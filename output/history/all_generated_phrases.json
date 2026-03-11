@@ -1,0 +1,40 @@
+{
+  "phrases": [
+    {
+      "english": "Call an ambulance, I'm hurt badly",
+      "japanese": "救急車を、すぐ呼んでください",
+      "romaji": "kyuukyuusha o, sugu yonde kudasai",
+      "category": "Emergency Japanese",
+      "generated_at": "2026-03-11T08:57:48.766748"
+    },
+    {
+      "english": "There's a fire, everyone get out now",
+      "japanese": "火事です、今すぐ避難してください",
+      "romaji": "kaji desu, ima sugu hinan shite kudasai",
+      "category": "Emergency Japanese",
+      "generated_at": "2026-03-11T08:57:48.766759"
+    },
+    {
+      "english": "I can't breathe, need medical help",
+      "japanese": "息ができません、医療の助けが必要です",
+      "romaji": "iki ga dekimasen, iryou no tasuke ga hitsuyou desu",
+      "category": "Emergency Japanese",
+      "generated_at": "2026-03-11T08:57:48.766762"
+    },
+    {
+      "english": "Someone's following me, I'm scared",
+      "japanese": "誰かがついてきます、怖いです",
+      "romaji": "dareka ga tsuite kimasu, kowai desu",
+      "category": "Emergency Japanese",
+      "generated_at": "2026-03-11T08:57:48.766764"
+    },
+    {
+      "english": "My child is missing, please help me",
+      "japanese": "子どもがいません、助けてください",
+      "romaji": "kodomo ga imasen, tasukete kudasai",
+      "category": "Emergency Japanese",
+      "generated_at": "2026-03-11T08:57:48.766766"
+    }
+  ],
+  "last_updated": "2026-03-11T08:57:48.766768"
+}
