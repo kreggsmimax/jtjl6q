@@ -139,7 +139,42 @@
       "romaji": "Nando mo chousen, ryuuchousa wa ato kara kuru",
       "category": "Inspiration",
       "generated_at": "2026-03-11T17:53:39.644296"
+    },
+    {
+      "english": "Call your mother, she might be worried",
+      "japanese": "お母さんに電話して、心配してるかも",
+      "romaji": "okaasan ni denwa shite, shinpai shiteru kamo",
+      "category": "Family Terms",
+      "generated_at": "2026-03-11T20:40:50.401102"
+    },
+    {
+      "english": "Introduce yourself to grandma, be polite",
+      "japanese": "おばあちゃんに挨拶して、丁寧にね",
+      "romaji": "obaachan ni aisatsu shite, teinei ni ne",
+      "category": "Family Terms",
+      "generated_at": "2026-03-11T20:40:50.401110"
+    },
+    {
+      "english": "My younger brother, loves video games",
+      "japanese": "弟は、テレビゲームが大好きだよ",
+      "romaji": "otouto wa, terebi geemu ga daisuki da yo",
+      "category": "Family Terms",
+      "generated_at": "2026-03-11T20:40:50.401111"
+    },
+    {
+      "english": "Family dinner tonight, everyone come",
+      "japanese": "今夜は家族の夕食、みんな来てね",
+      "romaji": "konya wa kazoku no yuushoku, minna kite ne",
+      "category": "Family Terms",
+      "generated_at": "2026-03-11T20:40:50.401112"
+    },
+    {
+      "english": "This is my husband, nice to meet you",
+      "japanese": "こちらは夫です、よろしくお願いします",
+      "romaji": "kochira wa otto desu, yoroshiku onegaishimasu",
+      "category": "Family Terms",
+      "generated_at": "2026-03-11T20:40:50.401114"
     }
   ],
-  "last_updated": "2026-03-11T17:53:39.644298"
+  "last_updated": "2026-03-11T20:40:50.401115"
 }
