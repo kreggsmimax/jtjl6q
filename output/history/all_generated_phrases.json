@@ -69,7 +69,42 @@
       "romaji": "Genkizukete kurete, arigatou",
       "category": "Gratitude",
       "generated_at": "2026-03-11T09:14:35.228231"
+    },
+    {
+      "english": "Brave the moment, take one bold step",
+      "japanese": "その瞬間に、勇気を出して一歩踏み出そう",
+      "romaji": "sono shunkan ni, yuuki o dashite ippo fumidasou",
+      "category": "Courage",
+      "generated_at": "2026-03-11T14:45:58.939524"
+    },
+    {
+      "english": "Face the fear, feel your strength grow",
+      "japanese": "怖さに向き合えば、力が強くなる",
+      "romaji": "kowasa ni mukiaeba, chikara ga tsuyoku naru",
+      "category": "Courage",
+      "generated_at": "2026-03-11T14:45:58.939533"
+    },
+    {
+      "english": "Speak up, your voice can change things",
+      "japanese": "声を出して、変化を起こそう",
+      "romaji": "koe o dashite, henka o okosou",
+      "category": "Courage",
+      "generated_at": "2026-03-11T14:45:58.939535"
+    },
+    {
+      "english": "One brave choice, changes everything",
+      "japanese": "勇気ある一つの選択が、全てを変える",
+      "romaji": "yuuki aru hitotsu no sentaku ga, subete o kaeru",
+      "category": "Courage",
+      "generated_at": "2026-03-11T14:45:58.939536"
+    },
+    {
+      "english": "Try again, small steps build courage",
+      "japanese": "もう一度、少しずつ勇気を積み上げよう",
+      "romaji": "mou ichido, sukoshi zutsu yuuki o tsumiageyou",
+      "category": "Courage",
+      "generated_at": "2026-03-11T14:45:58.939537"
     }
   ],
-  "last_updated": "2026-03-11T09:14:35.228233"
+  "last_updated": "2026-03-11T14:45:58.939539"
 }
