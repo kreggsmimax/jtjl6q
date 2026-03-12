@@ -174,7 +174,42 @@
       "romaji": "kochira wa otto desu, yoroshiku onegaishimasu",
       "category": "Family Terms",
       "generated_at": "2026-03-11T20:40:50.401114"
+    },
+    {
+      "english": "Take one step, toward your goal.",
+      "japanese": "一歩ずつ、目標に向かって進もう。",
+      "romaji": "Ippo zutsu, mokuhyou ni mukatte susumou.",
+      "category": "Numbers Japanese",
+      "generated_at": "2026-03-12T01:24:31.484879"
+    },
+    {
+      "english": "Two friends, share one big laugh.",
+      "japanese": "二人で、一緒に大笑いしよう。",
+      "romaji": "Futari de, issho ni oowarai shiyou.",
+      "category": "Numbers Japanese",
+      "generated_at": "2026-03-12T01:24:31.484888"
+    },
+    {
+      "english": "Three tries, then step back, reassess quickly.",
+      "japanese": "三回試して、少し離れて、再評価しよう。",
+      "romaji": "Sankai tameshite, sukoshi hanarete, saihyouka shiyou.",
+      "category": "Numbers Japanese",
+      "generated_at": "2026-03-12T01:24:31.484889"
+    },
+    {
+      "english": "Four minutes, focus only, finish the task.",
+      "japanese": "四分だけ、集中して、終わらせよう。",
+      "romaji": "Yon-pun dake, shuuchuu shite, owaraseyou.",
+      "category": "Numbers Japanese",
+      "generated_at": "2026-03-12T01:24:31.484890"
+    },
+    {
+      "english": "Five minutes, breathe deeply, start again.",
+      "japanese": "五分間、深呼吸して、もう一度始めよう。",
+      "romaji": "Go-funkan, shinkokyuu shite, mou ichido hajimeyou.",
+      "category": "Numbers Japanese",
+      "generated_at": "2026-03-12T01:24:31.484892"
     }
   ],
-  "last_updated": "2026-03-11T20:40:50.401115"
+  "last_updated": "2026-03-12T01:24:31.484893"
 }
