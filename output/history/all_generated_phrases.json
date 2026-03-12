@@ -244,7 +244,42 @@
       "romaji": "Shichakushitsu wa, doko desu ka?",
       "category": "Shopping Japanese",
       "generated_at": "2026-03-12T14:50:32.919688"
+    },
+    {
+      "english": "Breathe slow, notice your heartbeat",
+      "japanese": "ゆっくり呼吸して、鼓動に気づく",
+      "romaji": "yukkuri kokyuu shite, kodou ni kizuku",
+      "category": "Mindfulness",
+      "generated_at": "2026-03-12T17:54:30.117324"
+    },
+    {
+      "english": "Ground yourself, feel your feet now",
+      "japanese": "足の裏を感じて、今ここに立つ",
+      "romaji": "ashi no ura o kanjite, ima koko ni tatsu",
+      "category": "Mindfulness",
+      "generated_at": "2026-03-12T17:54:30.117332"
+    },
+    {
+      "english": "Notice thoughts, let them pass",
+      "japanese": "考えに気づき、流していく",
+      "romaji": "kangae ni kizuki, nagashite iku",
+      "category": "Mindfulness",
+      "generated_at": "2026-03-12T17:54:30.117333"
+    },
+    {
+      "english": "Soft gaze, return to the present",
+      "japanese": "視線を柔らかくして、現在に戻る",
+      "romaji": "shisen o yawarakaku shite, genzai ni modoru",
+      "category": "Mindfulness",
+      "generated_at": "2026-03-12T17:54:30.117337"
+    },
+    {
+      "english": "One breath, one step, one moment",
+      "japanese": "一呼吸、一歩、一瞬",
+      "romaji": "ikkokyuu, ippo, isshun",
+      "category": "Mindfulness",
+      "generated_at": "2026-03-12T17:54:30.117338"
     }
   ],
-  "last_updated": "2026-03-12T14:50:32.919689"
+  "last_updated": "2026-03-12T17:54:30.117340"
 }
