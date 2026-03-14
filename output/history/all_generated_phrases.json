@@ -524,7 +524,42 @@
       "romaji": "Shikkari tatte, yuuki de mae ni susumou",
       "category": "Strength",
       "generated_at": "2026-03-14T14:29:49.057162"
+    },
+    {
+      "english": "Good morning, did you sleep well?",
+      "japanese": "おはよう、よく眠れましたか？",
+      "romaji": "ohayou, yoku nemaremashita ka?",
+      "category": "Greetings",
+      "generated_at": "2026-03-14T17:34:01.008035"
+    },
+    {
+      "english": "Hello, long time no see, how are you?",
+      "japanese": "久しぶり、元気にしてた？",
+      "romaji": "hisashiburi, genki ni shiteta?",
+      "category": "Greetings",
+      "generated_at": "2026-03-14T17:34:01.008043"
+    },
+    {
+      "english": "Good evening, how was your day?",
+      "japanese": "こんばんは、今日はどうだった？",
+      "romaji": "konbanwa, kyou wa dou datta?",
+      "category": "Greetings",
+      "generated_at": "2026-03-14T17:34:01.008045"
+    },
+    {
+      "english": "Nice to meet you, I'm glad",
+      "japanese": "はじめまして、会えてうれしいです",
+      "romaji": "hajimemashite, aete ureshii desu",
+      "category": "Greetings",
+      "generated_at": "2026-03-14T17:34:01.008046"
+    },
+    {
+      "english": "Hi there, what's your name?",
+      "japanese": "こんにちは、お名前は何ですか？",
+      "romaji": "konnichiwa, onamae wa nan desu ka?",
+      "category": "Greetings",
+      "generated_at": "2026-03-14T17:34:01.008047"
     }
   ],
-  "last_updated": "2026-03-14T14:29:49.057164"
+  "last_updated": "2026-03-14T17:34:01.008049"
 }
