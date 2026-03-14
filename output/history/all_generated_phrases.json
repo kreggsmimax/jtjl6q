@@ -559,7 +559,42 @@
       "romaji": "konnichiwa, onamae wa nan desu ka?",
       "category": "Greetings",
       "generated_at": "2026-03-14T17:34:01.008047"
+    },
+    {
+      "english": "Hello, nice to meet you.",
+      "japanese": "こんにちは、はじめまして。",
+      "romaji": "konnichiwa, hajimemashite",
+      "category": "Basic Phrases",
+      "generated_at": "2026-03-14T20:36:10.332946"
+    },
+    {
+      "english": "Excuse me, can you help me?",
+      "japanese": "すみません、手伝ってくれますか？",
+      "romaji": "sumimasen, tetsudatte kuremasu ka?",
+      "category": "Basic Phrases",
+      "generated_at": "2026-03-14T20:36:10.332955"
+    },
+    {
+      "english": "I'm sorry, I didn't understand.",
+      "japanese": "ごめんなさい、わかりませんでした。",
+      "romaji": "gomen nasai, wakarimasen deshita",
+      "category": "Basic Phrases",
+      "generated_at": "2026-03-14T20:36:10.332956"
+    },
+    {
+      "english": "Please wait a moment, I'll be right back.",
+      "japanese": "ちょっと待ってください、すぐ戻ります。",
+      "romaji": "chotto matte kudasai, sugu modorimasu",
+      "category": "Basic Phrases",
+      "generated_at": "2026-03-14T20:36:10.332957"
+    },
+    {
+      "english": "I'm hungry, where is a restaurant?",
+      "japanese": "お腹がすきました、レストランはどこですか？",
+      "romaji": "onaka ga sukimashita, resutoran wa doko desu ka?",
+      "category": "Basic Phrases",
+      "generated_at": "2026-03-14T20:36:10.332959"
     }
   ],
-  "last_updated": "2026-03-14T17:34:01.008049"
+  "last_updated": "2026-03-14T20:36:10.332960"
 }
