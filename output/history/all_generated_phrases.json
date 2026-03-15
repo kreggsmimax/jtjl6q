@@ -594,7 +594,42 @@
       "romaji": "onaka ga sukimashita, resutoran wa doko desu ka?",
       "category": "Basic Phrases",
       "generated_at": "2026-03-14T20:36:10.332959"
+    },
+    {
+      "english": "Breathe deeply, find your middle ground",
+      "japanese": "深呼吸して、心の均衡を保つ",
+      "romaji": "shinkokyuu shite, kokoro no kinkou o tamotsu",
+      "category": "Balance",
+      "generated_at": "2026-03-15T01:51:54.527964"
+    },
+    {
+      "english": "Slow down, steady your everyday pace",
+      "japanese": "速度を落として、日々の歩調を整える",
+      "romaji": "sokudo o otoshite, hibi no hochou o totonoeru",
+      "category": "Balance",
+      "generated_at": "2026-03-15T01:51:54.527973"
+    },
+    {
+      "english": "Work hard, then rest even harder",
+      "japanese": "よく働いて、それからもっとしっかり休む",
+      "romaji": "yoku hataraite, sorekara motto shikkari yasumu",
+      "category": "Balance",
+      "generated_at": "2026-03-15T01:51:54.527975"
+    },
+    {
+      "english": "Say no, protect your time",
+      "japanese": "ノーと言って、時間を守る",
+      "romaji": "noo to itte, jikan o mamoru",
+      "category": "Balance",
+      "generated_at": "2026-03-15T01:51:54.527976"
+    },
+    {
+      "english": "Take small steps, build lasting balance",
+      "japanese": "小さな一歩で、持続するバランスを作る",
+      "romaji": "chiisana ippo de, jizoku suru baransu o tsukuru",
+      "category": "Balance",
+      "generated_at": "2026-03-15T01:51:54.527977"
     }
   ],
-  "last_updated": "2026-03-14T20:36:10.332960"
+  "last_updated": "2026-03-15T01:51:54.527978"
 }
