@@ -769,7 +769,42 @@
       "romaji": "Eki made, takushii o onegai shimasu.",
       "category": "Travel Japanese",
       "generated_at": "2026-03-16T01:52:48.010082"
+    },
+    {
+      "english": "Do you have this, in another size?",
+      "japanese": "これは、別のサイズがありますか？",
+      "romaji": "Kore wa, betsu no saizu ga arimasu ka?",
+      "category": "Shopping Japanese",
+      "generated_at": "2026-03-16T15:00:25.124293"
+    },
+    {
+      "english": "Could you give me a discount, please?",
+      "japanese": "割引して、いただけますか？",
+      "romaji": "Waribiki shite, itadakemasu ka?",
+      "category": "Shopping Japanese",
+      "generated_at": "2026-03-16T15:00:25.124303"
+    },
+    {
+      "english": "Please wrap it, as a gift.",
+      "japanese": "プレゼント用に、包んでください。",
+      "romaji": "Purezento you ni, tsutsunde kudasai.",
+      "category": "Shopping Japanese",
+      "generated_at": "2026-03-16T15:00:25.124304"
+    },
+    {
+      "english": "Can I pay with cash, or card?",
+      "japanese": "現金とカード、どちらが使えますか？",
+      "romaji": "Genkin to kaado, dochira ga tsukaemasu ka?",
+      "category": "Shopping Japanese",
+      "generated_at": "2026-03-16T15:00:25.124305"
+    },
+    {
+      "english": "I'm just looking, thank you.",
+      "japanese": "見ているだけです、ありがとうございます。",
+      "romaji": "Mite iru dake desu, arigato gozaimasu.",
+      "category": "Shopping Japanese",
+      "generated_at": "2026-03-16T15:00:25.124307"
     }
   ],
-  "last_updated": "2026-03-16T01:52:48.010083"
+  "last_updated": "2026-03-16T15:00:25.124308"
 }
