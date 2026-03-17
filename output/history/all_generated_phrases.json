@@ -944,7 +944,42 @@
       "romaji": "te ga furuete mo, tatte ganbarou",
       "category": "Courage",
       "generated_at": "2026-03-17T14:57:07.352940"
+    },
+    {
+      "english": "Imagine wildly, then make it real",
+      "japanese": "大胆に想像して、現実にしよう",
+      "romaji": "daitan ni souzou shite, genjitsu ni shiyou",
+      "category": "Creativity",
+      "generated_at": "2026-03-17T18:03:30.009073"
+    },
+    {
+      "english": "Start small, surprise yourself later",
+      "japanese": "小さく始めて、後で驚こう",
+      "romaji": "chiisaku hajimete, ato de odorokou",
+      "category": "Creativity",
+      "generated_at": "2026-03-17T18:03:30.009081"
+    },
+    {
+      "english": "Try something weird, learn something new",
+      "japanese": "変なことを試して、新しい発見をしよう",
+      "romaji": "hen na koto o tameshite, atarashii hakken o shiyou",
+      "category": "Creativity",
+      "generated_at": "2026-03-17T18:03:30.009082"
+    },
+    {
+      "english": "Make mistakes, collect valuable ideas",
+      "japanese": "失敗を重ねて、価値あるアイデアを集めよう",
+      "romaji": "shippai o kasanete, kachi aru aidea o atsumeyou",
+      "category": "Creativity",
+      "generated_at": "2026-03-17T18:03:30.009083"
+    },
+    {
+      "english": "Play with limits, find fresh paths",
+      "japanese": "限界で遊んで、新しい道を見つけよう",
+      "romaji": "genkai de asonde, atarashii michi o mitsukeyou",
+      "category": "Creativity",
+      "generated_at": "2026-03-17T18:03:30.009085"
     }
   ],
-  "last_updated": "2026-03-17T14:57:07.352942"
+  "last_updated": "2026-03-17T18:03:30.009086"
 }
