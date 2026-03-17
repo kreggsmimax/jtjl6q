@@ -909,7 +909,42 @@
       "romaji": "Ikō, tsuite iku ne.",
       "category": "Common Expressions",
       "generated_at": "2026-03-17T01:30:22.561481"
+    },
+    {
+      "english": "Stand tall, even when knees tremble",
+      "japanese": "膝が震えても、胸を張って立ち上がろう",
+      "romaji": "hiza ga furuete mo, mune o hatte tachi agarou",
+      "category": "Courage",
+      "generated_at": "2026-03-17T14:57:07.352928"
+    },
+    {
+      "english": "Trust yourself, the path appears with steps",
+      "japanese": "自分を信じて、歩けば道はできる",
+      "romaji": "jibun o shinjite, arukeba michi wa dekiru",
+      "category": "Courage",
+      "generated_at": "2026-03-17T14:57:07.352937"
+    },
+    {
+      "english": "Fear visits, courage chooses to stay",
+      "japanese": "恐れは来る、でも勇気は残る",
+      "romaji": "osore wa kuru, demo yuuki wa nokoru",
+      "category": "Courage",
+      "generated_at": "2026-03-17T14:57:07.352938"
+    },
+    {
+      "english": "Take the first step, the rest will follow",
+      "japanese": "最初の一歩を踏めば、あとは続く",
+      "romaji": "saisho no ippo o fumeba, ato wa tsuzuku",
+      "category": "Courage",
+      "generated_at": "2026-03-17T14:57:07.352939"
+    },
+    {
+      "english": "Stand up, even if your hands shake",
+      "japanese": "手が震えても、立って頑張ろう",
+      "romaji": "te ga furuete mo, tatte ganbarou",
+      "category": "Courage",
+      "generated_at": "2026-03-17T14:57:07.352940"
     }
   ],
-  "last_updated": "2026-03-17T01:30:22.561482"
+  "last_updated": "2026-03-17T14:57:07.352942"
 }
