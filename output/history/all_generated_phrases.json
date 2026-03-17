@@ -874,7 +874,42 @@
       "romaji": "ayumi o osokushite, chiisana yorokobi ni kizuku",
       "category": "Inner Peace",
       "generated_at": "2026-03-16T20:53:17.303509"
+    },
+    {
+      "english": "Good morning, ready for today?",
+      "japanese": "おはよう、今日の準備はいい？",
+      "romaji": "Ohayō, kyō no junbi wa ii?",
+      "category": "Common Expressions",
+      "generated_at": "2026-03-17T01:30:22.561467"
+    },
+    {
+      "english": "Thank you, I appreciate it.",
+      "japanese": "ありがとう、感謝しています。",
+      "romaji": "Arigatō, kansha shiteimasu.",
+      "category": "Common Expressions",
+      "generated_at": "2026-03-17T01:30:22.561476"
+    },
+    {
+      "english": "I'm sorry, I made a mistake.",
+      "japanese": "ごめんなさい、間違えました。",
+      "romaji": "Gomennasai, machigaemashita.",
+      "category": "Common Expressions",
+      "generated_at": "2026-03-17T01:30:22.561478"
+    },
+    {
+      "english": "No problem, take your time.",
+      "japanese": "大丈夫、ゆっくりでいいよ。",
+      "romaji": "Daijōbu, yukkuri de ii yo.",
+      "category": "Common Expressions",
+      "generated_at": "2026-03-17T01:30:22.561479"
+    },
+    {
+      "english": "Let's go, I'll follow you.",
+      "japanese": "行こう、ついて行くね。",
+      "romaji": "Ikō, tsuite iku ne.",
+      "category": "Common Expressions",
+      "generated_at": "2026-03-17T01:30:22.561481"
     }
   ],
-  "last_updated": "2026-03-16T20:53:17.303512"
+  "last_updated": "2026-03-17T01:30:22.561482"
 }
