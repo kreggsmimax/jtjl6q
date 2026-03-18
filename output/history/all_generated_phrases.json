@@ -1049,7 +1049,42 @@
       "romaji": "Jibun o shinjite, katei o ukeireyou",
       "category": "Perseverance",
       "generated_at": "2026-03-18T01:46:36.165103"
+    },
+    {
+      "english": "I was assaulted, call the police",
+      "japanese": "暴行されました、警察を呼んでください",
+      "romaji": "boukou saremashita, keisatsu o yonde kudasai",
+      "category": "Emergency Japanese",
+      "generated_at": "2026-03-18T15:03:02.516518"
+    },
+    {
+      "english": "I have severe allergy, need an EpiPen",
+      "japanese": "重度のアレルギー反応です、エピペンが必要です",
+      "romaji": "juudo no arerugii hannou desu, epipen ga hitsuyou desu",
+      "category": "Emergency Japanese",
+      "generated_at": "2026-03-18T15:03:02.516526"
+    },
+    {
+      "english": "I'm injured, bleeding heavily, please help",
+      "japanese": "怪我をしました、ひどく出血しています、助けてください",
+      "romaji": "kega o shimashita, hidoku shukketsu shiteimasu, tasukete kudasai",
+      "category": "Emergency Japanese",
+      "generated_at": "2026-03-18T15:03:02.516528"
+    },
+    {
+      "english": "I think I was poisoned, help me",
+      "japanese": "毒に当たったかも、助けてください",
+      "romaji": "doku ni atatta kamo, tasukete kudasai",
+      "category": "Emergency Japanese",
+      "generated_at": "2026-03-18T15:03:02.516529"
+    },
+    {
+      "english": "My car crashed, I'm trapped, call for help",
+      "japanese": "車が事故を起こしました、閉じ込められています、助けを呼んでください",
+      "romaji": "kuruma ga jiko o okoshimashita, tojikomerareteimasu, tasuke o yonde kudasai",
+      "category": "Emergency Japanese",
+      "generated_at": "2026-03-18T15:03:02.516530"
     }
   ],
-  "last_updated": "2026-03-18T01:46:36.165105"
+  "last_updated": "2026-03-18T15:03:02.516536"
 }
