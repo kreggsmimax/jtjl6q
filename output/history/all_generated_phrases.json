@@ -1224,7 +1224,42 @@
       "romaji": "Mainichi, nanika o manabu.",
       "category": "Success",
       "generated_at": "2026-03-19T12:00:59.684090"
+    },
+    {
+      "english": "Be gentle, with yourself.",
+      "japanese": "自分に、優しくね。",
+      "romaji": "Jibun ni, yasashiku ne.",
+      "category": "Kindness",
+      "generated_at": "2026-03-19T14:44:50.931913"
+    },
+    {
+      "english": "A little help, goes a long way.",
+      "japanese": "少しの助けが、力になります。",
+      "romaji": "Sukoshi no tasuke ga, chikara ni narimasu.",
+      "category": "Kindness",
+      "generated_at": "2026-03-19T14:44:50.931923"
+    },
+    {
+      "english": "Share your smile, it's contagious.",
+      "japanese": "笑顔を、分けてあげよう。",
+      "romaji": "Egao o, wakete ageyou.",
+      "category": "Kindness",
+      "generated_at": "2026-03-19T14:44:50.931924"
+    },
+    {
+      "english": "Listen well, understand deeply.",
+      "japanese": "よく聞いて、深く理解する。",
+      "romaji": "Yoku kiite, fukaku rikai suru.",
+      "category": "Kindness",
+      "generated_at": "2026-03-19T14:44:50.931925"
+    },
+    {
+      "english": "Small acts, big impact.",
+      "japanese": "小さな親切が、大きな変化を。",
+      "romaji": "Chiisana shinsetsu ga, ookina henka o.",
+      "category": "Kindness",
+      "generated_at": "2026-03-19T14:44:50.931927"
     }
   ],
-  "last_updated": "2026-03-19T12:00:59.684091"
+  "last_updated": "2026-03-19T14:44:50.931928"
 }
