@@ -1189,7 +1189,42 @@
       "romaji": "chiisana kachi, yagate jishin ni naru",
       "category": "Motivation",
       "generated_at": "2026-03-19T01:46:30.855523"
+    },
+    {
+      "english": "Keep going, step by step.",
+      "japanese": "一歩ずつ、進みましょう。",
+      "romaji": "Ippo zutsu, susumimashou.",
+      "category": "Success",
+      "generated_at": "2026-03-19T12:00:59.684077"
+    },
+    {
+      "english": "Small efforts, big results.",
+      "japanese": "小さな努力、大きな成果。",
+      "romaji": "Chiisana doryoku, ookina seika.",
+      "category": "Success",
+      "generated_at": "2026-03-19T12:00:59.684086"
+    },
+    {
+      "english": "You can do it, believe.",
+      "japanese": "できるよ、信じて。",
+      "romaji": "Dekiru yo, shinjite.",
+      "category": "Success",
+      "generated_at": "2026-03-19T12:00:59.684087"
+    },
+    {
+      "english": "Never give up, try again.",
+      "japanese": "諦めないで、また挑戦。",
+      "romaji": "Akiramenaide, mata chousen.",
+      "category": "Success",
+      "generated_at": "2026-03-19T12:00:59.684089"
+    },
+    {
+      "english": "Every day, learn something.",
+      "japanese": "毎日、何かを学ぶ。",
+      "romaji": "Mainichi, nanika o manabu.",
+      "category": "Success",
+      "generated_at": "2026-03-19T12:00:59.684090"
     }
   ],
-  "last_updated": "2026-03-19T01:46:30.855524"
+  "last_updated": "2026-03-19T12:00:59.684091"
 }
