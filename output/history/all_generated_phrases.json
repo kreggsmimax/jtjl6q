@@ -1539,7 +1539,42 @@
       "romaji": "Kore, arimasu ka?",
       "category": "Travel Japanese",
       "generated_at": "2026-03-21T00:56:23.377528"
+    },
+    {
+      "english": "My heart, beats for you.",
+      "japanese": "私の心臓は、あなたのために動きます。",
+      "romaji": "Watashi no shinzou wa, anata no tame ni ugokimasu.",
+      "category": "Love",
+      "generated_at": "2026-03-21T12:21:14.091279"
+    },
+    {
+      "english": "You are, my everything.",
+      "japanese": "あなたは、私の全てです。",
+      "romaji": "Anata wa, watashi no subete desu.",
+      "category": "Love",
+      "generated_at": "2026-03-21T12:21:14.091288"
+    },
+    {
+      "english": "I love you, always.",
+      "japanese": "愛しています、ずっと。",
+      "romaji": "Aishite imasu, zutto.",
+      "category": "Love",
+      "generated_at": "2026-03-21T12:21:14.091289"
+    },
+    {
+      "english": "Thinking of you, often.",
+      "japanese": "あなたのこと、よく考えています。",
+      "romaji": "Anata no koto, yoku kangaete imasu.",
+      "category": "Love",
+      "generated_at": "2026-03-21T12:21:14.091291"
+    },
+    {
+      "english": "My world, is brighter with you.",
+      "japanese": "あなたといると、世界が明るくなります。",
+      "romaji": "Anata to iru to, sekai ga akaruku narimasu.",
+      "category": "Love",
+      "generated_at": "2026-03-21T12:21:14.091292"
     }
   ],
-  "last_updated": "2026-03-21T00:56:23.377529"
+  "last_updated": "2026-03-21T12:21:14.091293"
 }
