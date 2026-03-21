@@ -1644,7 +1644,42 @@
       "romaji": "Shibaraku shitara, ikimasu.",
       "category": "Time Japanese",
       "generated_at": "2026-03-21T17:31:23.268762"
+    },
+    {
+      "english": "I'm just looking, thanks.",
+      "japanese": "ちょっと見てるだけです、ありがとう。",
+      "romaji": "Chotto miteru dake desu, arigatou.",
+      "category": "Shopping Japanese",
+      "generated_at": "2026-03-21T20:21:34.794813"
+    },
+    {
+      "english": "Do you have this, smaller?",
+      "japanese": "これの、小さいサイズはありますか？",
+      "romaji": "Kore no, chiisai saizu wa arimasu ka?",
+      "category": "Shopping Japanese",
+      "generated_at": "2026-03-21T20:21:34.794822"
+    },
+    {
+      "english": "Can I try this on?",
+      "japanese": "これを試着してもいいですか？",
+      "romaji": "Kore o shichaku shite mo ii desu ka?",
+      "category": "Shopping Japanese",
+      "generated_at": "2026-03-21T20:21:34.794824"
+    },
+    {
+      "english": "This color is nice.",
+      "japanese": "この色、いいですね。",
+      "romaji": "Kono iro, ii desu ne.",
+      "category": "Shopping Japanese",
+      "generated_at": "2026-03-21T20:21:34.794825"
+    },
+    {
+      "english": "I'll take this one.",
+      "japanese": "これをください。",
+      "romaji": "Kore o kudasai.",
+      "category": "Shopping Japanese",
+      "generated_at": "2026-03-21T20:21:34.794826"
     }
   ],
-  "last_updated": "2026-03-21T17:31:23.268764"
+  "last_updated": "2026-03-21T20:21:34.794828"
 }
