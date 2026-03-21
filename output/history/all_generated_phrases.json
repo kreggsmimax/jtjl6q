@@ -1574,7 +1574,42 @@
       "romaji": "Anata to iru to, sekai ga akaruku narimasu.",
       "category": "Love",
       "generated_at": "2026-03-21T12:21:14.091292"
+    },
+    {
+      "english": "Let's give it, a try.",
+      "japanese": "やってみましょう。",
+      "romaji": "yatte mimashou.",
+      "category": "Common Expressions",
+      "generated_at": "2026-03-21T14:25:48.427734"
+    },
+    {
+      "english": "Don't worry, about it.",
+      "japanese": "心配しないでください。",
+      "romaji": "shinpai shinaide kudasai.",
+      "category": "Common Expressions",
+      "generated_at": "2026-03-21T14:25:48.427744"
+    },
+    {
+      "english": "It's okay, really.",
+      "japanese": "大丈夫ですよ、本当に。",
+      "romaji": "daijoubu desu yo, hontou ni.",
+      "category": "Common Expressions",
+      "generated_at": "2026-03-21T14:25:48.427745"
+    },
+    {
+      "english": "I understand, a little.",
+      "japanese": "少し、わかります。",
+      "romaji": "sukoshi, wakarimasu.",
+      "category": "Common Expressions",
+      "generated_at": "2026-03-21T14:25:48.427746"
+    },
+    {
+      "english": "Please wait, a moment.",
+      "japanese": "少々、お待ちください。",
+      "romaji": "shoushou, omachi kudasai.",
+      "category": "Common Expressions",
+      "generated_at": "2026-03-21T14:25:48.427747"
     }
   ],
-  "last_updated": "2026-03-21T12:21:14.091293"
+  "last_updated": "2026-03-21T14:25:48.427749"
 }
