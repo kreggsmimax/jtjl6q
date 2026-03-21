@@ -1609,7 +1609,42 @@
       "romaji": "shoushou, omachi kudasai.",
       "category": "Common Expressions",
       "generated_at": "2026-03-21T14:25:48.427747"
+    },
+    {
+      "english": "Right now, let's start.",
+      "japanese": "今すぐ、始めましょう。",
+      "romaji": "Ima sugu, hajimemashou.",
+      "category": "Time Japanese",
+      "generated_at": "2026-03-21T17:31:23.268751"
+    },
+    {
+      "english": "Later, maybe tomorrow.",
+      "japanese": "後で、たぶん明日。",
+      "romaji": "Ato de, tabun ashita.",
+      "category": "Time Japanese",
+      "generated_at": "2026-03-21T17:31:23.268758"
+    },
+    {
+      "english": "Just a moment, please.",
+      "japanese": "少々お待ちください。",
+      "romaji": "Shoushou omachi kudasai.",
+      "category": "Time Japanese",
+      "generated_at": "2026-03-21T17:31:23.268759"
+    },
+    {
+      "english": "It's already late.",
+      "japanese": "もう遅いですね。",
+      "romaji": "Mou osoi desu ne.",
+      "category": "Time Japanese",
+      "generated_at": "2026-03-21T17:31:23.268761"
+    },
+    {
+      "english": "After a while, we'll go.",
+      "japanese": "しばらくしたら、行きます。",
+      "romaji": "Shibaraku shitara, ikimasu.",
+      "category": "Time Japanese",
+      "generated_at": "2026-03-21T17:31:23.268762"
     }
   ],
-  "last_updated": "2026-03-21T14:25:48.427749"
+  "last_updated": "2026-03-21T17:31:23.268764"
 }
