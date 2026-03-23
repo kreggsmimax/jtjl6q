@@ -1959,7 +1959,42 @@
       "romaji": "Renshuu wa, kanpeki o tsukuru.",
       "category": "Perseverance",
       "generated_at": "2026-03-23T14:54:10.491316"
+    },
+    {
+      "english": "Little by little, you'll get there.",
+      "japanese": "少しずつ、進んでいきましょう。",
+      "romaji": "Sukoshi zutsu, susunde ikimashou.",
+      "category": "Motivation",
+      "generated_at": "2026-03-23T17:55:47.885796"
+    },
+    {
+      "english": "Every mistake, is a lesson.",
+      "japanese": "どんな間違いも、学びです。",
+      "romaji": "Donna machigai mo, manabi desu.",
+      "category": "Motivation",
+      "generated_at": "2026-03-23T17:55:47.885811"
+    },
+    {
+      "english": "Keep going, don't give up.",
+      "japanese": "続けて、諦めないで。",
+      "romaji": "Tsuzukete, akiramenaide.",
+      "category": "Motivation",
+      "generated_at": "2026-03-23T17:55:47.885813"
+    },
+    {
+      "english": "Your effort, will pay off.",
+      "japanese": "あなたの努力は、報われます。",
+      "romaji": "Anata no doryoku wa, mukawaremasu.",
+      "category": "Motivation",
+      "generated_at": "2026-03-23T17:55:47.885814"
+    },
+    {
+      "english": "Enjoy the journey, of learning.",
+      "japanese": "学ぶ旅を、楽しんでください。",
+      "romaji": "Manabu tabi o, tanoshinde kudasai.",
+      "category": "Motivation",
+      "generated_at": "2026-03-23T17:55:47.885815"
     }
   ],
-  "last_updated": "2026-03-23T14:54:10.491318"
+  "last_updated": "2026-03-23T17:55:47.885817"
 }
