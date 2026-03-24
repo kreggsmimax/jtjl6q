@@ -2134,7 +2134,42 @@
       "romaji": "Konnan ni, yuuki wo motte.",
       "category": "Strength",
       "generated_at": "2026-03-24T14:56:53.499455"
+    },
+    {
+      "english": "You, make me laugh.",
+      "japanese": "あなたは、私を笑わせてくれます。",
+      "romaji": "Anata wa, watashi o warawasete kuremasu.",
+      "category": "Friendship",
+      "generated_at": "2026-03-24T18:00:14.572898"
+    },
+    {
+      "english": "We, have fun together.",
+      "japanese": "一緒に、楽しい時間を過ごします。",
+      "romaji": "Issho ni, tanoshii jikan o sugoshimasu.",
+      "category": "Friendship",
+      "generated_at": "2026-03-24T18:00:14.572906"
+    },
+    {
+      "english": "You, are very kind.",
+      "japanese": "あなたは、とても親切です。",
+      "romaji": "Anata wa, totemo shinsetsu desu.",
+      "category": "Friendship",
+      "generated_at": "2026-03-24T18:00:14.572908"
+    },
+    {
+      "english": "I, value our friendship.",
+      "japanese": "私たちの友情を、大切にしています。",
+      "romaji": "Watashitachi no yuujou o, taisetsu ni shite imasu.",
+      "category": "Friendship",
+      "generated_at": "2026-03-24T18:00:14.572909"
+    },
+    {
+      "english": "Let's, stay friends forever.",
+      "japanese": "ずっと、友達でいましょう。",
+      "romaji": "Zutto, tomodachi de imashou.",
+      "category": "Friendship",
+      "generated_at": "2026-03-24T18:00:14.572910"
     }
   ],
-  "last_updated": "2026-03-24T14:56:53.499457"
+  "last_updated": "2026-03-24T18:00:14.572912"
 }
