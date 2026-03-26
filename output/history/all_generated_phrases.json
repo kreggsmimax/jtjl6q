@@ -2414,7 +2414,42 @@
       "romaji": "nintai wa, tobira o hiraku.",
       "category": "Wisdom",
       "generated_at": "2026-03-26T18:02:52.056969"
+    },
+    {
+      "english": "Even a small step, forward.",
+      "japanese": "小さな一歩でも、前へ。",
+      "romaji": "Chiisana ippo demo, mae e.",
+      "category": "Hope",
+      "generated_at": "2026-03-26T20:31:54.864594"
+    },
+    {
+      "english": "Tomorrow will be better, I think.",
+      "japanese": "明日はきっと、良くなる。",
+      "romaji": "Ashita wa kitto, yoku naru.",
+      "category": "Hope",
+      "generated_at": "2026-03-26T20:31:54.864603"
+    },
+    {
+      "english": "A new beginning, awaits.",
+      "japanese": "新しい始まりが、待っている。",
+      "romaji": "Atarashii hajimari ga, matte iru.",
+      "category": "Hope",
+      "generated_at": "2026-03-26T20:31:54.864604"
+    },
+    {
+      "english": "You can do it, I know.",
+      "japanese": "あなたならできる、分かってる。",
+      "romaji": "Anata nara dekiru, wakatteru.",
+      "category": "Hope",
+      "generated_at": "2026-03-26T20:31:54.864605"
+    },
+    {
+      "english": "Let's aim for the future.",
+      "japanese": "未来を目指そう、一緒に。",
+      "romaji": "Mirai o mezasou, issho ni.",
+      "category": "Hope",
+      "generated_at": "2026-03-26T20:31:54.864606"
     }
   ],
-  "last_updated": "2026-03-26T18:02:52.056974"
+  "last_updated": "2026-03-26T20:31:54.864608"
 }
