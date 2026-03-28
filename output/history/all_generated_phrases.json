@@ -2659,7 +2659,42 @@
       "romaji": "kokoro ga, karoyaka desu.",
       "category": "Joy",
       "generated_at": "2026-03-28T14:30:54.090952"
+    },
+    {
+      "english": "Face your fears, bravely.",
+      "japanese": "恐れに、立ち向かおう。",
+      "romaji": "osore ni, tachimukao.",
+      "category": "Courage",
+      "generated_at": "2026-03-28T17:36:03.954256"
+    },
+    {
+      "english": "Take the first step, boldly.",
+      "japanese": "最初の一歩を、勇気を出して。",
+      "romaji": "saisho no ippo o, yuuki o dashite.",
+      "category": "Courage",
+      "generated_at": "2026-03-28T17:36:03.954265"
+    },
+    {
+      "english": "Even small acts, matter.",
+      "japanese": "小さな行動も、大切。",
+      "romaji": "chiisana koudou mo, taisetsu.",
+      "category": "Courage",
+      "generated_at": "2026-03-28T17:36:03.954266"
+    },
+    {
+      "english": "Don't give up, keep going.",
+      "japanese": "諦めないで、進もう。",
+      "romaji": "akiramenai de, susumou.",
+      "category": "Courage",
+      "generated_at": "2026-03-28T17:36:03.954267"
+    },
+    {
+      "english": "Embrace the challenge, head on.",
+      "japanese": "挑戦を、受け入れよう。",
+      "romaji": "chousen o, ukeireyou.",
+      "category": "Courage",
+      "generated_at": "2026-03-28T17:36:03.954269"
     }
   ],
-  "last_updated": "2026-03-28T14:30:54.090955"
+  "last_updated": "2026-03-28T17:36:03.954270"
 }
