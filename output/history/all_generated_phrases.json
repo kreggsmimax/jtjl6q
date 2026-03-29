@@ -2729,7 +2729,42 @@
       "romaji": "mata ato de.",
       "category": "Common Expressions",
       "generated_at": "2026-03-29T12:26:51.758203"
+    },
+    {
+      "english": "Good things, come to those who wait.",
+      "japanese": "良いことは、待つ人に訪れます。",
+      "romaji": "yoi koto wa, matsu hito ni otozuremasu.",
+      "category": "Patience",
+      "generated_at": "2026-03-29T14:33:01.847411"
+    },
+    {
+      "english": "Be patient, a solution will appear.",
+      "japanese": "忍耐強く、解決策が見つかります。",
+      "romaji": "nintaizuyoku, kaiketsusaku ga mitsukarimasu.",
+      "category": "Patience",
+      "generated_at": "2026-03-29T14:33:01.847424"
+    },
+    {
+      "english": "Slow and steady, wins the race.",
+      "japanese": "ゆっくり着実に、勝利します。",
+      "romaji": "yukkuri chakujitsu ni, shōri shimasu.",
+      "category": "Patience",
+      "generated_at": "2026-03-29T14:33:01.847427"
+    },
+    {
+      "english": "It takes time, to grow strong.",
+      "japanese": "強くなるには、時間がかかります。",
+      "romaji": "tsuyoku naru ni wa, jikan ga kakarimasu.",
+      "category": "Patience",
+      "generated_at": "2026-03-29T14:33:01.847434"
+    },
+    {
+      "english": "Just keep going, one step at a time.",
+      "japanese": "一歩ずつ、進み続けましょう。",
+      "romaji": "ippo zutsu, susumi tsudzukemashō.",
+      "category": "Patience",
+      "generated_at": "2026-03-29T14:33:01.847437"
     }
   ],
-  "last_updated": "2026-03-29T12:26:51.758204"
+  "last_updated": "2026-03-29T14:33:01.847440"
 }
