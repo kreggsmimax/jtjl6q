@@ -2834,7 +2834,42 @@
       "romaji": "konkai dake, yurushite kudasai.",
       "category": "Forgiveness",
       "generated_at": "2026-03-29T20:25:55.434953"
+    },
+    {
+      "english": "Offer comfort, when needed.",
+      "japanese": "困っている人に、寄り添おう。",
+      "romaji": "Komatte iru hito ni, yorisou.",
+      "category": "Kindness",
+      "generated_at": "2026-03-30T01:11:10.461781"
+    },
+    {
+      "english": "Be patient, with others.",
+      "japanese": "相手を、大切に待ってあげて。",
+      "romaji": "Aite o, taisetsu ni matte agete.",
+      "category": "Kindness",
+      "generated_at": "2026-03-30T01:11:10.461791"
+    },
+    {
+      "english": "Spread positivity, always.",
+      "japanese": "いつも、良い言葉を。",
+      "romaji": "Itsumo, yoi kotoba o.",
+      "category": "Kindness",
+      "generated_at": "2026-03-30T01:11:10.461793"
+    },
+    {
+      "english": "A kind word, can heal.",
+      "japanese": "優しい言葉は、癒やしになる。",
+      "romaji": "Yasashii kotoba wa, iyashi ni naru.",
+      "category": "Kindness",
+      "generated_at": "2026-03-30T01:11:10.461795"
+    },
+    {
+      "english": "Give thanks, from the heart.",
+      "japanese": "心から、感謝を伝えよう。",
+      "romaji": "Kokoro kara, kansha o tsutaeyou.",
+      "category": "Kindness",
+      "generated_at": "2026-03-30T01:11:10.461796"
     }
   ],
-  "last_updated": "2026-03-29T20:25:55.434954"
+  "last_updated": "2026-03-30T01:11:10.461798"
 }
