@@ -2939,7 +2939,42 @@
       "romaji": "bejitarian menyuu, arimasu ka?",
       "category": "Restaurant Japanese",
       "generated_at": "2026-03-31T01:08:46.777091"
+    },
+    {
+      "english": "You make me, so happy.",
+      "japanese": "あなたは私を、とても幸せにします。",
+      "romaji": "Anata wa watashi wo, totemo shiawase ni shimasu.",
+      "category": "Love",
+      "generated_at": "2026-03-31T12:44:17.418413"
+    },
+    {
+      "english": "I cherish, our moments.",
+      "japanese": "私たちの時間を、大切にします。",
+      "romaji": "Watashitachi no jikan wo, taisetsu ni shimasu.",
+      "category": "Love",
+      "generated_at": "2026-03-31T12:44:17.418424"
+    },
+    {
+      "english": "You are, my beloved.",
+      "japanese": "あなたは、私の愛しい人です。",
+      "romaji": "Anata wa, watashi no itoshii hito desu.",
+      "category": "Love",
+      "generated_at": "2026-03-31T12:44:17.418426"
+    },
+    {
+      "english": "My love, for you grows.",
+      "japanese": "あなたへの愛が、育っています。",
+      "romaji": "Anata e no ai ga, sodatte imasu.",
+      "category": "Love",
+      "generated_at": "2026-03-31T12:44:17.418427"
+    },
+    {
+      "english": "I want to be, with you.",
+      "japanese": "あなたと一緒に、いたいのです。",
+      "romaji": "Anata to issho ni, itai no desu.",
+      "category": "Love",
+      "generated_at": "2026-03-31T12:44:17.418428"
     }
   ],
-  "last_updated": "2026-03-31T01:08:46.777093"
+  "last_updated": "2026-03-31T12:44:17.418430"
 }
