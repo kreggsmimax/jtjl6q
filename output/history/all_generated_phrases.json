@@ -2904,7 +2904,42 @@
       "romaji": "nihongo wa, tabi.",
       "category": "Inspiration",
       "generated_at": "2026-03-30T15:02:46.516070"
+    },
+    {
+      "english": "I'll have, this one, please.",
+      "japanese": "これを、お願いします。",
+      "romaji": "kore o, onegaishimasu.",
+      "category": "Restaurant Japanese",
+      "generated_at": "2026-03-31T01:08:46.777079"
+    },
+    {
+      "english": "Is this, spicy, by chance?",
+      "japanese": "これ、辛いですか？",
+      "romaji": "kore, karai desu ka?",
+      "category": "Restaurant Japanese",
+      "generated_at": "2026-03-31T01:08:46.777087"
+    },
+    {
+      "english": "The bill, please, when you can.",
+      "japanese": "お会計、お願いします。",
+      "romaji": "okaikei, onegaishimasu.",
+      "category": "Restaurant Japanese",
+      "generated_at": "2026-03-31T01:08:46.777089"
+    },
+    {
+      "english": "It was, very tasty, thank you.",
+      "japanese": "とても美味しかったです、ごちそうさまでした。",
+      "romaji": "totemo oishikatta desu, gochisousama deshita.",
+      "category": "Restaurant Japanese",
+      "generated_at": "2026-03-31T01:08:46.777090"
+    },
+    {
+      "english": "Do you have, vegetarian options?",
+      "japanese": "ベジタリアンメニュー、ありますか？",
+      "romaji": "bejitarian menyuu, arimasu ka?",
+      "category": "Restaurant Japanese",
+      "generated_at": "2026-03-31T01:08:46.777091"
     }
   ],
-  "last_updated": "2026-03-30T15:02:46.516071"
+  "last_updated": "2026-03-31T01:08:46.777093"
 }
