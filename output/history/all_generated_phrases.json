@@ -3114,7 +3114,42 @@
       "romaji": "Anata no yume o, shinjite.",
       "category": "Happiness",
       "generated_at": "2026-04-21T13:23:55.350507"
+    },
+    {
+      "english": "Rest well, then create.",
+      "japanese": "よく休んで、それから創る。",
+      "romaji": "yoku yasunde, sorekara tsukuru.",
+      "category": "Balance",
+      "generated_at": "2026-04-23T18:05:14.235420"
+    },
+    {
+      "english": "Observe closely, then decide.",
+      "japanese": "よく観察し、それから決める。",
+      "romaji": "yoku kansatsu shi, sorekara kimeru.",
+      "category": "Balance",
+      "generated_at": "2026-04-23T18:05:14.235431"
+    },
+    {
+      "english": "Give freely, receive gratefully.",
+      "japanese": "気前よく与え、感謝して受け取る。",
+      "romaji": "kimae yoku atae, kansha shite uketoru.",
+      "category": "Balance",
+      "generated_at": "2026-04-23T18:05:14.235433"
+    },
+    {
+      "english": "Breathe in, breathe out.",
+      "japanese": "息を吸って、息を吐く。",
+      "romaji": "iki wo sutte, iki wo haku.",
+      "category": "Balance",
+      "generated_at": "2026-04-23T18:05:14.235434"
+    },
+    {
+      "english": "Grow slowly, bloom fully.",
+      "japanese": "ゆっくり成長し、満開に咲く。",
+      "romaji": "yukkuri seichou shi, mankai ni saku.",
+      "category": "Balance",
+      "generated_at": "2026-04-23T18:05:14.235435"
     }
   ],
-  "last_updated": "2026-04-21T13:23:55.350508"
+  "last_updated": "2026-04-23T18:05:14.235437"
 }
