@@ -3149,7 +3149,42 @@
       "romaji": "yukkuri seichou shi, mankai ni saku.",
       "category": "Balance",
       "generated_at": "2026-04-23T18:05:14.235435"
+    },
+    {
+      "english": "Breathe in peace, breathe out stress.",
+      "japanese": "息を吸って、穏やかに。息を吐いて、ストレスを抜いて。",
+      "romaji": "Iki o sutte, odayaka ni. Iki o haite, sutoresu o nuite.",
+      "category": "Mindfulness",
+      "generated_at": "2026-04-27T13:49:42.450809"
+    },
+    {
+      "english": "Here now, just this moment.",
+      "japanese": "今ここ、ただこの瞬間。",
+      "romaji": "Ima koko, tada kono shunkan.",
+      "category": "Mindfulness",
+      "generated_at": "2026-04-27T13:49:42.450821"
+    },
+    {
+      "english": "Listen to the quiet, inside you.",
+      "japanese": "静けさを聞こう、あなたの心で。",
+      "romaji": "Shizukesa o kikou, anata no kokoro de.",
+      "category": "Mindfulness",
+      "generated_at": "2026-04-27T13:49:42.450822"
+    },
+    {
+      "english": "Feel your feet, on the ground.",
+      "japanese": "足の裏を感じて、地面に。",
+      "romaji": "Ashi no ura o kanjite, jimen ni.",
+      "category": "Mindfulness",
+      "generated_at": "2026-04-27T13:49:42.450823"
+    },
+    {
+      "english": "Gentle thoughts, softly bloom.",
+      "japanese": "優しい思い、そっと咲く。",
+      "romaji": "Yasashii omoi, sotto saku.",
+      "category": "Mindfulness",
+      "generated_at": "2026-04-27T13:49:42.450825"
     }
   ],
-  "last_updated": "2026-04-23T18:05:14.235437"
+  "last_updated": "2026-04-27T13:49:42.450826"
 }
