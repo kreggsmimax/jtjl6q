@@ -3254,7 +3254,42 @@
       "romaji": "Kowakutemo, yuukan ni.",
       "category": "Courage",
       "generated_at": "2026-04-30T13:51:34.440549"
+    },
+    {
+      "english": "Believe in yourself, you can do it.",
+      "japanese": "自分を信じて、できるよ。",
+      "romaji": "Jibun o shinjite, dekiru yo.",
+      "category": "Hope",
+      "generated_at": "2026-04-30T15:44:29.688535"
+    },
+    {
+      "english": "Don't give up, keep trying.",
+      "japanese": "諦めないで、挑戦しよう。",
+      "romaji": "Akiramenai de, chōsen shiyou.",
+      "category": "Hope",
+      "generated_at": "2026-04-30T15:44:29.688545"
+    },
+    {
+      "english": "A new day, new possibilities.",
+      "japanese": "新しい日、新しい可能性。",
+      "romaji": "Atarashii hi, atarashii kanōsei.",
+      "category": "Hope",
+      "generated_at": "2026-04-30T15:44:29.688546"
+    },
+    {
+      "english": "Even small steps, lead forward.",
+      "japanese": "小さな一歩でも、前に進む。",
+      "romaji": "Chiisana ippo demo, mae ni susumu.",
+      "category": "Hope",
+      "generated_at": "2026-04-30T15:44:29.688548"
+    },
+    {
+      "english": "Your strength, is inside you.",
+      "japanese": "あなたの強さ、中にあります。",
+      "romaji": "Anata no tsuyosa, naka ni arimasu.",
+      "category": "Hope",
+      "generated_at": "2026-04-30T15:44:29.688549"
     }
   ],
-  "last_updated": "2026-04-30T13:51:34.440550"
+  "last_updated": "2026-04-30T15:44:29.688551"
 }
