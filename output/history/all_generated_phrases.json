@@ -3534,7 +3534,42 @@
       "romaji": "Chiisana shouri wo, itsumo iwaou.",
       "category": "Wisdom",
       "generated_at": "2026-05-01T17:58:28.441632"
+    },
+    {
+      "english": "Little by little, great things are made.",
+      "japanese": "少しずつ、大きなことが生まれます。",
+      "romaji": "Sukoshi zutsu, ōkina koto ga umaremasu.",
+      "category": "Motivation",
+      "generated_at": "2026-05-01T20:41:29.818853"
+    },
+    {
+      "english": "Keep trying, you will improve.",
+      "japanese": "頑張って、上手くなりますよ。",
+      "romaji": "Ganbatte, jōzu ni narimasu yo.",
+      "category": "Motivation",
+      "generated_at": "2026-05-01T20:41:29.818861"
+    },
+    {
+      "english": "Mistakes are, part of learning.",
+      "japanese": "間違いは、学びの一部です。",
+      "romaji": "Machigai wa, manabi no ichibu desu.",
+      "category": "Motivation",
+      "generated_at": "2026-05-01T20:41:29.818862"
+    },
+    {
+      "english": "Speak, even if imperfectly.",
+      "japanese": "完璧でなくても、話しましょう。",
+      "romaji": "Kanpeki de nakute mo, hanashimashō.",
+      "category": "Motivation",
+      "generated_at": "2026-05-01T20:41:29.818864"
+    },
+    {
+      "english": "Every word, is a step forward.",
+      "japanese": "一つ一つの言葉が、前進です。",
+      "romaji": "Hitotsu hitotsu no kotoba ga, zenshin desu.",
+      "category": "Motivation",
+      "generated_at": "2026-05-01T20:41:29.818865"
     }
   ],
-  "last_updated": "2026-05-01T17:58:28.441633"
+  "last_updated": "2026-05-01T20:41:29.818866"
 }
