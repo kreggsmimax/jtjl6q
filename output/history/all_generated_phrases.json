@@ -3464,7 +3464,42 @@
       "romaji": "Ohisashiburi desu, genki sou desu ne!",
       "category": "Greetings",
       "generated_at": "2026-05-01T13:17:35.515950"
+    },
+    {
+      "english": "This way, please.",
+      "japanese": "こちらへ、どうぞ。",
+      "romaji": "kochirā e, dōzo.",
+      "category": "Restaurant Japanese",
+      "generated_at": "2026-05-01T14:47:37.666057"
+    },
+    {
+      "english": "A table for two, please.",
+      "japanese": "二人席、お願いします。",
+      "romaji": "futari-seki, onegaishimasu.",
+      "category": "Restaurant Japanese",
+      "generated_at": "2026-05-01T14:47:37.666073"
+    },
+    {
+      "english": "Can I see the menu?",
+      "japanese": "メニュー、見せてください。",
+      "romaji": "menyuu, misete kudasai.",
+      "category": "Restaurant Japanese",
+      "generated_at": "2026-05-01T14:47:37.666075"
+    },
+    {
+      "english": "What do you recommend?",
+      "japanese": "おすすめは、何ですか？",
+      "romaji": "osusume wa, nan desu ka?",
+      "category": "Restaurant Japanese",
+      "generated_at": "2026-05-01T14:47:37.666077"
+    },
+    {
+      "english": "I'll have this one.",
+      "japanese": "これにします。",
+      "romaji": "kore ni shimasu.",
+      "category": "Restaurant Japanese",
+      "generated_at": "2026-05-01T14:47:37.666078"
     }
   ],
-  "last_updated": "2026-05-01T13:17:35.515951"
+  "last_updated": "2026-05-01T14:47:37.666079"
 }
