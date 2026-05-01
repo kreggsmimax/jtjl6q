@@ -3394,7 +3394,42 @@
       "romaji": "Nante suteki na sapuraizu!",
       "category": "Joy",
       "generated_at": "2026-05-01T02:12:03.737638"
+    },
+    {
+      "english": "Excuse me, where is the station?",
+      "japanese": "すみません、駅はどこですか？",
+      "romaji": "sumimasen, eki wa doko desu ka?",
+      "category": "Travel Japanese",
+      "generated_at": "2026-05-01T02:40:28.148870"
+    },
+    {
+      "english": "This is very delicious, thank you.",
+      "japanese": "これ、とても美味しいです。ありがとう。",
+      "romaji": "kore, totemo oishii desu. arigatou.",
+      "category": "Travel Japanese",
+      "generated_at": "2026-05-01T02:40:28.148882"
+    },
+    {
+      "english": "Can I have the bill, please?",
+      "japanese": "お会計、お願いします。",
+      "romaji": "okaikei, onegaishimasu.",
+      "category": "Travel Japanese",
+      "generated_at": "2026-05-01T02:40:28.148884"
+    },
+    {
+      "english": "I want to go here.",
+      "japanese": "ここに行きたいです。",
+      "romaji": "koko ni ikitai desu.",
+      "category": "Travel Japanese",
+      "generated_at": "2026-05-01T02:40:28.148885"
+    },
+    {
+      "english": "Do you have this in stock?",
+      "japanese": "これはありますか？",
+      "romaji": "kore wa arimasu ka?",
+      "category": "Travel Japanese",
+      "generated_at": "2026-05-01T02:40:28.148886"
     }
   ],
-  "last_updated": "2026-05-01T02:12:03.737640"
+  "last_updated": "2026-05-01T02:40:28.148888"
 }
