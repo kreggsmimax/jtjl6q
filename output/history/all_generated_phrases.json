@@ -3429,7 +3429,42 @@
       "romaji": "kore wa arimasu ka?",
       "category": "Travel Japanese",
       "generated_at": "2026-05-01T02:40:28.148886"
+    },
+    {
+      "english": "Hello there, nice to meet you.",
+      "japanese": "こんにちは、はじめまして。",
+      "romaji": "Konnichiwa, hajimemashite.",
+      "category": "Greetings",
+      "generated_at": "2026-05-01T13:17:35.515937"
+    },
+    {
+      "english": "Excuse me, can I help you?",
+      "japanese": "すみません、何かお手伝いしましょうか？",
+      "romaji": "Sumimasen, nani ka otetsudai shimashou ka?",
+      "category": "Greetings",
+      "generated_at": "2026-05-01T13:17:35.515947"
+    },
+    {
+      "english": "See you later, have a good one.",
+      "japanese": "また後で、良い一日を。",
+      "romaji": "Mata ato de, yoi ichinichi o.",
+      "category": "Greetings",
+      "generated_at": "2026-05-01T13:17:35.515948"
+    },
+    {
+      "english": "Hi everyone, it's great to be here.",
+      "japanese": "皆さん、こんにちは、ここに来られて嬉しいです。",
+      "romaji": "Minasan, konnichiwa, koko ni korarete ureshii desu.",
+      "category": "Greetings",
+      "generated_at": "2026-05-01T13:17:35.515949"
+    },
+    {
+      "english": "Long time no see, you look good!",
+      "japanese": "お久しぶりです、元気そうですね！",
+      "romaji": "Ohisashiburi desu, genki sou desu ne!",
+      "category": "Greetings",
+      "generated_at": "2026-05-01T13:17:35.515950"
     }
   ],
-  "last_updated": "2026-05-01T02:40:28.148888"
+  "last_updated": "2026-05-01T13:17:35.515951"
 }
