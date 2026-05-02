@@ -3709,7 +3709,42 @@
       "romaji": "Akiramenai, susumi tsuzukeru.",
       "category": "Strength",
       "generated_at": "2026-05-02T17:41:51.797717"
+    },
+    {
+      "english": "Mistakes are, stepping stones.",
+      "japanese": "間違いは、成功への道。",
+      "romaji": "Machigai wa, seikou e no michi.",
+      "category": "Growth",
+      "generated_at": "2026-05-02T20:31:37.061666"
+    },
+    {
+      "english": "Practice makes, progress.",
+      "japanese": "練習こそが、進歩。",
+      "romaji": "Renshuu koso ga, shinpo.",
+      "category": "Growth",
+      "generated_at": "2026-05-02T20:31:37.061677"
+    },
+    {
+      "english": "One step, at a time.",
+      "japanese": "一歩ずつ、着実に。",
+      "romaji": "Ippo zutsu, chakujitsu ni.",
+      "category": "Growth",
+      "generated_at": "2026-05-02T20:31:37.061679"
+    },
+    {
+      "english": "Embrace, the challenge.",
+      "japanese": "挑戦を、受け入れよう。",
+      "romaji": "Chousen o, ukeireyou.",
+      "category": "Growth",
+      "generated_at": "2026-05-02T20:31:37.061680"
+    },
+    {
+      "english": "Ask questions, always.",
+      "japanese": "質問は、常に。",
+      "romaji": "Shitsumon wa, tsune ni.",
+      "category": "Growth",
+      "generated_at": "2026-05-02T20:31:37.061681"
     }
   ],
-  "last_updated": "2026-05-02T17:41:51.797719"
+  "last_updated": "2026-05-02T20:31:37.061683"
 }
