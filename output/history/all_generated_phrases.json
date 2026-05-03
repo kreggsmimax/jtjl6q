@@ -3744,7 +3744,42 @@
       "romaji": "Shitsumon wa, tsune ni.",
       "category": "Growth",
       "generated_at": "2026-05-02T20:31:37.061681"
+    },
+    {
+      "english": "Keep trying, you'll get there.",
+      "japanese": "頑張って、きっと大丈夫。",
+      "romaji": "Ganbatte, kitto daijoubu.",
+      "category": "Confidence",
+      "generated_at": "2026-05-03T02:31:45.972986"
+    },
+    {
+      "english": "Every little bit, counts.",
+      "japanese": "少しずつでも、大切。",
+      "romaji": "Sukoshi zutsu demo, taisetsu.",
+      "category": "Confidence",
+      "generated_at": "2026-05-03T02:31:45.972996"
+    },
+    {
+      "english": "You're doing great, really.",
+      "japanese": "とても上手ですよ、本当に。",
+      "romaji": "Totemo jouzu desu yo, hontou ni.",
+      "category": "Confidence",
+      "generated_at": "2026-05-03T02:31:45.972997"
+    },
+    {
+      "english": "Don't give up, please.",
+      "japanese": "諦めないで、ね。",
+      "romaji": "Akiramenai de, ne.",
+      "category": "Confidence",
+      "generated_at": "2026-05-03T02:31:45.972999"
+    },
+    {
+      "english": "Your progress, is amazing.",
+      "japanese": "あなたの進歩、すごい。",
+      "romaji": "Anata no shinpo, sugoi.",
+      "category": "Confidence",
+      "generated_at": "2026-05-03T02:31:45.973000"
     }
   ],
-  "last_updated": "2026-05-02T20:31:37.061683"
+  "last_updated": "2026-05-03T02:31:45.973002"
 }
