@@ -3779,7 +3779,42 @@
       "romaji": "Anata no shinpo, sugoi.",
       "category": "Confidence",
       "generated_at": "2026-05-03T02:31:45.973000"
+    },
+    {
+      "english": "Slowly, but surely.",
+      "japanese": "ゆっくり、でも着実に。",
+      "romaji": "yukkuri, demo chakujitsu ni.",
+      "category": "Patience",
+      "generated_at": "2026-05-03T13:06:26.491888"
+    },
+    {
+      "english": "Good things, take time.",
+      "japanese": "良いことは、時間がかかる。",
+      "romaji": "yoi koto wa, jikan ga kakaru.",
+      "category": "Patience",
+      "generated_at": "2026-05-03T13:06:26.491899"
+    },
+    {
+      "english": "Trust the process, it works.",
+      "japanese": "プロセスを信じて、うまくいく。",
+      "romaji": "purosesu o shinjite, umaku iku.",
+      "category": "Patience",
+      "generated_at": "2026-05-03T13:06:26.491900"
+    },
+    {
+      "english": "Perseverance, brings reward.",
+      "japanese": "忍耐は、報酬をもたらす。",
+      "romaji": "nintai wa, hoshuu o motarasu.",
+      "category": "Patience",
+      "generated_at": "2026-05-03T13:06:26.491902"
+    },
+    {
+      "english": "Little by little, we grow.",
+      "japanese": "少しずつ、私たちは成長する。",
+      "romaji": "sukoshi zutsu, watashitachi wa seichou suru.",
+      "category": "Patience",
+      "generated_at": "2026-05-03T13:06:26.491903"
     }
   ],
-  "last_updated": "2026-05-03T02:31:45.973002"
+  "last_updated": "2026-05-03T13:06:26.491905"
 }
