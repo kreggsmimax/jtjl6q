@@ -4024,7 +4024,42 @@
       "romaji": "ima o, taisetsu ni ikiyou.",
       "category": "Happiness",
       "generated_at": "2026-05-04T18:13:15.696731"
+    },
+    {
+      "english": "Thank you, for everything.",
+      "japanese": "ありがとうございます、色々と。",
+      "romaji": "Arigatou gozaimasu, iroiro to.",
+      "category": "Gratitude",
+      "generated_at": "2026-05-04T20:58:43.579884"
+    },
+    {
+      "english": "I appreciate, your kindness.",
+      "japanese": "親切に、感謝します。",
+      "romaji": "Shinsetsu ni, kansha shimasu.",
+      "category": "Gratitude",
+      "generated_at": "2026-05-04T20:58:43.579894"
+    },
+    {
+      "english": "This is, wonderful. Thanks!",
+      "japanese": "素晴らしいです、ありがとう！",
+      "romaji": "Subarashii desu, arigatou!",
+      "category": "Gratitude",
+      "generated_at": "2026-05-04T20:58:43.579895"
+    },
+    {
+      "english": "You helped me, a lot.",
+      "japanese": "たくさん、助かりました。",
+      "romaji": "Takusan, tasukarimashita.",
+      "category": "Gratitude",
+      "generated_at": "2026-05-04T20:58:43.579896"
+    },
+    {
+      "english": "I am grateful, for this chance.",
+      "japanese": "この機会に、感謝しています。",
+      "romaji": "Kono kikai ni, kansha shite imasu.",
+      "category": "Gratitude",
+      "generated_at": "2026-05-04T20:58:43.579897"
     }
   ],
-  "last_updated": "2026-05-04T18:13:15.696733"
+  "last_updated": "2026-05-04T20:58:43.579899"
 }
