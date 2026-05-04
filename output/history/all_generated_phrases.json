@@ -3954,7 +3954,42 @@
       "romaji": "motto, omoide tsukurou.",
       "category": "Friendship",
       "generated_at": "2026-05-04T02:30:17.992776"
+    },
+    {
+      "english": "One more, please.",
+      "japanese": "もう一つ、お願いします。",
+      "romaji": "mou hitotsu, onegaishimasu.",
+      "category": "Numbers Japanese",
+      "generated_at": "2026-05-04T15:55:28.596286"
+    },
+    {
+      "english": "Two days, maybe.",
+      "japanese": "二日、くらいかな。",
+      "romaji": "futsuka, kurai kana.",
+      "category": "Numbers Japanese",
+      "generated_at": "2026-05-04T15:55:28.596295"
+    },
+    {
+      "english": "Three people, coming.",
+      "japanese": "三名、来ます。",
+      "romaji": "sanmei, kimasu.",
+      "category": "Numbers Japanese",
+      "generated_at": "2026-05-04T15:55:28.596297"
+    },
+    {
+      "english": "Four o'clock, is late.",
+      "japanese": "四時、遅いです。",
+      "romaji": "yoji, osoi desu.",
+      "category": "Numbers Japanese",
+      "generated_at": "2026-05-04T15:55:28.596298"
+    },
+    {
+      "english": "Five hundred yen, please.",
+      "japanese": "五百円、ください。",
+      "romaji": "gohyaku en, kudasai.",
+      "category": "Numbers Japanese",
+      "generated_at": "2026-05-04T15:55:28.596299"
     }
   ],
-  "last_updated": "2026-05-04T02:30:17.992778"
+  "last_updated": "2026-05-04T15:55:28.596301"
 }
