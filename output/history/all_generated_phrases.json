@@ -4094,7 +4094,42 @@
       "romaji": "Kurejitto kādo de haraemasu ka?",
       "category": "Shopping Japanese",
       "generated_at": "2026-05-05T02:25:04.821409"
+    },
+    {
+      "english": "Keep going, you'll get there.",
+      "japanese": "続けて、そこに着くよ。",
+      "romaji": "tsuzukete, soko ni tsuku yo.",
+      "category": "Perseverance",
+      "generated_at": "2026-05-05T18:14:50.260195"
+    },
+    {
+      "english": "Learn from mistakes, grow stronger.",
+      "japanese": "間違いから学び、強くなる。",
+      "romaji": "machigai kara manabi, tsuyoku naru.",
+      "category": "Perseverance",
+      "generated_at": "2026-05-05T18:14:50.260205"
+    },
+    {
+      "english": "Patience, it's a journey.",
+      "japanese": "辛抱強く、これは旅だよ。",
+      "romaji": "shinbou tsuyoku, kore wa tabi da yo.",
+      "category": "Perseverance",
+      "generated_at": "2026-05-05T18:14:50.260207"
+    },
+    {
+      "english": "Keep practicing, you'll master it.",
+      "japanese": "練習を続けて、マスターする。",
+      "romaji": "renshuu o tsuzukete, masutaa suru.",
+      "category": "Perseverance",
+      "generated_at": "2026-05-05T18:14:50.260208"
+    },
+    {
+      "english": "One day at a time, steadily.",
+      "japanese": "一日ずつ、着実に。",
+      "romaji": "ichinichi zutsu, chakujitsu ni.",
+      "category": "Perseverance",
+      "generated_at": "2026-05-05T18:14:50.260209"
     }
   ],
-  "last_updated": "2026-05-05T02:25:04.821411"
+  "last_updated": "2026-05-05T18:14:50.260211"
 }
