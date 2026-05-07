@@ -4234,7 +4234,42 @@
       "romaji": "jibun no shinpo o shinjite.",
       "category": "Success",
       "generated_at": "2026-05-07T16:32:10.337564"
+    },
+    {
+      "english": "My mother, she's kind.",
+      "japanese": "母は、優しいです。",
+      "romaji": "haha wa, yasashii desu.",
+      "category": "Family Terms",
+      "generated_at": "2026-05-07T18:22:29.362653"
+    },
+    {
+      "english": "My father, he works hard.",
+      "japanese": "父は、よく働きます。",
+      "romaji": "chichi wa, yoku hatarakimasu.",
+      "category": "Family Terms",
+      "generated_at": "2026-05-07T18:22:29.362665"
+    },
+    {
+      "english": "My older sister, she's funny.",
+      "japanese": "姉は、面白いです。",
+      "romaji": "ane wa, omoshiroi desu.",
+      "category": "Family Terms",
+      "generated_at": "2026-05-07T18:22:29.362666"
+    },
+    {
+      "english": "My younger brother, he's energetic.",
+      "japanese": "弟は、元気です。",
+      "romaji": "otouto wa, genki desu.",
+      "category": "Family Terms",
+      "generated_at": "2026-05-07T18:22:29.362667"
+    },
+    {
+      "english": "My older brother, he's strong.",
+      "japanese": "兄は、強いです。",
+      "romaji": "ani wa, tsuyoi desu.",
+      "category": "Family Terms",
+      "generated_at": "2026-05-07T18:22:29.362668"
     }
   ],
-  "last_updated": "2026-05-07T16:32:10.337565"
+  "last_updated": "2026-05-07T18:22:29.362670"
 }
