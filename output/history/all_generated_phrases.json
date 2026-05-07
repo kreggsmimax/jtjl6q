@@ -4199,7 +4199,42 @@
       "romaji": "Mō iku jikan desu.",
       "category": "Time Japanese",
       "generated_at": "2026-05-07T14:04:39.659018"
+    },
+    {
+      "english": "Little by little, progress.",
+      "japanese": "少しずつ、前進。",
+      "romaji": "sukoshi zutsu, zenshin.",
+      "category": "Success",
+      "generated_at": "2026-05-07T16:32:10.337549"
+    },
+    {
+      "english": "Focus, and you will master.",
+      "japanese": "集中すれば、習得できます。",
+      "romaji": "shūchū sureba, shūtoku dekimasu.",
+      "category": "Success",
+      "generated_at": "2026-05-07T16:32:10.337559"
+    },
+    {
+      "english": "Mistakes are lessons, learn well.",
+      "japanese": "間違いは教訓、よく学びましょう。",
+      "romaji": "machigai wa kyōkun, yoku manabimashō.",
+      "category": "Success",
+      "generated_at": "2026-05-07T16:32:10.337561"
+    },
+    {
+      "english": "Today's effort, tomorrow's reward.",
+      "japanese": "今日の努力、明日の報酬。",
+      "romaji": "kyō no doryoku, asu no hōshū.",
+      "category": "Success",
+      "generated_at": "2026-05-07T16:32:10.337562"
+    },
+    {
+      "english": "Believe in your progress.",
+      "japanese": "自分の進歩を信じて。",
+      "romaji": "jibun no shinpo o shinjite.",
+      "category": "Success",
+      "generated_at": "2026-05-07T16:32:10.337564"
     }
   ],
-  "last_updated": "2026-05-07T14:04:39.659020"
+  "last_updated": "2026-05-07T16:32:10.337565"
 }
