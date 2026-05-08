@@ -4339,7 +4339,42 @@
       "romaji": "mirai o, kizukimashou.",
       "category": "Purpose",
       "generated_at": "2026-05-08T15:26:18.036273"
+    },
+    {
+      "english": "Is this spicy?",
+      "japanese": "これは、辛いですか？",
+      "romaji": "kore wa, karai desu ka?",
+      "category": "Restaurant Japanese",
+      "generated_at": "2026-05-08T18:08:05.135821"
+    },
+    {
+      "english": "Delicious! Thank you.",
+      "japanese": "美味しいです。ごちそうさま。",
+      "romaji": "oishii desu. gochisōsama.",
+      "category": "Restaurant Japanese",
+      "generated_at": "2026-05-08T18:08:05.135849"
+    },
+    {
+      "english": "The check, please.",
+      "japanese": "お会計、お願いします。",
+      "romaji": "okaikei, onegaishimasu.",
+      "category": "Restaurant Japanese",
+      "generated_at": "2026-05-08T18:08:05.135850"
+    },
+    {
+      "english": "Do you have Wi-Fi?",
+      "japanese": "Wi-Fi、ありますか？",
+      "romaji": "wai-fai, arimasu ka?",
+      "category": "Restaurant Japanese",
+      "generated_at": "2026-05-08T18:08:05.135852"
+    },
+    {
+      "english": "Excuse me, waiter!",
+      "japanese": "すみません、店員さん！",
+      "romaji": "sumimasen, ten'in-san!",
+      "category": "Restaurant Japanese",
+      "generated_at": "2026-05-08T18:08:05.135853"
     }
   ],
-  "last_updated": "2026-05-08T15:26:18.036274"
+  "last_updated": "2026-05-08T18:08:05.135855"
 }
