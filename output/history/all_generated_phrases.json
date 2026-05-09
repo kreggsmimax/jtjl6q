@@ -4374,7 +4374,42 @@
       "romaji": "sumimasen, ten'in-san!",
       "category": "Restaurant Japanese",
       "generated_at": "2026-05-08T18:08:05.135853"
+    },
+    {
+      "english": "Thank you, sincerely.",
+      "japanese": "心から、感謝いたします。",
+      "romaji": "Kokoro kara, kansha itashimasu.",
+      "category": "Gratitude",
+      "generated_at": "2026-05-09T13:14:23.529214"
+    },
+    {
+      "english": "That was, very helpful.",
+      "japanese": "とても、役に立ちました。",
+      "romaji": "Totemo, yaku ni tachimashita.",
+      "category": "Gratitude",
+      "generated_at": "2026-05-09T13:14:23.529224"
+    },
+    {
+      "english": "Thank you, for your time.",
+      "japanese": "お時間を、ありがとうございます。",
+      "romaji": "O-jikan o, arigatou gozaimasu.",
+      "category": "Gratitude",
+      "generated_at": "2026-05-09T13:14:23.529226"
+    },
+    {
+      "english": "I'm so glad, you're here.",
+      "japanese": "いてくれて、嬉しいです。",
+      "romaji": "Ite kurete, ureshii desu.",
+      "category": "Gratitude",
+      "generated_at": "2026-05-09T13:14:23.529230"
+    },
+    {
+      "english": "Truly, thank you.",
+      "japanese": "本当に、ありがとう。",
+      "romaji": "Hontou ni, arigatou.",
+      "category": "Gratitude",
+      "generated_at": "2026-05-09T13:14:23.529232"
     }
   ],
-  "last_updated": "2026-05-08T18:08:05.135855"
+  "last_updated": "2026-05-09T13:14:23.529233"
 }
