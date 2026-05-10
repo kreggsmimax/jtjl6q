@@ -4409,7 +4409,42 @@
       "romaji": "Hontou ni, arigatou.",
       "category": "Gratitude",
       "generated_at": "2026-05-09T13:14:23.529232"
+    },
+    {
+      "english": "Six times, tried.",
+      "japanese": "六回、試しました。",
+      "romaji": "rokkai, tameshimashita.",
+      "category": "Numbers Japanese",
+      "generated_at": "2026-05-10T13:15:03.493859"
+    },
+    {
+      "english": "Seven days, a week.",
+      "japanese": "七日間、一週間。",
+      "romaji": "nanokakan, isshūkan.",
+      "category": "Numbers Japanese",
+      "generated_at": "2026-05-10T13:15:03.493871"
+    },
+    {
+      "english": "Eight slices, for us.",
+      "japanese": "八切れ、私たちに。",
+      "romaji": "hachigire, watashitachi ni.",
+      "category": "Numbers Japanese",
+      "generated_at": "2026-05-10T13:15:03.493873"
+    },
+    {
+      "english": "Nine points, scored.",
+      "japanese": "九点、取りました。",
+      "romaji": "kyūten, torimashita.",
+      "category": "Numbers Japanese",
+      "generated_at": "2026-05-10T13:15:03.493874"
+    },
+    {
+      "english": "Ten years, ago.",
+      "japanese": "十年、前です。",
+      "romaji": "jūnen, mae desu.",
+      "category": "Numbers Japanese",
+      "generated_at": "2026-05-10T13:15:03.493876"
     }
   ],
-  "last_updated": "2026-05-09T13:14:23.529233"
+  "last_updated": "2026-05-10T13:15:03.493877"
 }
