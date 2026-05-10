@@ -4444,7 +4444,42 @@
       "romaji": "jūnen, mae desu.",
       "category": "Numbers Japanese",
       "generated_at": "2026-05-10T13:15:03.493876"
+    },
+    {
+      "english": "My mistake, I apologize.",
+      "japanese": "私のミスです、すみません。",
+      "romaji": "watashi no misu desu, sumimasen.",
+      "category": "Forgiveness",
+      "generated_at": "2026-05-10T17:50:52.643533"
+    },
+    {
+      "english": "Please overlook this, okay?",
+      "japanese": "これは、見逃してくださいね？",
+      "romaji": "kore wa, minogashite kudasai ne?",
+      "category": "Forgiveness",
+      "generated_at": "2026-05-10T17:50:52.643545"
+    },
+    {
+      "english": "I made a mistake, forgive me.",
+      "japanese": "間違えました、許して。",
+      "romaji": "machigaemashita, yurushite.",
+      "category": "Forgiveness",
+      "generated_at": "2026-05-10T17:50:52.643548"
+    },
+    {
+      "english": "I deeply regret it, please.",
+      "japanese": "深く後悔しています、どうか。",
+      "romaji": "fukaku koukai shite imasu, douka.",
+      "category": "Forgiveness",
+      "generated_at": "2026-05-10T17:50:52.643550"
+    },
+    {
+      "english": "Can you forgive my error?",
+      "japanese": "私の誤りを、許せますか？",
+      "romaji": "watashi no ayamari wo, yurusmasu ka?",
+      "category": "Forgiveness",
+      "generated_at": "2026-05-10T17:50:52.643553"
     }
   ],
-  "last_updated": "2026-05-10T13:15:03.493877"
+  "last_updated": "2026-05-10T17:50:52.643555"
 }
