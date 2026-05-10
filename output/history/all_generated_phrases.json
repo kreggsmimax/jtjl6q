@@ -4479,7 +4479,42 @@
       "romaji": "watashi no ayamari wo, yurusmasu ka?",
       "category": "Forgiveness",
       "generated_at": "2026-05-10T17:50:52.643553"
+    },
+    {
+      "english": "Be here, now.",
+      "japanese": "今、ここに。",
+      "romaji": "ima, koko ni.",
+      "category": "Mindfulness",
+      "generated_at": "2026-05-10T20:38:09.052806"
+    },
+    {
+      "english": "Notice the sounds, around you.",
+      "japanese": "周りの音、気づいて。",
+      "romaji": "mawari no oto, kizuite.",
+      "category": "Mindfulness",
+      "generated_at": "2026-05-10T20:38:09.052817"
+    },
+    {
+      "english": "Gentle thoughts, gentle heart.",
+      "japanese": "優しい考え、優しい心。",
+      "romaji": "yasashii kangae, yasashii kokoro.",
+      "category": "Mindfulness",
+      "generated_at": "2026-05-10T20:38:09.052819"
+    },
+    {
+      "english": "See the light, within.",
+      "japanese": "内なる光、見て。",
+      "romaji": "uchinaru hikari, mite.",
+      "category": "Mindfulness",
+      "generated_at": "2026-05-10T20:38:09.052820"
+    },
+    {
+      "english": "Simple moments, precious.",
+      "japanese": "単純な瞬間、大切。",
+      "romaji": "tanjun na shunkan, taisetsu.",
+      "category": "Mindfulness",
+      "generated_at": "2026-05-10T20:38:09.052821"
     }
   ],
-  "last_updated": "2026-05-10T17:50:52.643555"
+  "last_updated": "2026-05-10T20:38:09.052823"
 }
