@@ -4514,7 +4514,42 @@
       "romaji": "tanjun na shunkan, taisetsu.",
       "category": "Mindfulness",
       "generated_at": "2026-05-10T20:38:09.052821"
+    },
+    {
+      "english": "Take your time, relax.",
+      "japanese": "ゆっくりと, してください。",
+      "romaji": "Yukkuri to, shite kudasai.",
+      "category": "Time Japanese",
+      "generated_at": "2026-05-11T16:25:07.988691"
+    },
+    {
+      "english": "It's time, for a break.",
+      "japanese": "休憩の時間です。",
+      "romaji": "Kyūkei no jikan desu.",
+      "category": "Time Japanese",
+      "generated_at": "2026-05-11T16:25:07.988700"
+    },
+    {
+      "english": "Let's meet, at that time.",
+      "japanese": "その時間に, 会いましょう。",
+      "romaji": "Sono jikan ni, aimashō.",
+      "category": "Time Japanese",
+      "generated_at": "2026-05-11T16:25:07.988702"
+    },
+    {
+      "english": "This is my time, to shine.",
+      "japanese": "これは私の, 輝く時です。",
+      "romaji": "Kore wa watashi no, kagayaku toki desu.",
+      "category": "Time Japanese",
+      "generated_at": "2026-05-11T16:25:07.988703"
+    },
+    {
+      "english": "Just in time, for dinner.",
+      "japanese": "ちょうど夕食の時間に, 間に合いました。",
+      "romaji": "Chōdo yūshoku no jikan ni, man'aimashita.",
+      "category": "Time Japanese",
+      "generated_at": "2026-05-11T16:25:07.988705"
     }
   ],
-  "last_updated": "2026-05-10T20:38:09.052823"
+  "last_updated": "2026-05-11T16:25:07.988706"
 }
