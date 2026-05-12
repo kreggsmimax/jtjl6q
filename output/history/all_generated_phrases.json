@@ -4584,7 +4584,42 @@
       "romaji": "kimi wa taisetsu da yo.",
       "category": "Friendship",
       "generated_at": "2026-05-11T19:00:06.400426"
+    },
+    {
+      "english": "Breathe deep, feel calm.",
+      "japanese": "深く息を吸って、穏やかな気持ちに。",
+      "romaji": "Fukaku iki o sutte, odayaka na kimochi ni.",
+      "category": "Inner Peace",
+      "generated_at": "2026-05-12T14:22:42.414678"
+    },
+    {
+      "english": "Let go, find peace.",
+      "japanese": "手放して、安らぎを見つけよう。",
+      "romaji": "Tebanashite, yasuragi o mitsukeyou.",
+      "category": "Inner Peace",
+      "generated_at": "2026-05-12T14:22:42.414688"
+    },
+    {
+      "english": "Be present, in this moment.",
+      "japanese": "今ここに、集中しましょう。",
+      "romaji": "Ima koko ni, shuuchuu shimashou.",
+      "category": "Inner Peace",
+      "generated_at": "2026-05-12T14:22:42.414689"
+    },
+    {
+      "english": "Quiet mind, clear soul.",
+      "japanese": "静かな心、澄んだ魂。",
+      "romaji": "Shizuka na kokoro, sunda tamashii.",
+      "category": "Inner Peace",
+      "generated_at": "2026-05-12T14:22:42.414691"
+    },
+    {
+      "english": "Gentle rhythm, inner flow.",
+      "japanese": "優しいリズム、内なる流れ。",
+      "romaji": "Yasashii rizumu, uchinaru nagare.",
+      "category": "Inner Peace",
+      "generated_at": "2026-05-12T14:22:42.414692"
     }
   ],
-  "last_updated": "2026-05-11T19:00:06.400428"
+  "last_updated": "2026-05-12T14:22:42.414694"
 }
