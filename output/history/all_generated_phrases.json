@@ -4619,7 +4619,42 @@
       "romaji": "Yasashii rizumu, uchinaru nagare.",
       "category": "Inner Peace",
       "generated_at": "2026-05-12T14:22:42.414692"
+    },
+    {
+      "english": "Let's try, again.",
+      "japanese": "もう一度, やってみましょう。",
+      "romaji": "mou ichido, yatte mimashou.",
+      "category": "Common Expressions",
+      "generated_at": "2026-05-13T14:34:16.109378"
+    },
+    {
+      "english": "That sounds, good.",
+      "japanese": "それは, いいですね。",
+      "romaji": "sore wa, ii desu ne.",
+      "category": "Common Expressions",
+      "generated_at": "2026-05-13T14:34:16.109394"
+    },
+    {
+      "english": "What do you, think?",
+      "japanese": "どう思いますか？",
+      "romaji": "dou omoimasu ka?",
+      "category": "Common Expressions",
+      "generated_at": "2026-05-13T14:34:16.109396"
+    },
+    {
+      "english": "I understand, now.",
+      "japanese": "よくわかりました。",
+      "romaji": "yoku wakarimashita.",
+      "category": "Common Expressions",
+      "generated_at": "2026-05-13T14:34:16.109397"
+    },
+    {
+      "english": "Please, take care.",
+      "japanese": "どうぞ、お気をつけて。",
+      "romaji": "douzo, okiwotsukete.",
+      "category": "Common Expressions",
+      "generated_at": "2026-05-13T14:34:16.109398"
     }
   ],
-  "last_updated": "2026-05-12T14:22:42.414694"
+  "last_updated": "2026-05-13T14:34:16.109400"
 }
