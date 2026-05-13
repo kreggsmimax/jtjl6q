@@ -4654,7 +4654,42 @@
       "romaji": "douzo, okiwotsukete.",
       "category": "Common Expressions",
       "generated_at": "2026-05-13T14:34:16.109398"
+    },
+    {
+      "english": "Be kind, always.",
+      "japanese": "優しく、いつも。",
+      "romaji": "yasashiku, itsumo.",
+      "category": "Kindness",
+      "generated_at": "2026-05-13T21:17:44.429955"
+    },
+    {
+      "english": "Help others, first.",
+      "japanese": "まず、人を助けよう。",
+      "romaji": "maza, hito o tasukeyou.",
+      "category": "Kindness",
+      "generated_at": "2026-05-13T21:17:44.429966"
+    },
+    {
+      "english": "Share your smile, freely.",
+      "japanese": "笑顔を、自由に分け合おう。",
+      "romaji": "egao o, jiyuu ni wakeaou.",
+      "category": "Kindness",
+      "generated_at": "2026-05-13T21:17:44.429967"
+    },
+    {
+      "english": "Listen well, to everyone.",
+      "japanese": "皆の、話をよく聞こう。",
+      "romaji": "mina no, hanashi o yoku kikou.",
+      "category": "Kindness",
+      "generated_at": "2026-05-13T21:17:44.429968"
+    },
+    {
+      "english": "Think good thoughts, often.",
+      "japanese": "良いことを、よく考えよう。",
+      "romaji": "ii koto o, yoku kangaeou.",
+      "category": "Kindness",
+      "generated_at": "2026-05-13T21:17:44.429969"
     }
   ],
-  "last_updated": "2026-05-13T14:34:16.109400"
+  "last_updated": "2026-05-13T21:17:44.429970"
 }
