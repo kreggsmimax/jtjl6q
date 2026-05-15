@@ -4759,7 +4759,42 @@
       "romaji": "Wakarimasen. Gomen nasai.",
       "category": "Emergency Japanese",
       "generated_at": "2026-05-15T14:03:26.673258"
+    },
+    {
+      "english": "Stillness within, strength found.",
+      "japanese": "内なる静けさ、強さを見つける。",
+      "romaji": "Uchinaru shizukesa, tsuyosa o mitsukeru.",
+      "category": "Inner Peace",
+      "generated_at": "2026-05-15T23:03:42.028977"
+    },
+    {
+      "english": "Accept all, with kindness.",
+      "japanese": "全てを受け入れて、優しく。",
+      "romaji": "Subete o ukeirete, yasashiku.",
+      "category": "Inner Peace",
+      "generated_at": "2026-05-15T23:03:42.028990"
+    },
+    {
+      "english": "Listen closely, to yourself.",
+      "japanese": "よく聞いて、自分自身の声に。",
+      "romaji": "Yoku kiite, jibun jishin no koe ni.",
+      "category": "Inner Peace",
+      "generated_at": "2026-05-15T23:03:42.028991"
+    },
+    {
+      "english": "Simply be, at ease.",
+      "japanese": "ただ、リラックスして。",
+      "romaji": "Tada, rirakkusu shite.",
+      "category": "Inner Peace",
+      "generated_at": "2026-05-15T23:03:42.028993"
+    },
+    {
+      "english": "Find your center, a calm space.",
+      "japanese": "中心を見つけて、穏やかな場所。",
+      "romaji": "Chuushin o mitsukete, odayaka na basho.",
+      "category": "Inner Peace",
+      "generated_at": "2026-05-15T23:03:42.028994"
     }
   ],
-  "last_updated": "2026-05-15T14:03:26.673259"
+  "last_updated": "2026-05-15T23:03:42.028996"
 }
