@@ -4724,7 +4724,42 @@
       "romaji": "watashi no kazoku wa, naka ga ii desu.",
       "category": "Family Terms",
       "generated_at": "2026-05-14T19:57:24.258217"
+    },
+    {
+      "english": "Help, please. I'm lost.",
+      "japanese": "助けてください。道に迷いました。",
+      "romaji": "Tasukete kudasai. Michi ni mayoi mashita.",
+      "category": "Emergency Japanese",
+      "generated_at": "2026-05-15T14:03:26.673241"
+    },
+    {
+      "english": "I need a doctor, now.",
+      "japanese": "医者が必要です。すぐに。",
+      "romaji": "Isha ga hitsuyou desu. Suguni.",
+      "category": "Emergency Japanese",
+      "generated_at": "2026-05-15T14:03:26.673253"
+    },
+    {
+      "english": "Is there a police station nearby?",
+      "japanese": "近くに、交番はありますか？",
+      "romaji": "Chikaku ni, kouban wa arimasu ka?",
+      "category": "Emergency Japanese",
+      "generated_at": "2026-05-15T14:03:26.673255"
+    },
+    {
+      "english": "Call the ambulance, please.",
+      "japanese": "救急車を、呼んでください。",
+      "romaji": "Kyuukyuusha o, yonde kudasai.",
+      "category": "Emergency Japanese",
+      "generated_at": "2026-05-15T14:03:26.673256"
+    },
+    {
+      "english": "I don't understand. Sorry.",
+      "japanese": "わかりません。ごめんなさい。",
+      "romaji": "Wakarimasen. Gomen nasai.",
+      "category": "Emergency Japanese",
+      "generated_at": "2026-05-15T14:03:26.673258"
     }
   ],
-  "last_updated": "2026-05-14T19:57:24.258219"
+  "last_updated": "2026-05-15T14:03:26.673259"
 }
