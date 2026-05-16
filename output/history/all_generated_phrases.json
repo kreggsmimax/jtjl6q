@@ -4794,7 +4794,42 @@
       "romaji": "Chuushin o mitsukete, odayaka na basho.",
       "category": "Inner Peace",
       "generated_at": "2026-05-15T23:03:42.028994"
+    },
+    {
+      "english": "Offer comfort, gently.",
+      "japanese": "優しく、労わろう。",
+      "romaji": "yasashiku, warawau.",
+      "category": "Kindness",
+      "generated_at": "2026-05-16T02:33:32.601169"
+    },
+    {
+      "english": "Forgive mistakes, easily.",
+      "japanese": "間違いは、簡単に許そう。",
+      "romaji": "machigai wa, kantan ni yurusu.",
+      "category": "Kindness",
+      "generated_at": "2026-05-16T02:33:32.601183"
+    },
+    {
+      "english": "Be patient, with time.",
+      "japanese": "時間に、忍耐強く。",
+      "romaji": "jikan ni, nintai tsuyoku.",
+      "category": "Kindness",
+      "generated_at": "2026-05-16T02:33:32.601186"
+    },
+    {
+      "english": "Spread joy, around you.",
+      "japanese": "周りに、喜びを広げよう。",
+      "romaji": "mawari ni, yorokobi o hirogeyou.",
+      "category": "Kindness",
+      "generated_at": "2026-05-16T02:33:32.601189"
+    },
+    {
+      "english": "Show gratitude, daily.",
+      "japanese": "感謝を、毎日示そう。",
+      "romaji": "kansha o, mainichi shimesou.",
+      "category": "Kindness",
+      "generated_at": "2026-05-16T02:33:32.601190"
     }
   ],
-  "last_updated": "2026-05-15T23:03:42.028996"
+  "last_updated": "2026-05-16T02:33:32.601193"
 }
