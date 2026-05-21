@@ -5004,7 +5004,42 @@
       "romaji": "otouto wa, genki ippai desu.",
       "category": "Family Terms",
       "generated_at": "2026-05-21T18:07:28.706604"
+    },
+    {
+      "english": "Thank you very much.",
+      "japanese": "どうも、ありがとうございます。",
+      "romaji": "doumo, arigatou gozaimasu.",
+      "category": "Basic Phrases",
+      "generated_at": "2026-05-21T20:05:18.586038"
+    },
+    {
+      "english": "Excuse me, please.",
+      "japanese": "すみません、お願いします。",
+      "romaji": "sumimasen, onegaishimasu.",
+      "category": "Basic Phrases",
+      "generated_at": "2026-05-21T20:05:18.586051"
+    },
+    {
+      "english": "Yes, that's right.",
+      "japanese": "はい、そうです、あの。",
+      "romaji": "hai, sou desu, ano.",
+      "category": "Basic Phrases",
+      "generated_at": "2026-05-21T20:05:18.586053"
+    },
+    {
+      "english": "This is delicious.",
+      "japanese": "これ、おいしいですね。",
+      "romaji": "kore, oishii desu ne.",
+      "category": "Basic Phrases",
+      "generated_at": "2026-05-21T20:05:18.586054"
+    },
+    {
+      "english": "I am from America.",
+      "japanese": "アメリカから、来ました。",
+      "romaji": "amerika kara, kimashita.",
+      "category": "Basic Phrases",
+      "generated_at": "2026-05-21T20:05:18.586055"
     }
   ],
-  "last_updated": "2026-05-21T18:07:28.706606"
+  "last_updated": "2026-05-21T20:05:18.586057"
 }
