@@ -4934,7 +4934,42 @@
       "romaji": "Ashita wa, kyuujitsu desu.",
       "category": "Time Japanese",
       "generated_at": "2026-05-21T15:20:19.984839"
+    },
+    {
+      "english": "Listen well, speak little.",
+      "japanese": "よく聞き、少なく話す。",
+      "romaji": "yoku kiki, sukunaku hanasu.",
+      "category": "Wisdom",
+      "generated_at": "2026-05-21T16:41:27.913718"
+    },
+    {
+      "english": "Small steps, lead far.",
+      "japanese": "小さな一歩が、遠くへ導く。",
+      "romaji": "chiisana ippo ga, tooku e michibiku.",
+      "category": "Wisdom",
+      "generated_at": "2026-05-21T16:41:27.913727"
+    },
+    {
+      "english": "Mistakes are, good lessons.",
+      "japanese": "間違いは、良い学び。",
+      "romaji": "machigai wa, yoi manabi.",
+      "category": "Wisdom",
+      "generated_at": "2026-05-21T16:41:27.913728"
+    },
+    {
+      "english": "Seek understanding, not just words.",
+      "japanese": "言葉でなく、理解を求めよう。",
+      "romaji": "kotoba de naku, rikai o motomeyou.",
+      "category": "Wisdom",
+      "generated_at": "2026-05-21T16:41:27.913730"
+    },
+    {
+      "english": "Every word, has meaning.",
+      "japanese": "すべての言葉に、意味がある。",
+      "romaji": "subete no kotoba ni, imi ga aru.",
+      "category": "Wisdom",
+      "generated_at": "2026-05-21T16:41:27.913731"
     }
   ],
-  "last_updated": "2026-05-21T15:20:19.984841"
+  "last_updated": "2026-05-21T16:41:27.913732"
 }
