@@ -5039,7 +5039,42 @@
       "romaji": "amerika kara, kimashita.",
       "category": "Basic Phrases",
       "generated_at": "2026-05-21T20:05:18.586055"
+    },
+    {
+      "english": "Where is the station, please?",
+      "japanese": "駅は、どこですか？",
+      "romaji": "eki wa, doko desu ka?",
+      "category": "Travel Japanese",
+      "generated_at": "2026-05-21T21:21:53.757287"
+    },
+    {
+      "english": "This is delicious, really.",
+      "japanese": "これ、美味しいです。",
+      "romaji": "kore, oishii desu.",
+      "category": "Travel Japanese",
+      "generated_at": "2026-05-21T21:21:53.757299"
+    },
+    {
+      "english": "Excuse me, how much?",
+      "japanese": "すみません、いくらですか？",
+      "romaji": "sumimasen, ikura desu ka?",
+      "category": "Travel Japanese",
+      "generated_at": "2026-05-21T21:21:53.757301"
+    },
+    {
+      "english": "I want to go there.",
+      "japanese": "あそこへ、行きたいです。",
+      "romaji": "asoko e, ikitai desu.",
+      "category": "Travel Japanese",
+      "generated_at": "2026-05-21T21:21:53.757302"
+    },
+    {
+      "english": "Could you take a photo?",
+      "japanese": "写真、撮ってもらえますか？",
+      "romaji": "shashin, totte moraemasu ka?",
+      "category": "Travel Japanese",
+      "generated_at": "2026-05-21T21:21:53.757303"
     }
   ],
-  "last_updated": "2026-05-21T20:05:18.586057"
+  "last_updated": "2026-05-21T21:21:53.757305"
 }
