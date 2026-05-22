@@ -5109,7 +5109,42 @@
       "romaji": "Yatte mimashou, ii?",
       "category": "Common Expressions",
       "generated_at": "2026-05-21T23:10:25.803652"
+    },
+    {
+      "english": "Tomorrow, will be better.",
+      "japanese": "明日、きっと良くなる。",
+      "romaji": "ashita, kitto yoku naru.",
+      "category": "Hope",
+      "generated_at": "2026-05-22T02:52:37.240848"
+    },
+    {
+      "english": "A new start, awaits.",
+      "japanese": "新しい始まりが、待っている。",
+      "romaji": "atarashii hajimari ga, matte iru.",
+      "category": "Hope",
+      "generated_at": "2026-05-22T02:52:37.240859"
+    },
+    {
+      "english": "Brighter days, are coming.",
+      "japanese": "明るい日々が、来るよ。",
+      "romaji": "akarui hibi ga, kuru yo.",
+      "category": "Hope",
+      "generated_at": "2026-05-22T02:52:37.240861"
+    },
+    {
+      "english": "Find your strength, within.",
+      "japanese": "内なる力を見つけて。",
+      "romaji": "uchi naru chikara o mitsukete.",
+      "category": "Hope",
+      "generated_at": "2026-05-22T02:52:37.240863"
+    },
+    {
+      "english": "Even now, is a chance.",
+      "japanese": "今だって、チャンスだよ。",
+      "romaji": "ima datte, chansu da yo.",
+      "category": "Hope",
+      "generated_at": "2026-05-22T02:52:37.240864"
     }
   ],
-  "last_updated": "2026-05-21T23:10:25.803654"
+  "last_updated": "2026-05-22T02:52:37.240866"
 }
