@@ -5179,7 +5179,42 @@
       "romaji": "tsuzukete, tomaranaide.",
       "category": "Patience",
       "generated_at": "2026-05-22T12:13:47.718374"
+    },
+    {
+      "english": "Hello there, hope you're well.",
+      "japanese": "こんにちは、お元気ですか。",
+      "romaji": "Konnichiwa, ogenki desu ka?",
+      "category": "Greetings",
+      "generated_at": "2026-05-22T14:36:31.249774"
+    },
+    {
+      "english": "Good morning, let's have a great day.",
+      "japanese": "おはようございます、良い一日を。",
+      "romaji": "Ohayou gozaimasu, yoi ichinichi o.",
+      "category": "Greetings",
+      "generated_at": "2026-05-22T14:36:31.249785"
+    },
+    {
+      "english": "Hello again, it's good to see you.",
+      "japanese": "またお会いできて、嬉しいです。",
+      "romaji": "Mata oaidekite, ureshii desu.",
+      "category": "Greetings",
+      "generated_at": "2026-05-22T14:36:31.249786"
+    },
+    {
+      "english": "Excuse me, just a moment.",
+      "japanese": "すみません、少々お待ちください。",
+      "romaji": "Sumimasen, shoushou omachi kudasai.",
+      "category": "Greetings",
+      "generated_at": "2026-05-22T14:36:31.249787"
+    },
+    {
+      "english": "Hi everyone, how is it going?",
+      "japanese": "皆さん、調子はどうですか？",
+      "romaji": "Minasan, choushi wa dou desu ka?",
+      "category": "Greetings",
+      "generated_at": "2026-05-22T14:36:31.249788"
     }
   ],
-  "last_updated": "2026-05-22T12:13:47.718376"
+  "last_updated": "2026-05-22T14:36:31.249789"
 }
