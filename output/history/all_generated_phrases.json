@@ -5144,7 +5144,42 @@
       "romaji": "ima datte, chansu da yo.",
       "category": "Hope",
       "generated_at": "2026-05-22T02:52:37.240864"
+    },
+    {
+      "english": "Take your time, breathe.",
+      "japanese": "焦らずに、息を吸って。",
+      "romaji": "aserazu ni, iki o sutte.",
+      "category": "Patience",
+      "generated_at": "2026-05-22T12:13:47.718359"
+    },
+    {
+      "english": "Don't rush, the process.",
+      "japanese": "過程を、急がないで。",
+      "romaji": "katei o, isoganaide.",
+      "category": "Patience",
+      "generated_at": "2026-05-22T12:13:47.718370"
+    },
+    {
+      "english": "Let it unfold, naturally.",
+      "japanese": "自然に、展開させて。",
+      "romaji": "shizen ni, tenkai sasete.",
+      "category": "Patience",
+      "generated_at": "2026-05-22T12:13:47.718372"
+    },
+    {
+      "english": "Rome wasn't built, in a day.",
+      "japanese": "ローマは、一日では築かれなかった。",
+      "romaji": "rooma wa, ichinichi de wa kizukarenakatta.",
+      "category": "Patience",
+      "generated_at": "2026-05-22T12:13:47.718373"
+    },
+    {
+      "english": "Keep going, don't stop.",
+      "japanese": "続けて、止まらないで。",
+      "romaji": "tsuzukete, tomaranaide.",
+      "category": "Patience",
+      "generated_at": "2026-05-22T12:13:47.718374"
     }
   ],
-  "last_updated": "2026-05-22T02:52:37.240866"
+  "last_updated": "2026-05-22T12:13:47.718376"
 }
