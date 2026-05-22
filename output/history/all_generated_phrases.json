@@ -5214,7 +5214,42 @@
       "romaji": "Minasan, choushi wa dou desu ka?",
       "category": "Greetings",
       "generated_at": "2026-05-22T14:36:31.249788"
+    },
+    {
+      "english": "Find your center, breathe.",
+      "japanese": "中心を見つけ, 息を吸って。",
+      "romaji": "Chūshin o mitsuke, iki o sutte.",
+      "category": "Balance",
+      "generated_at": "2026-05-22T16:15:45.382594"
+    },
+    {
+      "english": "Every step, matters.",
+      "japanese": "一歩一歩, 大切。",
+      "romaji": "Ippo ippo, taisetsu.",
+      "category": "Balance",
+      "generated_at": "2026-05-22T16:15:45.382603"
+    },
+    {
+      "english": "One day at, a time.",
+      "japanese": "一日ずつ, 行こう。",
+      "romaji": "Ichinichi zutsu, ikou.",
+      "category": "Balance",
+      "generated_at": "2026-05-22T16:15:45.382605"
+    },
+    {
+      "english": "Work and rest, equal.",
+      "japanese": "仕事と休息, 同じくらい。",
+      "romaji": "Shigoto to kyūsoku, onaji kurai.",
+      "category": "Balance",
+      "generated_at": "2026-05-22T16:15:45.382606"
+    },
+    {
+      "english": "Slow down, to go faster.",
+      "japanese": "ゆっくり進んで, 速く。",
+      "romaji": "Yukkuri susunde, hayaku.",
+      "category": "Balance",
+      "generated_at": "2026-05-22T16:15:45.382607"
     }
   ],
-  "last_updated": "2026-05-22T14:36:31.249789"
+  "last_updated": "2026-05-22T16:15:45.382609"
 }
