@@ -5529,7 +5529,42 @@
       "romaji": "Itsutsu, sore de kimari.",
       "category": "Numbers Japanese",
       "generated_at": "2026-05-23T17:12:57.555571"
+    },
+    {
+      "english": "Let's, make, memories.",
+      "japanese": "思い出を, 作ろうよ。",
+      "romaji": "Omoide o, tsukurou yo.",
+      "category": "Friendship",
+      "generated_at": "2026-05-23T19:23:51.720313"
+    },
+    {
+      "english": "You're, my best, friend.",
+      "japanese": "君は, 一番の, 友達だよ。",
+      "romaji": "Kimi wa, ichiban no, tomodachi da yo.",
+      "category": "Friendship",
+      "generated_at": "2026-05-23T19:23:51.720322"
+    },
+    {
+      "english": "Always, there for you.",
+      "japanese": "いつでも, 君の, 味方だよ。",
+      "romaji": "Itsudemo, kimi no, mikata da yo.",
+      "category": "Friendship",
+      "generated_at": "2026-05-23T19:23:51.720323"
+    },
+    {
+      "english": "Let's, hang out, soon.",
+      "japanese": "また, 近いうちに, 遊ぼうね。",
+      "romaji": "Mata, chikai uchi ni, asobou ne.",
+      "category": "Friendship",
+      "generated_at": "2026-05-23T19:23:51.720325"
+    },
+    {
+      "english": "Thanks, for everything.",
+      "japanese": "いつも, ありがとう。",
+      "romaji": "Itsumo, arigatou.",
+      "category": "Friendship",
+      "generated_at": "2026-05-23T19:23:51.720329"
     }
   ],
-  "last_updated": "2026-05-23T17:12:57.555573"
+  "last_updated": "2026-05-23T19:23:51.720330"
 }
