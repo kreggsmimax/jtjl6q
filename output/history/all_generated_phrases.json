@@ -5739,7 +5739,42 @@
       "romaji": "Shinbō tsuyoku, nebarizuyoku.",
       "category": "Inspiration",
       "generated_at": "2026-05-24T17:13:06.166434"
+    },
+    {
+      "english": "Is there a doctor? Nearby?",
+      "japanese": "お医者さんはいますか？近くに？",
+      "romaji": "Oisha-san wa imasu ka? Chikaku ni?",
+      "category": "Emergency Japanese",
+      "generated_at": "2026-05-24T23:04:20.629890"
+    },
+    {
+      "english": "I need a taxi. Quickly.",
+      "japanese": "タクシーが必要です。すぐに。",
+      "romaji": "Takushi- ga hitsuyou desu. Suguni.",
+      "category": "Emergency Japanese",
+      "generated_at": "2026-05-24T23:04:20.629901"
+    },
+    {
+      "english": "Where is the police? Station?",
+      "japanese": "警察署はどこですか？",
+      "romaji": "Keisatsu-sho wa doko desu ka?",
+      "category": "Emergency Japanese",
+      "generated_at": "2026-05-24T23:04:20.629902"
+    },
+    {
+      "english": "My passport, is missing.",
+      "japanese": "パスポートが、ありません。",
+      "romaji": "Pasupo-to ga, arimasen.",
+      "category": "Emergency Japanese",
+      "generated_at": "2026-05-24T23:04:20.629904"
+    },
+    {
+      "english": "I feel sick. Very.",
+      "japanese": "気分が悪いです。とても。",
+      "romaji": "Kibun ga warui desu. Totemo.",
+      "category": "Emergency Japanese",
+      "generated_at": "2026-05-24T23:04:20.629905"
     }
   ],
-  "last_updated": "2026-05-24T17:13:06.166435"
+  "last_updated": "2026-05-24T23:04:20.629906"
 }
