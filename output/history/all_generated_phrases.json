@@ -6019,7 +6019,42 @@
       "romaji": "kimi no chikara, nobite iku.",
       "category": "Courage",
       "generated_at": "2026-05-27T02:57:02.616342"
+    },
+    {
+      "english": "Six, it's my turn.",
+      "japanese": "六つ、私の番です。",
+      "romaji": "Muttsu, watashi no ban desu.",
+      "category": "Numbers Japanese",
+      "generated_at": "2026-05-27T15:37:01.817614"
+    },
+    {
+      "english": "Seven, lucky number.",
+      "japanese": "七つ、ラッキーナンバー。",
+      "romaji": "Nanatsu, rakkii nanbaa.",
+      "category": "Numbers Japanese",
+      "generated_at": "2026-05-27T15:37:01.817626"
+    },
+    {
+      "english": "Eight, good to go.",
+      "japanese": "八つ、準備OKです。",
+      "romaji": "Yattsu, junbi OK desu.",
+      "category": "Numbers Japanese",
+      "generated_at": "2026-05-27T15:37:01.817627"
+    },
+    {
+      "english": "Nine, almost there.",
+      "japanese": "九つ、もうすぐです。",
+      "romaji": "Kokonotsu, mousugu desu.",
+      "category": "Numbers Japanese",
+      "generated_at": "2026-05-27T15:37:01.817629"
+    },
+    {
+      "english": "Ten, perfect score.",
+      "japanese": "十、満点です。",
+      "romaji": "Tou, manten desu.",
+      "category": "Numbers Japanese",
+      "generated_at": "2026-05-27T15:37:01.817630"
     }
   ],
-  "last_updated": "2026-05-27T02:57:02.616344"
+  "last_updated": "2026-05-27T15:37:01.817632"
 }
