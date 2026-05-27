@@ -6089,7 +6089,42 @@
       "romaji": "seikou suru tame ni, akiramenaide.",
       "category": "Purpose",
       "generated_at": "2026-05-27T18:31:25.806888"
+    },
+    {
+      "english": "Can I have water, please?",
+      "japanese": "お水、もらえますか？",
+      "romaji": "Omizu, moraemasu ka?",
+      "category": "Restaurant Japanese",
+      "generated_at": "2026-05-27T21:45:23.286964"
+    },
+    {
+      "english": "This is very delicious.",
+      "japanese": "これ、とても美味しいです。",
+      "romaji": "Kore, totemo oishii desu.",
+      "category": "Restaurant Japanese",
+      "generated_at": "2026-05-27T21:45:23.286976"
+    },
+    {
+      "english": "Check, please.",
+      "japanese": "お会計、お願いします。",
+      "romaji": "Okaikei, onegaishimasu.",
+      "category": "Restaurant Japanese",
+      "generated_at": "2026-05-27T21:45:23.286978"
+    },
+    {
+      "english": "Do you have vegetarian options?",
+      "japanese": "ベジタリアン、ありますか？",
+      "romaji": "Bejitarian, arimasu ka?",
+      "category": "Restaurant Japanese",
+      "generated_at": "2026-05-27T21:45:23.286979"
+    },
+    {
+      "english": "Thank you for the meal.",
+      "japanese": "ごちそうさまでした。",
+      "romaji": "Gochisousama deshita.",
+      "category": "Restaurant Japanese",
+      "generated_at": "2026-05-27T21:45:23.286981"
     }
   ],
-  "last_updated": "2026-05-27T18:31:25.806890"
+  "last_updated": "2026-05-27T21:45:23.286982"
 }
