@@ -6159,7 +6159,42 @@
       "romaji": "Shippai o osorena.",
       "category": "Perseverance",
       "generated_at": "2026-05-28T15:48:52.929160"
+    },
+    {
+      "english": "Your smile, is my light.",
+      "japanese": "あなたの笑顔は、私の光です。",
+      "romaji": "Anata no egao wa, watashi no hikari desu.",
+      "category": "Love",
+      "generated_at": "2026-05-28T17:31:53.098551"
+    },
+    {
+      "english": "I love you, more than words.",
+      "japanese": "言葉以上に、あなたを愛しています。",
+      "romaji": "Kotoba ijou ni, anata o aishite imasu.",
+      "category": "Love",
+      "generated_at": "2026-05-28T17:31:53.098572"
+    },
+    {
+      "english": "My love, for you, grows.",
+      "japanese": "あなたへの愛は、育っていきます。",
+      "romaji": "Anata e no ai wa, sodatte ikimasu.",
+      "category": "Love",
+      "generated_at": "2026-05-28T17:31:53.098574"
+    },
+    {
+      "english": "You complete, my world.",
+      "japanese": "あなたは、私の世界を完成させます。",
+      "romaji": "Anata wa, watashi no sekai o kansei sasemasu.",
+      "category": "Love",
+      "generated_at": "2026-05-28T17:31:53.098575"
+    },
+    {
+      "english": "My destiny, is you.",
+      "japanese": "私の運命は、あなたです。",
+      "romaji": "Watashi no unmei wa, anata desu.",
+      "category": "Love",
+      "generated_at": "2026-05-28T17:31:53.098576"
     }
   ],
-  "last_updated": "2026-05-28T15:48:52.929162"
+  "last_updated": "2026-05-28T17:31:53.098578"
 }
