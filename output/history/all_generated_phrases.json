@@ -6229,7 +6229,42 @@
       "romaji": "Yorokobi ga saku, kokoro no naka ni.",
       "category": "Joy",
       "generated_at": "2026-05-29T18:40:03.969793"
+    },
+    {
+      "english": "Every day, study hard.",
+      "japanese": "毎日、勉強しましょう。",
+      "romaji": "Mainichi, benkyou shimashou.",
+      "category": "Time Japanese",
+      "generated_at": "2026-05-30T02:41:25.373748"
+    },
+    {
+      "english": "This week, is busy.",
+      "japanese": "今週は、忙しいです。",
+      "romaji": "Konshuu wa, isogashii desu.",
+      "category": "Time Japanese",
+      "generated_at": "2026-05-30T02:41:25.373757"
+    },
+    {
+      "english": "Next month, new job.",
+      "japanese": "来月、新しい仕事です。",
+      "romaji": "Raigetsu, atarashii shigoto desu.",
+      "category": "Time Japanese",
+      "generated_at": "2026-05-30T02:41:25.373759"
+    },
+    {
+      "english": "Last year, I traveled.",
+      "japanese": "去年、旅行しました。",
+      "romaji": "Kyonen, ryokou shimashita.",
+      "category": "Time Japanese",
+      "generated_at": "2026-05-30T02:41:25.373760"
+    },
+    {
+      "english": "Soon, we will meet.",
+      "japanese": "もうすぐ、会えますね。",
+      "romaji": "Mou sugu, aemasu ne.",
+      "category": "Time Japanese",
+      "generated_at": "2026-05-30T02:41:25.373762"
     }
   ],
-  "last_updated": "2026-05-29T18:40:03.969796"
+  "last_updated": "2026-05-30T02:41:25.373763"
 }
