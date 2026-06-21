@@ -6684,7 +6684,42 @@
       "romaji": "soto wa, samui desu ka?",
       "category": "Weather Japanese",
       "generated_at": "2026-06-21T12:05:18.328255"
+    },
+    {
+      "english": "My head, hurts a little.",
+      "japanese": "頭が、少し痛いです。",
+      "romaji": "Atama ga, sukoshi itai desu.",
+      "category": "Body Japanese",
+      "generated_at": "2026-06-21T14:05:55.802663"
+    },
+    {
+      "english": "My hands, are cold.",
+      "japanese": "手が、冷たいです。",
+      "romaji": "Te ga, tsumetai desu.",
+      "category": "Body Japanese",
+      "generated_at": "2026-06-21T14:05:55.802674"
+    },
+    {
+      "english": "My eyes, are tired.",
+      "japanese": "目が、疲れています。",
+      "romaji": "Me ga, tsukarete imasu.",
+      "category": "Body Japanese",
+      "generated_at": "2026-06-21T14:05:55.802676"
+    },
+    {
+      "english": "My legs, feel heavy.",
+      "japanese": "足が、重いです。",
+      "romaji": "Ashi ga, omoi desu.",
+      "category": "Body Japanese",
+      "generated_at": "2026-06-21T14:05:55.802677"
+    },
+    {
+      "english": "My stomach, is empty.",
+      "japanese": "お腹が、空いています。",
+      "romaji": "Onaka ga, suite imasu.",
+      "category": "Body Japanese",
+      "generated_at": "2026-06-21T14:05:55.802678"
     }
   ],
-  "last_updated": "2026-06-21T12:05:18.328256"
+  "last_updated": "2026-06-21T14:05:55.802680"
 }
