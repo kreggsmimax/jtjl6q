@@ -6719,7 +6719,42 @@
       "romaji": "Onaka ga, suite imasu.",
       "category": "Body Japanese",
       "generated_at": "2026-06-21T14:05:55.802678"
+    },
+    {
+      "english": "Count to ten, breathe, relax",
+      "japanese": "十まで数えて, 深呼吸, 落ち着いて",
+      "romaji": "jū made kazoete, shinkokyū shite, ochitsuite",
+      "category": "Numbers Japanese",
+      "generated_at": "2026-06-21T15:46:56.841710"
+    },
+    {
+      "english": "Start at one, go slowly",
+      "japanese": "一から始めて, ゆっくり進もう",
+      "romaji": "ichi kara hajimete, yukkuri susumō",
+      "category": "Numbers Japanese",
+      "generated_at": "2026-06-21T15:46:56.841720"
+    },
+    {
+      "english": "Two cups, please, thank you",
+      "japanese": "二つお願いします, ありがとうございます",
+      "romaji": "futatsu onegaishimasu, arigatō gozaimasu",
+      "category": "Numbers Japanese",
+      "generated_at": "2026-06-21T15:46:56.841722"
+    },
+    {
+      "english": "Three steps, then turn right",
+      "japanese": "三歩で, それから右へ曲がって",
+      "romaji": "sanpo de, soredakara migi e magatte",
+      "category": "Numbers Japanese",
+      "generated_at": "2026-06-21T15:46:56.841723"
+    },
+    {
+      "english": "Four seasons, enjoy them",
+      "japanese": "四季を楽しんで, 心を軽く",
+      "romaji": "shiki o tanoshinde, kokoro o karuku",
+      "category": "Numbers Japanese",
+      "generated_at": "2026-06-21T15:46:56.841725"
     }
   ],
-  "last_updated": "2026-06-21T14:05:55.802680"
+  "last_updated": "2026-06-21T15:46:56.841726"
 }
