@@ -6789,7 +6789,42 @@
       "romaji": "Atarashii reshipi o, ryōri suru no ga daisuki desu.",
       "category": "Hobbies Japanese",
       "generated_at": "2026-06-21T17:46:11.359808"
+    },
+    {
+      "english": "Thank you, for today’s kindness",
+      "japanese": "今日のやさしさに、ありがとうございます。",
+      "romaji": "kyou no yasashisa ni, arigatou gozaimasu.",
+      "category": "Gratitude",
+      "generated_at": "2026-06-21T19:56:44.471374"
+    },
+    {
+      "english": "I’m grateful, for your patient help",
+      "japanese": "ご親切に、助けてくれてありがとう。",
+      "romaji": "go-shinsetsu ni, tasukete kurete arigatou.",
+      "category": "Gratitude",
+      "generated_at": "2026-06-21T19:56:44.471397"
+    },
+    {
+      "english": "Thanks again, for listening to me",
+      "japanese": "聞いてくれて、ありがとうございます。",
+      "romaji": "kiite kurete, arigatou gozaimasu.",
+      "category": "Gratitude",
+      "generated_at": "2026-06-21T19:56:44.471399"
+    },
+    {
+      "english": "I appreciate it, your steady support",
+      "japanese": "いつも支えてくれて、感謝します。",
+      "romaji": "itsumo sasaete kurete, kansha shimasu.",
+      "category": "Gratitude",
+      "generated_at": "2026-06-21T19:56:44.471402"
+    },
+    {
+      "english": "Thank you, for your warm words",
+      "japanese": "あたたかい言葉に、元気をもらった。",
+      "romaji": "atatakai kotoba ni, genki o mora tta.",
+      "category": "Gratitude",
+      "generated_at": "2026-06-21T19:56:44.471403"
     }
   ],
-  "last_updated": "2026-06-21T17:46:11.359810"
+  "last_updated": "2026-06-21T19:56:44.471405"
 }
