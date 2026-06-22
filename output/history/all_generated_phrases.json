@@ -6964,7 +6964,42 @@
       "romaji": "shinpai o tebanashite, kokyū de ii",
       "category": "Inner Peace",
       "generated_at": "2026-06-22T15:14:07.040143"
+    },
+    {
+      "english": "Time flies, breathe, then move",
+      "japanese": "時間は過ぎる, 深呼吸して, 動こう",
+      "romaji": "jikan wa sugiru, shinkokyuu shite, ugokou",
+      "category": "Time Japanese",
+      "generated_at": "2026-06-22T16:53:02.426783"
+    },
+    {
+      "english": "Now is enough, start your work",
+      "japanese": "今でいい, 仕事を始めよう",
+      "romaji": "ima de ii, shigoto o hajimeyou",
+      "category": "Time Japanese",
+      "generated_at": "2026-06-22T16:53:02.426796"
+    },
+    {
+      "english": "Wait a moment, then answer",
+      "japanese": "少し待って, それから答えて",
+      "romaji": "sukoshi matte, sorekara kotaete",
+      "category": "Time Japanese",
+      "generated_at": "2026-06-22T16:53:02.426798"
+    },
+    {
+      "english": "At noon, meet me at the station",
+      "japanese": "正午に, 駅で会おう",
+      "romaji": "shougo ni, eki de aiyou",
+      "category": "Time Japanese",
+      "generated_at": "2026-06-22T16:53:02.426799"
+    },
+    {
+      "english": "In the morning, take a slow walk",
+      "japanese": "朝は, ゆっくり散歩しよう",
+      "romaji": "asa wa, yukkuri sanpo shiyou",
+      "category": "Time Japanese",
+      "generated_at": "2026-06-22T16:53:02.426800"
     }
   ],
-  "last_updated": "2026-06-22T15:14:07.040145"
+  "last_updated": "2026-06-22T16:53:02.426802"
 }
