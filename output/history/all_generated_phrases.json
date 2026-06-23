@@ -7244,7 +7244,42 @@
       "romaji": "ashi o oite, jimen o kanjite.",
       "category": "Mindfulness",
       "generated_at": "2026-06-23T12:28:51.874989"
+    },
+    {
+      "english": "May I order now, please?",
+      "japanese": "今、注文してもいいですか。",
+      "romaji": "ima, chuumon shite mo ii desu ka",
+      "category": "Restaurant Japanese",
+      "generated_at": "2026-06-23T14:44:18.330746"
+    },
+    {
+      "english": "Could I get ketchup on the side?",
+      "japanese": "ケチャップは別でいただけますか。",
+      "romaji": "ketchappu wa betsu de itadakemasu ka",
+      "category": "Restaurant Japanese",
+      "generated_at": "2026-06-23T14:44:18.330753"
+    },
+    {
+      "english": "Please, can we have the bill now?",
+      "japanese": "お会計を今お願いできますか。",
+      "romaji": "okaikei o ima onegaidekimasu ka",
+      "category": "Restaurant Japanese",
+      "generated_at": "2026-06-23T14:44:18.330755"
+    },
+    {
+      "english": "Do you accept credit cards, too?",
+      "japanese": "クレジットカードも使えますか。",
+      "romaji": "kurejitto kaado mo tsukaemasu ka",
+      "category": "Restaurant Japanese",
+      "generated_at": "2026-06-23T14:44:18.330756"
+    },
+    {
+      "english": "Thank you, have a good day.",
+      "japanese": "ありがとうございます、よい一日を。",
+      "romaji": "arigatou gozaimasu, yoi ichinichi o",
+      "category": "Restaurant Japanese",
+      "generated_at": "2026-06-23T14:44:18.330757"
     }
   ],
-  "last_updated": "2026-06-23T12:28:51.874990"
+  "last_updated": "2026-06-23T14:44:18.330759"
 }
