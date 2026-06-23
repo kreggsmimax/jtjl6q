@@ -7314,7 +7314,42 @@
       "romaji": "kyou wa isogashii desu, mata ato de.",
       "category": "Basic Phrases",
       "generated_at": "2026-06-23T16:21:26.673769"
+    },
+    {
+      "english": "Keep going, even when it’s hard",
+      "japanese": "つらくても、やめないで進む",
+      "romaji": "tsurakute mo, yamenai de susumu",
+      "category": "Perseverance",
+      "generated_at": "2026-06-23T18:06:44.031894"
+    },
+    {
+      "english": "Small steps, steady heart, daily progress",
+      "japanese": "小さく歩いて、まっすぐ前へ",
+      "romaji": "chiisaku aruite, massugu mae e",
+      "category": "Perseverance",
+      "generated_at": "2026-06-23T18:06:44.031903"
+    },
+    {
+      "english": "Mistakes happen, learn, and try again",
+      "japanese": "失敗しても、学んでまた挑む",
+      "romaji": "shippai shite mo, manande mata idomu",
+      "category": "Perseverance",
+      "generated_at": "2026-06-23T18:06:44.031905"
+    },
+    {
+      "english": "Stay patient, your effort will show",
+      "japanese": "焦らずに、努力は必ず届く",
+      "romaji": "ase razu ni, doryoku wa kanarazu todoku",
+      "category": "Perseverance",
+      "generated_at": "2026-06-23T18:06:44.031906"
+    },
+    {
+      "english": "One more day, one more practice",
+      "japanese": "もう一日、もう一回練習",
+      "romaji": "mou ichinichi, mou ikkai renshuu",
+      "category": "Perseverance",
+      "generated_at": "2026-06-23T18:06:44.031907"
     }
   ],
-  "last_updated": "2026-06-23T16:21:26.673771"
+  "last_updated": "2026-06-23T18:06:44.031909"
 }
