@@ -7349,7 +7349,42 @@
       "romaji": "mou ichinichi, mou ikkai renshuu",
       "category": "Perseverance",
       "generated_at": "2026-06-23T18:06:44.031907"
+    },
+    {
+      "english": "Hello, how are you today?",
+      "japanese": "こんにちは、今日は元気ですか。",
+      "romaji": "konnichiwa, kyou wa genki desu ka",
+      "category": "Greetings",
+      "generated_at": "2026-06-23T20:17:30.380997"
+    },
+    {
+      "english": "Good morning, nice to meet you.",
+      "japanese": "おはようございます、はじめまして。",
+      "romaji": "ohayou gozaimasu, hajimemashite",
+      "category": "Greetings",
+      "generated_at": "2026-06-23T20:17:30.381006"
+    },
+    {
+      "english": "Good evening, I hope you're doing well.",
+      "japanese": "こんばんは、元気にしていますか。",
+      "romaji": "konbanwa, genki ni shiteimasu ka",
+      "category": "Greetings",
+      "generated_at": "2026-06-23T20:17:30.381008"
+    },
+    {
+      "english": "Hi there, welcome to Japan.",
+      "japanese": "こんにちは、日本へようこそ。",
+      "romaji": "konnichiwa, nihon e youkoso",
+      "category": "Greetings",
+      "generated_at": "2026-06-23T20:17:30.381009"
+    },
+    {
+      "english": "Nice to see you again, how's it going?",
+      "japanese": "また会えてうれしいです、元気ですか。",
+      "romaji": "mata aete ureshii desu, genki desu ka",
+      "category": "Greetings",
+      "generated_at": "2026-06-23T20:17:30.381010"
     }
   ],
-  "last_updated": "2026-06-23T18:06:44.031909"
+  "last_updated": "2026-06-23T20:17:30.381012"
 }
