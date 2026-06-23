@@ -7209,7 +7209,42 @@
       "romaji": "otagai ni yurusō, yukkuri, kyō",
       "category": "Forgiveness",
       "generated_at": "2026-06-23T02:48:19.763643"
+    },
+    {
+      "english": "Breathe in slowly, feel your body.",
+      "japanese": "ゆっくり息を吸って、体を感じて。",
+      "romaji": "yukkuri iki o sutte, karada o kanjite.",
+      "category": "Mindfulness",
+      "generated_at": "2026-06-23T12:28:51.874974"
+    },
+    {
+      "english": "Notice now, let the thoughts pass.",
+      "japanese": "今に気づいて、考えを流して。",
+      "romaji": "ima ni kizuite, kangae o nagashite.",
+      "category": "Mindfulness",
+      "generated_at": "2026-06-23T12:28:51.874984"
+    },
+    {
+      "english": "Relax your shoulders, soften your jaw.",
+      "japanese": "肩の力を抜いて、あごをゆるめて。",
+      "romaji": "kata no chikara o nuite, ago o yurumete.",
+      "category": "Mindfulness",
+      "generated_at": "2026-06-23T12:28:51.874986"
+    },
+    {
+      "english": "Listen quietly, hear each sound.",
+      "japanese": "静かに聞いて、音をひとつずつ。",
+      "romaji": "shizukani kiite, oto o hitotsu zutsu.",
+      "category": "Mindfulness",
+      "generated_at": "2026-06-23T12:28:51.874987"
+    },
+    {
+      "english": "Place your feet, feel the ground.",
+      "japanese": "足を置いて、地面を感じて。",
+      "romaji": "ashi o oite, jimen o kanjite.",
+      "category": "Mindfulness",
+      "generated_at": "2026-06-23T12:28:51.874989"
     }
   ],
-  "last_updated": "2026-06-23T02:48:19.763645"
+  "last_updated": "2026-06-23T12:28:51.874990"
 }
