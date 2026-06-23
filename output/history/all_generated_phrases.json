@@ -7384,7 +7384,42 @@
       "romaji": "mata aete ureshii desu, genki desu ka",
       "category": "Greetings",
       "generated_at": "2026-06-23T20:17:30.381010"
+    },
+    {
+      "english": "Five minutes, wait calmly",
+      "japanese": "五分だけ, 落ち着いて待って",
+      "romaji": "go fun dake, ochitsuite matte",
+      "category": "Numbers Japanese",
+      "generated_at": "2026-06-23T21:23:15.718842"
+    },
+    {
+      "english": "Six friends, meet at seven",
+      "japanese": "六人で, 七時に会おう",
+      "romaji": "rokunin de, shichiji ni aō",
+      "category": "Numbers Japanese",
+      "generated_at": "2026-06-23T21:23:15.718855"
+    },
+    {
+      "english": "Seven times, check again",
+      "japanese": "七回くり返して, もう一度確認",
+      "romaji": "nanakai kurikaeshite, mō ichido kakunin",
+      "category": "Numbers Japanese",
+      "generated_at": "2026-06-23T21:23:15.718856"
+    },
+    {
+      "english": "Eight pages, read slowly",
+      "japanese": "八ページ, ゆっくり読んで",
+      "romaji": "hachi pēji, yukkuri yonde",
+      "category": "Numbers Japanese",
+      "generated_at": "2026-06-23T21:23:15.718857"
+    },
+    {
+      "english": "Nine days, keep going",
+      "japanese": "九日間, これからも続けよう",
+      "romaji": "kokonichikan, korekara mo tsuzukeyō",
+      "category": "Numbers Japanese",
+      "generated_at": "2026-06-23T21:23:15.718859"
     }
   ],
-  "last_updated": "2026-06-23T20:17:30.381012"
+  "last_updated": "2026-06-23T21:23:15.718860"
 }
