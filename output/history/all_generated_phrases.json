@@ -7279,7 +7279,42 @@
       "romaji": "arigatou gozaimasu, yoi ichinichi o",
       "category": "Restaurant Japanese",
       "generated_at": "2026-06-23T14:44:18.330757"
+    },
+    {
+      "english": "Good morning, how are you today?",
+      "japanese": "おはようございます、今日はいかがですか。",
+      "romaji": "ohayou gozaimasu, kyou wa ikaga desu ka.",
+      "category": "Basic Phrases",
+      "generated_at": "2026-06-23T16:21:26.673750"
+    },
+    {
+      "english": "Please wait a moment, thank you.",
+      "japanese": "少し待ってください、ありがとうございます。",
+      "romaji": "sukoshi matte kudasai, arigatou gozaimasu.",
+      "category": "Basic Phrases",
+      "generated_at": "2026-06-23T16:21:26.673764"
+    },
+    {
+      "english": "I like this, how much is it?",
+      "japanese": "これが好きです、いくらですか。",
+      "romaji": "kore ga suki desu, ikura desu ka.",
+      "category": "Basic Phrases",
+      "generated_at": "2026-06-23T16:21:26.673766"
+    },
+    {
+      "english": "I don’t understand, can you speak slowly?",
+      "japanese": "わかりません、ゆっくり話してください。",
+      "romaji": "wakarimasen, yukkuri hanashite kudasai.",
+      "category": "Basic Phrases",
+      "generated_at": "2026-06-23T16:21:26.673768"
+    },
+    {
+      "english": "Today is busy, see you later.",
+      "japanese": "今日は忙しいです、またあとで。",
+      "romaji": "kyou wa isogashii desu, mata ato de.",
+      "category": "Basic Phrases",
+      "generated_at": "2026-06-23T16:21:26.673769"
     }
   ],
-  "last_updated": "2026-06-23T14:44:18.330759"
+  "last_updated": "2026-06-23T16:21:26.673771"
 }
