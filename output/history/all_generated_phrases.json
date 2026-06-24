@@ -7489,7 +7489,42 @@
       "romaji": "te o tsunaide, issho ni arukou",
       "category": "Love",
       "generated_at": "2026-06-24T02:53:47.337749"
+    },
+    {
+      "english": "My back, is sore.",
+      "japanese": "背中が、凝っています。",
+      "romaji": "Senaka ga, kotte imasu.",
+      "category": "Body Japanese",
+      "generated_at": "2026-06-24T12:14:34.892173"
+    },
+    {
+      "english": "My ears, are ringing.",
+      "japanese": "耳鳴りが、します。",
+      "romaji": "Mimi nari ga, shimasu.",
+      "category": "Body Japanese",
+      "generated_at": "2026-06-24T12:14:34.892185"
+    },
+    {
+      "english": "My throat, is dry.",
+      "japanese": "喉が、乾いています。",
+      "romaji": "Nodo ga, kawaite imasu.",
+      "category": "Body Japanese",
+      "generated_at": "2026-06-24T12:14:34.892187"
+    },
+    {
+      "english": "My nose, is stuffy.",
+      "japanese": "鼻が、詰まっています。",
+      "romaji": "Hana ga, tsumatte imasu.",
+      "category": "Body Japanese",
+      "generated_at": "2026-06-24T12:14:34.892188"
+    },
+    {
+      "english": "My feet, are aching.",
+      "japanese": "足の裏が、痛みます。",
+      "romaji": "Ashi no ura ga, itamimasu.",
+      "category": "Body Japanese",
+      "generated_at": "2026-06-24T12:14:34.892189"
     }
   ],
-  "last_updated": "2026-06-24T02:53:47.337751"
+  "last_updated": "2026-06-24T12:14:34.892190"
 }
