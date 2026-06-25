@@ -7839,7 +7839,42 @@
       "romaji": "mizu wo, yoku nonde kudasai.",
       "category": "Health Japanese",
       "generated_at": "2026-06-25T14:29:22.572747"
+    },
+    {
+      "english": "I will be better, forgive me, okay",
+      "japanese": "もっと良くするよ、許してね、大丈夫",
+      "romaji": "motto yoku suru yo, yuru shite ne, daijōbu",
+      "category": "Forgiveness",
+      "generated_at": "2026-06-25T16:15:59.609703"
+    },
+    {
+      "english": "Please accept my apology, forgive me",
+      "japanese": "謝ります、許してくれませんか",
+      "romaji": "ayamarimasu, yuru shite kuremasen ka",
+      "category": "Forgiveness",
+      "generated_at": "2026-06-25T16:15:59.609716"
+    },
+    {
+      "english": "I won't repeat it, forgive me, please",
+      "japanese": "二度としない、許して、お願いします",
+      "romaji": "nido to shinai, yuru shite, onegaishimasu",
+      "category": "Forgiveness",
+      "generated_at": "2026-06-25T16:15:59.609718"
+    },
+    {
+      "english": "Thank you, for forgiving me, I promise",
+      "japanese": "許してくれてありがとう、約束する",
+      "romaji": "yuru shite kurete arigatō, yakusoku suru",
+      "category": "Forgiveness",
+      "generated_at": "2026-06-25T16:15:59.609720"
+    },
+    {
+      "english": "We can start again, forgive me",
+      "japanese": "また始めよう、許して",
+      "romaji": "mata hajimeyō, yuru shite",
+      "category": "Forgiveness",
+      "generated_at": "2026-06-25T16:15:59.609721"
     }
   ],
-  "last_updated": "2026-06-25T14:29:22.572749"
+  "last_updated": "2026-06-25T16:15:59.609723"
 }
