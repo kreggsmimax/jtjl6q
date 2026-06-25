@@ -7944,7 +7944,42 @@
       "romaji": "ame no ato, kuuki ga sunde imasu.",
       "category": "Weather Japanese",
       "generated_at": "2026-06-25T20:16:54.382339"
+    },
+    {
+      "english": "I got hurt, please call a doctor",
+      "japanese": "けがしました、医者を呼んでください",
+      "romaji": "kega shimashita, isha o yonde kudasai",
+      "category": "Emergency Japanese",
+      "generated_at": "2026-06-25T21:21:57.660105"
+    },
+    {
+      "english": "Water, please, I feel very thirsty",
+      "japanese": "水をください、とても喉が渇きました",
+      "romaji": "mizu o kudasai, totemo nodo ga kawakimashita",
+      "category": "Emergency Japanese",
+      "generated_at": "2026-06-25T21:21:57.660115"
+    },
+    {
+      "english": "Where is the nearest hospital, please",
+      "japanese": "一番近い病院はどこですか",
+      "romaji": "ichiban chikai byōin wa doko desu ka",
+      "category": "Emergency Japanese",
+      "generated_at": "2026-06-25T21:21:57.660117"
+    },
+    {
+      "english": "Danger, get back, stay away",
+      "japanese": "危ないです、下がってください",
+      "romaji": "abunai desu, sagatte kudasai",
+      "category": "Emergency Japanese",
+      "generated_at": "2026-06-25T21:21:57.660118"
+    },
+    {
+      "english": "I need police, call them now",
+      "japanese": "警察が必要です、今すぐ呼んで",
+      "romaji": "keisatsu ga hitsuyō desu, imasugu yonde",
+      "category": "Emergency Japanese",
+      "generated_at": "2026-06-25T21:21:57.660119"
     }
   ],
-  "last_updated": "2026-06-25T20:16:54.382341"
+  "last_updated": "2026-06-25T21:21:57.660120"
 }
