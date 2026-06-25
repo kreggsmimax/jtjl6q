@@ -7979,7 +7979,42 @@
       "romaji": "keisatsu ga hitsuyō desu, imasugu yonde",
       "category": "Emergency Japanese",
       "generated_at": "2026-06-25T21:21:57.660119"
+    },
+    {
+      "english": "Set a clear goal, move one step now",
+      "japanese": "目標をはっきり, いま一歩進もう",
+      "romaji": "mokuhyou wo hakkiri, ima ippo susumou",
+      "category": "Purpose",
+      "generated_at": "2026-06-25T23:25:13.910675"
+    },
+    {
+      "english": "Learn daily, grow quietly, keep going",
+      "japanese": "毎日学ぶ, ゆっくり伸びて, 続けよう",
+      "romaji": "mainichi manabu, yukkuri nobite, tsuzukeyou",
+      "category": "Purpose",
+      "generated_at": "2026-06-25T23:25:13.910684"
+    },
+    {
+      "english": "Practice speaking, even when you're nervous",
+      "japanese": "話す練習, 緊張してもやろう",
+      "romaji": "hanasu renshuu, kinchou shitemo yarou",
+      "category": "Purpose",
+      "generated_at": "2026-06-25T23:25:13.910686"
+    },
+    {
+      "english": "Listen first, understand slowly, then answer",
+      "japanese": "まず聞いて, ゆっくり理解して, こたえよう",
+      "romaji": "mazu kiite, yukkuri rikai shite, kotaeyou",
+      "category": "Purpose",
+      "generated_at": "2026-06-25T23:25:13.910687"
+    },
+    {
+      "english": "Make mistakes, adjust fast, try again",
+      "japanese": "失敗しても, すぐ直して, また挑戦",
+      "romaji": "shippai shitemo, sugu naoshite, mata chousen",
+      "category": "Purpose",
+      "generated_at": "2026-06-25T23:25:13.910688"
     }
   ],
-  "last_updated": "2026-06-25T21:21:57.660120"
+  "last_updated": "2026-06-25T23:25:13.910690"
 }
