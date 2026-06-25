@@ -7909,7 +7909,42 @@
       "romaji": "Shū ni nikai, kendō no renshū o shimasu.",
       "category": "Hobbies Japanese",
       "generated_at": "2026-06-25T18:20:26.376847"
+    },
+    {
+      "english": "It's quite hot, today.",
+      "japanese": "今日は、かなり暑いです。",
+      "romaji": "kyou wa, kanari atsui desu.",
+      "category": "Weather Japanese",
+      "generated_at": "2026-06-25T20:16:54.382322"
+    },
+    {
+      "english": "What's the weather, like?",
+      "japanese": "天気は、どうですか？",
+      "romaji": "tenki wa, dou desu ka?",
+      "category": "Weather Japanese",
+      "generated_at": "2026-06-25T20:16:54.382335"
+    },
+    {
+      "english": "It's a beautiful day, yes.",
+      "japanese": "いい天気ですね、はい。",
+      "romaji": "ii tenki desu ne, hai.",
+      "category": "Weather Japanese",
+      "generated_at": "2026-06-25T20:16:54.382337"
+    },
+    {
+      "english": "Will it snow, tomorrow?",
+      "japanese": "明日は、雪が降りますか？",
+      "romaji": "ashita wa, yuki ga furimasu ka?",
+      "category": "Weather Japanese",
+      "generated_at": "2026-06-25T20:16:54.382338"
+    },
+    {
+      "english": "The air is fresh, after rain.",
+      "japanese": "雨の後、空気が澄んでいます。",
+      "romaji": "ame no ato, kuuki ga sunde imasu.",
+      "category": "Weather Japanese",
+      "generated_at": "2026-06-25T20:16:54.382339"
     }
   ],
-  "last_updated": "2026-06-25T18:20:26.376848"
+  "last_updated": "2026-06-25T20:16:54.382341"
 }
