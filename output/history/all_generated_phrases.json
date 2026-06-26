@@ -8224,7 +8224,42 @@
       "romaji": "Arukou, yawarakai shibafu no ue.",
       "category": "Nature Japanese",
       "generated_at": "2026-06-26T21:20:20.842160"
+    },
+    {
+      "english": "Feeling a bit tired, today.",
+      "japanese": "今日は、少し疲れています。",
+      "romaji": "kyō wa, sukoshi tsukarete imasu.",
+      "category": "Feelings Japanese",
+      "generated_at": "2026-06-26T23:15:38.489829"
+    },
+    {
+      "english": "So happy, right now.",
+      "japanese": "今、とても嬉しいです。",
+      "romaji": "ima, totemo ureshī desu.",
+      "category": "Feelings Japanese",
+      "generated_at": "2026-06-26T23:15:38.489839"
+    },
+    {
+      "english": "Feeling lonely, sometimes.",
+      "japanese": "時々、寂しいです。",
+      "romaji": "tokidoki, sabishī desu.",
+      "category": "Feelings Japanese",
+      "generated_at": "2026-06-26T23:15:38.489840"
+    },
+    {
+      "english": "A little nervous, I think.",
+      "japanese": "少し、緊張しています。",
+      "romaji": "sukoshi, kinchō shite imasu.",
+      "category": "Feelings Japanese",
+      "generated_at": "2026-06-26T23:15:38.489841"
+    },
+    {
+      "english": "Feeling excited, for sure.",
+      "japanese": "確かに、ワクワクしています。",
+      "romaji": "tashika ni, wakuwaku shite imasu.",
+      "category": "Feelings Japanese",
+      "generated_at": "2026-06-26T23:15:38.489842"
     }
   ],
-  "last_updated": "2026-06-26T21:20:20.842162"
+  "last_updated": "2026-06-26T23:15:38.489844"
 }
