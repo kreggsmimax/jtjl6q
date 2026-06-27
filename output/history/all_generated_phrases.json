@@ -8259,7 +8259,42 @@
       "romaji": "tashika ni, wakuwaku shite imasu.",
       "category": "Feelings Japanese",
       "generated_at": "2026-06-26T23:15:38.489842"
+    },
+    {
+      "english": "Touch your chest, breathe slowly",
+      "japanese": "胸に手を当てて, ゆっくり呼吸して",
+      "romaji": "mune ni te o atete, yukkuri kokyuu shite",
+      "category": "Body Japanese",
+      "generated_at": "2026-06-27T02:43:45.493053"
+    },
+    {
+      "english": "Move your shoulders, relax now",
+      "japanese": "肩を動かして, いまリラックス",
+      "romaji": "kata o ugokashite, ima rakkurakku",
+      "category": "Body Japanese",
+      "generated_at": "2026-06-27T02:43:45.493061"
+    },
+    {
+      "english": "Stretch your legs, feel the stretch",
+      "japanese": "足を伸ばして, のびを感じて",
+      "romaji": "ashi o nobashite, nobi o kanjite",
+      "category": "Body Japanese",
+      "generated_at": "2026-06-27T02:43:45.493063"
+    },
+    {
+      "english": "Roll your neck, gently turn",
+      "japanese": "首を回して, ゆっくりね",
+      "romaji": "kubi o mawashite, yukkuri ne",
+      "category": "Body Japanese",
+      "generated_at": "2026-06-27T02:43:45.493064"
+    },
+    {
+      "english": "Stand tall, keep your back straight",
+      "japanese": "背筋を伸ばして, 背中まっすぐ",
+      "romaji": "sekinsu o nobashite, senaka massugu",
+      "category": "Body Japanese",
+      "generated_at": "2026-06-27T02:43:45.493065"
     }
   ],
-  "last_updated": "2026-06-26T23:15:38.489844"
+  "last_updated": "2026-06-27T02:43:45.493067"
 }
