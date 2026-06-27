@@ -8399,7 +8399,42 @@
       "romaji": "ii koto wa jikan ga kakaru yo, shinjite",
       "category": "Patience",
       "generated_at": "2026-06-27T15:08:40.272727"
+    },
+    {
+      "english": "I’ll have this one, please.",
+      "japanese": "これをお願いします。",
+      "romaji": "Kore o onegaishimasu.",
+      "category": "Numbers Japanese",
+      "generated_at": "2026-06-27T17:19:13.975124"
+    },
+    {
+      "english": "Just a moment, let me check.",
+      "japanese": "少々お待ちください。",
+      "romaji": "Shōshō omachikudasai.",
+      "category": "Numbers Japanese",
+      "generated_at": "2026-06-27T17:19:13.975137"
+    },
+    {
+      "english": "Sorry, what’s this dish called?",
+      "japanese": "すみません、この料理は何ですか？",
+      "romaji": "Sumimasen, kono ryōri wa nan desu ka?",
+      "category": "Numbers Japanese",
+      "generated_at": "2026-06-27T17:19:13.975139"
+    },
+    {
+      "english": "Can I pay by card, or cash only?",
+      "japanese": "カードは使えますか、現金のみですか？",
+      "romaji": "Kādo wa tsukaemasu ka, genkin nomi desu ka?",
+      "category": "Numbers Japanese",
+      "generated_at": "2026-06-27T17:19:13.975140"
+    },
+    {
+      "english": "Where’s the nearest train station?",
+      "japanese": "一番近い駅はどこですか？",
+      "romaji": "Ichiban chikai eki wa doko desu ka?",
+      "category": "Numbers Japanese",
+      "generated_at": "2026-06-27T17:19:13.975141"
     }
   ],
-  "last_updated": "2026-06-27T15:08:40.272729"
+  "last_updated": "2026-06-27T17:19:13.975143"
 }
