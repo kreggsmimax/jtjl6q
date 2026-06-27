@@ -8434,7 +8434,42 @@
       "romaji": "Ichiban chikai eki wa doko desu ka?",
       "category": "Numbers Japanese",
       "generated_at": "2026-06-27T17:19:13.975141"
+    },
+    {
+      "english": "I practice yoga, every morning.",
+      "japanese": "毎朝、ヨガをします。",
+      "romaji": "maiasa, yōga o shimasu",
+      "category": "Hobbies Japanese",
+      "generated_at": "2026-06-27T19:41:19.119657"
+    },
+    {
+      "english": "I play the guitar, after work.",
+      "japanese": "仕事のあと、ギターをひきます。",
+      "romaji": "shigoto no ato, gitā o hikimasu",
+      "category": "Hobbies Japanese",
+      "generated_at": "2026-06-27T19:41:19.119667"
+    },
+    {
+      "english": "I draw quietly, in my room.",
+      "japanese": "部屋で、ゆっくり絵をかきます。",
+      "romaji": "heya de, yukkuri e o kakimasu",
+      "category": "Hobbies Japanese",
+      "generated_at": "2026-06-27T19:41:19.119669"
+    },
+    {
+      "english": "I bake bread, on weekends.",
+      "japanese": "週末に、パンを焼きます。",
+      "romaji": "shūmatsu ni, pan o yakimasu",
+      "category": "Hobbies Japanese",
+      "generated_at": "2026-06-27T19:41:19.119670"
+    },
+    {
+      "english": "I read manga, before sleeping.",
+      "japanese": "寝る前に、マンガを読みます。",
+      "romaji": "neru mae ni, manga o yomimasu",
+      "category": "Hobbies Japanese",
+      "generated_at": "2026-06-27T19:41:19.119671"
     }
   ],
-  "last_updated": "2026-06-27T17:19:13.975143"
+  "last_updated": "2026-06-27T19:41:19.119673"
 }
