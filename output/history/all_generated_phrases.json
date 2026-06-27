@@ -8364,7 +8364,42 @@
       "romaji": "ki o tsukete, kotoba ga daiji",
       "category": "Kindness",
       "generated_at": "2026-06-27T13:28:43.979833"
+    },
+    {
+      "english": "Wait quietly, your time will come",
+      "japanese": "静かに待って、時が来るよ",
+      "romaji": "shizuka ni matte, toki ga kuru yo",
+      "category": "Patience",
+      "generated_at": "2026-06-27T15:08:40.272711"
+    },
+    {
+      "english": "Breathe, take one step at a time",
+      "japanese": "深呼吸して、ひとつずつ進もう",
+      "romaji": "shinkokyuu shite, hitotsu zutsu susumou",
+      "category": "Patience",
+      "generated_at": "2026-06-27T15:08:40.272723"
+    },
+    {
+      "english": "Slow is okay, keep going",
+      "japanese": "ゆっくりでいい、続けよう",
+      "romaji": "yukkuri de ii, tsuzukeyou",
+      "category": "Patience",
+      "generated_at": "2026-06-27T15:08:40.272724"
+    },
+    {
+      "english": "Listen first, then answer calmly",
+      "japanese": "まず聞いて、それから落ち着いて答えてね",
+      "romaji": "mazu kiite, sorekara ochitsuite kotaete ne",
+      "category": "Patience",
+      "generated_at": "2026-06-27T15:08:40.272726"
+    },
+    {
+      "english": "Good things take time, trust it",
+      "japanese": "いいことは時間がかかるよ、信じて",
+      "romaji": "ii koto wa jikan ga kakaru yo, shinjite",
+      "category": "Patience",
+      "generated_at": "2026-06-27T15:08:40.272727"
     }
   ],
-  "last_updated": "2026-06-27T13:28:43.979835"
+  "last_updated": "2026-06-27T15:08:40.272729"
 }
