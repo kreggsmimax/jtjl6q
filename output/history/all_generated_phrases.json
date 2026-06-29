@@ -8819,7 +8819,42 @@
       "romaji": "jibun o shinjite, ochitsuite iku yo",
       "category": "Inner Peace",
       "generated_at": "2026-06-28T23:12:17.984247"
+    },
+    {
+      "english": "My mom, kind and hardworking",
+      "japanese": "母さん、やさしくて一生懸命だよ",
+      "romaji": "kā-san, yasashikute isshōkenmei da yo",
+      "category": "Family Terms",
+      "generated_at": "2026-06-29T03:00:03.440984"
+    },
+    {
+      "english": "My dad, please take a break",
+      "japanese": "お父さん、少し休んでね",
+      "romaji": "otō-san, sukoshi yasunde ne",
+      "category": "Family Terms",
+      "generated_at": "2026-06-29T03:00:03.440995"
+    },
+    {
+      "english": "My parents, they support me",
+      "japanese": "両親、いつも支えてくれる",
+      "romaji": "ryōshin, itsumo sasaete kureru",
+      "category": "Family Terms",
+      "generated_at": "2026-06-29T03:00:03.440997"
+    },
+    {
+      "english": "My brother, always makes me laugh",
+      "japanese": "兄弟、いつも笑わせてくれる",
+      "romaji": "kyōdai, itsumo warawase te kureru",
+      "category": "Family Terms",
+      "generated_at": "2026-06-29T03:00:03.440998"
+    },
+    {
+      "english": "My sister, calm voice, always",
+      "japanese": "妹、いつも落ち着いた声だね",
+      "romaji": "imōto, itsumo ochitsuita koe da ne",
+      "category": "Family Terms",
+      "generated_at": "2026-06-29T03:00:03.441000"
     }
   ],
-  "last_updated": "2026-06-28T23:12:17.984249"
+  "last_updated": "2026-06-29T03:00:03.441002"
 }
