@@ -8959,7 +8959,42 @@
       "romaji": "Mazu wa zatsuni, atode totonoeru",
       "category": "Creativity",
       "generated_at": "2026-06-29T16:49:57.677774"
+    },
+    {
+      "english": "It’s sunny today, enjoy the light.",
+      "japanese": "今日は晴れますよ, 光を楽しんで。",
+      "romaji": "kyou wa haremasu yo, hikari o tanoshinde.",
+      "category": "Weather Japanese",
+      "generated_at": "2026-06-29T18:17:38.592938"
+    },
+    {
+      "english": "Clouds are moving fast, watch the sky.",
+      "japanese": "雲が速く動いてる, 空を見て。",
+      "romaji": "kumo ga hayaku ugiteru, sora o shite.",
+      "category": "Weather Japanese",
+      "generated_at": "2026-06-29T18:17:38.592952"
+    },
+    {
+      "english": "It might rain soon, carry an umbrella.",
+      "japanese": "もうすぐ雨かも, 傘を持って。",
+      "romaji": "mou sugu ame kamo, kasa o motte.",
+      "category": "Weather Japanese",
+      "generated_at": "2026-06-29T18:17:38.592954"
+    },
+    {
+      "english": "The wind is strong, stay warm.",
+      "japanese": "風が強いです, しっかり暖かく。",
+      "romaji": "kaze ga tsuyoi desu, shikkari atataku.",
+      "category": "Weather Japanese",
+      "generated_at": "2026-06-29T18:17:38.592955"
+    },
+    {
+      "english": "It’s cold today, wear a jacket.",
+      "japanese": "今日は寒いです, ジャケットを着て。",
+      "romaji": "kyou wa samui desu, jaketto o kite.",
+      "category": "Weather Japanese",
+      "generated_at": "2026-06-29T18:17:38.592956"
     }
   ],
-  "last_updated": "2026-06-29T16:49:57.677776"
+  "last_updated": "2026-06-29T18:17:38.592958"
 }
