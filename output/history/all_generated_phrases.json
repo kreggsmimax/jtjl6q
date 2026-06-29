@@ -9029,7 +9029,42 @@
       "romaji": "ima wara tte, shinpai o keshite ikou",
       "category": "Joy",
       "generated_at": "2026-06-29T20:10:37.385453"
+    },
+    {
+      "english": "Excuse me, this isn’t what I ordered.",
+      "japanese": "すみません、注文した物と違います。",
+      "romaji": "Sumimasen, chūmon shita mono to chigaimasu.",
+      "category": "Travel Japanese",
+      "generated_at": "2026-06-29T23:06:14.753375"
+    },
+    {
+      "english": "How do I get to Tokyo Tower?",
+      "japanese": "東京タワーへはどうやって行けばいいですか？",
+      "romaji": "Tōkyō tawā e wa dō yatte ikeba ii desu ka?",
+      "category": "Travel Japanese",
+      "generated_at": "2026-06-29T23:06:14.753387"
+    },
+    {
+      "english": "Do you accept credit cards here?",
+      "japanese": "ここではクレジットカードは使えますか？",
+      "romaji": "Koko de wa kurejitto kādo wa tsukaemasu ka?",
+      "category": "Travel Japanese",
+      "generated_at": "2026-06-29T23:06:14.753389"
+    },
+    {
+      "english": "I need a doctor, it’s urgent.",
+      "japanese": "医者が必要です。急ぎます。",
+      "romaji": "Isha ga hitsuyō desu. Isogimasu.",
+      "category": "Travel Japanese",
+      "generated_at": "2026-06-29T23:06:14.753391"
+    },
+    {
+      "english": "This street looks fun, let’s explore.",
+      "japanese": "この道、楽しそう。探検しよう。",
+      "romaji": "Kono michi, tanoshisō. Tanken shiyō.",
+      "category": "Travel Japanese",
+      "generated_at": "2026-06-29T23:06:14.753392"
     }
   ],
-  "last_updated": "2026-06-29T20:10:37.385455"
+  "last_updated": "2026-06-29T23:06:14.753394"
 }
