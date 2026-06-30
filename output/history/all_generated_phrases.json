@@ -9134,7 +9134,42 @@
       "romaji": "Kore o onegaishimasu",
       "category": "Basic Phrases",
       "generated_at": "2026-06-30T12:04:56.166703"
+    },
+    {
+      "english": "You make me smile, again, somehow",
+      "japanese": "あなたがいると、また笑える",
+      "romaji": "anata ga iru to, mata waraeru",
+      "category": "Love",
+      "generated_at": "2026-06-30T14:14:57.633842"
+    },
+    {
+      "english": "Hold my hand, please, don’t let go",
+      "japanese": "手を握って、お願い、離さないで",
+      "romaji": "te o ninatte, onegai, hanasanai de",
+      "category": "Love",
+      "generated_at": "2026-06-30T14:14:57.633852"
+    },
+    {
+      "english": "I trust you, deeply, with my time",
+      "japanese": "あなたを、心から、信じています",
+      "romaji": "anata o, kokoro kara, shinji teimasu",
+      "category": "Love",
+      "generated_at": "2026-06-30T14:14:57.633854"
+    },
+    {
+      "english": "Kiss me, gently, and listen",
+      "japanese": "優しく、キスして、きいて",
+      "romaji": "yasashiku, kisu shite, kiite",
+      "category": "Love",
+      "generated_at": "2026-06-30T14:14:57.633855"
+    },
+    {
+      "english": "I choose you, always, right now",
+      "japanese": "私は、いつも、今あなたを選ぶ",
+      "romaji": "watashi wa, itsumo, ima anata o erabu",
+      "category": "Love",
+      "generated_at": "2026-06-30T14:14:57.633857"
     }
   ],
-  "last_updated": "2026-06-30T12:04:56.166705"
+  "last_updated": "2026-06-30T14:14:57.633858"
 }
