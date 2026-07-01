@@ -9414,7 +9414,42 @@
       "romaji": "Chikara o nuite, yasashiku nagareyō",
       "category": "Inner Peace",
       "generated_at": "2026-07-01T14:31:10.907591"
+    },
+    {
+      "english": "So relaxed, today.",
+      "japanese": "今日は、とてもリラックスしています。",
+      "romaji": "kyō wa, totemo rirakkusu shite imasu.",
+      "category": "Feelings Japanese",
+      "generated_at": "2026-07-01T16:16:47.874773"
+    },
+    {
+      "english": "Feeling a bit sad, here.",
+      "japanese": "ここで、少し悲しいです。",
+      "romaji": "koko de, sukoshi kanashī desu.",
+      "category": "Feelings Japanese",
+      "generated_at": "2026-07-01T16:16:47.874784"
+    },
+    {
+      "english": "Very surprised, wow.",
+      "japanese": "とても、驚いています。",
+      "romaji": "totemo, odoroite imasu.",
+      "category": "Feelings Japanese",
+      "generated_at": "2026-07-01T16:16:47.874786"
+    },
+    {
+      "english": "Feeling bored, a little.",
+      "japanese": "少し、退屈しています。",
+      "romaji": "sukoshi, taikutsu shite imasu.",
+      "category": "Feelings Japanese",
+      "generated_at": "2026-07-01T16:16:47.874787"
+    },
+    {
+      "english": "This is interesting, hmm.",
+      "japanese": "これは、面白いですね。",
+      "romaji": "kore wa, omoshiroi desu ne.",
+      "category": "Feelings Japanese",
+      "generated_at": "2026-07-01T16:16:47.874789"
     }
   ],
-  "last_updated": "2026-07-01T14:31:10.907593"
+  "last_updated": "2026-07-01T16:16:47.874790"
 }
