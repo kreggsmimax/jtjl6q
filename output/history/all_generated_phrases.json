@@ -9799,7 +9799,42 @@
       "romaji": "Tsukaretara yasume. Demo yameru na. Kanarazu saikai shiro.",
       "category": "Success",
       "generated_at": "2026-07-02T19:44:51.449341"
+    },
+    {
+      "english": "Thanks, I really appreciate your help.",
+      "japanese": "ありがとう、手伝ってくれて本当に助かるよ。",
+      "romaji": "arigatou, tetsudatte kurete hontou ni tasukaru yo",
+      "category": "Common Expressions",
+      "generated_at": "2026-07-02T20:53:04.940575"
+    },
+    {
+      "english": "I’m sorry, I missed your call.",
+      "japanese": "ごめんなさい、電話を取りませんでした。",
+      "romaji": "gomennasai, denwa o torimasen deshita",
+      "category": "Common Expressions",
+      "generated_at": "2026-07-02T20:53:04.940584"
+    },
+    {
+      "english": "Please speak slowly, I’m still learning.",
+      "japanese": "ゆっくり話して、まだ勉強中です。",
+      "romaji": "yukkuri hanashite, mada benkyou chuu desu",
+      "category": "Common Expressions",
+      "generated_at": "2026-07-02T20:53:04.940586"
+    },
+    {
+      "english": "No problem, we can try again.",
+      "japanese": "大丈夫、もう一度やってみよう。",
+      "romaji": "daijoubu, mou ichido yattemiyou",
+      "category": "Common Expressions",
+      "generated_at": "2026-07-02T20:53:04.940588"
+    },
+    {
+      "english": "Can I pay by card, please?",
+      "japanese": "カードで払えますか？お願いします。",
+      "romaji": "kaado de haraemasu ka? onegaishimasu",
+      "category": "Common Expressions",
+      "generated_at": "2026-07-02T20:53:04.940589"
     }
   ],
-  "last_updated": "2026-07-02T19:44:51.449343"
+  "last_updated": "2026-07-02T20:53:04.940592"
 }
