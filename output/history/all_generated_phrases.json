@@ -10044,7 +10044,42 @@
       "romaji": "machinagara, kokoro wa mae e susume",
       "category": "Patience",
       "generated_at": "2026-07-04T11:17:42.486364"
+    },
+    {
+      "english": "Walk past, the red building.",
+      "japanese": "赤い建物を、通り過ぎてください。",
+      "romaji": "akai tatemono o, tōrisugite kudasai.",
+      "category": "Direction Japanese",
+      "generated_at": "2026-07-04T13:20:11.863438"
+    },
+    {
+      "english": "Take the first left.",
+      "japanese": "最初の道を、左に曲がってください。",
+      "romaji": "saisho no michi o, hidari ni magatte kudasai.",
+      "category": "Direction Japanese",
+      "generated_at": "2026-07-04T13:20:11.863448"
+    },
+    {
+      "english": "You'll see it, on your right.",
+      "japanese": "右手に、見えるはずです。",
+      "romaji": "migite ni, mieru hazu desu.",
+      "category": "Direction Japanese",
+      "generated_at": "2026-07-04T13:20:11.863450"
+    },
+    {
+      "english": "Go up, this street.",
+      "japanese": "この坂道を、上ってください。",
+      "romaji": "kono sakamichi o, nobotte kudasai.",
+      "category": "Direction Japanese",
+      "generated_at": "2026-07-04T13:20:11.863451"
+    },
+    {
+      "english": "Is it far, from here?",
+      "japanese": "ここから、遠いですか？",
+      "romaji": "koko kara, tōi desu ka?",
+      "category": "Direction Japanese",
+      "generated_at": "2026-07-04T13:20:11.863452"
     }
   ],
-  "last_updated": "2026-07-04T11:17:42.486366"
+  "last_updated": "2026-07-04T13:20:11.863454"
 }
