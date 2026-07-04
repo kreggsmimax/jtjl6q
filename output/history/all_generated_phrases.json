@@ -10009,7 +10009,42 @@
       "romaji": "sukeジュuru o koushin shite, saki e susumou",
       "category": "Work Japanese",
       "generated_at": "2026-07-04T02:29:33.076464"
+    },
+    {
+      "english": "Hold on, even small progress matters",
+      "japanese": "もう少し、少しの進歩も大事",
+      "romaji": "mou sukoshi, sukoshi no shinpo mo daiji",
+      "category": "Patience",
+      "generated_at": "2026-07-04T11:17:42.486349"
+    },
+    {
+      "english": "Stay steady, change will arrive",
+      "japanese": "そのまま続けて、変化は来る",
+      "romaji": "sono mama tsuzukete, henka wa kuru",
+      "category": "Patience",
+      "generated_at": "2026-07-04T11:17:42.486360"
+    },
+    {
+      "english": "Be patient, you can learn gradually",
+      "japanese": "焦らないで、少しずつ学べる",
+      "romaji": "asiranaide, sukoshi zutsu manaberu",
+      "category": "Patience",
+      "generated_at": "2026-07-04T11:17:42.486361"
+    },
+    {
+      "english": "Let it pass, then try again",
+      "japanese": "やりすごして、また挑戦しよう",
+      "romaji": "yari sugoshite, mata chousenshiyou",
+      "category": "Patience",
+      "generated_at": "2026-07-04T11:17:42.486363"
+    },
+    {
+      "english": "Wait, but move your heart forward",
+      "japanese": "待ちながら、心は前へ進め",
+      "romaji": "machinagara, kokoro wa mae e susume",
+      "category": "Patience",
+      "generated_at": "2026-07-04T11:17:42.486364"
     }
   ],
-  "last_updated": "2026-07-04T02:29:33.076465"
+  "last_updated": "2026-07-04T11:17:42.486366"
 }
