@@ -10149,7 +10149,42 @@
       "romaji": "karuku nobashite, fukaku kokyū, ochitsuite",
       "category": "Health Japanese",
       "generated_at": "2026-07-04T19:26:07.607856"
+    },
+    {
+      "english": "My grandparents, warm tea together",
+      "japanese": "祖父母、いっしょに温かいお茶",
+      "romaji": "sohふbō, isshoni atatakai ocha",
+      "category": "Family Terms",
+      "generated_at": "2026-07-04T23:05:12.453307"
+    },
+    {
+      "english": "Uncle, come in, sit down",
+      "japanese": "おじさん、どうぞ、座ってください",
+      "romaji": "oji-san, dōzo, suwatte kudasai",
+      "category": "Family Terms",
+      "generated_at": "2026-07-04T23:05:12.453318"
+    },
+    {
+      "english": "Auntie, I brought this for you",
+      "japanese": "おばさん、これ、あなたに",
+      "romaji": "oba-san, kore, anata ni",
+      "category": "Family Terms",
+      "generated_at": "2026-07-04T23:05:12.453320"
+    },
+    {
+      "english": "My cousin, let’s meet after school",
+      "japanese": "いとこ、放課後に会おうね",
+      "romaji": "itoko, hōkōgo ni aō ne",
+      "category": "Family Terms",
+      "generated_at": "2026-07-04T23:05:12.453322"
+    },
+    {
+      "english": "Household, we eat together, every day",
+      "japanese": "家族、毎日いっしょに食べる",
+      "romaji": "kazoku, mainichi isshoni taberu",
+      "category": "Family Terms",
+      "generated_at": "2026-07-04T23:05:12.453323"
     }
   ],
-  "last_updated": "2026-07-04T19:26:07.607858"
+  "last_updated": "2026-07-04T23:05:12.453325"
 }
