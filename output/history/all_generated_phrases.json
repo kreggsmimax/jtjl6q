@@ -10184,7 +10184,42 @@
       "romaji": "kazoku, mainichi isshoni taberu",
       "category": "Family Terms",
       "generated_at": "2026-07-04T23:05:12.453323"
+    },
+    {
+      "english": "It’s getting warmer, take off your coat.",
+      "japanese": "だんだん暖かい, コートを脱いで。",
+      "romaji": "dandan atatakai, kooto o nuide.",
+      "category": "Weather Japanese",
+      "generated_at": "2026-07-05T15:06:08.078803"
+    },
+    {
+      "english": "There’s a thunderstorm, stay inside.",
+      "japanese": "雷雨です, 家にいてください。",
+      "romaji": "raiguu desu, ie ni ite kudasai.",
+      "category": "Weather Japanese",
+      "generated_at": "2026-07-05T15:06:08.078814"
+    },
+    {
+      "english": "The snow is falling, drive carefully.",
+      "japanese": "雪が降っています, 気をつけて運転して。",
+      "romaji": "yuki ga futte imasu, ki o tsukete unten shite.",
+      "category": "Weather Japanese",
+      "generated_at": "2026-07-05T15:06:08.078816"
+    },
+    {
+      "english": "Humidity is high, drink water often.",
+      "japanese": "湿度が高いです, こまめに水を飲んで。",
+      "romaji": "shido ga takai desu, komame ni mizu o nonde.",
+      "category": "Weather Japanese",
+      "generated_at": "2026-07-05T15:06:08.078817"
+    },
+    {
+      "english": "Clear weather is back, let’s go out.",
+      "japanese": "天気が晴れてきた, 出かけよう。",
+      "romaji": "tenki ga harete kita, dekakeyou.",
+      "category": "Weather Japanese",
+      "generated_at": "2026-07-05T15:06:08.078821"
     }
   ],
-  "last_updated": "2026-07-04T23:05:12.453325"
+  "last_updated": "2026-07-05T15:06:08.078824"
 }
