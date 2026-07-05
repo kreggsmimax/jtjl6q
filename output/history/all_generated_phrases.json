@@ -10289,7 +10289,42 @@
       "romaji": "Eigo ga hanasemasu ka? Shikyō onegaishimasu!",
       "category": "Emergency Japanese",
       "generated_at": "2026-07-05T19:37:56.038575"
+    },
+    {
+      "english": "Tonight, let’s talk, just for a bit",
+      "japanese": "今夜は, 少し話そう",
+      "romaji": "kon'ya wa, sukoshi hanasou",
+      "category": "Time Japanese",
+      "generated_at": "2026-07-05T20:45:30.808876"
+    },
+    {
+      "english": "After work, rest, then study",
+      "japanese": "仕事のあと, 休んで, 勉強しよう",
+      "romaji": "shigoto no ato, yasunde, benkyou shiyou",
+      "category": "Time Japanese",
+      "generated_at": "2026-07-05T20:45:30.808885"
+    },
+    {
+      "english": "One more minute, you can do it",
+      "japanese": "もう一分, できるよ",
+      "romaji": "mou ichifun, dekiruyo",
+      "category": "Time Japanese",
+      "generated_at": "2026-07-05T20:45:30.808887"
+    },
+    {
+      "english": "Tomorrow morning, call me early",
+      "japanese": "明日の朝, 早く電話して",
+      "romaji": "ashita no asa, hayaku denwa shite",
+      "category": "Time Japanese",
+      "generated_at": "2026-07-05T20:45:30.808888"
+    },
+    {
+      "english": "Every day, small steps, strong future",
+      "japanese": "毎日少しずつ, 未来は強い",
+      "romaji": "mainichi sukoshi zutsu, mirai wa tsuyoi",
+      "category": "Time Japanese",
+      "generated_at": "2026-07-05T20:45:30.808889"
     }
   ],
-  "last_updated": "2026-07-05T19:37:56.038577"
+  "last_updated": "2026-07-05T20:45:30.808891"
 }
