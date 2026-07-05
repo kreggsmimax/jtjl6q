@@ -10219,7 +10219,42 @@
       "romaji": "tenki ga harete kita, dekakeyou.",
       "category": "Weather Japanese",
       "generated_at": "2026-07-05T15:06:08.078821"
+    },
+    {
+      "english": "Please, have this. I made it for you.",
+      "japanese": "どうぞ。私、あなたのために作りました。",
+      "romaji": "Dōzo. Watashi, anata no tame ni tsukurimashita.",
+      "category": "Kindness",
+      "generated_at": "2026-07-05T17:21:22.971039"
+    },
+    {
+      "english": "Let me help you with that.",
+      "japanese": "手伝いましょうか？",
+      "romaji": "Tetsudaimashō ka?",
+      "category": "Kindness",
+      "generated_at": "2026-07-05T17:21:22.971048"
+    },
+    {
+      "english": "That's very kind of you, thank you.",
+      "japanese": "ご親切に、ありがとうございます。",
+      "romaji": "Go shinsetsu ni, arigatō gozaimasu.",
+      "category": "Kindness",
+      "generated_at": "2026-07-05T17:21:22.971050"
+    },
+    {
+      "english": "Smile more, the world needs your light.",
+      "japanese": "もっと笑って。世界はあなたの光を必要としています。",
+      "romaji": "Motto waratte. Sekai wa anata no hikari o hitsuyō to shite imasu.",
+      "category": "Kindness",
+      "generated_at": "2026-07-05T17:21:22.971052"
+    },
+    {
+      "english": "Could you help me, please?",
+      "japanese": "手伝ってくれませんか？",
+      "romaji": "Tetsudatte kuremasen ka?",
+      "category": "Kindness",
+      "generated_at": "2026-07-05T17:21:22.971053"
     }
   ],
-  "last_updated": "2026-07-05T15:06:08.078824"
+  "last_updated": "2026-07-05T17:21:22.971055"
 }
