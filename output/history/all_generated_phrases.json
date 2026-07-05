@@ -10254,7 +10254,42 @@
       "romaji": "Tetsudatte kuremasen ka?",
       "category": "Kindness",
       "generated_at": "2026-07-05T17:21:22.971053"
+    },
+    {
+      "english": "I swallowed something wrong...",
+      "japanese": "間違えて飲み込みました...",
+      "romaji": "Magaete nomikomimashita...",
+      "category": "Emergency Japanese",
+      "generated_at": "2026-07-05T19:37:56.038560"
+    },
+    {
+      "english": "Where is the nearest hospital?",
+      "japanese": "一番近い病院はどこですか？",
+      "romaji": "Ichiban chikai byōin wa doko desu ka?",
+      "category": "Emergency Japanese",
+      "generated_at": "2026-07-05T19:37:56.038571"
+    },
+    {
+      "english": "I can't breathe... send help!",
+      "japanese": "息ができません...助けてください！",
+      "romaji": "Iki ga dekimasen... Tasukete kudasai!",
+      "category": "Emergency Japanese",
+      "generated_at": "2026-07-05T19:37:56.038573"
+    },
+    {
+      "english": "This is an emergency!",
+      "japanese": "これは緊急事態です！",
+      "romaji": "Kore wa kinkyō jitai desu!",
+      "category": "Emergency Japanese",
+      "generated_at": "2026-07-05T19:37:56.038574"
+    },
+    {
+      "english": "Can you speak English? Please hurry!",
+      "japanese": "英語が話せますか？至急お願いします！",
+      "romaji": "Eigo ga hanasemasu ka? Shikyō onegaishimasu!",
+      "category": "Emergency Japanese",
+      "generated_at": "2026-07-05T19:37:56.038575"
     }
   ],
-  "last_updated": "2026-07-05T17:21:22.971055"
+  "last_updated": "2026-07-05T19:37:56.038577"
 }
