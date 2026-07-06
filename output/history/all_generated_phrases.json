@@ -10359,7 +10359,42 @@
       "romaji": "Atarashii tango ni chōsen shite, jibun ni go-hōbi o!",
       "category": "Motivation",
       "generated_at": "2026-07-06T02:43:51.456475"
+    },
+    {
+      "english": "I go hiking, early in the morning.",
+      "japanese": "早朝に、ハイキングへ行きます。",
+      "romaji": "sōchō ni, haikingu e ikimasu",
+      "category": "Hobbies Japanese",
+      "generated_at": "2026-07-06T13:38:06.103851"
+    },
+    {
+      "english": "I cook new dishes, with friends.",
+      "japanese": "友だちと、新しい料理を作ります。",
+      "romaji": "tomodachi to, atarashii ryōri o tsukurimasu",
+      "category": "Hobbies Japanese",
+      "generated_at": "2026-07-06T13:38:06.103861"
+    },
+    {
+      "english": "I watch classic films, on rainy days.",
+      "japanese": "雨の日に、名作映画を観ます。",
+      "romaji": "ame no hi ni, meisaku eiga o mimasu",
+      "category": "Hobbies Japanese",
+      "generated_at": "2026-07-06T13:38:06.103862"
+    },
+    {
+      "english": "I write journal notes, at night.",
+      "japanese": "夜に、日記を書きます。",
+      "romaji": "yoru ni, nikki o kakimasu",
+      "category": "Hobbies Japanese",
+      "generated_at": "2026-07-06T13:38:06.103864"
+    },
+    {
+      "english": "I collect stamps, one by one.",
+      "japanese": "切手を、ひとつずつ集めます。",
+      "romaji": "kitte o, hitotsu zutsu atsumemasu",
+      "category": "Hobbies Japanese",
+      "generated_at": "2026-07-06T13:38:06.103865"
     }
   ],
-  "last_updated": "2026-07-06T02:43:51.456477"
+  "last_updated": "2026-07-06T13:38:06.103867"
 }
