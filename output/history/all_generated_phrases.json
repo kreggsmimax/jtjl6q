@@ -10499,7 +10499,42 @@
       "romaji": "yoru ni wa, hoshi ga kirakira, tooku kagayaku",
       "category": "Nature Japanese",
       "generated_at": "2026-07-06T18:16:44.265107"
+    },
+    {
+      "english": "Orange juice, sweet and bright, please",
+      "japanese": "オレンジジュース、甘くて明るい、ください",
+      "romaji": "orenji juusu, amakute akarui, kudasai",
+      "category": "Colors Japanese",
+      "generated_at": "2026-07-06T20:09:37.160514"
+    },
+    {
+      "english": "Black coffee, strong aroma, start your day",
+      "japanese": "黒いコーヒー、濃い香りで、一日の始まり",
+      "romaji": "kuroi koohii, koi kaori de, ichinichi no hajimari",
+      "category": "Colors Japanese",
+      "generated_at": "2026-07-06T20:09:37.160525"
+    },
+    {
+      "english": "White snow, soft steps, listen quietly",
+      "japanese": "白い雪、やわらかい足音、静かに聞いて",
+      "romaji": "shiroi yuki, yawarakai ashioto, shizuka ni kiite",
+      "category": "Colors Japanese",
+      "generated_at": "2026-07-06T20:09:37.160527"
+    },
+    {
+      "english": "Gray clouds, slow walk, take it easy",
+      "japanese": "灰色の雲、ゆっくり歩いて、無理しないで",
+      "romaji": "haiiro no kumo, yukkuri aruite, muri shinaide",
+      "category": "Colors Japanese",
+      "generated_at": "2026-07-06T20:09:37.160529"
+    },
+    {
+      "english": "Pink ribbon, cheerful heart, you can do it",
+      "japanese": "ピンクのリボン、元気な心、できるよ",
+      "romaji": "pinku no ribon, genki na kokoro, dekiru yo",
+      "category": "Colors Japanese",
+      "generated_at": "2026-07-06T20:09:37.160530"
     }
   ],
-  "last_updated": "2026-07-06T18:16:44.265109"
+  "last_updated": "2026-07-06T20:09:37.160532"
 }
