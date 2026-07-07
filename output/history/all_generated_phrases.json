@@ -10709,7 +10709,42 @@
       "romaji": "mirai wa ima de tsukuru, shinjiyou",
       "category": "Positive Life",
       "generated_at": "2026-07-07T14:28:21.955452"
+    },
+    {
+      "english": "Get dressed, choose clothes.",
+      "japanese": "服を着ます、選びます。",
+      "romaji": "Fuku o kimasu, erabimasu.",
+      "category": "Daily Routine",
+      "generated_at": "2026-07-07T16:18:11.384825"
+    },
+    {
+      "english": "Go to work, by train.",
+      "japanese": "仕事に行きます、電車で。",
+      "romaji": "Shigoto ni ikimasu, densha de.",
+      "category": "Daily Routine",
+      "generated_at": "2026-07-07T16:18:11.384836"
+    },
+    {
+      "english": "Listen to music, on the way.",
+      "japanese": "音楽を聴きます、道中で。",
+      "romaji": "Ongaku o kikimasu, dōchū de.",
+      "category": "Daily Routine",
+      "generated_at": "2026-07-07T16:18:11.384839"
+    },
+    {
+      "english": "Arrive at office, say hello.",
+      "japanese": "会社に着きます、挨拶します。",
+      "romaji": "Kaisha ni tsukimasu, aisatsu shimasu.",
+      "category": "Daily Routine",
+      "generated_at": "2026-07-07T16:18:11.384858"
+    },
+    {
+      "english": "Start work, focus now.",
+      "japanese": "仕事を始めます、集中します。",
+      "romaji": "Shigoto o hajimemasu, shūchū shimasu.",
+      "category": "Daily Routine",
+      "generated_at": "2026-07-07T16:18:11.384861"
     }
   ],
-  "last_updated": "2026-07-07T14:28:21.955454"
+  "last_updated": "2026-07-07T16:18:11.384864"
 }
