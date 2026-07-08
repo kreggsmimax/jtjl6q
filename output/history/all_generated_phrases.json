@@ -10849,7 +10849,42 @@
       "romaji": "yasashiku, kyoukaisen o kimete, mata kokyū suru",
       "category": "Balance",
       "generated_at": "2026-07-08T02:12:46.378124"
+    },
+    {
+      "english": "I will handle this task, please relax",
+      "japanese": "私がこの仕事を担当します、安心して",
+      "romaji": "watashi ga kono shigoto o tantou shimasu, anshin shite",
+      "category": "Work Japanese",
+      "generated_at": "2026-07-08T13:59:51.588976"
+    },
+    {
+      "english": "We need feedback, please reply quickly",
+      "japanese": "フィードバックが必要です、早めに返信して",
+      "romaji": "fiidobakku ga hitsuyou desu, hayame ni henshin shite",
+      "category": "Work Japanese",
+      "generated_at": "2026-07-08T13:59:51.588986"
+    },
+    {
+      "english": "The meeting starts soon, please be ready",
+      "japanese": "会議はすぐです、準備してください",
+      "romaji": "kaigi wa sugu desu, junbi shite kudasai",
+      "category": "Work Japanese",
+      "generated_at": "2026-07-08T13:59:51.588987"
+    },
+    {
+      "english": "I agree, but we should confirm details",
+      "japanese": "賛成です、でも細部を確認しましょう",
+      "romaji": "sansei desu, demo saib u o kakunin shimashou",
+      "category": "Work Japanese",
+      "generated_at": "2026-07-08T13:59:51.588989"
+    },
+    {
+      "english": "Let's close this task, then summarize",
+      "japanese": "この作業を終えて、まとめましょう",
+      "romaji": "kono sagyou o oete, matome mashou",
+      "category": "Work Japanese",
+      "generated_at": "2026-07-08T13:59:51.588990"
     }
   ],
-  "last_updated": "2026-07-08T02:12:46.378126"
+  "last_updated": "2026-07-08T13:59:51.588991"
 }
