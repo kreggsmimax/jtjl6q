@@ -11024,7 +11024,42 @@
       "romaji": "kibou wo motte, ashita ga akarui.",
       "category": "Happiness",
       "generated_at": "2026-07-09T14:54:02.367599"
+    },
+    {
+      "english": "No worries, it’s okay, let’s move on...",
+      "japanese": "大丈夫、気にしないで、次に行こう...",
+      "romaji": "Daijoubu, kini shinaide, tsugi ni ikou...",
+      "category": "Forgiveness",
+      "generated_at": "2026-07-09T16:22:43.809568"
+    },
+    {
+      "english": "Please forgive me, I didn’t mean to hurt you...",
+      "japanese": " forgiveness、悪気はなかったんです...",
+      "romaji": "Yurushite kudasai, waragi wa nakattan desu...",
+      "category": "Forgiveness",
+      "generated_at": "2026-07-09T16:22:43.809580"
+    },
+    {
+      "english": "I apologize for my mistake, I’ll do better...",
+      "japanese": "間違ってごめんなさい、次は頑張ります...",
+      "romaji": "Machigatte gomen'nasai, tsugi wa ganbarimasu...",
+      "category": "Forgiveness",
+      "generated_at": "2026-07-09T16:22:43.809582"
+    },
+    {
+      "english": "It’s not your fault, don’t blame yourself...",
+      "japanese": "あなたのせいじゃない、自分を責めないで...",
+      "romaji": "Anata no sei ja nai, jibun o semenaide...",
+      "category": "Forgiveness",
+      "generated_at": "2026-07-09T16:22:43.809583"
+    },
+    {
+      "english": "I understand, no hard feelings...",
+      "japanese": "分かった、気にしないで...",
+      "romaji": "Wakatta, kini shinaide...",
+      "category": "Forgiveness",
+      "generated_at": "2026-07-09T16:22:43.809585"
     }
   ],
-  "last_updated": "2026-07-09T14:54:02.367600"
+  "last_updated": "2026-07-09T16:22:43.809586"
 }
