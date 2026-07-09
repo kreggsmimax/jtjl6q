@@ -11059,7 +11059,42 @@
       "romaji": "Wakatta, kini shinaide...",
       "category": "Forgiveness",
       "generated_at": "2026-07-09T16:22:43.809585"
+    },
+    {
+      "english": "Wash hands well, before you eat",
+      "japanese": "手をよく洗って, 食べる前に",
+      "romaji": "te o yoku araatte, taberu mae ni",
+      "category": "Health Japanese",
+      "generated_at": "2026-07-09T18:04:43.806229"
+    },
+    {
+      "english": "Eat vegetables daily, build a strong body",
+      "japanese": "毎日野菜を食べて, 健康な体を",
+      "romaji": "mainichi yasai o tabete, kenkō na karada o",
+      "category": "Health Japanese",
+      "generated_at": "2026-07-09T18:04:43.806241"
+    },
+    {
+      "english": "Limit sweets, enjoy them in small amounts",
+      "japanese": "甘いもの控えて, 少しだけ楽しんで",
+      "romaji": "amai mono hikaete, sukoshi dake tanoshinde",
+      "category": "Health Japanese",
+      "generated_at": "2026-07-09T18:04:43.806243"
+    },
+    {
+      "english": "Drink tea or water, skip sugary drinks",
+      "japanese": "お茶か水にして, 甘い飲み物はやめて",
+      "romaji": "ocha ka mizu ni shite, amai nomimono wa yamete",
+      "category": "Health Japanese",
+      "generated_at": "2026-07-09T18:04:43.806244"
+    },
+    {
+      "english": "See a doctor, if you feel unwell",
+      "japanese": "体調が悪いなら, 病院へ行こう",
+      "romaji": "taichō ga warui nara, byōin e ikō",
+      "category": "Health Japanese",
+      "generated_at": "2026-07-09T18:04:43.806246"
     }
   ],
-  "last_updated": "2026-07-09T16:22:43.809586"
+  "last_updated": "2026-07-09T18:04:43.806255"
 }
