@@ -11094,7 +11094,42 @@
       "romaji": "taichō ga warui nara, byōin e ikō",
       "category": "Health Japanese",
       "generated_at": "2026-07-09T18:04:43.806246"
+    },
+    {
+      "english": "Morning, let's start the day full of energy",
+      "japanese": "朝だ、今日は元気いっぱいで行こう",
+      "romaji": "Asa da, kyō wa genki ippai de ikou",
+      "category": "Time Japanese",
+      "generated_at": "2026-07-09T19:58:12.467111"
+    },
+    {
+      "english": "Afternoon, time for a short break, isn't it?",
+      "japanese": "午後だ、少し休憩しようか",
+      "romaji": "Gogo da, sukoshi kyūkei shiyou ka",
+      "category": "Time Japanese",
+      "generated_at": "2026-07-09T19:58:12.467121"
+    },
+    {
+      "english": "Evening, how about a little relaxation?",
+      "japanese": "夕方だ、少しリラックスしない？",
+      "romaji": "Yūgata da, sukoshi rirakku-su shinai?",
+      "category": "Time Japanese",
+      "generated_at": "2026-07-09T19:58:12.467124"
+    },
+    {
+      "english": "Night, sky is beautiful tonight, right?",
+      "japanese": "夜だ、今夜の空は綺麗だね",
+      "romaji": "Yoru da, kon'ya no sora wa kirei da ne",
+      "category": "Time Japanese",
+      "generated_at": "2026-07-09T19:58:12.467125"
+    },
+    {
+      "english": "Weekend, finally free time, yeah?",
+      "japanese": "週末だ、やっと自由な時間",
+      "romaji": "Shūmatsu da, yatto jiyū na jikan",
+      "category": "Time Japanese",
+      "generated_at": "2026-07-09T19:58:12.467126"
     }
   ],
-  "last_updated": "2026-07-09T18:04:43.806255"
+  "last_updated": "2026-07-09T19:58:12.467128"
 }
