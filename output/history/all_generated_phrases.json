@@ -11199,7 +11199,42 @@
       "romaji": "Ha wa aki no suzushii kaze ni odoru...",
       "category": "Nature Japanese",
       "generated_at": "2026-07-10T12:20:59.841581"
+    },
+    {
+      "english": "I wake up, breathe slowly, start today",
+      "japanese": "目が覚めたら, すこし深呼吸, 今日を始めます",
+      "romaji": "me ga sametara, sukoshi shin kokyuu, kyou wo hajimemasu",
+      "category": "Daily Routine",
+      "generated_at": "2026-07-10T14:21:26.224105"
+    },
+    {
+      "english": "I wash my face, gently, every morning",
+      "japanese": "顔を洗って, やさしく, 毎朝",
+      "romaji": "kao wo aratte, yasashiku, maiasa",
+      "category": "Daily Routine",
+      "generated_at": "2026-07-10T14:21:26.224113"
+    },
+    {
+      "english": "I brush my teeth, slowly, for two minutes",
+      "japanese": "歯をみがく, ゆっくり, 二分間",
+      "romaji": "ha wo migaku, yukkuri, nifunkan",
+      "category": "Daily Routine",
+      "generated_at": "2026-07-10T14:21:26.224115"
+    },
+    {
+      "english": "I make my bed, tidy up first",
+      "japanese": "ベッドを整えて, まず片づけます",
+      "romaji": "beddo wo totonoete, mazu katazukemasu",
+      "category": "Daily Routine",
+      "generated_at": "2026-07-10T14:21:26.224116"
+    },
+    {
+      "english": "I eat breakfast, drink water, then leave",
+      "japanese": "朝ごはんを食べて, 水を飲んで, 出ます",
+      "romaji": "asagohan wo tabete, mizu wo nonde, demasu",
+      "category": "Daily Routine",
+      "generated_at": "2026-07-10T14:21:26.224118"
     }
   ],
-  "last_updated": "2026-07-10T12:20:59.841584"
+  "last_updated": "2026-07-10T14:21:26.224119"
 }
