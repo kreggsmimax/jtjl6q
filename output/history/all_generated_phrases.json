@@ -11374,7 +11374,42 @@
       "romaji": "Kinō no kyōkun, kyō no yorokobi",
       "category": "Joy",
       "generated_at": "2026-07-11T02:10:10.648650"
+    },
+    {
+      "english": "I enjoy hiking, the fresh air feels good",
+      "japanese": "ハイキングが好き, 新鮮な空気が気持ちいい",
+      "romaji": "Haikingu ga suki, shinsen na kuuki ga kimochii",
+      "category": "Hobbies Japanese",
+      "generated_at": "2026-07-11T10:55:50.301276"
+    },
+    {
+      "english": "Gardening brings me peace, watching seeds grow",
+      "japanese": "ガーデニングは癒し, 種が育つのを見る",
+      "romaji": "Gādeningu wa iyashi, tane ga sodatsu no o miru",
+      "category": "Hobbies Japanese",
+      "generated_at": "2026-07-11T10:55:50.301286"
+    },
+    {
+      "english": "Photography captures memories, one shot at a time",
+      "japanese": "写真は思い出を残す, 一枚ずつ",
+      "romaji": "Shashin wa omoide o nokosu, ichi-mai zutsu",
+      "category": "Hobbies Japanese",
+      "generated_at": "2026-07-11T10:55:50.301288"
+    },
+    {
+      "english": "Baking relaxes me, the smell of fresh bread",
+      "japanese": "パン作りはリラックス, 焼きたてのいい匂い",
+      "romaji": "Pan zukuri wa rirakkusu, yakitate no ii nioi",
+      "category": "Hobbies Japanese",
+      "generated_at": "2026-07-11T10:55:50.301290"
+    },
+    {
+      "english": "Calligraphy flows, my brush dances on paper",
+      "japanese": "書道は流れる, 筆が紙上で踊る",
+      "romaji": "Shodō wa nagareru, fude ga shijō de odoru",
+      "category": "Hobbies Japanese",
+      "generated_at": "2026-07-11T10:55:50.301291"
     }
   ],
-  "last_updated": "2026-07-11T02:10:10.648652"
+  "last_updated": "2026-07-11T10:55:50.301293"
 }
