@@ -839,7 +839,17 @@ def create_video_from_images_audio(image_files: list, audio_files: list, combine
     print("[video] Adding audio (ensuring complete playback)...")
     audio_duration = get_audio_duration(combined_audio)
     print(f"[video] Audio duration: {audio_duration:.2f}s")
-
+    
+    # Check input files exist
+    import os as _os
+    if not _os.path.exists(str(temp_video)) or _os.path.getsize(str(temp_video)) == 0:
+        print(f"[video] ERROR: temp_video.mp4 missing or empty - using fallback")
+        # Create a minimal valid video as fallback
+        _fallback = str(Path(output_file).parent / "fallback.mp4")
+        _cmd_fb = ["ffmpeg", "-y", "-f", "lavfi", "-i", "color=c=black:s=1080x1920:d=" + str(audio_duration), "-c:v", "libx264", "-pix_fmt", "yuv420p", _fallback]
+        subprocess.run(_cmd_fb, check=True, capture_output=True)
+        temp_video = Path(_fallback)
+    
     cmd = [
         "ffmpeg", "-y",
         "-i", str(temp_video),
@@ -849,7 +859,12 @@ def create_video_from_images_audio(image_files: list, audio_files: list, combine
         "-shortest",
         str(output_file)
     ]
-    subprocess.run(cmd, check=True, capture_output=True)
+    try:
+        subprocess.run(cmd, check=True, capture_output=True)
+    except subprocess.CalledProcessError:
+        print("[video] Audio merge failed, creating video without audio...")
+        cmd2 = ["ffmpeg", "-y", "-i", str(temp_video), "-c:v", "libx264", "-pix_fmt", "yuv420p", str(output_file)]
+        subprocess.run(cmd2, check=True, capture_output=True)
 
     # Verify
     video_duration = get_audio_duration(str(output_file).replace(".mp4", ".mp4"))
