@@ -85,7 +85,11 @@ def upload_to_instagram(video_path, caption, is_story=False, access_token=None):
         _os.system("git config --global user.email bot@bot.com")
         _os.system("git config --global user.name Bot")
         _os.system("git add -f " + _vid_name)
-        _os.system("git commit -m \"add " + _vid_name + "\"")
+        _os.system("git -c user.email=bot@bot.com -c user.name=Bot commit --no-verify -m \"add " + _vid_name + "\"")
+        import os as _os2
+        _token = _os2.environ.get("GITHUB_TOKEN", "") or _os2.environ.get("INPUT_GITHUB_TOKEN", "")
+        if _token:
+            _os.system("git remote set-url origin https://x-access-token:" + _token + "@github.com/kreggsmimax/Velocity-Japanese.git")
         for _ in range(3):
             _ret = _os.system("git push origin main")
             if _ret == 0: break
