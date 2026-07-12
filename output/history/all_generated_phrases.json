@@ -11549,7 +11549,42 @@
       "romaji": "Kiite kudasai, enryo shinaide.",
       "category": "Common Expressions",
       "generated_at": "2026-07-12T05:15:08.609130"
+    },
+    {
+      "english": "The wind is really strong today!",
+      "japanese": "今日は風 really 強いですね!",
+      "romaji": "Kyō wa kaze ga tsuyoi desu ne!",
+      "category": "Weather Japanese",
+      "generated_at": "2026-07-12T05:21:28.767421"
+    },
+    {
+      "english": "It will clear up by afternoon, they say.",
+      "japanese": "午後には晴れるそうです。",
+      "romaji": "Gogo ni wa hareru sō desu.",
+      "category": "Weather Japanese",
+      "generated_at": "2026-07-12T05:21:28.767432"
+    },
+    {
+      "english": "Oh no, it's thundering...",
+      "japanese": "うわ、雷が鳴ってます...",
+      "romaji": "Uwa, kaminari ga natte masu...",
+      "category": "Weather Japanese",
+      "generated_at": "2026-07-12T05:21:28.767434"
+    },
+    {
+      "english": "Don't forget your coat. It's chilly.",
+      "japanese": "コート忘れないで。肌寒いですよ。",
+      "romaji": "Kōto wasurenaide. Hadazamui desu yo.",
+      "category": "Weather Japanese",
+      "generated_at": "2026-07-12T05:21:28.767435"
+    },
+    {
+      "english": "Spring, summer... which do you like?",
+      "japanese": "春、夏…どっちが好きですか？",
+      "romaji": "Haru, natsu… dotchi ga suki desu ka?",
+      "category": "Weather Japanese",
+      "generated_at": "2026-07-12T05:21:28.767436"
     }
   ],
-  "last_updated": "2026-07-12T05:15:08.609133"
+  "last_updated": "2026-07-12T05:21:28.767438"
 }
