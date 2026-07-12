@@ -95,7 +95,7 @@ def upload_to_instagram(video_path, caption, is_story=False, access_token=None):
         print("[instagram] Step 2: Creating Instagram " + media_type + " container...")
         
         # v21.0 or v18.0? The "new" one used v21.0
-        container_url = f"https://graph.instagram.com/v21.0/{user_id}/media"
+        container_url = f"https://graph.facebook.com/v21.0/{user_id}/media"
         container_params = {
             'media_type': media_type,
             'video_url': video_url,
@@ -117,7 +117,7 @@ def upload_to_instagram(video_path, caption, is_story=False, access_token=None):
             
             # Fallback to graph.facebook.com if graph.instagram.com fails
             print(f"[instagram] 🔄 Retrying with Facebook Graph API endpoint...")
-            container_url = f"https://graph.facebook.com/v21.0/{user_id}/media"
+            container_url = f"https://graph.instagram.com/v21.0/{user_id}/media"
             container_response = requests.post(container_url, params=container_params, timeout=60)
             
             if container_response.status_code != 200:
