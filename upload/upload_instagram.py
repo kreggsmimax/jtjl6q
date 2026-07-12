@@ -79,21 +79,40 @@ def upload_to_instagram(video_path, caption, is_story=False, access_token=None):
     try:
         # Step 1: Upload to tmpfiles.org to get public URL
         print("[instagram] Step 1: Uploading to GitHub raw URL...")
-        import subprocess as _sp, uuid as _uuid, os as _os
+        import subprocess as _sp, uuid as _uuid, os as _os, requests as _req, base64 as _b64, json as _json
         _vid_name = "ig_" + _uuid.uuid4().hex[:8] + ".mp4"
-        _os.system("cp " + str(video_path_obj) + " " + _vid_name)
-        _os.system("git config --global user.email bot@bot.com")
-        _os.system("git config --global user.name Bot")
-        _os.system("git add -f " + _vid_name)
-        _os.system("git -c user.email=bot@bot.com -c user.name=Bot commit --no-verify -m \"add " + _vid_name + "\"")
-        import os as _os2
-        _token = _os2.environ.get("GITHUB_TOKEN", "") or _os2.environ.get("INPUT_GITHUB_TOKEN", "")
-        if _token:
-            _os.system("git remote set-url origin https://x-access-token:" + _token + "@github.com/kreggsmimax/Velocity-Japanese.git")
-        for _ in range(3):
-            _ret = _os.system("git push origin main")
-            if _ret == 0: break
-            time.sleep(5)
+        _sp.run(["cp", str(video_path_obj), _vid_name], capture_output=True)
+        
+        # Try GitHub API upload first
+        _tok = _os.environ.get("GH_TOKEN") or _os.environ.get("GITHUB_TOKEN") or ""
+        if _tok:
+            with open(_vid_name, "rb") as _f:
+                _enc = _b64.b64encode(_f.read()).decode()
+            _put = _req.put("https://api.github.com/repos/kreggsmimax/Velocity-Japanese/contents/" + _vid_name,
+                headers={"Authorization": "Bearer " + _tok, "Accept": "application/vnd.github+json"},
+                json={"message": "add " + _vid_name, "content": _enc, "branch": "main"})
+            if _put.status_code in [200, 201]:
+                print("[instagram] Uploaded via GitHub API")
+            else:
+                print("[instagram] GitHub API failed, trying git push...")
+                _sp.run(["git", "config", "--global", "user.email", "bot@bot.com"], capture_output=True)
+                _sp.run(["git", "config", "--global", "user.name", "Bot"], capture_output=True)
+                _sp.run(["git", "add", "-f", _vid_name], capture_output=True)
+                _sp.run(["git", "commit", "--no-verify", "-m", "add " + _vid_name], capture_output=True)
+                for _ in range(3):
+                    _ret = _sp.run(["git", "push", "origin", "main"], capture_output=True)
+                    if _ret.returncode == 0: break
+                    time.sleep(5)
+        else:
+            _sp.run(["git", "config", "--global", "user.email", "bot@bot.com"], capture_output=True)
+            _sp.run(["git", "config", "--global", "user.name", "Bot"], capture_output=True)
+            _sp.run(["git", "add", "-f", _vid_name], capture_output=True)
+            _sp.run(["git", "commit", "--no-verify", "-m", "add " + _vid_name], capture_output=True)
+            for _ in range(3):
+                _ret = _sp.run(["git", "push", "origin", "main"], capture_output=True)
+                if _ret.returncode == 0: break
+                time.sleep(5)
+        
         video_url = "https://raw.githubusercontent.com/kreggsmimax/Velocity-Japanese/main/" + _vid_name
         print("[instagram] GitHub raw URL: " + video_url)
         print("[instagram] Step 2: Creating Instagram " + media_type + " container...")
