@@ -78,14 +78,25 @@ def upload_to_instagram(video_path, caption, is_story=False, access_token=None):
     
     try:
         # Step 1: Upload to GitHub raw URL
-        print("[instagram] Step 1: Uploading to GitHub raw URL...")
-        import uuid as _uuid, os as _os, requests as _req, base64 as _b64
-        _vid_name = "ig_" + _uuid.uuid4().hex[:8] + ".mp4"
+        # Step 1: Compress + GitHub raw URL
+        print("[instagram] Step 1: Compressing video...")
+        import subprocess as _sp2, os as _os2
+        _compressed = str(video_path_obj.parent / ("comp_" + video_path_obj.name))
+        _sp2.run(["ffmpeg", "-y", "-i", str(video_path_obj), "-vf", "scale=1080:1920:force_original_aspect_ratio=decrease,pad=1080:1920:(ow-iw)/2:(oh-ih)/2", "-c:v", "libx264", "-crf", "23", "-preset", "fast", "-pix_fmt", "yuv420p", _compressed], capture_output=True, timeout=120)
+        if _os2.path.exists(_compressed) and _os2.path.getsize(_compressed) > 0:
+            _upload_path = _compressed
+            _mb = _os2.path.getsize(_compressed) / 1024 / 1024
+            print(f"[instagram] Compressed to {_mb:.1f}MB")
+        else:
+            _upload_path = str(video_path_obj)
+            print("[instagram] Using original (compression failed)")
         
-        # Use GITHUB_TOKEN to upload via API (set in workflow env)
-        _token = _os.environ.get("GH_TOKEN") or _os.environ.get("GITHUB_TOKEN") or ""
+        print("[instagram] Step 1: Uploading to GitHub raw URL...")
+        import uuid as _uuid, requests as _req, base64 as _b64
+        _vid_name = "ig_" + _uuid.uuid4().hex[:8] + ".mp4"
+        _token = _os2.environ.get("GH_TOKEN") or _os2.environ.get("GITHUB_TOKEN") or ""
         if _token:
-            with open(str(video_path_obj), "rb") as _f:
+            with open(_upload_path, "rb") as _f:
                 _enc = _b64.b64encode(_f.read()).decode()
             _put = _req.put("https://api.github.com/repos/kreggsmimax/Velocity-Japanese/contents/" + _vid_name,
                 headers={"Authorization": "Bearer " + _token, "Accept": "application/vnd.github+json"},
@@ -93,21 +104,16 @@ def upload_to_instagram(video_path, caption, is_story=False, access_token=None):
             if _put.status_code in [200, 201]:
                 print("[instagram] Uploaded via GitHub API")
             else:
-                print("[instagram] GitHub API failed (" + str(_put.status_code) + "), falling back to git push...")
-                _os.system("cp " + str(video_path_obj) + " " + _vid_name)
-                _os.system("git config --global user.email bot@bot.com")
-                _os.system("git config --global user.name Bot")
-                _os.system("git add -f " + _vid_name)
-                _os.system("git commit --no-verify -m \"add " + _vid_name + "\"")
-                _os.system("git push origin main")
+                print(f"[instagram] GitHub API failed ({_put.status_code})")
+                _os2.system("cp " + _upload_path + " " + _vid_name)
+                _os2.system("git add -f " + _vid_name)
+                _os2.system("git commit --no-verify -m \"add " + _vid_name + "\"")
+                _os2.system("git push origin main")
         else:
-            print("[instagram] No GITHUB_TOKEN found, using git push...")
-            _os.system("cp " + str(video_path_obj) + " " + _vid_name)
-            _os.system("git config --global user.email bot@bot.com")
-            _os.system("git config --global user.name Bot")
-            _os.system("git add -f " + _vid_name)
-            _os.system("git commit --no-verify -m \"add " + _vid_name + "\"")
-            _os.system("git push origin main")
+            _os2.system("cp " + _upload_path + " " + _vid_name)
+            _os2.system("git add -f " + _vid_name)
+            _os2.system("git commit --no-verify -m \"add " + _vid_name + "\"")
+            _os2.system("git push origin main")
         
         video_url = "https://raw.githubusercontent.com/kreggsmimax/Velocity-Japanese/main/" + _vid_name
         print("[instagram] GitHub raw URL: " + video_url)
