@@ -11619,7 +11619,42 @@
       "romaji": "konnichiwa, genki desu ka",
       "category": "Greetings",
       "generated_at": "2026-07-12T05:33:51.165136"
+    },
+    {
+      "english": "I'm hungry, what's good?",
+      "japanese": "",
+      "romaji": "Gohan ga hoshii, nani ga oishii?",
+      "category": "Restaurant Japanese",
+      "generated_at": "2026-07-12T05:41:23.734208"
+    },
+    {
+      "english": "Show me, the menu",
+      "japanese": "",
+      "romaji": "Menyu o misete kudasai",
+      "category": "Restaurant Japanese",
+      "generated_at": "2026-07-12T05:41:23.734220"
+    },
+    {
+      "english": "How much, is this?",
+      "japanese": "",
+      "romaji": "Kore wa ikura desu ka",
+      "category": "Restaurant Japanese",
+      "generated_at": "2026-07-12T05:41:23.734221"
+    },
+    {
+      "english": "I'll take, the special",
+      "japanese": "",
+      "romaji": "Tokubetsu na mono o kudasai",
+      "category": "Restaurant Japanese",
+      "generated_at": "2026-07-12T05:41:23.734222"
+    },
+    {
+      "english": "Do you, have sake?",
+      "japanese": "",
+      "romaji": "Sake wa arimasu ka",
+      "category": "Restaurant Japanese",
+      "generated_at": "2026-07-12T05:41:23.734223"
     }
   ],
-  "last_updated": "2026-07-12T05:33:51.165138"
+  "last_updated": "2026-07-12T05:41:23.734225"
 }
