@@ -12179,7 +12179,42 @@
       "romaji": "Kyou renshuu shite, ashita masutaa shiyou",
       "category": "Purpose",
       "generated_at": "2026-07-15T01:58:32.570458"
+    },
+    {
+      "english": "Sleep early, wake up refreshed",
+      "japanese": "早寝早起き、すっきり目覚め",
+      "romaji": "Hayane hayoki, sukkiri mezame",
+      "category": "Health Japanese",
+      "generated_at": "2026-07-15T11:22:41.789742"
+    },
+    {
+      "english": "Drink water, stay hydrated",
+      "japanese": "水を飲んで、水分補給",
+      "romaji": "Mizu o nonde, suibun hokyō",
+      "category": "Health Japanese",
+      "generated_at": "2026-07-15T11:22:41.789759"
+    },
+    {
+      "english": "Stretch gently, relax your muscles",
+      "japanese": "優しくストレッチ、筋肉を緩めて",
+      "romaji": "Yasashiku sutorecchi, kin'niku o yurumete",
+      "category": "Health Japanese",
+      "generated_at": "2026-07-15T11:22:41.789761"
+    },
+    {
+      "english": "Chew slowly, aids digestion",
+      "japanese": "ゆっくり噛んで、消化によい",
+      "romaji": "Yukkuri kande, shōka ni ii",
+      "category": "Health Japanese",
+      "generated_at": "2026-07-15T11:22:41.789762"
+    },
+    {
+      "english": "Take breaks, avoid eye strain",
+      "japanese": "休憩を取って、目の負担を減らそう",
+      "romaji": "Kyūkei o totte, me no futan o herasō",
+      "category": "Health Japanese",
+      "generated_at": "2026-07-15T11:22:41.789763"
     }
   ],
-  "last_updated": "2026-07-15T01:58:32.570460"
+  "last_updated": "2026-07-15T11:22:41.789765"
 }
