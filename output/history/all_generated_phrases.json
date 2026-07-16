@@ -12459,7 +12459,42 @@
       "romaji": "ai, anata o iyasu",
       "category": "Inner Peace",
       "generated_at": "2026-07-16T11:27:17.049832"
+    },
+    {
+      "english": "Can I, get the bill?",
+      "japanese": "",
+      "romaji": "Kanpai o moraemasu ka",
+      "category": "Restaurant Japanese",
+      "generated_at": "2026-07-16T13:46:48.987289"
+    },
+    {
+      "english": "This is, delicious",
+      "japanese": "",
+      "romaji": "Kore wa oishii desu",
+      "category": "Restaurant Japanese",
+      "generated_at": "2026-07-16T13:46:48.987299"
+    },
+    {
+      "english": "I need, a fork",
+      "japanese": "",
+      "romaji": "Fōku o kudasai",
+      "category": "Restaurant Japanese",
+      "generated_at": "2026-07-16T13:46:48.987301"
+    },
+    {
+      "english": "Where's, the restroom?",
+      "japanese": "",
+      "romaji": "Toire wa doko ni arimasu ka",
+      "category": "Restaurant Japanese",
+      "generated_at": "2026-07-16T13:46:48.987302"
+    },
+    {
+      "english": "Thank you, very much",
+      "japanese": "",
+      "romaji": "Arigatou gozaimasu",
+      "category": "Restaurant Japanese",
+      "generated_at": "2026-07-16T13:46:48.987303"
     }
   ],
-  "last_updated": "2026-07-16T11:27:17.049833"
+  "last_updated": "2026-07-16T13:46:48.987305"
 }
