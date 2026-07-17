@@ -12774,7 +12774,42 @@
       "romaji": "yasashiku, itsumo tasukeru",
       "category": "Self Improvement",
       "generated_at": "2026-07-17T17:21:02.134528"
+    },
+    {
+      "english": "Sunny day, perfect weather",
+      "japanese": "",
+      "romaji": "Hareno hi, kanpeki na tenki",
+      "category": "Weather Japanese",
+      "generated_at": "2026-07-17T19:25:28.259554"
+    },
+    {
+      "english": "Rain, stay inside",
+      "japanese": "",
+      "romaji": "Ame, naka de iru",
+      "category": "Weather Japanese",
+      "generated_at": "2026-07-17T19:25:28.259562"
+    },
+    {
+      "english": "Snowflakes, gently falling",
+      "japanese": "",
+      "romaji": "Yuki no hana, yawaraka ni furu",
+      "category": "Weather Japanese",
+      "generated_at": "2026-07-17T19:25:28.259564"
+    },
+    {
+      "english": "Warm breeze, nice day",
+      "japanese": "",
+      "romaji": "Atatakai kaze, ii hi",
+      "category": "Weather Japanese",
+      "generated_at": "2026-07-17T19:25:28.259565"
+    },
+    {
+      "english": "Cloudy, maybe rain",
+      "japanese": "",
+      "romaji": "Kumori, ame ka na",
+      "category": "Weather Japanese",
+      "generated_at": "2026-07-17T19:25:28.259566"
     }
   ],
-  "last_updated": "2026-07-17T17:21:02.134530"
+  "last_updated": "2026-07-17T19:25:28.259567"
 }
