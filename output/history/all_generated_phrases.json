@@ -13194,7 +13194,42 @@
       "romaji": "Yoake ga kite, mata odayaka na hi wa hajimaru.",
       "category": "Nature Japanese",
       "generated_at": "2026-07-19T17:08:35.643315"
+    },
+    {
+      "english": "Walk often, keep moving",
+      "japanese": "歩くこと、身体を動かそう",
+      "romaji": "Aruku koto, karada o ugokasō",
+      "category": "Health Japanese",
+      "generated_at": "2026-07-19T20:37:45.790601"
+    },
+    {
+      "english": "Laugh daily, boosts immunity",
+      "japanese": "毎日笑う、免疫力アップ",
+      "romaji": "Mainichi warau, men'ekiryoku appu",
+      "category": "Health Japanese",
+      "generated_at": "2026-07-19T20:37:45.790611"
+    },
+    {
+      "english": "Eat colorful, get nutrients",
+      "japanese": "カラフルな食事、栄養を取る",
+      "romaji": "Karafuruna shokuji, eiyō o toru",
+      "category": "Health Japanese",
+      "generated_at": "2026-07-19T20:37:45.790613"
+    },
+    {
+      "english": "Breathe deep, calm your mind",
+      "japanese": "深呼吸して、心を落ち着け",
+      "romaji": "Shin kokyū shite, kokoro o ochitsukete",
+      "category": "Health Japanese",
+      "generated_at": "2026-07-19T20:37:45.790614"
+    },
+    {
+      "english": "Limit sugar, choose wisely",
+      "japanese": "甘いもの控えて、賢く選ぼう",
+      "romaji": "Amai mono hikae te, kashikoku erabō",
+      "category": "Health Japanese",
+      "generated_at": "2026-07-19T20:37:45.790616"
     }
   ],
-  "last_updated": "2026-07-19T17:08:35.643317"
+  "last_updated": "2026-07-19T20:37:45.790617"
 }
