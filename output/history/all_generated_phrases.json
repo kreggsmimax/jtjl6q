@@ -13089,7 +13089,42 @@
       "romaji": "Kanzen ni ikiru, fukaku aisuru",
       "category": "Happiness",
       "generated_at": "2026-07-19T02:12:25.271947"
+    },
+    {
+      "english": "Mom, help me with homework, please",
+      "japanese": "お母さん、宿題を手伝って",
+      "romaji": "Okaa-san, shukudai o tetsudatte",
+      "category": "Family Terms",
+      "generated_at": "2026-07-19T11:04:18.742830"
+    },
+    {
+      "english": "Where’s my little brother, Dad?",
+      "japanese": "お兄ちゃんはどこ？Papā",
+      "romaji": "Onii-chan wa doko? Papa",
+      "category": "Family Terms",
+      "generated_at": "2026-07-19T11:04:18.742842"
+    },
+    {
+      "english": "Grandma makes the best cookies, doesn’t she?",
+      "japanese": "おばあちゃんのクッキーは最高だよね",
+      "romaji": "Obā-chan no kukkī wa saikō da yo ne",
+      "category": "Family Terms",
+      "generated_at": "2026-07-19T11:04:18.742846"
+    },
+    {
+      "english": "Sis, can you fix my shirt?",
+      "japanese": "姉さん、 shirt 直してくれる？",
+      "romaji": "Ane-san, shatsu naoshite kureru?",
+      "category": "Family Terms",
+      "generated_at": "2026-07-19T11:04:18.742849"
+    },
+    {
+      "english": "Our family trips are memorable, aren’t they?",
+      "japanese": "家族旅行は思い出深いよね",
+      "romaji": "Kazoku ryokō wa omoide fukai yo ne",
+      "category": "Family Terms",
+      "generated_at": "2026-07-19T11:04:18.742851"
     }
   ],
-  "last_updated": "2026-07-19T02:12:25.271949"
+  "last_updated": "2026-07-19T11:04:18.742854"
 }
