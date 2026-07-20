@@ -13299,7 +13299,42 @@
       "romaji": "Asagohan da, ichinichi o shikkari hajimeyou",
       "category": "Time Japanese",
       "generated_at": "2026-07-20T12:08:52.694730"
+    },
+    {
+      "english": "I check my schedule, then start work",
+      "japanese": "予定を確認して, それから仕事します",
+      "romaji": "yotei wo kakunin shite, sorekara shigoto shimasu",
+      "category": "Daily Routine",
+      "generated_at": "2026-07-20T15:46:22.819555"
+    },
+    {
+      "english": "I take a short break, relax a little",
+      "japanese": "少し休んで, ほっとします",
+      "romaji": "sukoshi yasund e, hotto shimasu",
+      "category": "Daily Routine",
+      "generated_at": "2026-07-20T15:46:22.819566"
+    },
+    {
+      "english": "I go to lunch, quickly, with friends",
+      "japanese": "昼ごはんへ行って, 友だちとすぐ食べます",
+      "romaji": "hirugohan e itte, tomodachi to sugu tabemasu",
+      "category": "Daily Routine",
+      "generated_at": "2026-07-20T15:46:22.819568"
+    },
+    {
+      "english": "I study in the evening, focused, quietly",
+      "japanese": "夕方に勉強して, 集中して, 静かに",
+      "romaji": "yuugata ni benkyou shite, shuu chuu shite, shizuka ni",
+      "category": "Daily Routine",
+      "generated_at": "2026-07-20T15:46:22.819570"
+    },
+    {
+      "english": "I wind down at night, set tomorrow ready",
+      "japanese": "夜は落ち着いて, 明日の準備をします",
+      "romaji": "yoru wa ochitsuite, ashita no junbi wo shimasu",
+      "category": "Daily Routine",
+      "generated_at": "2026-07-20T15:46:22.819571"
     }
   ],
-  "last_updated": "2026-07-20T12:08:52.694732"
+  "last_updated": "2026-07-20T15:46:22.819572"
 }
