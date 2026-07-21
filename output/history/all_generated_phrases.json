@@ -13509,7 +13509,42 @@
       "romaji": "Hassō wa, nan nichi desu ka",
       "category": "Shopping Japanese",
       "generated_at": "2026-07-21T15:29:00.493895"
+    },
+    {
+      "english": "Forgive me if I overstepped, I was wrong...",
+      "japanese": "踏み込みすぎたらゴメン、間違ってた...",
+      "romaji": "Fumikomi sugitara gomen, machigatte ta...",
+      "category": "Forgiveness",
+      "generated_at": "2026-07-21T20:57:56.128074"
+    },
+    {
+      "english": "I regret my words, please accept my apology...",
+      "japanese": "言葉を regret、 apology 受け取ってください...",
+      "romaji": "Kotoba o regureitto, aporoji uketotte kudasai...",
+      "category": "Forgiveness",
+      "generated_at": "2026-07-21T20:57:56.128083"
+    },
+    {
+      "english": "Let’s put this behind us, okay?",
+      "japanese": "これ以上は考えないで、ね？",
+      "romaji": "Kore ijou wa kangaenaide, ne?",
+      "category": "Forgiveness",
+      "generated_at": "2026-07-21T20:57:56.128085"
+    },
+    {
+      "english": "I didn’t mean to bother you, sorry...",
+      "japanese": "迷惑かけてごめんね...",
+      "romaji": "Meiwaku kakete gomen ne...",
+      "category": "Forgiveness",
+      "generated_at": "2026-07-21T20:57:56.128087"
+    },
+    {
+      "english": "Everyone makes mistakes, let’s try again...",
+      "japanese": "誰でも失敗するから、もう一度頑張ろう...",
+      "romaji": "Dare demo shippai suru kara, mou ichido ganbarou...",
+      "category": "Forgiveness",
+      "generated_at": "2026-07-21T20:57:56.128088"
     }
   ],
-  "last_updated": "2026-07-21T15:29:00.493897"
+  "last_updated": "2026-07-21T20:57:56.128090"
 }
