@@ -14104,7 +14104,42 @@
       "romaji": "tsuyoku are, kenkō de",
       "category": "Health Japanese",
       "generated_at": "2026-07-26T13:17:14.819626"
+    },
+    {
+      "english": "Turn left at the next traffic light, please.",
+      "japanese": "あの信号を左に曲がってください。",
+      "romaji": "Ano shingō o hidari ni magatte kudasai.",
+      "category": "Direction Japanese",
+      "generated_at": "2026-07-26T17:11:33.952044"
+    },
+    {
+      "english": "Go straight for about 200 meters, then turn right.",
+      "japanese": "200メートルほどまっすぐ行って、右に曲がってください。",
+      "romaji": "Ni-hyaku mētoru hodo massugu itte, migi ni magatte kudasai.",
+      "category": "Direction Japanese",
+      "generated_at": "2026-07-26T17:11:33.952055"
+    },
+    {
+      "english": "Walk past the convenience store, and you'll see it on the left.",
+      "japanese": "コンビニを通り過ぎて、左側にあります。",
+      "romaji": "Konbini o tōri sugite, hidarigawa ni arimasu.",
+      "category": "Direction Japanese",
+      "generated_at": "2026-07-26T17:11:33.952058"
+    },
+    {
+      "english": "Please go up the stairs, then turn left.",
+      "japanese": "階段を上って、左に曲がってください。",
+      "romaji": "Kaidan o agatte, hidari ni magatte kudasai.",
+      "category": "Direction Japanese",
+      "generated_at": "2026-07-26T17:11:33.952060"
+    },
+    {
+      "english": "The station is just around the corner, past the bank.",
+      "japanese": "銀行を過ぎて、すぐ角に駅があります。",
+      "romaji": "Ginkō o sugite, sugu kado ni eki ga arimasu.",
+      "category": "Direction Japanese",
+      "generated_at": "2026-07-26T17:11:33.952061"
     }
   ],
-  "last_updated": "2026-07-26T13:17:14.819628"
+  "last_updated": "2026-07-26T17:11:33.952063"
 }
