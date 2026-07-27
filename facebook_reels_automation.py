@@ -1391,6 +1391,8 @@ def find_font(bold=False, size=40):
         "/usr/share/fonts/truetype/wqy/wqy-microhei.ttc",
         "/usr/share/fonts/truetype/wqy/wqy-zenhei.ttc",
         "/usr/share/fonts/noto-cjk/NotoSansCJK-Bold.ttc",
+        "/usr/share/fonts/truetype/noto/NotoSansCJK-Bold.ttc",
+        "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
     ]
     for fp in jp_fonts:
         try:
@@ -1765,6 +1767,7 @@ if __name__ == "__main__":
     print("\n" + "="*80)
     print("READY FOR DAILY AUTOMATION!")
     print("="*80)
+
 
 
 
