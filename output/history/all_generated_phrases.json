@@ -14349,7 +14349,42 @@
       "transliteration": "Yuuki o, anata no ikari ni.",
       "category": "Hope",
       "generated_at": "2026-07-27T12:50:43.224599"
+    },
+    {
+      "english": "Good morning! Hope you slept well?",
+      "japanese": "おはよう、ぐっすり眠れた？",
+      "romaji": "Ohayō, gussuri nemureta?",
+      "category": "Greetings",
+      "generated_at": "2026-07-27T15:03:35.213391"
+    },
+    {
+      "english": "How's your day going so far?",
+      "japanese": "今日は、どんな感じ？",
+      "romaji": "Kyō wa, donna kanji?",
+      "category": "Greetings",
+      "generated_at": "2026-07-27T15:03:35.213401"
+    },
+    {
+      "english": "Hello there, long time no see!",
+      "japanese": "やあ、久しぶり！",
+      "romaji": "Yā, hisashiburi!",
+      "category": "Greetings",
+      "generated_at": "2026-07-27T15:03:35.213403"
+    },
+    {
+      "english": "Nice weather today, isn't it?",
+      "japanese": "今日はいい天気だね。",
+      "romaji": "Kyō wa ii tenki da ne.",
+      "category": "Greetings",
+      "generated_at": "2026-07-27T15:03:35.213404"
+    },
+    {
+      "english": "Have you eaten lunch yet?",
+      "japanese": "もうランチ食べた？",
+      "romaji": "Mō ranchi tabeta?",
+      "category": "Greetings",
+      "generated_at": "2026-07-27T15:03:35.213405"
     }
   ],
-  "last_updated": "2026-07-27T12:50:43.224601"
+  "last_updated": "2026-07-27T15:03:35.213407"
 }
