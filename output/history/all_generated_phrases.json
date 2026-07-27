@@ -14279,7 +14279,42 @@
       "transliteration": "Kono taisetsu na toki o, taisetsu ni shiyou.",
       "category": "Love",
       "generated_at": "2026-07-27T12:37:05.056582"
+    },
+    {
+      "english": "Quiet joy, inside me.",
+      "japanese": "静かな喜び、心の中に。",
+      "transliteration": "Shizukana yorokobi, kokoro no naka ni.",
+      "category": "Feelings",
+      "generated_at": "2026-07-27T12:43:26.801330"
+    },
+    {
+      "english": "A little bit shy, today.",
+      "japanese": "今日は、少し恥ずかしい。",
+      "transliteration": "Kyō wa, sukoshi hazukashii.",
+      "category": "Feelings",
+      "generated_at": "2026-07-27T12:43:26.801341"
+    },
+    {
+      "english": "Feeling hopeful, tomorrow.",
+      "japanese": "明日は、希望を感じる。",
+      "transliteration": "Ashita wa, kibō o kanjiru.",
+      "category": "Feelings",
+      "generated_at": "2026-07-27T12:43:26.801343"
+    },
+    {
+      "english": "Slightly worried, about that.",
+      "japanese": "それについて、少し心配。",
+      "transliteration": "Sore ni tsuite, sukoshi shinpai.",
+      "category": "Feelings",
+      "generated_at": "2026-07-27T12:43:26.801344"
+    },
+    {
+      "english": "Full of energy, now.",
+      "japanese": "今、元気がいっぱい。",
+      "transliteration": "Ima, genki ga ippai.",
+      "category": "Feelings",
+      "generated_at": "2026-07-27T12:43:26.801345"
     }
   ],
-  "last_updated": "2026-07-27T12:37:05.056584"
+  "last_updated": "2026-07-27T12:43:26.801346"
 }
