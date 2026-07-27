@@ -1,10 +1,10 @@
-﻿"""
+﻿﻿"""
 Facebook Reels Automation - Bilingual English/Dutch Content Generator
 IMPROVED VERSION: Better backgrounds, English categories, no repeats, VELOCITY JAPANESE branding
 Rounded container style from Habla Verse
 """
 
-import os
+import os, os.path
 import sys
 import json
 import random
@@ -544,18 +544,22 @@ FONTS_DIR = BASE_DIR / "fonts"
 
 
 def ensure_font():
-    font_file = FONTS_DIR / "NotoSans-Bold.ttf"
-    if font_file.exists():
-        return str(font_file)
     FONTS_DIR.mkdir(exist_ok=True)
+    jp_font = FONTS_DIR / "NotoSansJP-Bold.otf"
+    if jp_font.exists():
+        return str(jp_font)
     try:
         import urllib.request
-        print(f"[font] Downloading {font_file.name}...")
-        urllib.request.urlretrieve(NOTO_FONT_URL, str(font_file))
-        print(f"[font] Downloaded: {font_file}")
-        return str(font_file)
+        url = "https://github.com/googlefonts/noto-cjk/raw/main/Sans/OTF/Japanese/NotoSansJP-Bold.otf"
+        print("[font] Downloading Japanese NotoSansJP-Bold...")
+        urllib.request.urlretrieve(url, str(jp_font))
+        print(f"[font] Downloaded: {jp_font}")
+        return str(jp_font)
     except Exception as e:
         print(f"[font] Download failed: {e}")
+        for fp in ["/usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc", "/usr/share/fonts/truetype/wqy/wqy-microhei.ttc"]:
+            if os.path.exists(fp):
+                return fp
     return None
 
 
@@ -1381,12 +1385,18 @@ def create_impressive_background(category_english: str):
 
 def find_font(bold=False, size=40):
     from PIL import ImageFont
-    font_file = FONTS_DIR / "NotoSansDutch-Bold.ttf"
-    if font_file.exists():
+    jp_fonts = [
+        str(FONTS_DIR / "NotoSansJP-Bold.otf"),
+        "/usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc",
+        "/usr/share/fonts/truetype/wqy/wqy-microhei.ttc",
+        "/usr/share/fonts/truetype/wqy/wqy-zenhei.ttc",
+        "/usr/share/fonts/noto-cjk/NotoSansCJK-Bold.ttc",
+    ]
+    for fp in jp_fonts:
         try:
-            return ImageFont.truetype(str(font_file), size)
+            return ImageFont.truetype(fp, size)
         except (IOError, OSError):
-            pass
+            continue
     if bold:
         font_preferences = [
             "segoeuib.ttf", "arialbd.ttf", "DejaVuSans-Bold.ttf",
@@ -1755,5 +1765,6 @@ if __name__ == "__main__":
     print("\n" + "="*80)
     print("READY FOR DAILY AUTOMATION!")
     print("="*80)
+
 
 
