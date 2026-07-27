@@ -1,10 +1,9 @@
-﻿"""
-Facebook Reels Automation - Bilingual English/Dutch Content Generator
-IMPROVED VERSION: Better backgrounds, English categories, no repeats, VELOCITY JAPANESE branding
-Rounded container style from Habla Verse
+"""
+Facebook Reels Automation - Bilingual English/Japanese Content Generator
+IMPROVED VERSION: Better backgrounds, English categories, no repeats, Velocity Japanese branding
 """
 
-import os, os.path
+import os
 import sys
 import json
 import random
@@ -28,6 +27,7 @@ if not AI_MODEL:
         "For GitHub Actions: Add AI_MODEL to repository secrets."
     )
 
+# Directories
 BASE_DIR = Path(__file__).parent
 OUTPUT_DIR = BASE_DIR / "output"
 IMAGES_DIR = OUTPUT_DIR / "images"
@@ -38,134 +38,82 @@ HISTORY_DIR = OUTPUT_DIR / "history"
 for d in [OUTPUT_DIR, IMAGES_DIR, AUDIO_DIR, VIDEO_DIR, HISTORY_DIR]:
     d.mkdir(exist_ok=True)
 
+# Video settings (9:16 vertical)
 VIDEO_WIDTH = 1080
 VIDEO_HEIGHT = 1920
 FPS = 30
 
+# English category names (for American/European learners)
+# Essential Japanese learning categories + Motivational categories
 CATEGORIES_ENGLISH = [
-    "Greetings",
-    "Basic Phrases",
-    "Common Expressions",
-    "Travel",
-    "Restaurant",
-    "Shopping",
-    "Emergency",
-    "Family Terms",
-    "Numbers",
-    "Time",
-    "Motivation",
-    "Love",
-    "Success",
-    "Wisdom",
-    "Happiness",
-    "Self Improvement",
-    "Gratitude",
-    "Friendship",
-    "Hope",
-    "Creativity",
-    "Inner Peace",
-    "Confidence",
-    "Perseverance",
-    "Inspiration",
-    "Positive Life",
-    "Courage",
-    "Kindness",
-    "Patience",
-    "Forgiveness",
-    "Strength",
-    "Joy",
-    "Balance",
-    "Growth",
-    "Purpose",
-    "Mindfulness",
-    "Daily Routine",
-    "Weather",
-    "Feelings",
-    "Food",
-    "Health",
-    "Work",
-    "Technology",
-    "Nature",
-    "Animals",
-    "Colors",
-    "Directions",
-    "Body Parts",
-    "Clothes",
-    "Music",
-    "Sports",
-    "Holidays",
-    "Education",
-    "Culture",
-    "Finance",
-    "Relationships",]
+    # Essential Japanese Learning (Priority)
+    "Greetings", "Basic Phrases", "Common Expressions", "Travel Japanese", "Restaurant Japanese",
+    "Shopping Japanese", "Emergency Japanese", "Family Terms", "Numbers Japanese", "Time Japanese",
+    # Motivational Categories
+    "Motivation", "Love", "Success", "Wisdom", "Happiness",
+    "Self Improvement", "Gratitude", "Friendship", "Hope", "Creativity",
+    "Inner Peace", "Confidence", "Perseverance", "Inspiration", "Positive Life",
+    "Courage", "Kindness", "Patience", "Forgiveness", "Strength",
+    "Joy", "Balance", "Growth", "Purpose", "Mindfulness",
+]
 
-CATEGORIES_NATIVE = {
-    "Greetings": "Groeten",
-    "Basic Phrases": "Basisuitdrukkingen",
-    "Common Expressions": "Veelvoorkomende Uitdrukkingen",
-    "Travel": "Reizen",
-    "Restaurant": "Restaurant",
-    "Shopping": "Winkelen",
-    "Emergency": "Noodgevallen",
-    "Family Terms": "Familietermen",
-    "Numbers": "Nummers",
-    "Time": "Tijd",
-    "Motivation": "Motivatie",
-    "Love": "Liefde",
-    "Success": "Succes",
-    "Wisdom": "Wijsheid",
-    "Happiness": "Geluk",
-    "Self Improvement": "Zelfverbetering",
-    "Gratitude": "Dankbaarheid",
-    "Friendship": "Vriendschap",
-    "Hope": "Hoop",
-    "Creativity": "Creativiteit",
-    "Inner Peace": "Innerlijke Rust",
-    "Confidence": "Vertrouwen",
-    "Perseverance": "Doorzettingsvermogen",
-    "Inspiration": "Inspiratie",
-    "Positive Life": "Positief Leven",
-    "Courage": "Moed",
-    "Kindness": "Vriendelijkheid",
-    "Patience": "Geduld",
-    "Forgiveness": "Vergeving",
-    "Strength": "Kracht",
-    "Joy": "Vreugde",
-    "Balance": "Balans",
-    "Growth": "Groei",
-    "Purpose": "Doel",
-    "Mindfulness": "Mindfulness",
-    "Daily Routine": "Dagelijkse routine",
-    "Weather": "Weer",
-    "Feelings": "Gevoelens",
-    "Food": "Eten",
-    "Health": "Gezondheid",
-    "Work": "Werk",
-    "Technology": "Technologie",
-    "Nature": "Natuur",
-    "Animals": "Dieren",
-    "Colors": "Kleuren",
-    "Directions": "Richtingen",
-    "Body Parts": "Lichaamsdelen",
-    "Clothes": "Kleding",
-    "Music": "Muziek",
-    "Sports": "Sport",
-    "Holidays": "Feestdagen",
-    "Education": "Onderwijs",
-    "Culture": "Cultuur",
-    "Finance": "Financiën",
-    "Relationships": "Relaties"
+# Japanese translations for display
+CATEGORIES_JAPANESE = {
+    # Essential Japanese Learning (Priority)
+    "Greetings": "挨拶",
+    "Basic Phrases": "基本フレーズ",
+    "Common Expressions": "一般的な表現",
+    "Travel Japanese": "旅行日本語",
+    "Restaurant Japanese": "レストラン日本語",
+    "Shopping Japanese": "ショッピング日本語",
+    "Emergency Japanese": "緊急日本語",
+    "Family Terms": "家族用語",
+    "Numbers Japanese": "数字日本語",
+    "Time Japanese": "時間日本語",
+    # Motivational Categories
+    "Motivation": "モチベーション",
+    "Love": "愛",
+    "Success": "成功",
+    "Wisdom": "知恵",
+    "Happiness": "幸せ",
+    "Self Improvement": "自己啓発",
+    "Gratitude": "感謝",
+    "Friendship": "友情",
+    "Hope": "希望",
+    "Creativity": "創造性",
+    "Inner Peace": "内なる平和",
+    "Confidence": "自信",
+    "Perseverance": "忍耐",
+    "Inspiration": "インスピレーション",
+    "Positive Life": "ポジティブな人生",
+    "Courage": "勇気",
+    "Kindness": "優しさ",
+    "Patience": "我慢",
+    "Forgiveness": "許し",
+    "Strength": "力",
+    "Joy": "喜び",
+    "Balance": "バランス",
+    "Growth": "成長",
+    "Purpose": "目的",
+    "Mindfulness": "マインドフルネス",
 }
 
+# Edge TTS voices
 ENGLISH_VOICE = "en-US-GuyNeural"
-NATIVE_VOICE = "ja-JP-NanamiNeural"
+JAPANESE_VOICE = "ja-JP-NanamiNeural"
 
+# Phrase history file (NEVER delete this!)
 PHRASE_HISTORY_FILE = HISTORY_DIR / "all_generated_phrases.json"
-RECENT_CATEGORIES_FILE = HISTORY_DIR / "recent_categories.json"
-MAX_RECENT_CATEGORIES = 25
 
+# Recent categories file (for rotation - prevents category repeats)
+RECENT_CATEGORIES_FILE = HISTORY_DIR / "recent_categories.json"
+MAX_RECENT_CATEGORIES = 15  # Track last 15 categories to avoid repeats
+
+
+# ============== PHRASE HISTORY MANAGEMENT (Prevent Repeats) ==============
 
 def load_phrase_history():
+    """Load all previously generated phrases"""
     if PHRASE_HISTORY_FILE.exists():
         with open(PHRASE_HISTORY_FILE, "r", encoding="utf-8") as f:
             return json.load(f)
@@ -173,12 +121,14 @@ def load_phrase_history():
 
 
 def save_phrase_history(data):
+    """Save phrase history"""
     data["last_updated"] = datetime.now().isoformat()
     with open(PHRASE_HISTORY_FILE, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
 
 
 def is_phrase_used(english_phrase):
+    """Check if phrase was already generated"""
     history = load_phrase_history()
     english_lower = english_phrase.lower().strip()
     for p in history.get("phrases", []):
@@ -188,13 +138,13 @@ def is_phrase_used(english_phrase):
 
 
 def add_phrases_to_history(phrases, category):
+    """Add new phrases to history"""
     history = load_phrase_history()
-    lang_key = "japanese"
     for phrase in phrases:
         history["phrases"].append({
             "english": phrase["english"],
-            lang_key: phrase[lang_key],
-            "transliteration": phrase.get("transliteration", ""),
+            "japanese": phrase["japanese"],
+            "romaji": phrase.get("romaji", ""),
             "category": category,
             "generated_at": datetime.now().isoformat()
         })
@@ -202,7 +152,10 @@ def add_phrases_to_history(phrases, category):
     print(f"[history] Added {len(phrases)} phrases to history (total: {len(history['phrases'])})")
 
 
+# ============== CATEGORY ROTATION MANAGEMENT (Prevent Repeats) ==============
+
 def load_recent_categories():
+    """Load recently used categories"""
     if RECENT_CATEGORIES_FILE.exists():
         with open(RECENT_CATEGORIES_FILE, "r", encoding="utf-8") as f:
             return json.load(f)
@@ -210,37 +163,54 @@ def load_recent_categories():
 
 
 def save_recent_categories(data):
+    """Save recent categories"""
     data["last_updated"] = datetime.now().isoformat()
     with open(RECENT_CATEGORIES_FILE, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
 
 
 def get_available_category():
+    """Get a category that hasn't been used recently - ensures rotation across ALL 35 categories"""
     recent_data = load_recent_categories()
     recent = recent_data.get("recent_categories", [])
+
+    # Get all categories that are NOT in recent list
     available = [cat for cat in CATEGORIES_ENGLISH if cat not in recent]
+
+    # If all categories have been used recently, clear the oldest ones
     if not available:
+        # Keep only the most recent 5, clear the rest
         recent_data["recent_categories"] = recent[-5:]
         save_recent_categories(recent_data)
         available = [cat for cat in CATEGORIES_ENGLISH if cat not in recent_data["recent_categories"]]
         print(f"[rotation] All categories used recently - cleared old ones, {len(available)} available")
+
+    # Random selection from available (non-recent) categories
     selected = random.choice(available)
+
+    # Add to recent list
     recent.append(selected)
+
+    # Keep only the last MAX_RECENT_CATEGORIES
     if len(recent) > MAX_RECENT_CATEGORIES:
         recent = recent[-MAX_RECENT_CATEGORIES:]
+
     recent_data["recent_categories"] = recent
     save_recent_categories(recent_data)
+
     print(f"[rotation] Selected '{selected}' ({len(available)} available, {len(recent)} in recent history)")
     return selected
 
 
+# ============== CONTENT GENERATION ==============
+
 def generate_phrases(category_english: str, num_phrases: int = 5) -> list:
-    category_native = CATEGORIES_NATIVE[category_english]
+    """Generate unique bilingual phrases with natural pauses, ensuring no repeats"""
+
+    category_japanese = CATEGORIES_JAPANESE[category_english]
+
+    # Try AI first
     max_attempts = 3
-
-    history = load_phrase_history()
-    recent_english = [p["english"] for p in history.get("phrases", []) if p.get("category") == category_english][-30:]
-
     for attempt in range(max_attempts):
         try:
             import requests
@@ -250,11 +220,7 @@ def generate_phrases(category_english: str, num_phrases: int = 5) -> list:
                 "Content-Type": "application/json"
             }
 
-            avoid_text = ""
-            if recent_english:
-                avoid_text = "\nABSOLUTELY AVOID these already-used phrases:\n" + "\n".join(f"- {p}" for p in recent_english)
-
-            prompt = f"""Create {num_phrases * 6} unique and creative {category_english} phrases for English speakers learning Japanese.{avoid_text}
+            prompt = f"""Create {num_phrases * 2} unique {category_english} phrases for English speakers learning Japanese.
 
 IMPORTANT RULES FOR NATURAL SPEECH:
 1. Keep phrases SHORT (5-12 words max per language)
@@ -262,29 +228,27 @@ IMPORTANT RULES FOR NATURAL SPEECH:
 3. Use punctuation for breathing room in TTS
 4. Avoid long run-on sentences
 5. Each phrase should be speakable in 3-5 seconds
-6. Dutch text should be CLEAN - use standard Dutch script
-7. Do NOT include multiple versions or slashes - just ONE clean Dutch translation
-8. Transliteration should be in Roman script for pronunciation
-9. BE CREATIVE AND VARIED - do NOT repeat themes from the avoid list
+6. Japanese text should be CLEAN - use standard Japanese (mix of Kanji, Hiragana, Katakana as appropriate)
+7. Do NOT include multiple versions or slashes - just ONE clean Japanese translation
 
 For each phrase:
 1. English phrase (with commas for natural pauses)
-2. Dutch translation (in Japanese script)
-3. Japanese script (use Kanji, Hiragana, Katakana - NOT romanized)
+2. Japanese translation (natural Japanese with appropriate Kanji/Hiragana/Katakana)
+3. Romaji pronunciation guide (Hepburn Romanization, e.g., "konnichiwa")
 
 Return as JSON array:
-[{{"english": "...", "japanese": "...", "transliteration": "..."}}]
+[{{"english": "...", "japanese": "...", "romaji": "..."}}]
 
 IMPORTANT: Create FRESH, UNIQUE phrases that haven't been used before.
-IMPORTANT: Japanese text must use Japanese script characters (NOT romaji) - no slashes, no multiple versions."""
+IMPORTANT: Japanese text must be clean - no slashes, no multiple versions."""
 
             payload = {
                 "model": AI_MODEL,
                 "messages": [
-                    {"role": "system", "content": "You are a Japanese teacher. Create short, natural phrases with pauses. Each generation must produce completely different, creative phrases."},
+                    {"role": "system", "content": "You are a Japanese teacher. Create short, natural phrases with pauses."},
                     {"role": "user", "content": prompt}
                 ],
-                "temperature": min(0.95 + attempt * 0.03, 1.0)
+                "temperature": 0.9
             }
 
             response = requests.post(url, headers=headers, json=payload, timeout=60)
@@ -293,6 +257,7 @@ IMPORTANT: Japanese text must use Japanese script characters (NOT romaji) - no s
             data = response.json()
             content = data["choices"][0]["message"]["content"].strip()
 
+            # Extract JSON
             if "```json" in content:
                 content = content.split("```json")[1].split("```")[0].strip()
             elif "```" in content:
@@ -300,20 +265,10 @@ IMPORTANT: Japanese text must use Japanese script characters (NOT romaji) - no s
 
             phrases = json.loads(content)
 
-            for p in phrases:
-                if "transliteration" not in p and "romaji" in p:
-                    p["transliteration"] = p.pop("romaji")
-                if "japanese" not in p:
-                    alt_keys = ["japanese", "native", "translation", p.get("language", "")]
-                    for k in alt_keys:
-                        if k in p:
-                            p["japanese"] = p.pop(k)
-                            break
-                if "japanese" not in p:
-                    continue
-
+            # Filter out already-used phrases and ensure proper length
             unique_phrases = []
             for phrase in phrases:
+                # Skip if too long (over 15 words)
                 if len(phrase["english"].split()) > 15:
                     continue
                 if not is_phrase_used(phrase["english"]):
@@ -325,76 +280,276 @@ IMPORTANT: Japanese text must use Japanese script characters (NOT romaji) - no s
                 add_phrases_to_history(unique_phrases[:num_phrases], category_english)
                 return unique_phrases[:num_phrases]
 
-            print(f"[content] Attempt {attempt + 1}: API returned {len(phrases)} phrases, only {len(unique_phrases)} are new (need {num_phrases})")
-            for p in unique_phrases:
-                if p["english"] not in recent_english:
-                    recent_english.append(p["english"])
-
         except Exception as e:
             print(f"[content] Attempt {attempt + 1} failed: {e}")
 
+    # Fallback to fresh phrases
     print("[content] Using fallback phrases...")
     return get_fresh_fallback_phrases(category_english, num_phrases)
 
 
-
 def get_fresh_fallback_phrases(category: str, num_phrases: int) -> list:
-    """Return simple English fallback phrases when AI generation fails"""
-    generic_fallbacks = [
-        {"english": "Hello, nice to meet you.", "japanese": "\u3053\u3093\u306b\u3061\u306f\u3001\u306f\u3058\u3081\u307e\u3057\u3066", "transliteration": "\u3053\u3093\u306b\u3061\u306f\u3001\u306f\u3058\u3081\u307e\u3057\u3066"},
-        {"english": "Thank you very much.", "japanese": "\u3042\u308a\u304c\u3068\u3046\u3054\u3056\u3044\u307e\u3059", "transliteration": "\u3042\u308a\u304c\u3068\u3046\u3054\u3056\u3044\u307e\u3059"},
-        {"english": "Good morning, have a great day.", "japanese": "\u304a\u306f\u3088\u3046\u3054\u3056\u3044\u307e\u3059\u3001\u4eca\u65e5\u306f\u3044\u3044\u5929\u6c17\u3067\u3059\u306d", "transliteration": "\u304a\u306f\u3088\u3046\u3054\u3056\u3044\u307e\u3059\u3001\u4eca\u65e5\u306f\u3044\u3044\u5929\u6c17\u3067\u3059\u306d"},
-        {"english": "I love learning new languages.", "japanese": "\u79c1\u306f\u65b0\u3057\u3044\u8a00\u8a9e\u3092\u5b66\u3076\u306e\u304c\u5927\u597d\u304d\u3067\u3059", "transliteration": "\u79c1\u306f\u65b0\u3057\u3044\u8a00\u8a9e\u3092\u5b66\u3076\u306e\u304c\u5927\u597d\u304d\u3067\u3059"},
-        {"english": "Never give up on your dreams.", "japanese": "\u5922\u3092\u8b72\u3089\u306a\u3044\u3067\u304f\u3060\u3055\u3044", "transliteration": "\u5922\u3092\u8b72\u3089\u306a\u3044\u3067\u304f\u3060\u3055\u3044"},
-        {"english": "Every day is a fresh start.", "japanese": "\u6bce\u65e5\u304c\u65b0\u3057\u3044\u59cb\u307e\u308a\u3067\u3059", "transliteration": "\u6bce\u65e5\u304c\u65b0\u3057\u3044\u59cb\u307e\u308a\u3067\u3059"},
-        {"english": "Believe in yourself always.", "japanese": "\u3044\u3064\u3082\u81ea\u5206\u3092\u4fe1\u3058\u3066\u304f\u3060\u3055\u3044", "transliteration": "\u3044\u3064\u3082\u81ea\u5206\u3092\u4fe1\u3058\u3066\u304f\u3060\u3055\u3044"},
-        {"english": "Small steps lead to big changes.", "japanese": "Chiisana ippo ga ookina henka ni tsunagaru.", "transliteration": "Chiisana ippo ga ookina henka ni tsunagaru."},
-        {"english": "You are stronger than you think.", "japanese": "Anata wa omou yori mo tsuyoi desu.", "transliteration": "Anata wa omou yori mo tsuyoi desu."},
-        {"english": "Happiness is a choice, choose it.", "japanese": "Shiawase wa sentaku desu, sore o erande kudasai.", "transliteration": "Shiawase wa sentaku desu, sore o erande kudasai."},
-        {"english": "What time is it please.", "japanese": "Nanji desu ka.", "transliteration": "Nanji desu ka."},
-        {"english": "Where is the train station.", "japanese": "Eki wa doko desu ka.", "transliteration": "Eki wa doko desu ka."},
-        {"english": "How much does this cost.", "japanese": "Kore wa ikura desu ka.", "transliteration": "Kore wa ikura desu ka."},
-        {"english": "Can you help me please.", "japanese": "Tasukete kudasai.", "transliteration": "Tasukete kudasai."},
-        {"english": "I would like a coffee please.", "japanese": "Kohi o kudasai.", "transliteration": "Kohi o kudasai."},
-        {"english": "The food is delicious today.", "japanese": "Kyo no gohan wa oishii desu.", "transliteration": "Kyo no gohan wa oishii desu."},
-        {"english": "Have a wonderful weekend.", "japanese": "Yoi shuumatsu o.", "transliteration": "Yoi shuumatsu o."},
-        {"english": "Take care of yourself.", "japanese": "Jibun o daiji ni shite kudasai.", "transliteration": "Jibun o daiji ni shite kudasai."},
-        {"english": "See you tomorrow my friend.", "japanese": "Mata ashita, tomoyo.", "transliteration": "Mata ashita, tomoyo."},
-        {"english": "The weather is beautiful outside.", "japanese": "Soto no tenki wa subarashii desu.", "transliteration": "Soto no tenki wa subarashii desu."},
-        {"english": "I am very happy today.", "japanese": "Watashi wa kyo totemo shiawase desu.", "transliteration": "Watashi wa kyo totemo shiawase desu."},
-        {"english": "Learning a language opens new doors.", "japanese": "Gengo o manabu koto wa atarashii tobira o hiraku.", "transliteration": "Gengo o manabu koto wa atarashii tobira o hiraku."},
-        {"english": "Keep practicing every single day.", "japanese": "Mainichi renshu shite kudasai.", "transliteration": "Mainichi renshu shite kudasai."},
-        {"english": "You can achieve anything you want.", "japanese": "Anata wa nandemo kanarazu dekimasu.", "transliteration": "Anata wa nandemo kanarazu dekimasu."},
-        {"english": "Rest when you are tired.", "japanese": "Tsukareta toki wa yasunde kudasai.", "transliteration": "Tsukareta toki wa yasunde kudasai."},
-        {"english": "Focus on the positive things.", "japanese": "Pojitibu na koto ni fokasu shite.", "transliteration": "Pojitibu na koto ni fokasu shite."},
-        {"english": "Learn from your mistakes.", "japanese": "Machikara manande kudasai.", "transliteration": "Machikara manande kudasai."},
-        {"english": "Trust the process completely.", "japanese": "Purosesu o shinjite kudasai.", "transliteration": "Purosesu o shinjite kudasai."},
-        {"english": "Breathe deeply and stay calm.", "japanese": "Fukaku iki o shite, ochitsuite kudasai.", "transliteration": "Fukaku iki o shite, ochitsuite kudasai."},
-        {"english": "Enjoy the little moments in life.", "japanese": "Jinsei no chiisana shunkan o tanoshinde.", "transliteration": "Jinsei no chiisana shunkan o tanoshinde."},
-        {"english": "Smile more, worry less.", "japanese": "Yoku waratte, shinpai o herashite.", "transliteration": "Yoku waratte, shinpai o herashite."},
-        {"english": "Be kind to everyone you meet.", "japanese": "Au hito niwa shinsetsu ni.", "transliteration": "Au hito niwa shinsetsu ni."},
-        {"english": "Help others without expecting anything back.", "japanese": "Okaeshi o kitai sezu ni hito o tasukete.", "transliteration": "Okaeshi o kitai sezu ni hito o tasukete."},
-        {"english": "Forgive yourself and move forward.", "japanese": "Jibun o yurushite, saki ni susunde.", "transliteration": "Jibun o yurushite, saki ni susunde."},
-        {"english": "Stay strong in difficult times.", "japanese": "Taiken na toki mo tsuyoku ite.", "transliteration": "Taiken na toki mo tsuyoku ite."},
-        {"english": "Every moment is a new beginning.", "japanese": "Dono shunkan mo atarashii hajimari.", "transliteration": "Dono shunkan mo atarashii hajimari."},
-        {"english": "Listen to your heart always.", "japanese": "Itsumo jibun no kokoro ni shitagatte.", "transliteration": "Itsumo jibun no kokoro ni shitagatte."},
-        {"english": "Do what makes you happy.", "japanese": "Jibun o shiawase ni suru koto o shite.", "transliteration": "Jibun o shiawase ni suru koto o shite."},
-        {"english": "Your potential is unlimited.", "japanese": "Anata no kanosei wa mugendai desu.", "transliteration": "Anata no kanosei wa mugendai desu."},
-        {"english": "Be brave and take risks.", "japanese": "Yuki o motte risuku o's.", "transliteration": "Yuki o motte risuku o's."},
-        {"english": "Celebrate your progress every day.", "japanese": "Mainichi jibun no shinpo o iwatte.", "transliteration": "Mainichi jibun no shinpo o iwatte."},
-        {"english": "Surround yourself with good people.", "japanese": "Yoi hito ni kakomarete.", "transliteration": "Yoi hito ni kakomarete."},
-        {"english": "Read books and grow your mind.", "japanese": "Hon o yonde, kokoro o sodatete.", "transliteration": "Hon o yonde, kokoro o sodatete."},
-        {"english": "Travel and discover new places.", "japanese": "Tabishite, atarashii basho o hakken shite.", "transliteration": "Tabishite, atarashii basho o hakken shite."},
-        {"english": "Appreciate what you already have.", "japanese": "Motsu mono ni kansha shite.", "transliteration": "Motsu mono ni kansha shite."},
-        {"english": "Dance like nobody is watching.", "japanese": "Dare mo miteinai ka no yo ni odotte.", "transliteration": "Dare mo miteinai ka no yo ni odotte."},
-        {"english": "Sing from your heart out loud.", "japanese": "Koe no kagiri ni utatte.", "transliteration": "Koe no kagiri ni utatte."},
-        {"english": "Plant seeds of kindness everywhere.", "japanese": "Shinsetsu no tane o makite.", "transliteration": "Shinsetsu no tane o makite."},
-        {"english": "Let go of what you cannot control.", "japanese": "Seigyo dekinai koto wa hanate.", "transliteration": "Seigyo dekinai koto wa hanate."},
-        {"english": "Be present in the here and now.", "japanese": "Koko to ima ni sonzai shite.", "transliteration": "Koko to ima ni sonzai shite."}
-    ]
-    fresh = [p for p in generic_fallbacks if not is_phrase_used(p["english"])]
-    return fresh[:num_phrases]
+    """Get fallback phrases, filtering out used ones"""
+
+    all_fallbacks = {
+        # Essential Japanese Learning Categories
+        "Greetings": [
+            {"english": "Hello, nice to meet you.", "japanese": "こんにちは、はじめまして。", "romaji": "Konnichiwa, hajimemashite."},
+            {"english": "Good morning!", "japanese": "おはようございます！", "romaji": "Ohayou gozaimasu!"},
+            {"english": "Good evening, how are you?", "japanese": "こんばんは、お元気ですか？", "romaji": "Konbanwa, ogenki desu ka?"},
+            {"english": "See you tomorrow!", "japanese": "また明日！", "romaji": "Mata ashita!"},
+            {"english": "Goodbye, take care.", "japanese": "さようなら、お元気で。", "romaji": "Sayounara, ogenki de."},
+        ],
+        "Basic Phrases": [
+            {"english": "Thank you very much.", "japanese": "ありがとうございます。", "romaji": "Arigatou gozaimasu."},
+            {"english": "You're welcome, no problem.", "japanese": "どういたしまして。", "romaji": "Dou itashimashite."},
+            {"english": "I'm sorry, excuse me.", "japanese": "すみません、ごめんなさい。", "romaji": "Sumimasen, gomennasai."},
+            {"english": "Yes, that's correct.", "japanese": "はい、そうです。", "romaji": "Hai, sou desu."},
+            {"english": "No, I don't think so.", "japanese": "いいえ、ちがいます。", "romaji": "Iie, chigaimasu."},
+        ],
+        "Common Expressions": [
+            {"english": "How are you doing today?", "japanese": "今日はお元気ですか？", "romaji": "Kyou wa ogenki desu ka?"},
+            {"english": "I'm fine, thank you.", "japanese": "元気です、ありがとう。", "romaji": "Genki desu, arigatou."},
+            {"english": "What's your name?", "japanese": "お名前は何ですか？", "romaji": "Onamae wa nan desu ka?"},
+            {"english": "My name is...", "japanese": "私の名前は...です。", "romaji": "Watashi no namae wa... desu."},
+            {"english": "Nice to meet you too.", "japanese": "こちらこそ、はじめまして。", "romaji": "Kochira koso, hajimemashite."},
+        ],
+        "Travel Japanese": [
+            {"english": "Where is the bathroom?", "japanese": "トイレはどこですか？", "romaji": "Toire wa doko desu ka?"},
+            {"english": "How do I get there?", "japanese": "どうやって行きますか？", "romaji": "Douyatte ikimasu ka?"},
+            {"english": "I need a taxi, please.", "japanese": "タクシーが必要です。", "romaji": "Takushii ga hitsuyou desu."},
+            {"english": "Take me to the hotel.", "japanese": "ホテルまでお願いします。", "romaji": "Hoteru made onegaishimasu."},
+            {"english": "How much does it cost?", "japanese": "いくらですか？", "romaji": "Ikura desu ka?"},
+        ],
+        "Restaurant Japanese": [
+            {"english": "Can I see the menu?", "japanese": "メニューを見せてください。", "romaji": "Menyu o misete kudasai."},
+            {"english": "This looks delicious!", "japanese": "美味しそうですね！", "romaji": "Oishisou desu ne!"},
+            {"english": "Water, please.", "japanese": "お水をください。", "romaji": "Omizu o kudasai."},
+            {"english": "Check, please.", "japanese": "お会計をお願いします。", "romaji": "Okaikei o onegaishimasu."},
+            {"english": "It was delicious!", "japanese": "ごちそうさまでした！", "romaji": "Gochisousama deshita!"},
+        ],
+        "Shopping Japanese": [
+            {"english": "How much is this?", "japanese": "これはいくらですか？", "romaji": "Kore wa ikura desu ka?"},
+            {"english": "Can I try this on?", "japanese": "試着してもいいですか？", "romaji": "Shichaku shite mo ii desu ka?"},
+            {"english": "Do you have a smaller size?", "japanese": "もっと小さいサイズはありますか？", "romaji": "Motto chiisai saizu wa arimasu ka?"},
+            {"english": "I'll take this one.", "japanese": "これをお願いします。", "romaji": "Kore o onegaishimasu."},
+            {"english": "Can I pay by card?", "japanese": "カードで払えますか？", "romaji": "Kaado de haraemasu ka?"},
+        ],
+        "Emergency Japanese": [
+            {"english": "Help me, please!", "japanese": "助けてください！", "romaji": "Tasukete kudasai!"},
+            {"english": "Call the police!", "japanese": "警察を呼んでください！", "romaji": "Keisatsu o yonde kudasai!"},
+            {"english": "I need a doctor.", "japanese": "医者が必要です。", "romaji": "Isha ga hitsuyou desu."},
+            {"english": "Where is the hospital?", "japanese": "病院はどこですか？", "romaji": "Byouin wa doko desu ka?"},
+            {"english": "I'm lost, can you help?", "japanese": "道に迷いました、助けてくれますか？", "romaji": "Michi ni mayoimashita, tasukete kuremasu ka?"},
+        ],
+        "Family Terms": [
+            {"english": "This is my mother.", "japanese": "これは私の母です。", "romaji": "Kore wa watashi no haha desu."},
+            {"english": "This is my father.", "japanese": "これは私の父です。", "romaji": "Kore wa watashi no chichi desu."},
+            {"english": "I have an older brother.", "japanese": "私には兄がいます。", "romaji": "Watashi ni wa ani ga imasu."},
+            {"english": "I have a younger sister.", "japanese": "私には妹がいます。", "romaji": "Watashi ni wa imouto ga imasu."},
+            {"english": "These are my parents.", "japanese": "これは私の両親です。", "romaji": "Kore wa watashi no ryoushin desu."},
+        ],
+        "Numbers Japanese": [
+            {"english": "One, two, three.", "japanese": "一、二、三。", "romaji": "Ichi, ni, san."},
+            {"english": "Four, five, six.", "japanese": "四、五、六。", "romaji": "Yon, go, roku."},
+            {"english": "Seven, eight, nine, ten.", "japanese": "七、八、九、十。", "romaji": "Nana, hachi, kyuu, juu."},
+            {"english": "What number is this?", "japanese": "これはいくつですか？", "romaji": "Kore wa ikutsu desu ka?"},
+            {"english": "Give me two, please.", "japanese": "二つください。", "romaji": "Futatsu kudasai."},
+        ],
+        "Time Japanese": [
+            {"english": "What time is it?", "japanese": "今何時ですか？", "romaji": "Ima nanji desu ka?"},
+            {"english": "It's three o'clock.", "japanese": "三時です。", "romaji": "Sanji desu."},
+            {"english": "See you at noon.", "japanese": "正午に会いましょう。", "romaji": "Shougo ni aimashou."},
+            {"english": "I'll be there in five minutes.", "japanese": "5 分後に行きます。", "romaji": "Go-fun-go ni ikimasu."},
+            {"english": "What day is today?", "japanese": "今日は何曜日ですか？", "romaji": "Kyou wa nan'youbi desu ka?"},
+        ],
+        # Motivational Categories
+        "Motivation": [
+            {"english": "Believe in yourself.", "japanese": "自分を信じてください。", "romaji": "Jibun o shinjite kudasai."},
+            {"english": "You are capable of amazing things.", "japanese": "あなたは素晴らしいことができます。", "romaji": "Anata wa subarashii koto ga dekimasu."},
+            {"english": "Dream big, start small.", "japanese": "大きく夢見て、小さく始めよう。", "romaji": "Ookiku yumemite, chiisaku hajimeyou."},
+            {"english": "Your future is created by your actions.", "japanese": "あなたの未来は行動で作られます。", "romaji": "Anata no mirai wa koudou de tsukuraremasu."},
+            {"english": "Never give up on your dreams.", "japanese": "決して夢を諦めないでください。", "romaji": "Kesshite yume o akiramenaide kudasai."},
+        ],
+        "Love": [
+            {"english": "Love yourself first.", "japanese": "まず自分を愛してください。", "romaji": "Mazu jibun o aishite kudasai."},
+            {"english": "Love makes everything possible.", "japanese": "愛はすべてを可能にします。", "romaji": "Ai wa subete o kanou ni shimasu."},
+            {"english": "You are loved more than you know.", "japanese": "あなたは思っている以上に愛されています。", "romaji": "Anata wa omotteiru ijou ni aisareteimasu."},
+            {"english": "Love is the greatest power.", "japanese": "愛は最大の力です。", "romaji": "Ai wa saidai no chikara desu."},
+            {"english": "Spread love everywhere you go.", "japanese": "行く先々で愛を広めましょう。", "romaji": "Iku sakizaki de ai o hirogemashou."},
+        ],
+        "Success": [
+            {"english": "Success comes from hard work.", "japanese": "成功は努力から生まれます。", "romaji": "Seikou wa doryoku kara umaremasu."},
+            {"english": "Keep going, you're getting there.", "japanese": "続けて、もう少しで着きます。", "romaji": "Tsuzukete, mou sukoshi de tsukimasu."},
+            {"english": "Every step counts toward success.", "japanese": "すべてのステップが成功につながります。", "romaji": "Subete no suteppu ga seikou ni tsunagarimasu."},
+            {"english": "Your effort will pay off.", "japanese": "あなたの努力は報われます。", "romaji": "Anata no doryoku wa mukuwaremasu."},
+            {"english": "Success is a journey, not a destination.", "japanese": "成功は旅であり、目的地ではありません。", "romaji": "Seikou wa tabi deari, mokutekichi dewa arimasen."},
+        ],
+        "Wisdom": [
+            {"english": "Knowledge is power.", "japanese": "知識は力なり。", "romaji": "Chishiki wa chikara nari."},
+            {"english": "Learn from yesterday, live for today.", "japanese": "昨日から学び、今日を生きよう。", "romaji": "Kinou kara manabi, kyou o ikiyou."},
+            {"english": "The wise learn from others' mistakes.", "japanese": "賢い人は他人の過ちから学びます。", "romaji": "Kashikoi hito wa tanin no ayamachi kara manabimasu."},
+            {"english": "Experience is the best teacher.", "japanese": "経験は最良の先生です。", "romaji": "Keiken wa sairyou no sensei desu."},
+            {"english": "Wisdom comes with age.", "japanese": "知恵は年齢とともに訪れます。", "romaji": "Chie wa nenrei to tomo ni otozuremasu."},
+        ],
+        "Happiness": [
+            {"english": "Happiness is a choice.", "japanese": "幸せは選択です。", "romaji": "Shiawase wa sentaku desu."},
+            {"english": "Find joy in the little things.", "japanese": "小さなことに喜びを見つけよう。", "romaji": "Chiisana koto ni yorokobi o mitsukeyou."},
+            {"english": "Your happiness matters most.", "japanese": "あなたの幸せが最も重要です。", "romaji": "Anata no shiawase ga mottomo juuyou desu."},
+            {"english": "Smile, it makes others happy.", "japanese": "笑顔で、他の人を幸せにしましょう。", "romaji": "Egao de, hoka no hito o shiawase ni shimashou."},
+            {"english": "Happiness is contagious, spread it.", "japanese": "幸せは伝染します、広めましょう。", "romaji": "Shiawase wa densen shimasu, hirogemashou."},
+        ],
+        "Self Improvement": [
+            {"english": "Better today than yesterday.", "japanese": "昨日より今日、良くなりましょう。", "romaji": "Kinou yori kyou, yoku narimashou."},
+            {"english": "Small steps lead to big changes.", "japanese": "小さなステップが大きな変化をもたらします。", "romaji": "Chiisana suteppu ga ookina henka o motarashimasu."},
+            {"english": "Invest in yourself daily.", "japanese": "毎日自分に投資しましょう。", "romaji": "Mainichi jibun ni toushi shimashou."},
+            {"english": "Growth requires discomfort.", "japanese": "成長には不快さが必要です。", "romaji": "Seichou ni wa fukaidesa ga hitsuyou desu."},
+            {"english": "Be your own competition.", "japanese": "自分自身の競争相手になりましょう。", "romaji": "Jibun jishin no kyousou aite ni narimashou."},
+        ],
+        "Gratitude": [
+            {"english": "I am grateful for today.", "japanese": "今日に感謝します。", "romaji": "Kyou ni kansha shimasu."},
+            {"english": "Thank you for everything.", "japanese": "すべてにありがとう。", "romaji": "Subete ni arigatou."},
+            {"english": "Gratitude turns what we have into enough.", "japanese": "感謝は持っているものを十分に変えます。", "romaji": "Kansha wa motteiru mono o juubun ni kaemasu."},
+            {"english": "Count your blessings daily.", "japanese": "毎日恵みを数えましょう。", "romaji": "Mainichi megumi o kazoemashou."},
+            {"english": "A grateful heart is a happy heart.", "japanese": "感謝の心は幸せな心です。", "romaji": "Kansha no kokoro wa shiawase na kokoro desu."},
+        ],
+        "Friendship": [
+            {"english": "Friends make life better.", "japanese": "友達は人生をより良くします。", "romaji": "Tomodachi wa jinsei o yori yoku shimasu."},
+            {"english": "A true friend is always there.", "japanese": "本当の友達はいつもそばにいます。", "romaji": "Hontou no tomodachi wa itsumo soba ni imasu."},
+            {"english": "Friendship is a precious gift.", "japanese": "友情は貴重な贈り物です。", "romaji": "Yuujou wa kichou na okurimono desu."},
+            {"english": "Good friends are like stars.", "japanese": "良い友達は星のようなものです。", "romaji": "Yoi tomodachi wa hoshi no you na mono desu."},
+            {"english": "Cherish your true friends.", "japanese": "本当の友達を大切にしましょう。", "romaji": "Hontou no tomodachi o taisetsu ni shimashou."},
+        ],
+        "Hope": [
+            {"english": "Hope never dies.", "japanese": "希望は決して消えません。", "romaji": "Kibou wa kesshite kiemasen."},
+            {"english": "Tomorrow is a new beginning.", "japanese": "明日は新しい始まりです。", "romaji": "Ashita wa atarashii hajimari desu."},
+            {"english": "Keep hope alive in your heart.", "japanese": "心の中で希望を生かし続けましょう。", "romaji": "Kokoro no naka de kibou o ikashi tsuzukemashou."},
+            {"english": "Hope is the light in darkness.", "japanese": "希望は闇の中の光です。", "romaji": "Kibou wa yami no naka no hikari desu."},
+            {"english": "Where there's hope, there's life.", "japanese": "希望があるところ、命があります。", "romaji": "Kibou ga aru tokoro, inochi ga arimasu."},
+        ],
+        "Creativity": [
+            {"english": "Create something beautiful today.", "japanese": "今日何か美しいものを作りましょう。", "romaji": "Kyou nanika utsukushii mono o tsukurimashou."},
+            {"english": "Your creativity is unique.", "japanese": "あなたの創造性はユニークです。", "romaji": "Anata no souzousei wa yuniiku desu."},
+            {"english": "Let your imagination run wild.", "japanese": "想像力を自由に働かせましょう。", "romaji": "Souzouryoku o jiyuu ni hatarakase mashou."},
+            {"english": "Art comes from the heart.", "japanese": "芸術は心から生まれます。", "romaji": "Geijutsu wa kokoro kara umaremasu."},
+            {"english": "Every day is a canvas.", "japanese": "毎日がキャンバスです。", "romaji": "Mainichi ga kyanbasu desu."},
+        ],
+        "Inner Peace": [
+            {"english": "Find peace within yourself.", "japanese": "自分自身の中で平和を見つけましょう。", "romaji": "Jibun jishin no naka de heiwa o mitsukemashou."},
+            {"english": "Calm mind, happy heart.", "japanese": "落ち着いた心、幸せな心。", "romaji": "Ochitsuita kokoro, shiawase na kokoro."},
+            {"english": "Peace begins with a smile.", "japanese": "平和は笑顔から始まります。", "romaji": "Heiwa wa egao kara hajimarimasu."},
+            {"english": "Breathe deeply, let go.", "japanese": "深く息を吸って、手放しましょう。", "romaji": "Fukaku iki o sutte, tebanashimashou."},
+            {"english": "Your inner peace is precious.", "japanese": "あなたの内なる平和は貴重です。", "romaji": "Anata no inaru heiwa wa kichou desu."},
+        ],
+        "Confidence": [
+            {"english": "Believe you can, you're right.", "japanese": "できると信じて、その通りです。", "romaji": "Dekiru to shinjite, sono toori desu."},
+            {"english": "You are stronger than you think.", "japanese": "あなたは思っているより強いです。", "romaji": "Anata wa omotteiru yori tsuyoi desu."},
+            {"english": "Confidence comes from within.", "japanese": "自信は内側から来ます。", "romaji": "Jishin wa uchigawa kara kimasu."},
+            {"english": "Stand tall, be proud.", "japanese": "背筋を伸ばして、誇りを持ちましょう。", "romaji": "Sesuji o nobashite, hokori o mochimashou."},
+            {"english": "You have what it takes.", "japanese": "あなたにはそれが必要です。", "romaji": "Anata ni wa sore ga hitsuyou desu."},
+        ],
+        "Perseverance": [
+            {"english": "Never give up, keep going.", "japanese": "決して諦めないで、続けてください。", "romaji": "Kesshite akiramenaide, tsuzukete kudasai."},
+            {"english": "Persistence beats talent.", "japanese": "持続性は才能に勝ります。", "romaji": "Jizokusei wa sainou ni masarimasu."},
+            {"english": "Fall seven times, rise eight.", "japanese": "七転び八起き。", "romaji": "Nanakorobi yaoki."},
+            {"english": "Hard work pays off eventually.", "japanese": "努力は最終的に報われます。", "romaji": "Doryoku wa saishuuteki ni mukuwaremasu."},
+            {"english": "Stay the course, don't quit.", "japanese": "コースを維持して、やめないでください。", "romaji": "Koosu o iji shite, yamenaide kudasai."},
+        ],
+        "Inspiration": [
+            {"english": "Let inspiration guide you.", "japanese": "インスピレーションに導かれましょう。", "romaji": "Insupireeshon ni michibikaremashou."},
+            {"english": "Be the inspiration others need.", "japanese": "他の人が必要とするインスピレーションになりましょう。", "romaji": "Hoka no hito ga hitsuyou to suru insupireeshon ni narimashou."},
+            {"english": "Inspire by example, not words.", "japanese": "言葉ではなく、例でインスピレーションを与えましょう。", "romaji": "Kotoba dewa naku, rei de insupireeshon o ataemashou."},
+            {"english": "Your story inspires others.", "japanese": "あなたの物語が他の人を刺激します。", "romaji": "Anata no monogatari ga hoka no hito o shigeki shimasu."},
+            {"english": "Find inspiration in nature.", "japanese": "自然の中でインスピレーションを見つけましょう。", "romaji": "Shizen no naka de insupireeshon o mitsukemashou."},
+        ],
+        "Positive Life": [
+            {"english": "Choose positivity every day.", "japanese": "毎日ポジティブさを選びましょう。", "romaji": "Mainichi pojitibu sa o erabimashou."},
+            {"english": "Positive thoughts create positive life.", "japanese": "ポジティブな思考がポジティブな人生を作ります。", "romaji": "Pojitibu na shikou ga pojitibu na jinsei o tsukurimasu."},
+            {"english": "Surround yourself with positivity.", "japanese": "自分をポジティブさで囲みましょう。", "romaji": "Jibun o pojitibu sa de kakomimashou."},
+            {"english": "Every day is a fresh start.", "japanese": "毎日が新しいスタートです。", "romaji": "Mainichi ga atarashii sutaato desu."},
+            {"english": "Live life with a positive heart.", "japanese": "ポジティブな心で人生を生きましょう。", "romaji": "Pojitibu na kokoro de jinsei o ikimashou."},
+        ],
+        "Courage": [
+            {"english": "Be brave, take the leap.", "japanese": "勇敢になって、飛び込みましょう。", "romaji": "Yuukan ni natte, tobikomi mashou."},
+            {"english": "Courage is not absence of fear.", "japanese": "勇気とは恐怖の不在ではありません。", "romaji": "Yuuki to wa kyoufu no fuzai dewa arimasen."},
+            {"english": "Face your fears with courage.", "japanese": "勇気を持って恐怖に立ち向かいましょう。", "romaji": "Yuuki o motte kyoufu ni tachimukaimashou."},
+            {"english": "Brave hearts change the world.", "japanese": "勇敢な心が世界を変えます。", "romaji": "Yuukan na kokoro ga sekai o kaemasu."},
+            {"english": "Courage grows with use.", "japanese": "勇気は使うほどに成長します。", "romaji": "Yuuki wa tsukau hodo ni seichou shimasu."},
+        ],
+        "Kindness": [
+            {"english": "Be kind to everyone you meet.", "japanese": "出会うすべての人に優しくしましょう。", "romaji": "Deau subete no hito ni yasashiku shimashou."},
+            {"english": "Kindness costs nothing, means everything.", "japanese": "優しさはお金がかからず、すべてを意味します。", "romaji": "Yasashisa wa okane ga kakarazu, subete o imi shimasu."},
+            {"english": "A kind word warms the heart.", "japanese": "優しい言葉は心を温めます。", "romaji": "Yasashii kotoba wa kokoro o atatamemasu."},
+            {"english": "Spread kindness wherever you go.", "japanese": "行く先々で優しさを広めましょう。", "romaji": "Iku sakizaki de yasashisa o hirogemashou."},
+            {"english": "Kindness makes the world better.", "japanese": "優しさが世界をより良くします。", "romaji": "Yasashisa ga sekai o yori yoku shimasu."},
+        ],
+        "Patience": [
+            {"english": "Good things come to those who wait.", "japanese": "良いことは待つ人にやってきます。", "romaji": "Yoi koto wa matsu hito ni yatte kimasu."},
+            {"english": "Patience is a virtue.", "japanese": "忍耐は美徳です。", "romaji": "Nintai wa bitoku desu."},
+            {"english": "Take your time, don't rush.", "japanese": "時間をかけて、急がないでください。", "romaji": "Jikan o kakete, isoganaide kudasai."},
+            {"english": "Patience brings peace of mind.", "japanese": "忍耐は心の平和をもたらします。", "romaji": "Nintai wa kokoro no heiwa o motarashimasu."},
+            {"english": "Wait patiently, trust the process.", "japanese": "辛抱強く待って、プロセスを信頼しましょう。", "romaji": "Shinbou zuyoku matte, purosesu o shinrai shimashou."},
+        ],
+        "Forgiveness": [
+            {"english": "Forgive and set yourself free.", "japanese": "許して自分自身を解放しましょう。", "romaji": "Yurushite jibun jishin o kaihou shimashou."},
+            {"english": "Forgiveness is a gift to yourself.", "japanese": "許しは自分自身への贈り物です。", "romaji": "Yurushi wa jibun jishin e no okurimono desu."},
+            {"english": "Let go of grudges, find peace.", "japanese": "恨みを捨てて、平和を見つけましょう。", "romaji": "Urami o sutete, heiwa o mitsukemashou."},
+            {"english": "To err is human, to forgive divine.", "japanese": "過ちは人なり、許すは神なり。", "romaji": "Ayamachi wa hito nari, yurusu wa kami nari."},
+            {"english": "Forgiveness heals all wounds.", "japanese": "許しはすべての傷を癒やします。", "romaji": "Yurushi wa subete no kizu o iyashimasu."},
+        ],
+        "Strength": [
+            {"english": "You are stronger than you know.", "japanese": "あなたは思っているより強いです。", "romaji": "Anata wa omotteiru yori tsuyoi desu."},
+            {"english": "Strength comes from within.", "japanese": "力は内側から来ます。", "romaji": "Chikara wa uchigawa kara kimasu."},
+            {"english": "Your struggles develop your strength.", "japanese": "あなたの苦闘が力を発展させます。", "romaji": "Anata no kutou ga chikara o hatten sasemasu."},
+            {"english": "Be strong, stay steady.", "japanese": "強く、安定していきましょう。", "romaji": "Tsuyoku, antei shite ikimashou."},
+            {"english": "Inner strength conquers all.", "japanese": "内なる力がすべてを征服します。", "romaji": "Inaru chikara ga subete o seifuku shimasu."},
+        ],
+        "Joy": [
+            {"english": "Find joy in every moment.", "japanese": "すべての瞬間に喜びを見つけましょう。", "romaji": "Subete no shunkan ni yorokobi o mitsukemashou."},
+            {"english": "Joy is contagious, spread it.", "japanese": "喜びは伝染します、広めましょう。", "romaji": "Yorokobi wa densen shimasu, hirogemashou."},
+            {"english": "Let joy fill your heart today.", "japanese": "今日喜びがあなたの心を満たしましょう。", "romaji": "Kyou yorokobi ga anata no kokoro o mitashimashou."},
+            {"english": "Choose joy over worry.", "japanese": "心配ではなく喜びを選びましょう。", "romaji": "Shinpai dewa naku yorokobi o erabimashou."},
+            {"english": "Joy is the simplest form of gratitude.", "japanese": "喜びは最も単純な感謝の形です。", "romaji": "Yorokobi wa mottomo tanjun na kansha no katachi desu."},
+        ],
+        "Balance": [
+            {"english": "Find balance in your life.", "japanese": "人生の中でバランスを見つけましょう。", "romaji": "Jinsei no naka de baransu o mitsukemashou."},
+            {"english": "Balance is the key to happiness.", "japanese": "バランスは幸せへの鍵です。", "romaji": "Baransu wa shiawase e no kagi desu."},
+            {"english": "Work hard, rest well.", "japanese": "一生懸命働いて、よく休みましょう。", "romaji": "Isshou kenmei hataraite, yoku yasumimashou."},
+            {"english": "A balanced life is a peaceful life.", "japanese": "バランスの取れた人生は平和な人生です。", "romaji": "Baransu no toreta jinsei wa heiwa na jinsei desu."},
+            {"english": "Prioritize what matters most.", "japanese": "最も重要なことを優先しましょう。", "romaji": "Mottomo juuyou na koto o yuusen shimashou."},
+        ],
+        "Growth": [
+            {"english": "Growth happens outside your comfort zone.", "japanese": "成長は快適ゾーンの外で起こります。", "romaji": "Seichou wa kaiteki zoon no soto de okorimasu."},
+            {"english": "Embrace change, grow stronger.", "japanese": "変化を受け入れて、より強くなりましょう。", "romaji": "Henka o ukeirete, yori tsuyoku narimashou."},
+            {"english": "Every challenge is a growth opportunity.", "japanese": "すべての挑戦は成長の機会です。", "romaji": "Subete no chousen wa seichou no kikai desu."},
+            {"english": "Grow through what you go through.", "japanese": "経験を通して成長しましょう。", "romaji": "Keiken o toushite seichou shimashou."},
+            {"english": "Personal growth is a lifelong journey.", "japanese": "個人の成長は生涯の旅です。", "romaji": "Kojin no seichou wa shougai no tabi desu."},
+        ],
+        "Purpose": [
+            {"english": "Find your purpose, live it.", "japanese": "あなたの目的を見つけて、生きましょう。", "romaji": "Anata no mokuteki o mitsukete, ikimashou."},
+            {"english": "Purpose gives life meaning.", "japanese": "目的は人生に意味を与えます。", "romaji": "Mokuteki wa jinsei ni imi o ataemasu."},
+            {"english": "Live with purpose and passion.", "japanese": "目的と情熱を持って生きましょう。", "romaji": "Mokuteki to jounetsu o motte ikimashou."},
+            {"english": "Your purpose is your calling.", "japanese": "あなたの目的はあなたの天職です。", "romaji": "Anata no mokuteki wa anata no tenshoku desu."},
+            {"english": "Discover purpose in everyday moments.", "japanese": "日常の瞬間に目的を発見しましょう。", "romaji": "Nichijou no shunkan ni mokuteki o hakken shimashou."},
+        ],
+        "Mindfulness": [
+            {"english": "Be present in this moment.", "japanese": "この瞬間に存在しましょう。", "romaji": "Kono shunkan ni sonzai shimashou."},
+            {"english": "Mindfulness brings inner peace.", "japanese": "マインドフルネスは内なる平和をもたらします。", "romaji": "Maindofurunesu wa inaru heiwa o motarashimasu."},
+            {"english": "Breathe deeply, stay mindful.", "japanese": "深く息を吸って、マインドフルでいましょう。", "romaji": "Fukaku iki o sutte, maindofuru de imashou."},
+            {"english": "The present moment is all we have.", "japanese": "現在の瞬間が私たちが持つすべてです。", "romaji": "Genzai no shunkan ga watashitachi ga motsu subete desu."},
+            {"english": "Practice mindfulness daily.", "japanese": "毎日マインドフルネスを実践しましょう。", "romaji": "Mainichi maindofurunesu o jissen shimashou."},
+        ],
+    }
+
+    fallbacks = all_fallbacks.get(category, all_fallbacks["Motivation"])
+    fresh_phrases = [p for p in fallbacks if not is_phrase_used(p["english"])]
+    return fresh_phrases[:num_phrases]
+
+
+# ============== AUDIO GENERATION ==============
+
 async def generate_single_audio(text: str, voice: str, output_path: str):
+    """Generate audio using Edge TTS"""
     try:
         import edge_tts
         communicate = edge_tts.Communicate(text, voice)
@@ -405,80 +560,66 @@ async def generate_single_audio(text: str, voice: str, output_path: str):
         return False
 
 
-async def generate_audio_with_retries(text: str, voice: str, output_path: str, max_retries: int = 3):
-    import asyncio
-    for attempt in range(1, max_retries + 1):
-        success = await generate_single_audio(text, voice, output_path)
-        if success:
-            if Path(output_path).exists() and Path(output_path).stat().st_size > 100:
-                return True
-            else:
-                print(f"    TTS file too small or missing, retrying ({attempt}/{max_retries})...")
-                await asyncio.sleep(2 * attempt)
-                continue
-        else:
-            if attempt < max_retries:
-                wait = 2 * attempt
-                print(f"    TTS retry {attempt}/{max_retries} in {wait}s...")
-                await asyncio.sleep(wait)
-            else:
-                print(f"    TTS failed after {max_retries} attempts, using silence fallback")
-                return False
-    return False
-
-
 def generate_all_audio(phrases: list, output_dir: str):
+    """Generate audio for all phrases with proper timing"""
+
     output_dir = Path(output_dir)
     output_dir.mkdir(parents=True, exist_ok=True)
     audio_files = []
 
     for i, phrase in enumerate(phrases):
         english_file = output_dir / f"english_{i}.mp3"
-        native_file = output_dir / f"native_{i}.mp3"
+        japanese_file = output_dir / f"japanese_{i}.mp3"
         combined_file = output_dir / f"combined_{i}.mp3"
 
         print(f"\n  Phrase {i+1}:")
         print(f"    EN: {phrase['english']}")
         print(f"    JP: {phrase['japanese']}")
 
-        nat_success = asyncio.run(generate_audio_with_retries(phrase["japanese"], NATIVE_VOICE, str(native_file)))
-        if nat_success:
-            print(f"    - Japanese: {native_file.name}")
-        else:
-            print(f"    - Japanese: SILENCE FALLBACK (TTS failed)")
-            cmd = ["ffmpeg", "-y", "-f", "lavfi", "-i", "anullsrc=r=24000:cl=mono", "-t", "2", str(native_file)]
-            subprocess.run(cmd, capture_output=True)
-
-        en_success = asyncio.run(generate_audio_with_retries(phrase["english"], ENGLISH_VOICE, str(english_file)))
+        # Generate English audio
+        en_success = asyncio.run(generate_single_audio(phrase["english"], ENGLISH_VOICE, str(english_file)))
         if en_success:
-            print(f"    - English: {english_file.name}")
+            print(f"    ✓ English: {english_file.name}")
         else:
-            print(f"    - English: SILENCE FALLBACK (TTS failed)")
             cmd = ["ffmpeg", "-y", "-f", "lavfi", "-i", "anullsrc=r=24000:cl=mono", "-t", "2", str(english_file)]
             subprocess.run(cmd, capture_output=True)
 
+        # Generate Japanese audio
+        jp_success = asyncio.run(generate_single_audio(phrase["japanese"], JAPANESE_VOICE, str(japanese_file)))
+        if jp_success:
+            print(f"    ✓ Japanese: {japanese_file.name}")
+        else:
+            cmd = ["ffmpeg", "-y", "-f", "lavfi", "-i", "anullsrc=r=24000:cl=mono", "-t", "2", str(japanese_file)]
+            subprocess.run(cmd, capture_output=True)
+
+        # Get ACTUAL durations
         en_duration = get_audio_duration(str(english_file))
-        nat_duration = get_audio_duration(str(native_file))
+        jp_duration = get_audio_duration(str(japanese_file))
+
+        # Add pause between English and Japanese
         pause_between = 0.5
-        total_duration = en_duration + pause_between + nat_duration
+        total_duration = en_duration + pause_between + jp_duration
 
-        print(f"    Total: {total_duration:.2f}s (EN: {en_duration:.2f}s + pause: {pause_between}s + JP: {nat_duration:.2f}s)")
+        print(f"    ⏱️  Total: {total_duration:.2f}s (EN: {en_duration:.2f}s + pause: {pause_between}s + JP: {jp_duration:.2f}s)")
 
+        # Combine audio files
         cmd = [
             "ffmpeg", "-y",
             "-i", str(english_file),
-            "-i", str(native_file),
-            "-filter_complex", "[0:a][1:a]concat=n=2:v=0:a=1[out]",
+            "-i", str(japanese_file),
+            "-filter_complex", f"[0:a][1:a]concat=n=2:v=0:a=1[out]",
             "-map", "[out]",
             str(combined_file)
         ]
+
         result = subprocess.run(cmd, capture_output=True, text=True)
 
         if result.returncode != 0:
             concat_file = output_dir / f"concat_{i}.txt"
             with open(concat_file, "w", encoding="utf-8") as f:
                 f.write(f"file '{english_file.as_posix()}'\n")
-                f.write(f"file '{native_file.as_posix()}'\n")
+                f.write(f"file '{japanese_file.as_posix()}'\n")
+
             cmd = [
                 "ffmpeg", "-y",
                 "-f", "concat", "-safe", "0",
@@ -491,23 +632,24 @@ def generate_all_audio(phrases: list, output_dir: str):
                 concat_file.unlink()
 
         actual_duration = get_audio_duration(str(combined_file))
-        print(f"    Combined verified: {actual_duration:.2f}s")
+        print(f"    ✓ Combined verified: {actual_duration:.2f}s")
 
         audio_files.append({
             "index": i,
             "english": str(english_file),
-            "native": str(native_file),
+            "japanese": str(japanese_file),
             "combined": str(combined_file),
             "duration": actual_duration,
             "en_duration": en_duration,
-            "nat_duration": nat_duration
+            "jp_duration": jp_duration
         })
 
-    print(f"\n[audio] Generated {len(audio_files)} phrase audios")
+    print(f"\n[audio] ✓ Generated {len(audio_files)} phrase audios")
     return audio_files
 
 
 def get_audio_duration(audio_file: str) -> float:
+    """Get audio duration in seconds"""
     if not Path(audio_file).exists():
         return 2.0
     cmd = ["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "default=noprint_wrappers=1:nokey=1", audio_file]
@@ -519,831 +661,85 @@ def get_audio_duration(audio_file: str) -> float:
 
 
 def create_final_narration(audio_files: list, output_file: str):
+    """Combine all audio files"""
     n = len(audio_files)
     print(f"[audio] Combining {n} audio files...")
+
     concat_file = Path(output_file).parent / "narration_list.txt"
+
     with open(concat_file, "w", encoding="utf-8") as f:
         for audio_info in audio_files:
             combined_path = Path(audio_info["combined"])
             if combined_path.exists():
                 path_str = str(combined_path.resolve()).replace("\\", "/").replace("'", "'\\''")
                 f.write(f"file '{path_str}'\n")
+
     cmd = ["ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", str(concat_file), "-c:a", "copy", str(output_file)]
     result = subprocess.run(cmd, capture_output=True, text=True)
+
     if concat_file.exists():
         concat_file.unlink()
+
     if result.returncode == 0 and Path(output_file).exists() and Path(output_file).stat().st_size > 0:
         size = Path(output_file).stat().st_size
-        print(f"\n[audio] Final narration: {Path(output_file).name} ({size/1024:.1f} KB)")
+        print(f"\n[audio] ✓ Final narration: {Path(output_file).name} ({size/1024:.1f} KB)")
         return True
+
     return False
 
 
-NOTO_FONT_URL = "https://github.com/google/fonts/raw/main/ofl/notosans/NotoSans%5Bwdth,wght%5D.ttf"
-FONTS_DIR = BASE_DIR / "fonts"
-
-
-def ensure_font():
-    FONTS_DIR.mkdir(exist_ok=True)
-    jp_font = FONTS_DIR / "NotoSansJP-Bold.otf"
-    if jp_font.exists():
-        return str(jp_font)
-    try:
-        import urllib.request
-        url = "https://github.com/googlefonts/noto-cjk/raw/main/Sans/OTF/Japanese/NotoSansJP-Bold.otf"
-        print("[font] Downloading Japanese NotoSansJP-Bold...")
-        urllib.request.urlretrieve(url, str(jp_font))
-        print(f"[font] Downloaded: {jp_font}")
-        return str(jp_font)
-    except Exception as e:
-        print(f"[font] Download failed: {e}")
-        for fp in ["/usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc", "/usr/share/fonts/truetype/wqy/wqy-microhei.ttc"]:
-            if os.path.exists(fp):
-                return fp
-    return None
-
+# ============== IMAGE GENERATION ==============
 
 def create_impressive_background(category_english: str):
+    """Create stunning gradient background with geometric patterns and glow"""
     from PIL import Image, ImageDraw
-
-    category_colors = {
-    "Greetings": [
-        [
-            70,
-            130,
-            180
-        ],
-        [
-            255,
-            140,
-            0
-        ],
-        [
-            255,
-            255,
-            0
-        ],
-        [
-            255,
-            99,
-            71
-        ]
-    ],
-    "Basic Phrases": [
-        [
-            60,
-            179,
-            113
-        ],
-        [
-            255,
-            215,
-            0
-        ],
-        [
-            144,
-            238,
-            144
-        ],
-        [
-            255,
-            140,
-            0
-        ]
-    ],
-    "Common Expressions": [
-        [
-            138,
-            43,
-            226
-        ],
-        [
-            255,
-            20,
-            147
-        ],
-        [
-            75,
-            0,
-            130
-        ],
-        [
-            255,
-            105,
-            180
-        ]
-    ],
-    "Travel": [
-        [
-            0,
-            191,
-            255
-        ],
-        [
-            255,
-            255,
-            0
-        ],
-        [
-            70,
-            130,
-            180
-        ],
-        [
-            255,
-            215,
-            0
-        ]
-    ],
-    "Restaurant": [
-        [
-            255,
-            69,
-            0
-        ],
-        [
-            255,
-            215,
-            0
-        ],
-        [
-            220,
-            20,
-            60
-        ],
-        [
-            255,
-            140,
-            0
-        ]
-    ],
-    "Shopping": [
-        [
-            255,
-            105,
-            180
-        ],
-        [
-            0,
-            100,
-            80
-        ],
-        [
-            255,
-            192,
-            203
-        ],
-        [
-            0,
-            200,
-            160
-        ]
-    ],
-    "Emergency": [
-        [
-            255,
-            0,
-            0
-        ],
-        [
-            139,
-            0,
-            0
-        ],
-        [
-            255,
-            69,
-            0
-        ],
-        [
-            220,
-            20,
-            60
-        ]
-    ],
-    "Family Terms": [
-        [
-            255,
-            182,
-            193
-        ],
-        [
-            138,
-            43,
-            226
-        ],
-        [
-            255,
-            160,
-            122
-        ],
-        [
-            75,
-            0,
-            130
-        ]
-    ],
-    "Numbers": [
-        [
-            255,
-            215,
-            0
-        ],
-        [
-            0,
-            0,
-            139
-        ],
-        [
-            255,
-            140,
-            0
-        ],
-        [
-            70,
-            130,
-            180
-        ]
-    ],
-    "Time": [
-        [
-            0,
-            0,
-            100
-        ],
-        [
-            255,
-            255,
-            0
-        ],
-        [
-            70,
-            130,
-            180
-        ],
-        [
-            255,
-            215,
-            0
-        ]
-    ],
-    "Motivation": [
-        [
-            138,
-            43,
-            226
-        ],
-        [
-            75,
-            0,
-            130
-        ],
-        [
-            255,
-            20,
-            147
-        ],
-        [
-            147,
-            112,
-            219
-        ]
-    ],
-    "Love": [
-        [
-            255,
-            0,
-            100
-        ],
-        [
-            139,
-            0,
-            0
-        ],
-        [
-            255,
-            105,
-            180
-        ],
-        [
-            255,
-            192,
-            203
-        ]
-    ],
-    "Success": [
-        [
-            255,
-            215,
-            0
-        ],
-        [
-            0,
-            100,
-            0
-        ],
-        [
-            255,
-            140,
-            0
-        ],
-        [
-            34,
-            139,
-            34
-        ]
-    ],
-    "Wisdom": [
-        [
-            0,
-            0,
-            139
-        ],
-        [
-            255,
-            215,
-            0
-        ],
-        [
-            70,
-            130,
-            180
-        ],
-        [
-            255,
-            255,
-            0
-        ]
-    ],
-    "Happiness": [
-        [
-            255,
-            255,
-            0
-        ],
-        [
-            255,
-            0,
-            255
-        ],
-        [
-            255,
-            165,
-            0
-        ],
-        [
-            147,
-            112,
-            219
-        ]
-    ],
-    "Self Improvement": [
-        [
-            0,
-            128,
-            0
-        ],
-        [
-            255,
-            215,
-            0
-        ],
-        [
-            0,
-            255,
-            0
-        ],
-        [
-            255,
-            140,
-            0
-        ]
-    ],
-    "Gratitude": [
-        [
-            255,
-            127,
-            80
-        ],
-        [
-            75,
-            0,
-            130
-        ],
-        [
-            255,
-            160,
-            122
-        ],
-        [
-            138,
-            43,
-            226
-        ]
-    ],
-    "Friendship": [
-        [
-            255,
-            192,
-            203
-        ],
-        [
-            0,
-            100,
-            80
-        ],
-        [
-            255,
-            105,
-            180
-        ],
-        [
-            0,
-            200,
-            160
-        ]
-    ],
-    "Hope": [
-        [
-            0,
-            0,
-            100
-        ],
-        [
-            255,
-            255,
-            0
-        ],
-        [
-            70,
-            130,
-            180
-        ],
-        [
-            255,
-            215,
-            0
-        ]
-    ],
-    "Creativity": [
-        [
-            255,
-            0,
-            127
-        ],
-        [
-            0,
-            0,
-            139
-        ],
-        [
-            255,
-            20,
-            147
-        ],
-        [
-            75,
-            0,
-            130
-        ]
-    ],
-    "Inner Peace": [
-        [
-            135,
-            206,
-            235
-        ],
-        [
-            0,
-            0,
-            100
-        ],
-        [
-            176,
-            224,
-            230
-        ],
-        [
-            75,
-            0,
-            130
-        ]
-    ],
-    "Confidence": [
-        [
-            255,
-            69,
-            0
-        ],
-        [
-            0,
-            0,
-            139
-        ],
-        [
-            255,
-            140,
-            0
-        ],
-        [
-            70,
-            130,
-            180
-        ]
-    ],
-    "Perseverance": [
-        [
-            139,
-            69,
-            19
-        ],
-        [
-            255,
-            215,
-            0
-        ],
-        [
-            160,
-            82,
-            45
-        ],
-        [
-            255,
-            140,
-            0
-        ]
-    ],
-    "Inspiration": [
-        [
-            255,
-            0,
-            255
-        ],
-        [
-            75,
-            0,
-            130
-        ],
-        [
-            255,
-            20,
-            147
-        ],
-        [
-            0,
-            0,
-            139
-        ]
-    ],
-    "Positive Life": [
-        [
-            50,
-            205,
-            50
-        ],
-        [
-            255,
-            0,
-            127
-        ],
-        [
-            144,
-            238,
-            144
-        ],
-        [
-            255,
-            20,
-            147
-        ]
-    ],
-    "Courage": [
-        [
-            178,
-            34,
-            34
-        ],
-        [
-            255,
-            215,
-            0
-        ],
-        [
-            220,
-            20,
-            60
-        ],
-        [
-            255,
-            140,
-            0
-        ]
-    ],
-    "Kindness": [
-        [
-            255,
-            182,
-            193
-        ],
-        [
-            138,
-            43,
-            226
-        ],
-        [
-            255,
-            160,
-            122
-        ],
-        [
-            75,
-            0,
-            130
-        ]
-    ],
-    "Patience": [
-        [
-            34,
-            139,
-            34
-        ],
-        [
-            255,
-            255,
-            0
-        ],
-        [
-            60,
-            179,
-            113
-        ],
-        [
-            255,
-            215,
-            0
-        ]
-    ],
-    "Forgiveness": [
-        [
-            230,
-            230,
-            250
-        ],
-        [
-            75,
-            0,
-            130
-        ],
-        [
-            216,
-            191,
-            216
-        ],
-        [
-            138,
-            43,
-            226
-        ]
-    ],
-    "Strength": [
-        [
-            100,
-            100,
-            100
-        ],
-        [
-            255,
-            69,
-            0
-        ],
-        [
-            150,
-            150,
-            150
-        ],
-        [
-            255,
-            140,
-            0
-        ]
-    ],
-    "Joy": [
-        [
-            255,
-            255,
-            0
-        ],
-        [
-            255,
-            0,
-            127
-        ],
-        [
-            255,
-            215,
-            0
-        ],
-        [
-            147,
-            112,
-            219
-        ]
-    ],
-    "Balance": [
-        [
-            60,
-            179,
-            113
-        ],
-        [
-            138,
-            43,
-            226
-        ],
-        [
-            152,
-            251,
-            152
-        ],
-        [
-            75,
-            0,
-            130
-        ]
-    ],
-    "Growth": [
-        [
-            0,
-            100,
-            0
-        ],
-        [
-            255,
-            215,
-            0
-        ],
-        [
-            34,
-            139,
-            34
-        ],
-        [
-            255,
-            140,
-            0
-        ]
-    ],
-    "Purpose": [
-        [
-            75,
-            0,
-            130
-        ],
-        [
-            255,
-            215,
-            0
-        ],
-        [
-            138,
-            43,
-            226
-        ],
-        [
-            255,
-            140,
-            0
-        ]
-    ],
-    "Mindfulness": [
-        [
-            210,
-            180,
-            140
-        ],
-        [
-            75,
-            0,
-            130
-        ],
-        [
-            245,
-            245,
-            220
-        ],
-        [
-            138,
-            43,
-            226
-        ]
-    ]
-}
 
     img = Image.new('RGB', (VIDEO_WIDTH, VIDEO_HEIGHT))
     draw = ImageDraw.Draw(img)
 
+    # HIGH CONTRAST gradients for ALL 35 categories (very different colors like Motivation)
+    category_colors = {
+        "Motivation": [(138, 43, 226), (75, 0, 130), (255, 20, 147), (147, 112, 219)],  # Purple → Dark Purple → Pink → Light Purple
+        "Love": [(255, 0, 100), (139, 0, 0), (255, 105, 180), (255, 192, 203)],  # Red → Dark Red → Hot Pink → Pink
+        "Success": [(255, 215, 0), (0, 100, 0), (255, 140, 0), (34, 139, 34)],  # Gold → Dark Green → Orange → Forest Green
+        "Wisdom": [(0, 0, 139), (255, 215, 0), (70, 130, 180), (255, 255, 0)],  # Dark Blue → Gold → Steel Blue → Yellow
+        "Happiness": [(255, 255, 0), (255, 0, 255), (255, 165, 0), (147, 112, 219)],  # Yellow → Magenta → Orange → Purple
+        "Self Improvement": [(0, 128, 0), (255, 215, 0), (0, 255, 0), (255, 140, 0)],  # Green → Gold → Lime → Orange
+        "Gratitude": [(255, 127, 80), (75, 0, 130), (255, 160, 122), (138, 43, 226)],  # Coral → Dark Purple → Light Salmon → Blue Violet
+        "Friendship": [(255, 192, 203), (0, 100, 80), (255, 105, 180), (0, 200, 160)],  # Pink → Dark Teal → Hot Pink → Medium Teal
+        "Hope": [(0, 0, 100), (255, 255, 0), (70, 130, 180), (255, 215, 0)],  # Dark Blue → Yellow → Steel Blue → Gold
+        "Creativity": [(255, 0, 127), (0, 0, 139), (255, 20, 147), (75, 0, 130)],  # Deep Pink → Dark Blue → Deep Pink → Dark Purple
+        "Inner Peace": [(135, 206, 235), (0, 0, 100), (176, 224, 230), (75, 0, 130)],  # Sky Blue → Dark Blue → Powder Blue → Dark Purple
+        "Confidence": [(255, 69, 0), (0, 0, 139), (255, 140, 0), (70, 130, 180)],  # Red Orange → Dark Blue → Orange → Steel Blue
+        "Perseverance": [(139, 69, 19), (255, 215, 0), (160, 82, 45), (255, 140, 0)],  # Saddle Brown → Gold → Sienna → Orange
+        "Inspiration": [(255, 0, 255), (75, 0, 130), (255, 20, 147), (0, 0, 139)],  # Magenta → Dark Purple → Deep Pink → Dark Blue
+        "Positive Life": [(50, 205, 50), (255, 0, 127), (144, 238, 144), (255, 20, 147)],  # Lime Green → Deep Pink → Light Green → Deep Pink
+        "Courage": [(178, 34, 34), (255, 215, 0), (220, 20, 60), (255, 140, 0)],  # Firebrick → Gold → Crimson → Orange
+        "Kindness": [(255, 182, 193), (138, 43, 226), (255, 160, 122), (75, 0, 130)],  # Light Salmon → Dark Purple → Light Salmon → Dark Purple
+        "Patience": [(34, 139, 34), (255, 255, 0), (60, 179, 113), (255, 215, 0)],  # Forest Green → Yellow → Medium Sea Green → Gold
+        "Forgiveness": [(230, 230, 250), (75, 0, 130), (216, 191, 216), (138, 43, 226)],  # Lavender → Dark Purple → Thistle → Blue Violet
+        "Strength": [(100, 100, 100), (255, 69, 0), (150, 150, 150), (255, 140, 0)],  # Gray → Red Orange → Light Gray → Orange
+        "Joy": [(255, 255, 0), (255, 0, 127), (255, 215, 0), (147, 112, 219)],  # Yellow → Deep Pink → Gold → Purple
+        "Balance": [(60, 179, 113), (138, 43, 226), (152, 251, 152), (75, 0, 130)],  # Medium Sea Green → Dark Purple → Pale Green → Dark Purple
+        "Growth": [(0, 100, 0), (255, 215, 0), (34, 139, 34), (255, 140, 0)],  # Dark Green → Gold → Forest Green → Orange
+        "Purpose": [(75, 0, 130), (255, 215, 0), (138, 43, 226), (255, 140, 0)],  # Dark Purple → Gold → Blue Violet → Orange
+        "Mindfulness": [(210, 180, 140), (75, 0, 130), (245, 245, 220), (138, 43, 226)],  # Tan → Dark Purple → Beige → Blue Violet
+        # Essential Japanese Learning Categories
+        "Greetings": [(70, 130, 180), (255, 140, 0), (255, 255, 0), (255, 99, 71)],  # Steel Blue → Orange → Yellow → Tomato
+        "Basic Phrases": [(60, 179, 113), (255, 215, 0), (144, 238, 144), (255, 140, 0)],  # Medium Sea Green → Gold → Light Green → Orange
+        "Common Expressions": [(138, 43, 226), (255, 20, 147), (75, 0, 130), (255, 105, 180)],  # Dark Violet → Deep Pink → Dark Purple → Hot Pink
+        "Travel Japanese": [(0, 191, 255), (255, 255, 0), (70, 130, 180), (255, 215, 0)],  # Deep Sky Blue → Yellow → Steel Blue → Gold
+        "Restaurant Japanese": [(255, 69, 0), (255, 215, 0), (220, 20, 60), (255, 140, 0)],  # Red Orange → Gold → Crimson → Orange
+        "Shopping Japanese": [(255, 105, 180), (0, 100, 80), (255, 192, 203), (0, 200, 160)],  # Hot Pink → Dark Teal → Pink → Medium Teal
+        "Emergency Japanese": [(255, 0, 0), (139, 0, 0), (255, 69, 0), (220, 20, 60)],  # Red → Dark Red → Red Orange → Crimson
+        "Family Terms": [(255, 182, 193), (138, 43, 226), (255, 160, 122), (75, 0, 130)],  # Light Pink → Dark Purple → Light Salmon → Dark Purple
+        "Numbers Japanese": [(255, 215, 0), (0, 0, 139), (255, 140, 0), (70, 130, 180)],  # Gold → Dark Blue → Orange → Steel Blue
+        "Time Japanese": [(0, 0, 100), (255, 255, 0), (70, 130, 180), (255, 215, 0)],  # Dark Blue → Yellow → Steel Blue → Gold
+    }
+
     colors = category_colors.get(category_english, [(138, 43, 226), (75, 0, 130), (255, 20, 147), (147, 112, 219)])
 
+    # Create smooth multi-stop gradient
     for y in range(VIDEO_HEIGHT):
         ratio = y / VIDEO_HEIGHT
         if ratio < 0.33:
@@ -1360,6 +756,7 @@ def create_impressive_background(category_english: str):
             b = int(colors[2][2] + (colors[3][2] - colors[2][2]) * ((ratio - 0.66) * 3))
         draw.rectangle([(0, y), (VIDEO_WIDTH, y + 1)], fill=(r, g, b))
 
+    # Add subtle geometric pattern for depth (circles)
     for i in range(0, VIDEO_WIDTH, 120):
         for j in range(0, VIDEO_HEIGHT, 120):
             draw.ellipse(
@@ -1368,8 +765,10 @@ def create_impressive_background(category_english: str):
                 width=1
             )
 
+    # Add radial glow effect from center
     glow = Image.new('RGBA', (VIDEO_WIDTH, VIDEO_HEIGHT), (0, 0, 0, 0))
     glow_draw = ImageDraw.Draw(glow)
+
     for radius in range(800, 0, -50):
         alpha = int(30 * (1 - radius / 800))
         glow_draw.ellipse(
@@ -1378,46 +777,14 @@ def create_impressive_background(category_english: str):
             fill=(255, 255, 255, alpha)
         )
 
+    # Composite glow over background
     img = img.convert('RGBA')
     img = Image.alpha_composite(img, glow)
+
     return img
 
 
-def find_font(bold=False, size=40):
-    from PIL import ImageFont
-    jp_fonts = [
-        str(FONTS_DIR / "NotoSansJP-Bold.otf"),
-        "/usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc",
-        "/usr/share/fonts/truetype/wqy/wqy-microhei.ttc",
-        "/usr/share/fonts/truetype/wqy/wqy-zenhei.ttc",
-        "/usr/share/fonts/noto-cjk/NotoSansCJK-Bold.ttc",
-        "/usr/share/fonts/truetype/noto/NotoSansCJK-Bold.ttc",
-        "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
-    ]
-    for fp in jp_fonts:
-        try:
-            return ImageFont.truetype(fp, size)
-        except (IOError, OSError):
-            continue
-    if bold:
-        font_preferences = [
-            "segoeuib.ttf", "arialbd.ttf", "DejaVuSans-Bold.ttf",
-            "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
-        ]
-    else:
-        font_preferences = [
-            "segoeui.ttf", "arial.ttf", "calibri.ttf", "DejaVuSans.ttf",
-            "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
-        ]
-    for font_name in font_preferences:
-        try:
-            return ImageFont.truetype(font_name, size)
-        except (IOError, OSError):
-            continue
-    return ImageFont.load_default()
-
-
-def rounded_rect(draw, bbox, radius, fill=None, outline=None, width=1):
+def rounded_rect(draw, bbox, radius, fill=None):
     x1, y1, x2, y2 = bbox
     r = min(radius, (x2 - x1) // 2, (y2 - y1) // 2)
     draw.pieslice([x1, y1, x1 + r*2, y1 + r*2], 180, 270, fill=fill)
@@ -1429,54 +796,126 @@ def rounded_rect(draw, bbox, radius, fill=None, outline=None, width=1):
 
 
 def generate_complete_image(phrase_data: dict, category_english: str, output_path: str, phrase_index: int = 0, total_phrases: int = 5):
+    """Generate image with impressive background - Dutch-style centered containers"""
     try:
         from PIL import Image, ImageDraw, ImageFont
     except ImportError:
         print("PIL not available. Install: pip install Pillow")
         return None
 
-    ensure_font()
     img = create_impressive_background(category_english)
     draw = ImageDraw.Draw(img)
+
+    # Load fonts - Optimized for mobile viewing (INCREASED sizes)
+    fonts_dir = Path(__file__).parent / "fonts"
+    english_font_paths = [
+        str(fonts_dir / "NotoSansDutch-Bold.ttf"),
+        str(fonts_dir / "NotoSans-Bold.ttf"),
+        "C:/Windows/Fonts/arialbd.ttf",
+        "C:/Windows/Fonts/segoeuib.ttf",
+        "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
+        "/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf",
+    ]
+
+    japanese_font_paths = [
+        str(fonts_dir / "yugothb.ttc"),
+        "C:/Windows/Fonts/yugothb.ttc",
+        "/usr/share/fonts/truetype/wqy/wqy-zenhei.ttc",
+        "/usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc",
+        "/usr/share/fonts/truetype/wqy/wqy-microhei.ttc",
+        "C:/Windows/Fonts/msgothic.ttc",
+        "C:/Windows/Fonts/msmincho.ttc",
+    ]
+
+    def load_font(font_paths, size):
+        for font_path in font_paths:
+            try:
+                return ImageFont.truetype(font_path, size)
+            except (IOError, OSError):
+                continue
+        return ImageFont.load_default()
 
     SIZE_CATEGORY = 64
     SIZE_NATIVE_L = 100
     SIZE_NATIVE_M = 82
     SIZE_NATIVE_S = 66
-    SIZE_ENGLISH = 70
-    SIZE_TRANSLITERATION = 48
-    SIZE_BRANDING = 50
+    SIZE_ENGLISH = 85
+    SIZE_TRANSLITERATION = 55
+    SIZE_BRANDING = 52
     SIZE_PROGRESS = 38
 
-    font_category = find_font(bold=True, size=SIZE_CATEGORY)
-    font_native_l = find_font(bold=True, size=SIZE_NATIVE_L)
-    font_native_m = find_font(bold=True, size=SIZE_NATIVE_M)
-    font_native_s = find_font(bold=True, size=SIZE_NATIVE_S)
-    font_english = find_font(bold=True, size=SIZE_ENGLISH)
-    font_transliteration = find_font(bold=False, size=SIZE_TRANSLITERATION)
-    font_branding = find_font(bold=True, size=SIZE_BRANDING)
-    font_progress = find_font(bold=False, size=SIZE_PROGRESS)
+    font_category = load_font(english_font_paths, SIZE_CATEGORY)
+    font_native_l = load_font(japanese_font_paths, SIZE_NATIVE_L)
+    font_native_m = load_font(japanese_font_paths, SIZE_NATIVE_M)
+    font_native_s = load_font(japanese_font_paths, SIZE_NATIVE_S)
+    font_english = load_font(english_font_paths, SIZE_ENGLISH)
+    font_romaji = load_font(english_font_paths, SIZE_TRANSLITERATION)
+    font_branding = load_font(english_font_paths, SIZE_BRANDING)
+    font_progress = load_font(english_font_paths, SIZE_PROGRESS)
 
-    native = phrase_data.get("japanese", "")
     english = phrase_data.get("english", "")
-    transliteration = phrase_data.get("transliteration", "")
+    japanese = phrase_data.get("japanese", "")
+    romaji = phrase_data.get("romaji", "")
+    romaji_text = f"[{romaji}]" if romaji else ""
 
     def wrap_text(text, font, max_width):
-        words = text.split()
         lines = []
-        current_line = []
-        for word in words:
-            test_line = ' '.join(current_line + [word])
-            bbox = draw.textbbox((0, 0), test_line, font=font)
-            width = bbox[2] - bbox[0]
-            if width <= max_width:
-                current_line.append(word)
-            else:
-                if current_line:
-                    lines.append(' '.join(current_line))
-                current_line = [word]
-        if current_line:
-            lines.append(' '.join(current_line))
+        is_jp = any('\u3040' <= c <= '\u309f' or '\u30a0' <= c <= '\u30ff' or '\u4e00' <= c <= '\u9fff' for c in text)
+        if is_jp:
+            chunks = []
+            buf = ''
+            for ch in text:
+                buf += ch
+                if ch in '、。・ ':
+                    chunks.append(buf)
+                    buf = ''
+            if buf:
+                chunks.append(buf)
+            if not chunks:
+                chunks = [text]
+            current_line = ''
+            for chunk in chunks:
+                test_line = current_line + chunk
+                bbox = draw.textbbox((0, 0), test_line, font=font)
+                w = bbox[2] - bbox[0]
+                if w <= max_width:
+                    current_line = test_line
+                else:
+                    if current_line:
+                        lines.append(current_line)
+                    # Check if chunk itself fits; if not, split char by char
+                    bbox = draw.textbbox((0, 0), chunk, font=font)
+                    if bbox[2] - bbox[0] <= max_width:
+                        current_line = chunk
+                    else:
+                        # Split chunk char by char
+                        current_line = ''
+                        for ch in chunk:
+                            test_line = current_line + ch
+                            bbox = draw.textbbox((0, 0), test_line, font=font)
+                            if bbox[2] - bbox[0] <= max_width:
+                                current_line = test_line
+                            else:
+                                if current_line:
+                                    lines.append(current_line)
+                                current_line = ch
+            if current_line:
+                lines.append(current_line)
+        else:
+            words = text.split()
+            current_line = []
+            for word in words:
+                test_line = ' '.join(current_line + [word])
+                bbox = draw.textbbox((0, 0), test_line, font=font)
+                width = bbox[2] - bbox[0]
+                if width <= max_width:
+                    current_line.append(word)
+                else:
+                    if current_line:
+                        lines.append(' '.join(current_line))
+                    current_line = [word]
+            if current_line:
+                lines.append(' '.join(current_line))
         return lines
 
     def pick_native_font(text, max_w):
@@ -1484,40 +923,45 @@ def generate_complete_image(phrase_data: dict, category_english: str, output_pat
             lines = wrap_text(text, font, max_w)
             if len(lines) <= 2:
                 return font, lines
-        return font_native_s, wrap_text(native, font_native_s, max_w)
+        return font_native_s, wrap_text(text, font_native_s, max_w)
 
-    def measure_line_h(font):
+    def measure_text_width(text, font):
+        b = draw.textbbox((0, 0), text, font=font)
+        return b[2] - b[0]
+
+    def measure_line_h(font, is_jp=False):
+        if is_jp:
+            return int(font.size * 1.6)
         b = draw.textbbox((0, 0), "Ag", font=font)
-        return b[3] - b[1]
+        h = b[3] - b[1]
+        return max(h, font.size + 10)
 
     max_text_w = VIDEO_WIDTH - 140
-    cat_native = CATEGORIES_NATIVE.get(category_english, category_english)
-
-    nat_font, nat_lines = pick_native_font(native, max_text_w - 40)
     en_lines = wrap_text(english, font_english, max_text_w)
-    trans_lines = wrap_text(transliteration, font_transliteration, max_text_w - 60) if transliteration else []
+    jp_font, jp_lines = pick_native_font(japanese, max_text_w - 20)
+    romaji_lines = wrap_text(romaji_text, font_romaji, max_text_w - 60) if romaji_text else []
 
-    nat_lh = measure_line_h(nat_font)
     en_lh = measure_line_h(font_english)
-    trans_lh = measure_line_h(font_transliteration)
+    jp_lh = measure_line_h(jp_font, is_jp=True)
+    romaji_lh = measure_line_h(font_romaji)
 
-    nat_box_pad = 35
-    en_box_pad = 28
-    trans_box_pad = 22
+    en_box_pad = 40
+    jp_box_pad = 60
+    romaji_box_pad = 35
 
-    nat_box_h = len(nat_lines) * nat_lh + nat_box_pad * 2
     en_box_h = len(en_lines) * en_lh + en_box_pad * 2
-    trans_box_h = len(trans_lines) * trans_lh + trans_box_pad * 2 if trans_lines else 0
+    jp_box_h = len(jp_lines) * jp_lh + jp_box_pad * 2
+    romaji_box_h = len(romaji_lines) * romaji_lh + romaji_box_pad * 2 if romaji_lines else 0
 
-    gap_cat_nat = 50
-    gap_nat_en = 35
-    gap_en_trans = 30
-    gap_trans_prog = 25
+    gap_cat_en = 50
+    gap_en_jp = 35
+    gap_jp_romaji = 30
+    gap_romaji_prog = 25
     gap_prog_brand = 40
     prog_bar_h = 30
 
-    total_center_h = (0 + gap_cat_nat + nat_box_h + gap_nat_en +
-                      en_box_h + gap_en_trans + trans_box_h + gap_trans_prog +
+    total_center_h = (0 + gap_cat_en + en_box_h + gap_en_jp +
+                      jp_box_h + gap_jp_romaji + romaji_box_h + gap_romaji_prog +
                       prog_bar_h + gap_prog_brand)
 
     start_y = int((VIDEO_HEIGHT - total_center_h) * 0.38)
@@ -1526,7 +970,7 @@ def generate_complete_image(phrase_data: dict, category_english: str, output_pat
 
     cy = start_y
 
-    # Category bar (rounded)
+    # Category bar (rounded, fixed position)
     cat_text = category_english
     cat_bb = draw.textbbox((0, 0), cat_text, font=font_category)
     cat_tw = cat_bb[2] - cat_bb[0]
@@ -1542,47 +986,47 @@ def generate_complete_image(phrase_data: dict, category_english: str, output_pat
                  25, fill=(0, 0, 0, 190))
     draw.text((cat_cx, cat_cy), cat_text,
               fill=(255, 255, 255), font=font_category, anchor="mm",
-              stroke_width=2, stroke_fill=(0, 0, 0))
+              stroke_width=3, stroke_fill=(0, 0, 0))
 
-    cy += gap_cat_nat
+    cy += gap_cat_en
 
     # English phrase (top)
-    en_margin = 60
+    en_margin = 50
     rounded_rect(draw, (en_margin, cy, VIDEO_WIDTH - en_margin, cy + en_box_h), 28,
                  fill=(20, 40, 100, 220))
     for i, line in enumerate(en_lines):
         ly = cy + en_box_pad + i * en_lh + en_lh // 2
         draw.text((VIDEO_WIDTH // 2, ly), line,
                   fill=(255, 255, 255), font=font_english, anchor="mm",
-                  stroke_width=3, stroke_fill=(0, 0, 40))
+                  stroke_width=4, stroke_fill=(0, 0, 40))
 
-    cy += en_box_h + gap_nat_en
+    cy += en_box_h + gap_en_jp
 
-    # Native phrase (below English)
-    nat_margin = 50
-    rounded_rect(draw, (nat_margin, cy, VIDEO_WIDTH - nat_margin, cy + nat_box_h), 24,
+    # Japanese phrase (below English)
+    jp_margin = 40
+    rounded_rect(draw, (jp_margin, cy, VIDEO_WIDTH - jp_margin, cy + jp_box_h), 24,
                  fill=(139, 0, 0, 220))
-    for i, line in enumerate(nat_lines):
-        ly = cy + nat_box_pad + i * nat_lh + nat_lh // 2
+    for i, line in enumerate(jp_lines):
+        ly = cy + jp_box_pad + i * jp_lh + jp_lh // 2
         draw.text((VIDEO_WIDTH // 2, ly), line,
-                  fill=(255, 255, 200), font=nat_font, anchor="mm",
-                  stroke_width=2, stroke_fill=(60, 0, 0))
+                  fill=(255, 255, 200), font=jp_font, anchor="mm",
+                  stroke_width=4, stroke_fill=(60, 0, 0))
 
-    cy += nat_box_h + gap_en_trans
+    cy += jp_box_h + gap_jp_romaji
 
-    # Transliteration
-    if trans_lines:
-        trans_margin = 70
-        rounded_rect(draw, (trans_margin, cy, VIDEO_WIDTH - trans_margin, cy + trans_box_h), 18,
+    # Romaji
+    if romaji_lines:
+        romaji_margin = 70
+        rounded_rect(draw, (romaji_margin, cy, VIDEO_WIDTH - romaji_margin, cy + romaji_box_h), 18,
                      fill=(40, 40, 40, 220))
-        for i, line in enumerate(trans_lines):
-            ly = cy + trans_box_pad + i * trans_lh + trans_lh // 2
+        for i, line in enumerate(romaji_lines):
+            ly = cy + romaji_box_pad + i * romaji_lh + romaji_lh // 2
             draw.text((VIDEO_WIDTH // 2, ly), line,
-                      fill=(220, 220, 220), font=font_transliteration, anchor="mm",
-                      stroke_width=1, stroke_fill=(20, 20, 20))
-        cy += trans_box_h + gap_trans_prog
+                      fill=(255, 255, 255), font=font_romaji, anchor="mm",
+                      stroke_width=3, stroke_fill=(20, 20, 20))
+        cy += romaji_box_h + gap_romaji_prog
     else:
-        cy += gap_trans_prog
+        cy += gap_romaji_prog
 
     # Progress
     prog_text = f"{phrase_index + 1} / {total_phrases}"
@@ -1614,11 +1058,15 @@ def generate_complete_image(phrase_data: dict, category_english: str, output_pat
 
     Path(output_path).parent.mkdir(parents=True, exist_ok=True)
     img.save(output_path, quality=95, optimize=True)
-    print(f"  Image: {Path(output_path).name}")
+    print(f"  ✓ Image: {Path(output_path).name}")
     return output_path
 
 
+# ============== VIDEO CREATION ==============
+
 def create_video_from_images_audio(image_files: list, audio_files: list, combined_audio: str, output_file: str):
+    """Create video from images and audio with PERFECT synchronization"""
+
     print(f"\n[video] Creating video from {len(image_files)} images...")
     print(f"[video] Ensuring complete audio playback and sync...")
 
@@ -1626,7 +1074,7 @@ def create_video_from_images_audio(image_files: list, audio_files: list, combine
 
     for i, (img_path, audio_info) in enumerate(zip(image_files, audio_files)):
         duration = audio_info['duration']
-        print(f"  Image {i+1}/{len(image_files)}: {duration:.2f}s (EN: {audio_info.get('en_duration', 0):.1f}s + JP: {audio_info.get('nat_duration', 0):.1f}s)")
+        print(f"  Image {i+1}/{len(image_files)}: {duration:.2f}s (EN: {audio_info.get('en_duration', 0):.1f}s + JP: {audio_info.get('jp_duration', 0):.1f}s)")
 
         temp_clip = Path(output_file).parent / f"temp_clip_{i:02d}.mp4"
         temp_clips.append(temp_clip)
@@ -1642,8 +1090,10 @@ def create_video_from_images_audio(image_files: list, audio_files: list, combine
             "-preset", "medium",
             str(temp_clip)
         ]
+
         subprocess.run(cmd, check=True, capture_output=True)
 
+    # Concatenate clips
     print("[video] Concatenating clips...")
     temp_video = Path(output_file).parent / "temp_video.mp4"
     concat_file = Path(output_file).parent / "concat_list.txt"
@@ -1655,6 +1105,7 @@ def create_video_from_images_audio(image_files: list, audio_files: list, combine
     cmd = ["ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", str(concat_file), "-c", "copy", str(temp_video)]
     subprocess.run(cmd, check=True, capture_output=True)
 
+    # Add audio
     print("[video] Adding audio (ensuring complete playback)...")
     audio_duration = get_audio_duration(combined_audio)
     print(f"[video] Audio duration: {audio_duration:.2f}s")
@@ -1670,9 +1121,11 @@ def create_video_from_images_audio(image_files: list, audio_files: list, combine
     ]
     subprocess.run(cmd, check=True, capture_output=True)
 
+    # Verify
     video_duration = get_audio_duration(str(output_file).replace(".mp4", ".mp4"))
-    print(f"[video] Video created: {Path(output_file).name} ({video_duration:.2f}s)")
+    print(f"[video] ✓ Video created: {Path(output_file).name} ({video_duration:.2f}s)")
 
+    # Cleanup
     for clip in temp_clips:
         if clip.exists():
             clip.unlink()
@@ -1682,36 +1135,45 @@ def create_video_from_images_audio(image_files: list, audio_files: list, combine
         concat_file.unlink()
 
 
+# ============== MAIN WORKFLOW ==============
+
 def generate_reel(category_english: str = None):
+    """Generate complete Facebook Reel"""
+
     if not category_english:
+        # Use smart category rotation to prevent repeats
         category_english = get_available_category()
 
     print(f"\n{'='*80}")
-    print(f"Category: {category_english} ({CATEGORIES_NATIVE[category_english]})")
+    print(f"Category: {category_english} ({CATEGORIES_JAPANESE[category_english]})")
     print(f"{'='*80}\n")
 
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     reel_dir = VIDEO_DIR / f"{category_english}_{timestamp}"
     reel_dir.mkdir(exist_ok=True)
 
+    # Step 1: Generate unique phrases
     print("[1/4] Generating unique phrases (checking history)...")
     phrases = generate_phrases(category_english, num_phrases=5)
 
     for i, phrase in enumerate(phrases, 1):
-        print(f"  {i}. {phrase['english']} -> {phrase['japanese']}")
+        print(f"  {i}. {phrase['english']} → {phrase['japanese']}")
 
+    # Step 2: Generate images
     print("\n[2/4] Generating images with impressive backgrounds...")
     for i, phrase in enumerate(phrases):
         output_path = reel_dir / f"phrase_{i:02d}.jpg"
         generate_complete_image(phrase, category_english, str(output_path), phrase_index=i, total_phrases=len(phrases))
-        print(f"  Image {i+1}: {phrase['english'][:40]}...")
+        print(f"  ✓ Image {i+1}: {phrase['english'][:40]}...")
 
-    print("\n[3/4] Generating audio (English + Dutch with 500ms pause)...")
+    # Step 3: Generate audio
+    print("\n[3/4] Generating audio (English + Japanese with 500ms pause)...")
     audio_files = generate_all_audio(phrases, str(reel_dir))
 
     final_audio = reel_dir / "narration.mp3"
     create_final_narration(audio_files, str(final_audio))
 
+    # Step 4: Create video - CRITICAL: Sort images for correct order
     print("\n[4/4] Creating video...")
     output_video = reel_dir / "final_reel.mp4"
 
@@ -1724,9 +1186,10 @@ def generate_reel(category_english: str = None):
         str(output_video)
     )
 
+    # Save metadata
     metadata = {
         "category_english": category_english,
-        "category_native": CATEGORIES_NATIVE[category_english],
+        "category_japanese": CATEGORIES_JAPANESE[category_english],
         "timestamp": timestamp,
         "phrases": phrases,
         "video": str(output_video),
@@ -1737,10 +1200,10 @@ def generate_reel(category_english: str = None):
         json.dump(metadata, f, indent=2, ensure_ascii=False)
 
     print(f"\n{'='*80}")
-    print(f"REEL COMPLETE!")
-    print(f"  {reel_dir}")
-    print(f"  {output_video.name}")
-    print(f"  Branding: VELOCITY JAPANESE")
+    print(f"✅ REEL COMPLETE!")
+    print(f"  📁 {reel_dir}")
+    print(f"  🎬 {output_video.name}")
+    print(f"  🏷️  Branding: Velocity Japanese")
     print(f"{'='*80}\n")
 
     return metadata
@@ -1748,27 +1211,33 @@ def generate_reel(category_english: str = None):
 
 if __name__ == "__main__":
     print("\n" + "="*80)
-    print(f"VELOCITY JAPANESE - FACEBOOK REELS AUTOMATION")
+    print("🇯🇵 VELOCITY JAPANESE - FACEBOOK REELS AUTOMATION 🇯🇵")
     print("="*80)
-    print("\nFEATURES:")
-    print("  - Natural pauses with commas (non-robotic TTS)")
-    print("  - Perfect audio-video synchronization")
-    print("  - Complete audio playback guaranteed")
-    print("  - English category names (for learners)")
-    print(f"  - VELOCITY JAPANESE branding at bottom")
-    print("  - NEVER repeats phrases (permanent history tracking)")
-    print(f"\nAVAILABLE CATEGORIES ({len(CATEGORIES_ENGLISH)} total):")
+    print("\n✨ IMPROVED FEATURES:")
+    print("  ✓ Natural pauses with commas (non-robotic TTS)")
+    print("  ✓ Perfect audio-video synchronization")
+    print("  ✓ Complete audio playback guaranteed")
+    print("  ✓ English category names (for American/European learners)")
+    print("  ✓ Velocity Japanese branding at bottom")
+    print("  ✓ NEVER repeats phrases (permanent history tracking)")
+    print(f"\n📊 AVAILABLE CATEGORIES ({len(CATEGORIES_ENGLISH)} total):")
     for i, cat in enumerate(CATEGORIES_ENGLISH, 1):
-        print(f"   {i:2d}. {cat} ({CATEGORIES_NATIVE[cat]})")
+        print(f"   {i:2d}. {cat} ({CATEGORIES_JAPANESE[cat]})")
+    print(f"\n📅 DAILY CAPACITY:")
+    print(f"  • 4 reels per day = 20 unique phrases daily")
+    print(f"  • {len(CATEGORIES_ENGLISH)} categories = Over 6 days before any category repeats")
+    print(f"  • Phrase history is PERMANENT (never deletes)")
+    print(f"  • AI generates FRESH phrases every time")
     print("="*80)
 
     generate_reel()
 
     print("\n" + "="*80)
-    print("READY FOR DAILY AUTOMATION!")
+    print("✅ READY FOR DAILY AUTOMATION!")
     print("="*80)
-
-
-
-
-
+    print("\nTo generate 4 reels for today:")
+    print("  from facebook_reels_automation import generate_daily_content")
+    print("  generate_daily_content(times_per_day=4)")
+    print("\nTo generate a single reel:")
+    print("  generate_reel('Love')  # Or any category from the list above")
+    print("="*80)
