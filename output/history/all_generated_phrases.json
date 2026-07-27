@@ -14139,7 +14139,42 @@
       "romaji": "Ginkō o sugite, sugu kado ni eki ga arimasu.",
       "category": "Direction Japanese",
       "generated_at": "2026-07-26T17:11:33.952061"
+    },
+    {
+      "english": "Pack lunch, grab keys, lock the door",
+      "japanese": "お弁当を詰めて、鍵を持って、ドアを閉めて",
+      "romaji": "Obentō o tsumete, kagi o motte, doa o shimete",
+      "category": "Daily Routine",
+      "generated_at": "2026-07-27T02:29:31.187929"
+    },
+    {
+      "english": "Walk to station, buy ticket, board train",
+      "japanese": "駅まで歩いて、切符を買って、電車に乗りましょう",
+      "romaji": "Eki made aruite, kippu o katte, densha ni norimashou",
+      "category": "Daily Routine",
+      "generated_at": "2026-07-27T02:29:31.187940"
+    },
+    {
+      "english": "Arrive at work, sit down, start tasks",
+      "japanese": "職場に着いて、席に座って、仕事を始めましょう",
+      "romaji": "Shokuba ni tsuite, seki ni suwatte, shigoto o hajimemashou",
+      "category": "Daily Routine",
+      "generated_at": "2026-07-27T02:29:31.187942"
+    },
+    {
+      "english": "Take breaks, chat with coworkers, recharge",
+      "japanese": "休憩して、同僚とおしゃべりして、 recharge しましょう",
+      "romaji": "Kyūkei shite, dōryō to oshare shite, recharge shimashou",
+      "category": "Daily Routine",
+      "generated_at": "2026-07-27T02:29:31.187943"
+    },
+    {
+      "english": "Finish work, leave office, go home",
+      "japanese": "仕事が終わって、オフィスを出て、家に帰りましょう",
+      "romaji": "Shigoto ga owatte, ofisu o dete, ie ni kaerimashou",
+      "category": "Daily Routine",
+      "generated_at": "2026-07-27T02:29:31.187944"
     }
   ],
-  "last_updated": "2026-07-26T17:11:33.952063"
+  "last_updated": "2026-07-27T02:29:31.187946"
 }
