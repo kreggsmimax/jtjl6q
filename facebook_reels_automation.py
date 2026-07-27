@@ -251,7 +251,7 @@ IMPORTANT: Japanese text must be clean - no slashes, no multiple versions."""
                 "temperature": 0.9
             }
 
-            response = requests.post(url, headers=headers, json=payload, timeout=60)
+            response = requests.post(url, headers=headers, json=payload, timeout=180)
             response.raise_for_status()
 
             data = response.json()
@@ -299,6 +299,12 @@ def get_fresh_fallback_phrases(category: str, num_phrases: int) -> list:
             {"english": "Good evening, how are you?", "japanese": "こんばんは、お元気ですか？", "romaji": "Konbanwa, ogenki desu ka?"},
             {"english": "See you tomorrow!", "japanese": "また明日！", "romaji": "Mata ashita!"},
             {"english": "Goodbye, take care.", "japanese": "さようなら、お元気で。", "romaji": "Sayounara, ogenki de."},
+            {"english": "How have you been?", "japanese": "お元気でしたか？", "romaji": "Ogenki deshita ka?"},
+            {"english": "Long time no see.", "japanese": "久しぶりです。", "romaji": "Hisashiburi desu."},
+            {"english": "Have a nice day!", "japanese": "良い一日を！", "romaji": "Yoi ichinichi o!"},
+            {"english": "See you later!", "japanese": "また後で！", "romaji": "Mata atode!"},
+            {"english": "Welcome to Japan!", "japanese": "日本へようこそ！", "romaji": "Nihon e youkoso!"},
+            {"english": "Talk to you soon.", "japanese": "また話しましょう。", "romaji": "Mata hanashimashou."},
         ],
         "Basic Phrases": [
             {"english": "Thank you very much.", "japanese": "ありがとうございます。", "romaji": "Arigatou gozaimasu."},
@@ -306,6 +312,15 @@ def get_fresh_fallback_phrases(category: str, num_phrases: int) -> list:
             {"english": "I'm sorry, excuse me.", "japanese": "すみません、ごめんなさい。", "romaji": "Sumimasen, gomennasai."},
             {"english": "Yes, that's correct.", "japanese": "はい、そうです。", "romaji": "Hai, sou desu."},
             {"english": "No, I don't think so.", "japanese": "いいえ、ちがいます。", "romaji": "Iie, chigaimasu."},
+            {"english": "Please give me this.", "japanese": "これをください。", "romaji": "Kore o kudasai."},
+            {"english": "I don't understand.", "japanese": "わかりません。", "romaji": "Wakarimasen."},
+            {"english": "Please speak slowly.", "japanese": "ゆっくり話してください。", "romaji": "Yukkuri hanashite kudasai."},
+            {"english": "Can you repeat that?", "japanese": "もう一度言ってください。", "romaji": "Mou ichido itte kudasai."},
+            {"english": "I understand now.", "japanese": "わかりました。", "romaji": "Wakarimashita."},
+            {"english": "What does this mean?", "japanese": "これはどういう意味ですか？", "romaji": "Kore wa dou iu imi desu ka?"},
+            {"english": "Is that okay?", "japanese": "大丈夫ですか？", "romaji": "Daijoubu desu ka?"},
+            {"english": "Wait a moment, please.", "japanese": "ちょっと待ってください。", "romaji": "Chotto matte kudasai."},
+            {"english": "Let's go together.", "japanese": "一緒に行きましょう。", "romaji": "Issho ni ikimashou."},
         ],
         "Common Expressions": [
             {"english": "How are you doing today?", "japanese": "今日はお元気ですか？", "romaji": "Kyou wa ogenki desu ka?"},
