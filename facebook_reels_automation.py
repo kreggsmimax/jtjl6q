@@ -1,6 +1,7 @@
-"""
-Facebook Reels Automation - Bilingual English/Japanese Content Generator
-IMPROVED VERSION: Better backgrounds, English categories, no repeats, Velocity Japanese branding
+﻿"""
+Facebook Reels Automation - Bilingual English/Dutch Content Generator
+IMPROVED VERSION: Better backgrounds, English categories, no repeats, VELOCITY JAPANESE branding
+Rounded container style from Habla Verse
 """
 
 import os
@@ -27,10 +28,6 @@ if not AI_MODEL:
         "For GitHub Actions: Add AI_MODEL to repository secrets."
     )
 
-if not POLLINATIONS_API_KEY:
-    print("[warn] POLLINATIONS_API_KEY not set! AI generation will fail, using fallback phrases.")
-
-# Directories
 BASE_DIR = Path(__file__).parent
 OUTPUT_DIR = BASE_DIR / "output"
 IMAGES_DIR = OUTPUT_DIR / "images"
@@ -41,96 +38,134 @@ HISTORY_DIR = OUTPUT_DIR / "history"
 for d in [OUTPUT_DIR, IMAGES_DIR, AUDIO_DIR, VIDEO_DIR, HISTORY_DIR]:
     d.mkdir(exist_ok=True)
 
-# Video settings (9:16 vertical)
 VIDEO_WIDTH = 1080
 VIDEO_HEIGHT = 1920
 FPS = 30
 
-# English category names (for American/European learners)
-# Essential Japanese learning categories + Motivational categories
 CATEGORIES_ENGLISH = [
-    # Essential Japanese Learning (Priority)
-    "Greetings", "Basic Phrases", "Common Expressions", "Travel Japanese", "Restaurant Japanese",
-    "Shopping Japanese", "Emergency Japanese", "Family Terms", "Numbers Japanese", "Time Japanese",
-    "Weather Japanese", "Direction Japanese", "Colors Japanese", "Body Japanese", "Feelings Japanese",
-    # Motivational Categories
-    "Motivation", "Love", "Success", "Wisdom", "Happiness",
-    "Self Improvement", "Gratitude", "Friendship", "Hope", "Creativity",
-    "Inner Peace", "Confidence", "Perseverance", "Inspiration", "Positive Life",
-    "Courage", "Kindness", "Patience", "Forgiveness", "Strength",
-    "Joy", "Balance", "Growth", "Purpose", "Mindfulness",
-    # Extended Practical Categories
-    "Work Japanese", "Hobbies Japanese", "Daily Routine", "Health Japanese", "Nature Japanese",
-]
+    "Greetings",
+    "Basic Phrases",
+    "Common Expressions",
+    "Travel",
+    "Restaurant",
+    "Shopping",
+    "Emergency",
+    "Family Terms",
+    "Numbers",
+    "Time",
+    "Motivation",
+    "Love",
+    "Success",
+    "Wisdom",
+    "Happiness",
+    "Self Improvement",
+    "Gratitude",
+    "Friendship",
+    "Hope",
+    "Creativity",
+    "Inner Peace",
+    "Confidence",
+    "Perseverance",
+    "Inspiration",
+    "Positive Life",
+    "Courage",
+    "Kindness",
+    "Patience",
+    "Forgiveness",
+    "Strength",
+    "Joy",
+    "Balance",
+    "Growth",
+    "Purpose",
+    "Mindfulness",
+    "Daily Routine",
+    "Weather",
+    "Feelings",
+    "Food",
+    "Health",
+    "Work",
+    "Technology",
+    "Nature",
+    "Animals",
+    "Colors",
+    "Directions",
+    "Body Parts",
+    "Clothes",
+    "Music",
+    "Sports",
+    "Holidays",
+    "Education",
+    "Culture",
+    "Finance",
+    "Relationships",]
 
-# Japanese translations for display
-CATEGORIES_JAPANESE = {
-    # Essential Japanese Learning (Priority)
-    "Greetings": "挨拶",
-    "Basic Phrases": "基本フレーズ",
-    "Common Expressions": "一般的な表現",
-    "Travel Japanese": "旅行日本語",
-    "Restaurant Japanese": "レストラン日本語",
-    "Shopping Japanese": "ショッピング日本語",
-    "Emergency Japanese": "緊急日本語",
-    "Family Terms": "家族用語",
-    "Numbers Japanese": "数字日本語",
-    "Time Japanese": "時間日本語",
-    "Weather Japanese": "天気の日本語",
-    "Direction Japanese": "方向の日本語",
-    "Colors Japanese": "色の日本語",
-    "Body Japanese": "体の日本語",
-    "Feelings Japanese": "感情の日本語",
-    # Motivational Categories
-    "Motivation": "モチベーション",
-    "Love": "愛",
-    "Success": "成功",
-    "Wisdom": "知恵",
-    "Happiness": "幸せ",
-    "Self Improvement": "自己啓発",
-    "Gratitude": "感謝",
-    "Friendship": "友情",
-    "Hope": "希望",
-    "Creativity": "創造性",
-    "Inner Peace": "内なる平和",
-    "Confidence": "自信",
-    "Perseverance": "忍耐",
-    "Inspiration": "インスピレーション",
-    "Positive Life": "ポジティブな人生",
-    "Courage": "勇気",
-    "Kindness": "優しさ",
-    "Patience": "我慢",
-    "Forgiveness": "許し",
-    "Strength": "力",
-    "Joy": "喜び",
-    "Balance": "バランス",
-    "Growth": "成長",
-    "Purpose": "目的",
-    "Mindfulness": "マインドフルネス",
-    # Extended Practical Categories
-    "Work Japanese": "仕事の日本語",
-    "Hobbies Japanese": "趣味の日本語",
-    "Daily Routine": "日常の習慣",
-    "Health Japanese": "健康の日本語",
-    "Nature Japanese": "自然の日本語",
+CATEGORIES_NATIVE = {
+    "Greetings": "Groeten",
+    "Basic Phrases": "Basisuitdrukkingen",
+    "Common Expressions": "Veelvoorkomende Uitdrukkingen",
+    "Travel": "Reizen",
+    "Restaurant": "Restaurant",
+    "Shopping": "Winkelen",
+    "Emergency": "Noodgevallen",
+    "Family Terms": "Familietermen",
+    "Numbers": "Nummers",
+    "Time": "Tijd",
+    "Motivation": "Motivatie",
+    "Love": "Liefde",
+    "Success": "Succes",
+    "Wisdom": "Wijsheid",
+    "Happiness": "Geluk",
+    "Self Improvement": "Zelfverbetering",
+    "Gratitude": "Dankbaarheid",
+    "Friendship": "Vriendschap",
+    "Hope": "Hoop",
+    "Creativity": "Creativiteit",
+    "Inner Peace": "Innerlijke Rust",
+    "Confidence": "Vertrouwen",
+    "Perseverance": "Doorzettingsvermogen",
+    "Inspiration": "Inspiratie",
+    "Positive Life": "Positief Leven",
+    "Courage": "Moed",
+    "Kindness": "Vriendelijkheid",
+    "Patience": "Geduld",
+    "Forgiveness": "Vergeving",
+    "Strength": "Kracht",
+    "Joy": "Vreugde",
+    "Balance": "Balans",
+    "Growth": "Groei",
+    "Purpose": "Doel",
+    "Mindfulness": "Mindfulness",
+    "Daily Routine": "Dagelijkse routine",
+    "Weather": "Weer",
+    "Feelings": "Gevoelens",
+    "Food": "Eten",
+    "Health": "Gezondheid",
+    "Work": "Werk",
+    "Technology": "Technologie",
+    "Nature": "Natuur",
+    "Animals": "Dieren",
+    "Colors": "Kleuren",
+    "Directions": "Richtingen",
+    "Body Parts": "Lichaamsdelen",
+    "Clothes": "Kleding",
+    "Music": "Muziek",
+    "Sports": "Sport",
+    "Holidays": "Feestdagen",
+    "Education": "Onderwijs",
+    "Culture": "Cultuur",
+    "Finance": "Financiën",
+    "Relationships": "Relaties"
 }
 
-# Edge TTS voices
 ENGLISH_VOICE = "en-US-GuyNeural"
-JAPANESE_VOICE = "ja-JP-NanamiNeural"
+NATIVE_VOICE = "ja-JP-NanamiNeural"
 
-# Phrase history file (NEVER delete this!)
 PHRASE_HISTORY_FILE = HISTORY_DIR / "all_generated_phrases.json"
-
-# Recent categories file (for rotation - prevents category repeats)
 RECENT_CATEGORIES_FILE = HISTORY_DIR / "recent_categories.json"
-MAX_RECENT_CATEGORIES = 15  # Track last 15 categories to avoid repeats
+MAX_RECENT_CATEGORIES = 25
 
-
-# ============== PHRASE HISTORY MANAGEMENT (Prevent Repeats) ==============
 
 def load_phrase_history():
-    """Load all previously generated phrases"""
     if PHRASE_HISTORY_FILE.exists():
         with open(PHRASE_HISTORY_FILE, "r", encoding="utf-8") as f:
             return json.load(f)
@@ -138,14 +173,12 @@ def load_phrase_history():
 
 
 def save_phrase_history(data):
-    """Save phrase history"""
     data["last_updated"] = datetime.now().isoformat()
     with open(PHRASE_HISTORY_FILE, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
 
 
 def is_phrase_used(english_phrase):
-    """Check if phrase was already generated"""
     history = load_phrase_history()
     english_lower = english_phrase.lower().strip()
     for p in history.get("phrases", []):
@@ -155,13 +188,13 @@ def is_phrase_used(english_phrase):
 
 
 def add_phrases_to_history(phrases, category):
-    """Add new phrases to history"""
     history = load_phrase_history()
+    lang_key = "japanese"
     for phrase in phrases:
         history["phrases"].append({
             "english": phrase["english"],
-            "japanese": phrase["japanese"],
-            "romaji": phrase.get("romaji", ""),
+            lang_key: phrase[lang_key],
+            "transliteration": phrase.get("transliteration", ""),
             "category": category,
             "generated_at": datetime.now().isoformat()
         })
@@ -169,10 +202,7 @@ def add_phrases_to_history(phrases, category):
     print(f"[history] Added {len(phrases)} phrases to history (total: {len(history['phrases'])})")
 
 
-# ============== CATEGORY ROTATION MANAGEMENT (Prevent Repeats) ==============
-
 def load_recent_categories():
-    """Load recently used categories"""
     if RECENT_CATEGORIES_FILE.exists():
         with open(RECENT_CATEGORIES_FILE, "r", encoding="utf-8") as f:
             return json.load(f)
@@ -180,66 +210,51 @@ def load_recent_categories():
 
 
 def save_recent_categories(data):
-    """Save recent categories"""
     data["last_updated"] = datetime.now().isoformat()
     with open(RECENT_CATEGORIES_FILE, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
 
 
 def get_available_category():
-    """Get a category that hasn't been used recently - ensures rotation across ALL 35 categories"""
     recent_data = load_recent_categories()
     recent = recent_data.get("recent_categories", [])
-
-    # Get all categories that are NOT in recent list
     available = [cat for cat in CATEGORIES_ENGLISH if cat not in recent]
-
-    # If all categories have been used recently, clear the oldest ones
     if not available:
-        # Keep only the most recent 5, clear the rest
         recent_data["recent_categories"] = recent[-5:]
         save_recent_categories(recent_data)
         available = [cat for cat in CATEGORIES_ENGLISH if cat not in recent_data["recent_categories"]]
         print(f"[rotation] All categories used recently - cleared old ones, {len(available)} available")
-
-    # Random selection from available (non-recent) categories
     selected = random.choice(available)
-
-    # Add to recent list
     recent.append(selected)
-
-    # Keep only the last MAX_RECENT_CATEGORIES
     if len(recent) > MAX_RECENT_CATEGORIES:
         recent = recent[-MAX_RECENT_CATEGORIES:]
-
     recent_data["recent_categories"] = recent
     save_recent_categories(recent_data)
-
     print(f"[rotation] Selected '{selected}' ({len(available)} available, {len(recent)} in recent history)")
     return selected
 
 
-# ============== CONTENT GENERATION ==============
-
 def generate_phrases(category_english: str, num_phrases: int = 5) -> list:
-    """Generate unique bilingual phrases with natural pauses, ensuring no repeats"""
-
-    category_japanese = CATEGORIES_JAPANESE[category_english]
-
-    # Try AI first
-    AI_MODELS_FALLBACK = [AI_MODEL, "openai", "mistral", "llama"]
+    category_native = CATEGORIES_NATIVE[category_english]
     max_attempts = 3
-    for attempt in range(max_attempts):
-        for model_idx, model in enumerate(AI_MODELS_FALLBACK):
-            try:
-                import requests
-                url = "https://gen.pollinations.ai/v1/chat/completions"
-                headers = {
-                    "Authorization": f"Bearer {POLLINATIONS_API_KEY}",
-                    "Content-Type": "application/json"
-                }
 
-                prompt = f"""Create {num_phrases * 2} unique {category_english} phrases for English speakers learning Japanese.
+    history = load_phrase_history()
+    recent_english = [p["english"] for p in history.get("phrases", []) if p.get("category") == category_english][-30:]
+
+    for attempt in range(max_attempts):
+        try:
+            import requests
+            url = "https://gen.pollinations.ai/v1/chat/completions"
+            headers = {
+                "Authorization": f"Bearer {POLLINATIONS_API_KEY}",
+                "Content-Type": "application/json"
+            }
+
+            avoid_text = ""
+            if recent_english:
+                avoid_text = "\nABSOLUTELY AVOID these already-used phrases:\n" + "\n".join(f"- {p}" for p in recent_english)
+
+            prompt = f"""Create {num_phrases * 6} unique and creative {category_english} phrases for English speakers learning Dutch.{avoid_text}
 
 IMPORTANT RULES FOR NATURAL SPEECH:
 1. Keep phrases SHORT (5-12 words max per language)
@@ -247,116 +262,139 @@ IMPORTANT RULES FOR NATURAL SPEECH:
 3. Use punctuation for breathing room in TTS
 4. Avoid long run-on sentences
 5. Each phrase should be speakable in 3-5 seconds
-6. Japanese text should be CLEAN - use standard Japanese (mix of Kanji, Hiragana, Katakana as appropriate)
-7. Do NOT include multiple versions or slashes - just ONE clean Japanese translation
+6. Dutch text should be CLEAN - use standard Dutch script
+7. Do NOT include multiple versions or slashes - just ONE clean Dutch translation
+8. Transliteration should be in Roman script for pronunciation
+9. BE CREATIVE AND VARIED - do NOT repeat themes from the avoid list
 
 For each phrase:
 1. English phrase (with commas for natural pauses)
-2. Japanese translation (natural Japanese with appropriate Kanji/Hiragana/Katakana)
-3. Romaji pronunciation guide (Hepburn Romanization, e.g., "konnichiwa")
+2. Dutch translation (in Dutch script)
+3. Transliteration (Roman script pronunciation)
 
 Return as JSON array:
-[{{"english": "...", "japanese": "...", "romaji": "..."}}]
+[{{"english": "...", "japanese": "...", "transliteration": "..."}}]
 
 IMPORTANT: Create FRESH, UNIQUE phrases that haven't been used before.
-IMPORTANT: Japanese text must be clean - no slashes, no multiple versions."""
+IMPORTANT: Dutch text must be clean - no slashes, no multiple versions."""
 
-                payload = {
-                    "model": model,
-                    "messages": [
-                        {"role": "system", "content": "You are a Japanese teacher. Create short, natural phrases with pauses."},
-                        {"role": "user", "content": prompt}
-                    ],
-                    "temperature": 0.9
-                }
+            payload = {
+                "model": AI_MODEL,
+                "messages": [
+                    {"role": "system", "content": "You are a Dutch teacher. Create short, natural phrases with pauses. Each generation must produce completely different, creative phrases."},
+                    {"role": "user", "content": prompt}
+                ],
+                "temperature": min(0.95 + attempt * 0.03, 1.0)
+            }
 
-                response = requests.post(url, headers=headers, json=payload, timeout=60)
-                if response.status_code != 200:
-                    print(f"[content] Attempt {attempt + 1}, model '{model}' returned {response.status_code}: {response.text[:200]}")
+            response = requests.post(url, headers=headers, json=payload, timeout=60)
+            response.raise_for_status()
+
+            data = response.json()
+            content = data["choices"][0]["message"]["content"].strip()
+
+            if "```json" in content:
+                content = content.split("```json")[1].split("```")[0].strip()
+            elif "```" in content:
+                content = content.split("```")[1].split("```")[0].strip()
+
+            phrases = json.loads(content)
+
+            for p in phrases:
+                if "transliteration" not in p and "romaji" in p:
+                    p["transliteration"] = p.pop("romaji")
+                if "japanese" not in p:
+                    alt_keys = ["japanese", "native", "translation", p.get("language", "")]
+                    for k in alt_keys:
+                        if k in p:
+                            p["japanese"] = p.pop(k)
+                            break
+                if "japanese" not in p:
                     continue
 
-                data = response.json()
-                content = data["choices"][0]["message"]["content"].strip()
-
-                # Extract JSON
-                if "```json" in content:
-                    content = content.split("```json")[1].split("```")[0].strip()
-                elif "```" in content:
-                    content = content.split("```")[1].split("```")[0].strip()
-
-                phrases = json.loads(content)
-
-                # Filter out already-used phrases and ensure proper length
-                unique_phrases = []
-                for phrase in phrases:
-                    if len(phrase["english"].split()) > 15:
-                        continue
-                    if not is_phrase_used(phrase["english"]):
-                        unique_phrases.append(phrase)
-                    if len(unique_phrases) >= num_phrases:
-                        break
-
+            unique_phrases = []
+            for phrase in phrases:
+                if len(phrase["english"].split()) > 15:
+                    continue
+                if not is_phrase_used(phrase["english"]):
+                    unique_phrases.append(phrase)
                 if len(unique_phrases) >= num_phrases:
-                    add_phrases_to_history(unique_phrases[:num_phrases], category_english)
-                    print(f"[content] Generated {len(unique_phrases[:num_phrases])} phrases via {model}")
-                    return unique_phrases[:num_phrases]
+                    break
 
-            except Exception as e:
-                print(f"[content] Attempt {attempt + 1}, model '{model}' failed: {e}")
+            if len(unique_phrases) >= num_phrases:
+                add_phrases_to_history(unique_phrases[:num_phrases], category_english)
+                return unique_phrases[:num_phrases]
 
-    # Fallback to fresh phrases
-    print("[content] All AI attempts exhausted. Using fallback phrases...")
+            print(f"[content] Attempt {attempt + 1}: API returned {len(phrases)} phrases, only {len(unique_phrases)} are new (need {num_phrases})")
+            for p in unique_phrases:
+                if p["english"] not in recent_english:
+                    recent_english.append(p["english"])
+
+        except Exception as e:
+            print(f"[content] Attempt {attempt + 1} failed: {e}")
+
+    print("[content] Using fallback phrases...")
     return get_fresh_fallback_phrases(category_english, num_phrases)
 
 
+
 def get_fresh_fallback_phrases(category: str, num_phrases: int) -> list:
-    """Get fallback phrases, filtering out used ones, mixing from related categories if depleted"""
-    from fallback_phrases import FALLBACK_PHRASES, RELATED_CATEGORIES
-
-    fallbacks = FALLBACK_PHRASES.get(category, FALLBACK_PHRASES["Motivation"])
-    fresh_phrases = [p for p in fallbacks if not is_phrase_used(p["english"])]
-
-    if len(fresh_phrases) >= num_phrases:
-        return fresh_phrases[:num_phrases]
-
-    related = RELATED_CATEGORIES.get(category, [])
-    for rel_cat in related:
-        rel_phrases = FALLBACK_PHRASES.get(rel_cat, [])
-        for p in rel_phrases:
-            if len(fresh_phrases) >= num_phrases:
-                break
-            if not is_phrase_used(p["english"]):
-                fresh_phrases.append(p)
-        if len(fresh_phrases) >= num_phrases:
-            break
-
-    if len(fresh_phrases) >= num_phrases:
-        return fresh_phrases[:num_phrases]
-
-    all_available = []
-    for cat_list in FALLBACK_PHRASES.values():
-        for p in cat_list:
-            if not is_phrase_used(p["english"]):
-                all_available.append(p)
-            if len(all_available) >= num_phrases:
-                break
-        if len(all_available) >= num_phrases:
-            break
-
-    if len(all_available) >= num_phrases:
-        result = all_available[:num_phrases]
-        add_phrases_to_history(result, category)
-        return result
-
-    result = fallbacks[:num_phrases]
-    print(f"[content] WARNING: All phrases used, reusing {len(result)} fallback phrases")
-    return result
-
-
-# ============== AUDIO GENERATION ==============
-
+    """Return simple English fallback phrases when AI generation fails"""
+    generic_fallbacks = [
+        {"english": "Hello, nice to meet you.", "japanese": "Hallo, leuk je te ontmoeten.", "transliteration": "Hallo, leuk je te ontmoeten."},
+        {"english": "Thank you very much.", "japanese": "Heel erg bedankt.", "transliteration": "Heel erg bedankt."},
+        {"english": "Good morning, have a great day.", "japanese": "Goedemorgen, een fijne dag.", "transliteration": "Goedemorgen, een fijne dag."},
+        {"english": "I love learning new languages.", "japanese": "Ik hou ervan om nieuwe talen te leren.", "transliteration": "Ik hou ervan om nieuwe talen te leren."},
+        {"english": "Never give up on your dreams.", "japanese": "Geef nooit je dromen op.", "transliteration": "Geef nooit je dromen op."},
+        {"english": "Every day is a fresh start.", "japanese": "Elke dag is een nieuwe start.", "transliteration": "Elke dag is een nieuwe start."},
+        {"english": "Believe in yourself always.", "japanese": "Geloof altijd in jezelf.", "transliteration": "Geloof altijd in jezelf."},
+        {"english": "Small steps lead to big changes.", "japanese": "Kleine stappen leiden tot grote veranderingen.", "transliteration": "Kleine stappen leiden tot grote veranderingen."},
+        {"english": "You are stronger than you think.", "japanese": "Je bent sterker dan je denkt.", "transliteration": "Je bent sterker dan je denkt."},
+        {"english": "Happiness is a choice, choose it.", "japanese": "Geluk is een keuze, kies ervoor.", "transliteration": "Geluk is een keuze, kies ervoor."},
+        {"english": "What time is it please.", "japanese": "Hoe laat is het alstublieft.", "transliteration": "Hoe laat is het alstublieft."},
+        {"english": "Where is the train station.", "japanese": "Waar is het treinstation.", "transliteration": "Waar is het treinstation."},
+        {"english": "How much does this cost.", "japanese": "Hoeveel kost dit.", "transliteration": "Hoeveel kost dit."},
+        {"english": "Can you help me please.", "japanese": "Kunt u mij alstublieft helpen.", "transliteration": "Kunt u mij alstublieft helpen."},
+        {"english": "I would like a coffee please.", "japanese": "Ik wil graag een koffie alstublieft.", "transliteration": "Ik wil graag een koffie alstublieft."},
+        {"english": "The food is delicious today.", "japanese": "Het eten is heerlijk vandaag.", "transliteration": "Het eten is heerlijk vandaag."},
+        {"english": "Have a wonderful weekend.", "japanese": "Een fijn weekend.", "transliteration": "Een fijn weekend."},
+        {"english": "Take care of yourself.", "japanese": "Zorg goed voor jezelf.", "transliteration": "Zorg goed voor jezelf."},
+        {"english": "See you tomorrow my friend.", "japanese": "Tot morgen mijn vriend.", "transliteration": "Tot morgen mijn vriend."},
+        {"english": "The weather is beautiful outside.", "japanese": "Het weer is prachtig buiten.", "transliteration": "Het weer is prachtig buiten."},
+        {"english": "I am very happy today.", "japanese": "Ik ben erg blij vandaag.", "transliteration": "Ik ben erg blij vandaag."},
+        {"english": "Learning a language opens new doors.", "japanese": "Een taal leren opent nieuwe deuren.", "transliteration": "Een taal leren opent nieuwe deuren."},
+        {"english": "Keep practicing every single day.", "japanese": "Blijf elke dag oefenen.", "transliteration": "Blijf elke dag oefenen."},
+        {"english": "You can achieve anything you want.", "japanese": "Je kunt alles bereiken wat je wilt.", "transliteration": "Je kunt alles bereiken wat je wilt."},
+        {"english": "Rest when you are tired.", "japanese": "Rust als je moe bent.", "transliteration": "Rust als je moe bent."},
+        {"english": "Focus on the positive things.", "japanese": "Focus op de positieve dingen.", "transliteration": "Focus op de positieve dingen."},
+        {"english": "Learn from your mistakes.", "japanese": "Leer van je fouten.", "transliteration": "Leer van je fouten."},
+        {"english": "Trust the process completely.", "japanese": "Vertrouw volledig op het proces.", "transliteration": "Vertrouw volledig op het proces."},
+        {"english": "Breathe deeply and stay calm.", "japanese": "Haal diep adem en blijf kalm.", "transliteration": "Haal diep adem en blijf kalm."},
+        {"english": "Enjoy the little moments in life.", "japanese": "Geniet van de kleine momenten in het leven.", "transliteration": "Geniet van de kleine momenten in het leven."},
+        {"english": "Smile more, worry less.", "japanese": "Lach meer, maak je minder zorgen.", "transliteration": "Lach meer, maak je minder zorgen."},
+        {"english": "Be kind to everyone you meet.", "japanese": "Wees vriendelijk tegen iedereen die je ontmoet.", "transliteration": "Wees vriendelijk tegen iedereen die je ontmoet."},
+        {"english": "Help others without expecting anything back.", "japanese": "Help anderen zonder iets terug te verwachten.", "transliteration": "Help anderen zonder iets terug te verwachten."},
+        {"english": "Forgive yourself and move forward.", "japanese": "Vergeef jezelf en ga verder.", "transliteration": "Vergeef jezelf en ga verder."},
+        {"english": "Stay strong in difficult times.", "japanese": "Blijf sterk in moeilijke tijden.", "transliteration": "Blijf sterk in moeilijke tijden."},
+        {"english": "Every moment is a new beginning.", "japanese": "Elk moment is een nieuw begin.", "transliteration": "Elk moment is een nieuw begin."},
+        {"english": "Listen to your heart always.", "japanese": "Luister altijd naar je hart.", "transliteration": "Luister altijd naar je hart."},
+        {"english": "Do what makes you happy.", "japanese": "Doe wat je gelukkig maakt.", "transliteration": "Doe wat je gelukkig maakt."},
+        {"english": "Your potential is unlimited.", "japanese": "Je potentieel is onbeperkt.", "transliteration": "Je potentieel is onbeperkt."},
+        {"english": "Be brave and take risks.", "japanese": "Wees moedig en neem risico's.", "transliteration": "Wees moedig en neem risico's."},
+        {"english": "Celebrate your progress every day.", "japanese": "Vier je vooruitgang elke dag.", "transliteration": "Vier je vooruitgang elke dag."},
+        {"english": "Surround yourself with good people.", "japanese": "Omring jezelf met goede mensen.", "transliteration": "Omring jezelf met goede mensen."},
+        {"english": "Read books and grow your mind.", "japanese": "Lees boeken en ontwikkel je geest.", "transliteration": "Lees boeken en ontwikkel je geest."},
+        {"english": "Travel and discover new places.", "japanese": "Reis en ontdek nieuwe plekken.", "transliteration": "Reis en ontdek nieuwe plekken."},
+        {"english": "Appreciate what you already have.", "japanese": "Waardeer wat je al hebt.", "transliteration": "Waardeer wat je al hebt."},
+        {"english": "Dance like nobody is watching.", "japanese": "Dans alsof niemand kijkt.", "transliteration": "Dans alsof niemand kijkt."},
+        {"english": "Sing from your heart out loud.", "japanese": "Zing uit volle borst.", "transliteration": "Zing uit volle borst."},
+        {"english": "Plant seeds of kindness everywhere.", "japanese": "Zaai overal zaadjes van vriendelijkheid.", "transliteration": "Zaai overal zaadjes van vriendelijkheid."},
+        {"english": "Let go of what you cannot control.", "japanese": "Laat los wat je niet kunt beheersen.", "transliteration": "Laat los wat je niet kunt beheersen."},
+        {"english": "Be present in the here and now.", "japanese": "Wees aanwezig in het hier en nu.", "transliteration": "Wees aanwezig in het hier en nu."}
+    ]
+    fresh = [p for p in generic_fallbacks if not is_phrase_used(p["english"])]
+    return fresh[:num_phrases]
 async def generate_single_audio(text: str, voice: str, output_path: str):
-    """Generate audio using Edge TTS"""
     try:
         import edge_tts
         communicate = edge_tts.Communicate(text, voice)
@@ -367,66 +405,80 @@ async def generate_single_audio(text: str, voice: str, output_path: str):
         return False
 
 
-def generate_all_audio(phrases: list, output_dir: str):
-    """Generate audio for all phrases with proper timing"""
+async def generate_audio_with_retries(text: str, voice: str, output_path: str, max_retries: int = 3):
+    import asyncio
+    for attempt in range(1, max_retries + 1):
+        success = await generate_single_audio(text, voice, output_path)
+        if success:
+            if Path(output_path).exists() and Path(output_path).stat().st_size > 100:
+                return True
+            else:
+                print(f"    TTS file too small or missing, retrying ({attempt}/{max_retries})...")
+                await asyncio.sleep(2 * attempt)
+                continue
+        else:
+            if attempt < max_retries:
+                wait = 2 * attempt
+                print(f"    TTS retry {attempt}/{max_retries} in {wait}s...")
+                await asyncio.sleep(wait)
+            else:
+                print(f"    TTS failed after {max_retries} attempts, using silence fallback")
+                return False
+    return False
 
+
+def generate_all_audio(phrases: list, output_dir: str):
     output_dir = Path(output_dir)
     output_dir.mkdir(parents=True, exist_ok=True)
     audio_files = []
 
     for i, phrase in enumerate(phrases):
         english_file = output_dir / f"english_{i}.mp3"
-        japanese_file = output_dir / f"japanese_{i}.mp3"
+        native_file = output_dir / f"native_{i}.mp3"
         combined_file = output_dir / f"combined_{i}.mp3"
 
         print(f"\n  Phrase {i+1}:")
         print(f"    EN: {phrase['english']}")
         print(f"    JP: {phrase['japanese']}")
 
-        # Generate English audio
-        en_success = asyncio.run(generate_single_audio(phrase["english"], ENGLISH_VOICE, str(english_file)))
-        if en_success:
-            print(f"    ✓ English: {english_file.name}")
+        nat_success = asyncio.run(generate_audio_with_retries(phrase["japanese"], NATIVE_VOICE, str(native_file)))
+        if nat_success:
+            print(f"    - Japanese: {native_file.name}")
         else:
+            print(f"    - Japanese: SILENCE FALLBACK (TTS failed)")
+            cmd = ["ffmpeg", "-y", "-f", "lavfi", "-i", "anullsrc=r=24000:cl=mono", "-t", "2", str(native_file)]
+            subprocess.run(cmd, capture_output=True)
+
+        en_success = asyncio.run(generate_audio_with_retries(phrase["english"], ENGLISH_VOICE, str(english_file)))
+        if en_success:
+            print(f"    - English: {english_file.name}")
+        else:
+            print(f"    - English: SILENCE FALLBACK (TTS failed)")
             cmd = ["ffmpeg", "-y", "-f", "lavfi", "-i", "anullsrc=r=24000:cl=mono", "-t", "2", str(english_file)]
             subprocess.run(cmd, capture_output=True)
 
-        # Generate Japanese audio
-        jp_success = asyncio.run(generate_single_audio(phrase["japanese"], JAPANESE_VOICE, str(japanese_file)))
-        if jp_success:
-            print(f"    ✓ Japanese: {japanese_file.name}")
-        else:
-            cmd = ["ffmpeg", "-y", "-f", "lavfi", "-i", "anullsrc=r=24000:cl=mono", "-t", "2", str(japanese_file)]
-            subprocess.run(cmd, capture_output=True)
-
-        # Get ACTUAL durations
         en_duration = get_audio_duration(str(english_file))
-        jp_duration = get_audio_duration(str(japanese_file))
-
-        # Add pause between English and Japanese
+        nat_duration = get_audio_duration(str(native_file))
         pause_between = 0.5
-        total_duration = en_duration + pause_between + jp_duration
+        total_duration = en_duration + pause_between + nat_duration
 
-        print(f"    ⏱️  Total: {total_duration:.2f}s (EN: {en_duration:.2f}s + pause: {pause_between}s + JP: {jp_duration:.2f}s)")
+        print(f"    Total: {total_duration:.2f}s (EN: {en_duration:.2f}s + pause: {pause_between}s + JP: {nat_duration:.2f}s)")
 
-        # Combine audio files
         cmd = [
             "ffmpeg", "-y",
             "-i", str(english_file),
-            "-i", str(japanese_file),
-            "-filter_complex", f"[0:a][1:a]concat=n=2:v=0:a=1[out]",
+            "-i", str(native_file),
+            "-filter_complex", "[0:a][1:a]concat=n=2:v=0:a=1[out]",
             "-map", "[out]",
             str(combined_file)
         ]
-
         result = subprocess.run(cmd, capture_output=True, text=True)
 
         if result.returncode != 0:
             concat_file = output_dir / f"concat_{i}.txt"
             with open(concat_file, "w", encoding="utf-8") as f:
                 f.write(f"file '{english_file.as_posix()}'\n")
-                f.write(f"file '{japanese_file.as_posix()}'\n")
-
+                f.write(f"file '{native_file.as_posix()}'\n")
             cmd = [
                 "ffmpeg", "-y",
                 "-f", "concat", "-safe", "0",
@@ -439,24 +491,23 @@ def generate_all_audio(phrases: list, output_dir: str):
                 concat_file.unlink()
 
         actual_duration = get_audio_duration(str(combined_file))
-        print(f"    ✓ Combined verified: {actual_duration:.2f}s")
+        print(f"    Combined verified: {actual_duration:.2f}s")
 
         audio_files.append({
             "index": i,
             "english": str(english_file),
-            "japanese": str(japanese_file),
+            "native": str(native_file),
             "combined": str(combined_file),
             "duration": actual_duration,
             "en_duration": en_duration,
-            "jp_duration": jp_duration
+            "nat_duration": nat_duration
         })
 
-    print(f"\n[audio] ✓ Generated {len(audio_files)} phrase audios")
+    print(f"\n[audio] Generated {len(audio_files)} phrase audios")
     return audio_files
 
 
 def get_audio_duration(audio_file: str) -> float:
-    """Get audio duration in seconds"""
     if not Path(audio_file).exists():
         return 2.0
     cmd = ["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "default=noprint_wrappers=1:nokey=1", audio_file]
@@ -468,85 +519,827 @@ def get_audio_duration(audio_file: str) -> float:
 
 
 def create_final_narration(audio_files: list, output_file: str):
-    """Combine all audio files"""
     n = len(audio_files)
     print(f"[audio] Combining {n} audio files...")
-
     concat_file = Path(output_file).parent / "narration_list.txt"
-
     with open(concat_file, "w", encoding="utf-8") as f:
         for audio_info in audio_files:
             combined_path = Path(audio_info["combined"])
             if combined_path.exists():
                 path_str = str(combined_path.resolve()).replace("\\", "/").replace("'", "'\\''")
                 f.write(f"file '{path_str}'\n")
-
     cmd = ["ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", str(concat_file), "-c:a", "copy", str(output_file)]
     result = subprocess.run(cmd, capture_output=True, text=True)
-
     if concat_file.exists():
         concat_file.unlink()
-
     if result.returncode == 0 and Path(output_file).exists() and Path(output_file).stat().st_size > 0:
         size = Path(output_file).stat().st_size
-        print(f"\n[audio] ✓ Final narration: {Path(output_file).name} ({size/1024:.1f} KB)")
+        print(f"\n[audio] Final narration: {Path(output_file).name} ({size/1024:.1f} KB)")
         return True
-
     return False
 
 
-# ============== IMAGE GENERATION ==============
+NOTO_FONT_URL = "https://github.com/google/fonts/raw/main/ofl/notosans/NotoSans%5Bwdth,wght%5D.ttf"
+FONTS_DIR = BASE_DIR / "fonts"
+
+
+def ensure_font():
+    font_file = FONTS_DIR / "NotoSans-Bold.ttf"
+    if font_file.exists():
+        return str(font_file)
+    FONTS_DIR.mkdir(exist_ok=True)
+    try:
+        import urllib.request
+        print(f"[font] Downloading {font_file.name}...")
+        urllib.request.urlretrieve(NOTO_FONT_URL, str(font_file))
+        print(f"[font] Downloaded: {font_file}")
+        return str(font_file)
+    except Exception as e:
+        print(f"[font] Download failed: {e}")
+    return None
+
 
 def create_impressive_background(category_english: str):
-    """Create stunning gradient background with geometric patterns and glow"""
     from PIL import Image, ImageDraw
+
+    category_colors = {
+    "Greetings": [
+        [
+            70,
+            130,
+            180
+        ],
+        [
+            255,
+            140,
+            0
+        ],
+        [
+            255,
+            255,
+            0
+        ],
+        [
+            255,
+            99,
+            71
+        ]
+    ],
+    "Basic Phrases": [
+        [
+            60,
+            179,
+            113
+        ],
+        [
+            255,
+            215,
+            0
+        ],
+        [
+            144,
+            238,
+            144
+        ],
+        [
+            255,
+            140,
+            0
+        ]
+    ],
+    "Common Expressions": [
+        [
+            138,
+            43,
+            226
+        ],
+        [
+            255,
+            20,
+            147
+        ],
+        [
+            75,
+            0,
+            130
+        ],
+        [
+            255,
+            105,
+            180
+        ]
+    ],
+    "Travel": [
+        [
+            0,
+            191,
+            255
+        ],
+        [
+            255,
+            255,
+            0
+        ],
+        [
+            70,
+            130,
+            180
+        ],
+        [
+            255,
+            215,
+            0
+        ]
+    ],
+    "Restaurant": [
+        [
+            255,
+            69,
+            0
+        ],
+        [
+            255,
+            215,
+            0
+        ],
+        [
+            220,
+            20,
+            60
+        ],
+        [
+            255,
+            140,
+            0
+        ]
+    ],
+    "Shopping": [
+        [
+            255,
+            105,
+            180
+        ],
+        [
+            0,
+            100,
+            80
+        ],
+        [
+            255,
+            192,
+            203
+        ],
+        [
+            0,
+            200,
+            160
+        ]
+    ],
+    "Emergency": [
+        [
+            255,
+            0,
+            0
+        ],
+        [
+            139,
+            0,
+            0
+        ],
+        [
+            255,
+            69,
+            0
+        ],
+        [
+            220,
+            20,
+            60
+        ]
+    ],
+    "Family Terms": [
+        [
+            255,
+            182,
+            193
+        ],
+        [
+            138,
+            43,
+            226
+        ],
+        [
+            255,
+            160,
+            122
+        ],
+        [
+            75,
+            0,
+            130
+        ]
+    ],
+    "Numbers": [
+        [
+            255,
+            215,
+            0
+        ],
+        [
+            0,
+            0,
+            139
+        ],
+        [
+            255,
+            140,
+            0
+        ],
+        [
+            70,
+            130,
+            180
+        ]
+    ],
+    "Time": [
+        [
+            0,
+            0,
+            100
+        ],
+        [
+            255,
+            255,
+            0
+        ],
+        [
+            70,
+            130,
+            180
+        ],
+        [
+            255,
+            215,
+            0
+        ]
+    ],
+    "Motivation": [
+        [
+            138,
+            43,
+            226
+        ],
+        [
+            75,
+            0,
+            130
+        ],
+        [
+            255,
+            20,
+            147
+        ],
+        [
+            147,
+            112,
+            219
+        ]
+    ],
+    "Love": [
+        [
+            255,
+            0,
+            100
+        ],
+        [
+            139,
+            0,
+            0
+        ],
+        [
+            255,
+            105,
+            180
+        ],
+        [
+            255,
+            192,
+            203
+        ]
+    ],
+    "Success": [
+        [
+            255,
+            215,
+            0
+        ],
+        [
+            0,
+            100,
+            0
+        ],
+        [
+            255,
+            140,
+            0
+        ],
+        [
+            34,
+            139,
+            34
+        ]
+    ],
+    "Wisdom": [
+        [
+            0,
+            0,
+            139
+        ],
+        [
+            255,
+            215,
+            0
+        ],
+        [
+            70,
+            130,
+            180
+        ],
+        [
+            255,
+            255,
+            0
+        ]
+    ],
+    "Happiness": [
+        [
+            255,
+            255,
+            0
+        ],
+        [
+            255,
+            0,
+            255
+        ],
+        [
+            255,
+            165,
+            0
+        ],
+        [
+            147,
+            112,
+            219
+        ]
+    ],
+    "Self Improvement": [
+        [
+            0,
+            128,
+            0
+        ],
+        [
+            255,
+            215,
+            0
+        ],
+        [
+            0,
+            255,
+            0
+        ],
+        [
+            255,
+            140,
+            0
+        ]
+    ],
+    "Gratitude": [
+        [
+            255,
+            127,
+            80
+        ],
+        [
+            75,
+            0,
+            130
+        ],
+        [
+            255,
+            160,
+            122
+        ],
+        [
+            138,
+            43,
+            226
+        ]
+    ],
+    "Friendship": [
+        [
+            255,
+            192,
+            203
+        ],
+        [
+            0,
+            100,
+            80
+        ],
+        [
+            255,
+            105,
+            180
+        ],
+        [
+            0,
+            200,
+            160
+        ]
+    ],
+    "Hope": [
+        [
+            0,
+            0,
+            100
+        ],
+        [
+            255,
+            255,
+            0
+        ],
+        [
+            70,
+            130,
+            180
+        ],
+        [
+            255,
+            215,
+            0
+        ]
+    ],
+    "Creativity": [
+        [
+            255,
+            0,
+            127
+        ],
+        [
+            0,
+            0,
+            139
+        ],
+        [
+            255,
+            20,
+            147
+        ],
+        [
+            75,
+            0,
+            130
+        ]
+    ],
+    "Inner Peace": [
+        [
+            135,
+            206,
+            235
+        ],
+        [
+            0,
+            0,
+            100
+        ],
+        [
+            176,
+            224,
+            230
+        ],
+        [
+            75,
+            0,
+            130
+        ]
+    ],
+    "Confidence": [
+        [
+            255,
+            69,
+            0
+        ],
+        [
+            0,
+            0,
+            139
+        ],
+        [
+            255,
+            140,
+            0
+        ],
+        [
+            70,
+            130,
+            180
+        ]
+    ],
+    "Perseverance": [
+        [
+            139,
+            69,
+            19
+        ],
+        [
+            255,
+            215,
+            0
+        ],
+        [
+            160,
+            82,
+            45
+        ],
+        [
+            255,
+            140,
+            0
+        ]
+    ],
+    "Inspiration": [
+        [
+            255,
+            0,
+            255
+        ],
+        [
+            75,
+            0,
+            130
+        ],
+        [
+            255,
+            20,
+            147
+        ],
+        [
+            0,
+            0,
+            139
+        ]
+    ],
+    "Positive Life": [
+        [
+            50,
+            205,
+            50
+        ],
+        [
+            255,
+            0,
+            127
+        ],
+        [
+            144,
+            238,
+            144
+        ],
+        [
+            255,
+            20,
+            147
+        ]
+    ],
+    "Courage": [
+        [
+            178,
+            34,
+            34
+        ],
+        [
+            255,
+            215,
+            0
+        ],
+        [
+            220,
+            20,
+            60
+        ],
+        [
+            255,
+            140,
+            0
+        ]
+    ],
+    "Kindness": [
+        [
+            255,
+            182,
+            193
+        ],
+        [
+            138,
+            43,
+            226
+        ],
+        [
+            255,
+            160,
+            122
+        ],
+        [
+            75,
+            0,
+            130
+        ]
+    ],
+    "Patience": [
+        [
+            34,
+            139,
+            34
+        ],
+        [
+            255,
+            255,
+            0
+        ],
+        [
+            60,
+            179,
+            113
+        ],
+        [
+            255,
+            215,
+            0
+        ]
+    ],
+    "Forgiveness": [
+        [
+            230,
+            230,
+            250
+        ],
+        [
+            75,
+            0,
+            130
+        ],
+        [
+            216,
+            191,
+            216
+        ],
+        [
+            138,
+            43,
+            226
+        ]
+    ],
+    "Strength": [
+        [
+            100,
+            100,
+            100
+        ],
+        [
+            255,
+            69,
+            0
+        ],
+        [
+            150,
+            150,
+            150
+        ],
+        [
+            255,
+            140,
+            0
+        ]
+    ],
+    "Joy": [
+        [
+            255,
+            255,
+            0
+        ],
+        [
+            255,
+            0,
+            127
+        ],
+        [
+            255,
+            215,
+            0
+        ],
+        [
+            147,
+            112,
+            219
+        ]
+    ],
+    "Balance": [
+        [
+            60,
+            179,
+            113
+        ],
+        [
+            138,
+            43,
+            226
+        ],
+        [
+            152,
+            251,
+            152
+        ],
+        [
+            75,
+            0,
+            130
+        ]
+    ],
+    "Growth": [
+        [
+            0,
+            100,
+            0
+        ],
+        [
+            255,
+            215,
+            0
+        ],
+        [
+            34,
+            139,
+            34
+        ],
+        [
+            255,
+            140,
+            0
+        ]
+    ],
+    "Purpose": [
+        [
+            75,
+            0,
+            130
+        ],
+        [
+            255,
+            215,
+            0
+        ],
+        [
+            138,
+            43,
+            226
+        ],
+        [
+            255,
+            140,
+            0
+        ]
+    ],
+    "Mindfulness": [
+        [
+            210,
+            180,
+            140
+        ],
+        [
+            75,
+            0,
+            130
+        ],
+        [
+            245,
+            245,
+            220
+        ],
+        [
+            138,
+            43,
+            226
+        ]
+    ]
+}
 
     img = Image.new('RGB', (VIDEO_WIDTH, VIDEO_HEIGHT))
     draw = ImageDraw.Draw(img)
 
-    # HIGH CONTRAST gradients for ALL 35 categories (very different colors like Motivation)
-    category_colors = {
-        "Motivation": [(138, 43, 226), (75, 0, 130), (255, 20, 147), (147, 112, 219)],  # Purple → Dark Purple → Pink → Light Purple
-        "Love": [(255, 0, 100), (139, 0, 0), (255, 105, 180), (255, 192, 203)],  # Red → Dark Red → Hot Pink → Pink
-        "Success": [(255, 215, 0), (0, 100, 0), (255, 140, 0), (34, 139, 34)],  # Gold → Dark Green → Orange → Forest Green
-        "Wisdom": [(0, 0, 139), (255, 215, 0), (70, 130, 180), (255, 255, 0)],  # Dark Blue → Gold → Steel Blue → Yellow
-        "Happiness": [(255, 255, 0), (255, 0, 255), (255, 165, 0), (147, 112, 219)],  # Yellow → Magenta → Orange → Purple
-        "Self Improvement": [(0, 128, 0), (255, 215, 0), (0, 255, 0), (255, 140, 0)],  # Green → Gold → Lime → Orange
-        "Gratitude": [(255, 127, 80), (75, 0, 130), (255, 160, 122), (138, 43, 226)],  # Coral → Dark Purple → Light Salmon → Blue Violet
-        "Friendship": [(255, 192, 203), (0, 100, 80), (255, 105, 180), (0, 200, 160)],  # Pink → Dark Teal → Hot Pink → Medium Teal
-        "Hope": [(0, 0, 100), (255, 255, 0), (70, 130, 180), (255, 215, 0)],  # Dark Blue → Yellow → Steel Blue → Gold
-        "Creativity": [(255, 0, 127), (0, 0, 139), (255, 20, 147), (75, 0, 130)],  # Deep Pink → Dark Blue → Deep Pink → Dark Purple
-        "Inner Peace": [(135, 206, 235), (0, 0, 100), (176, 224, 230), (75, 0, 130)],  # Sky Blue → Dark Blue → Powder Blue → Dark Purple
-        "Confidence": [(255, 69, 0), (0, 0, 139), (255, 140, 0), (70, 130, 180)],  # Red Orange → Dark Blue → Orange → Steel Blue
-        "Perseverance": [(139, 69, 19), (255, 215, 0), (160, 82, 45), (255, 140, 0)],  # Saddle Brown → Gold → Sienna → Orange
-        "Inspiration": [(255, 0, 255), (75, 0, 130), (255, 20, 147), (0, 0, 139)],  # Magenta → Dark Purple → Deep Pink → Dark Blue
-        "Positive Life": [(50, 205, 50), (255, 0, 127), (144, 238, 144), (255, 20, 147)],  # Lime Green → Deep Pink → Light Green → Deep Pink
-        "Courage": [(178, 34, 34), (255, 215, 0), (220, 20, 60), (255, 140, 0)],  # Firebrick → Gold → Crimson → Orange
-        "Kindness": [(255, 182, 193), (138, 43, 226), (255, 160, 122), (75, 0, 130)],  # Light Salmon → Dark Purple → Light Salmon → Dark Purple
-        "Patience": [(34, 139, 34), (255, 255, 0), (60, 179, 113), (255, 215, 0)],  # Forest Green → Yellow → Medium Sea Green → Gold
-        "Forgiveness": [(230, 230, 250), (75, 0, 130), (216, 191, 216), (138, 43, 226)],  # Lavender → Dark Purple → Thistle → Blue Violet
-        "Strength": [(100, 100, 100), (255, 69, 0), (150, 150, 150), (255, 140, 0)],  # Gray → Red Orange → Light Gray → Orange
-        "Joy": [(255, 255, 0), (255, 0, 127), (255, 215, 0), (147, 112, 219)],  # Yellow → Deep Pink → Gold → Purple
-        "Balance": [(60, 179, 113), (138, 43, 226), (152, 251, 152), (75, 0, 130)],  # Medium Sea Green → Dark Purple → Pale Green → Dark Purple
-        "Growth": [(0, 100, 0), (255, 215, 0), (34, 139, 34), (255, 140, 0)],  # Dark Green → Gold → Forest Green → Orange
-        "Purpose": [(75, 0, 130), (255, 215, 0), (138, 43, 226), (255, 140, 0)],  # Dark Purple → Gold → Blue Violet → Orange
-        "Mindfulness": [(210, 180, 140), (75, 0, 130), (245, 245, 220), (138, 43, 226)],  # Tan → Dark Purple → Beige → Blue Violet
-        # Essential Japanese Learning Categories
-        "Greetings": [(70, 130, 180), (255, 140, 0), (255, 255, 0), (255, 99, 71)],  # Steel Blue → Orange → Yellow → Tomato
-        "Basic Phrases": [(60, 179, 113), (255, 215, 0), (144, 238, 144), (255, 140, 0)],  # Medium Sea Green → Gold → Light Green → Orange
-        "Common Expressions": [(138, 43, 226), (255, 20, 147), (75, 0, 130), (255, 105, 180)],  # Dark Violet → Deep Pink → Dark Purple → Hot Pink
-        "Travel Japanese": [(0, 191, 255), (255, 255, 0), (70, 130, 180), (255, 215, 0)],  # Deep Sky Blue → Yellow → Steel Blue → Gold
-        "Restaurant Japanese": [(255, 69, 0), (255, 215, 0), (220, 20, 60), (255, 140, 0)],  # Red Orange → Gold → Crimson → Orange
-        "Shopping Japanese": [(255, 105, 180), (0, 100, 80), (255, 192, 203), (0, 200, 160)],  # Hot Pink → Dark Teal → Pink → Medium Teal
-        "Emergency Japanese": [(255, 0, 0), (139, 0, 0), (255, 69, 0), (220, 20, 60)],  # Red → Dark Red → Red Orange → Crimson
-        "Family Terms": [(255, 182, 193), (138, 43, 226), (255, 160, 122), (75, 0, 130)],  # Light Pink → Dark Purple → Light Salmon → Dark Purple
-        "Numbers Japanese": [(255, 215, 0), (0, 0, 139), (255, 140, 0), (70, 130, 180)],  # Gold → Dark Blue → Orange → Steel Blue
-        "Time Japanese": [(0, 0, 100), (255, 255, 0), (70, 130, 180), (255, 215, 0)],  # Dark Blue → Yellow → Steel Blue → Gold
-    }
-
     colors = category_colors.get(category_english, [(138, 43, 226), (75, 0, 130), (255, 20, 147), (147, 112, 219)])
 
-    # Create smooth multi-stop gradient
     for y in range(VIDEO_HEIGHT):
         ratio = y / VIDEO_HEIGHT
         if ratio < 0.33:
@@ -563,7 +1356,6 @@ def create_impressive_background(category_english: str):
             b = int(colors[2][2] + (colors[3][2] - colors[2][2]) * ((ratio - 0.66) * 3))
         draw.rectangle([(0, y), (VIDEO_WIDTH, y + 1)], fill=(r, g, b))
 
-    # Add subtle geometric pattern for depth (circles)
     for i in range(0, VIDEO_WIDTH, 120):
         for j in range(0, VIDEO_HEIGHT, 120):
             draw.ellipse(
@@ -572,10 +1364,8 @@ def create_impressive_background(category_english: str):
                 width=1
             )
 
-    # Add radial glow effect from center
     glow = Image.new('RGBA', (VIDEO_WIDTH, VIDEO_HEIGHT), (0, 0, 0, 0))
     glow_draw = ImageDraw.Draw(glow)
-
     for radius in range(800, 0, -50):
         alpha = int(30 * (1 - radius / 800))
         glow_draw.ellipse(
@@ -584,219 +1374,239 @@ def create_impressive_background(category_english: str):
             fill=(255, 255, 255, alpha)
         )
 
-    # Composite glow over background
     img = img.convert('RGBA')
     img = Image.alpha_composite(img, glow)
-
     return img
 
 
-def generate_complete_image(phrase_data: dict, category_english: str, output_path: str):
-    """Generate image with impressive background"""
+def find_font(bold=False, size=40):
+    from PIL import ImageFont
+    font_file = FONTS_DIR / "NotoSansDutch-Bold.ttf"
+    if font_file.exists():
+        try:
+            return ImageFont.truetype(str(font_file), size)
+        except (IOError, OSError):
+            pass
+    if bold:
+        font_preferences = [
+            "segoeuib.ttf", "arialbd.ttf", "DejaVuSans-Bold.ttf",
+            "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
+        ]
+    else:
+        font_preferences = [
+            "segoeui.ttf", "arial.ttf", "calibri.ttf", "DejaVuSans.ttf",
+            "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+        ]
+    for font_name in font_preferences:
+        try:
+            return ImageFont.truetype(font_name, size)
+        except (IOError, OSError):
+            continue
+    return ImageFont.load_default()
+
+
+def rounded_rect(draw, bbox, radius, fill=None, outline=None, width=1):
+    x1, y1, x2, y2 = bbox
+    r = min(radius, (x2 - x1) // 2, (y2 - y1) // 2)
+    draw.pieslice([x1, y1, x1 + r*2, y1 + r*2], 180, 270, fill=fill)
+    draw.pieslice([x2 - r*2, y1, x2, y1 + r*2], 270, 360, fill=fill)
+    draw.pieslice([x1, y2 - r*2, x1 + r*2, y2], 90, 180, fill=fill)
+    draw.pieslice([x2 - r*2, y2 - r*2, x2, y2], 0, 90, fill=fill)
+    draw.rectangle([x1 + r, y1, x2 - r, y2], fill=fill)
+    draw.rectangle([x1, y1 + r, x2, y2 - r], fill=fill)
+
+
+def generate_complete_image(phrase_data: dict, category_english: str, output_path: str, phrase_index: int = 0, total_phrases: int = 5):
     try:
         from PIL import Image, ImageDraw, ImageFont
     except ImportError:
         print("PIL not available. Install: pip install Pillow")
         return None
 
+    ensure_font()
     img = create_impressive_background(category_english)
     draw = ImageDraw.Draw(img)
 
-    # Load fonts - Optimized for mobile viewing (INCREASED sizes)
-    # English text fonts (bold, professional) - Linux/Windows fallback
-    english_font_paths = [
-        "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",  # Linux (GitHub Actions)
-        "/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf",  # Alternative Linux
-        "C:/Windows/Fonts/arialbd.ttf",  # Windows Arial Bold
-        "C:/Windows/Fonts/segoeui.ttf",  # Windows Segoe UI
-    ]
+    SIZE_CATEGORY = 64
+    SIZE_NATIVE_L = 100
+    SIZE_NATIVE_M = 82
+    SIZE_NATIVE_S = 66
+    SIZE_ENGLISH = 70
+    SIZE_TRANSLITERATION = 48
+    SIZE_BRANDING = 50
+    SIZE_PROGRESS = 38
 
-    # Japanese fonts (for Japanese characters only) - Bold versions
-    japanese_font_paths = [
-        "/usr/share/fonts/truetype/wqy/wqy-zenhei.ttc",  # Linux (GitHub Actions)
-        "/usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc",  # Alternative Linux
-        "/usr/share/fonts/truetype/wqy/wqy-microhei.ttc",  # Alternative Linux
-        "C:/Windows/Fonts/msgothic.ttc",  # Windows MS Gothic (Japanese)
-        "C:/Windows/Fonts/msmincho.ttc",  # Windows MS Mincho (Japanese)
-    ]
+    font_category = find_font(bold=True, size=SIZE_CATEGORY)
+    font_native_l = find_font(bold=True, size=SIZE_NATIVE_L)
+    font_native_m = find_font(bold=True, size=SIZE_NATIVE_M)
+    font_native_s = find_font(bold=True, size=SIZE_NATIVE_S)
+    font_english = find_font(bold=True, size=SIZE_ENGLISH)
+    font_transliteration = find_font(bold=False, size=SIZE_TRANSLITERATION)
+    font_branding = find_font(bold=True, size=SIZE_BRANDING)
+    font_progress = find_font(bold=False, size=SIZE_PROGRESS)
 
-    def load_font(font_paths, size):
-        """Load font with fallback"""
-        for font_path in font_paths:
-            try:
-                return ImageFont.truetype(font_path, size)
-            except (IOError, OSError):
-                continue
-        # Last resort - use default
-        return ImageFont.load_default()
-
-    # English text fonts (bold, professional)
-    font_category = load_font(english_font_paths, 60)
-    font_large = load_font(english_font_paths, 85)
-    font_branding = load_font(english_font_paths, 52)
-
-    # Japanese text fonts (supports Japanese characters, bold)
-    font_japanese = load_font(japanese_font_paths, 65)  # Reduced from 75 to fit better
-
-    # Romaji fonts - BOLD and LARGER for better visibility
-    # Use English bold fonts for romaji (Latin characters)
-    font_romaji = load_font(english_font_paths, 55)  # Increased size and uses bold font
-
+    native = phrase_data.get("japanese", "")
     english = phrase_data.get("english", "")
-    japanese = phrase_data.get("japanese", "")
-    romaji = phrase_data.get("romaji", "")
+    transliteration = phrase_data.get("transliteration", "")
 
     def wrap_text(text, font, max_width):
-        """Wrap text to fit within max_width - handles both English and Japanese"""
+        words = text.split()
         lines = []
-        
-        # For Japanese text (no spaces), split by character count
-        # Japanese characters are wider, so use smaller limit
-        is_japanese = any('\u3040' <= c <= '\u309f' or '\u30a0' <= c <= '\u30ff' or '\u4e00' <= c <= '\u9fff' for c in text)
-        
-        if is_japanese:
-            # Japanese: split by character count (14 chars max per line for safe fit)
-            max_chars = 14
-            for i in range(0, len(text), max_chars):
-                lines.append(text[i:i + max_chars])
-        else:
-            # English: split by words
-            words = text.split()
-            current_line = []
-            for word in words:
-                test_line = ' '.join(current_line + [word])
-                bbox = draw.textbbox((0, 0), test_line, font=font)
-                width = bbox[2] - bbox[0]
-                if width <= max_width:
-                    current_line.append(word)
-                else:
-                    if current_line:
-                        lines.append(' '.join(current_line))
-                    current_line = [word]
-            if current_line:
-                lines.append(' '.join(current_line))
-        
+        current_line = []
+        for word in words:
+            test_line = ' '.join(current_line + [word])
+            bbox = draw.textbbox((0, 0), test_line, font=font)
+            width = bbox[2] - bbox[0]
+            if width <= max_width:
+                current_line.append(word)
+            else:
+                if current_line:
+                    lines.append(' '.join(current_line))
+                current_line = [word]
+        if current_line:
+            lines.append(' '.join(current_line))
         return lines
 
-    # Category at top
-    category_text = category_english.upper()
-    category_bbox = draw.textbbox((VIDEO_WIDTH // 2, 140), category_text, font=font_category, anchor="mm")
-    padding = 25
-    draw.rectangle(
-        [(category_bbox[0] - padding, category_bbox[1] - padding),
-         (category_bbox[2] + padding, category_bbox[3] + padding)],
-        fill=(0, 0, 0, 200)
-    )
-    draw.text(
-        (VIDEO_WIDTH // 2, 140),
-        category_text,
-        fill=(255, 255, 255),
-        font=font_category,
-        anchor="mm",
-        stroke_width=2,
-        stroke_fill=(0, 0, 0)
-    )
+    def pick_native_font(text, max_w):
+        for font, name in [(font_native_l, 'L'), (font_native_m, 'M'), (font_native_s, 'S')]:
+            lines = wrap_text(text, font, max_w)
+            if len(lines) <= 2:
+                return font, lines
+        return font_native_s, wrap_text(native, font_native_s, max_w)
 
-    # English text
-    english_y = 470  # Adjusted for larger fonts
-    english_lines = wrap_text(english, font_large, VIDEO_WIDTH - 140)
-    total_height = len(english_lines) * 95  # Increased from 75 for larger fonts
+    def measure_line_h(font):
+        b = draw.textbbox((0, 0), "Ag", font=font)
+        return b[3] - b[1]
 
-    draw.rectangle(
-        [(60, english_y - 55), (VIDEO_WIDTH - 60, english_y + total_height + 15)],
-        fill=(20, 30, 80, 220)
-    )
+    max_text_w = VIDEO_WIDTH - 140
+    cat_native = CATEGORIES_NATIVE.get(category_english, category_english)
 
-    for i, line in enumerate(english_lines):
-        y_pos = english_y + (i * 95)  # Increased spacing
-        draw.text(
-            (VIDEO_WIDTH // 2, y_pos),
-            line,
-            fill=(255, 255, 255),
-            font=font_large,
-            anchor="mm",
-            stroke_width=2,
-            stroke_fill=(0, 0, 0)
-        )
+    nat_font, nat_lines = pick_native_font(native, max_text_w - 40)
+    en_lines = wrap_text(english, font_english, max_text_w)
+    trans_lines = wrap_text(transliteration, font_transliteration, max_text_w - 60) if transliteration else []
 
-    # Japanese text - with proper wrapping and container
-    japanese_y = english_y + total_height + 110
-    japanese_lines = wrap_text(japanese, font_japanese, VIDEO_WIDTH - 200)
-    total_height = len(japanese_lines) * 75  # Spacing for 65px font
+    nat_lh = measure_line_h(nat_font)
+    en_lh = measure_line_h(font_english)
+    trans_lh = measure_line_h(font_transliteration)
 
-    # Add extra padding for Japanese text container
-    japanese_padding = 60
-    draw.rectangle(
-        [(50, japanese_y - japanese_padding), (VIDEO_WIDTH - 50, japanese_y + total_height + japanese_padding - 10)],
-        fill=(80, 30, 30, 220)
-    )
+    nat_box_pad = 35
+    en_box_pad = 28
+    trans_box_pad = 22
 
-    for i, line in enumerate(japanese_lines):
-        y_pos = japanese_y + (i * 75)
-        draw.text(
-            (VIDEO_WIDTH // 2, y_pos),
-            line,
-            fill=(255, 255, 0),
-            font=font_japanese,
-            anchor="mm",
-            stroke_width=3,
-            stroke_fill=(0, 0, 0)
-        )
+    nat_box_h = len(nat_lines) * nat_lh + nat_box_pad * 2
+    en_box_h = len(en_lines) * en_lh + en_box_pad * 2
+    trans_box_h = len(trans_lines) * trans_lh + trans_box_pad * 2 if trans_lines else 0
 
-    # Romaji with FILLED BOX - BOLDER text for better visibility
-    romaji_y = japanese_y + total_height + 90  # Increased from 80
-    romaji_text = f"[{romaji}]"
-    romaji_lines = wrap_text(romaji_text, font_romaji, VIDEO_WIDTH - 160)
+    gap_cat_nat = 50
+    gap_nat_en = 35
+    gap_en_trans = 30
+    gap_trans_prog = 25
+    gap_prog_brand = 40
+    prog_bar_h = 30
 
-    if romaji_lines:
-        romaji_total_height = len(romaji_lines) * 60  # Increased spacing for larger font
-        draw.rectangle(
-            [(70, romaji_y - 25), (VIDEO_WIDTH - 70, romaji_y + romaji_total_height + 15)],
-            fill=(40, 40, 40, 230)
-        )
+    total_center_h = (0 + gap_cat_nat + nat_box_h + gap_nat_en +
+                      en_box_h + gap_en_trans + trans_box_h + gap_trans_prog +
+                      prog_bar_h + gap_prog_brand)
 
-        for i, romaji_line in enumerate(romaji_lines):
-            y_pos = romaji_y + (i * 60)  # Increased spacing to match font size
-            draw.text(
-                (VIDEO_WIDTH // 2, y_pos),
-                romaji_line,
-                fill=(255, 255, 255),  # Brighter white for better contrast
-                font=font_romaji,
-                anchor="mm",
-                stroke_width=3,  # Increased from 2 to 3 for much bolder text
-                stroke_fill=(0, 0, 0, 220)
-            )
+    start_y = int((VIDEO_HEIGHT - total_center_h) * 0.38)
+    if start_y < 200:
+        start_y = 200
 
-    # Branding
-    branding_y = VIDEO_HEIGHT - 100
-    draw.rectangle(
-        [(0, branding_y - 30), (VIDEO_WIDTH, branding_y + 50)],
-        fill=(0, 0, 0, 180)
-    )
-    draw.text(
-        (VIDEO_WIDTH // 2, branding_y),
-        "VELOCITY JAPANESE",
-        fill=(255, 255, 255),
-        font=font_branding,
-        anchor="mm",
-        stroke_width=2,
-        stroke_fill=(0, 0, 0)
-    )
+    cy = start_y
+
+    # Category bar (rounded)
+    cat_text = category_english
+    cat_bb = draw.textbbox((0, 0), cat_text, font=font_category)
+    cat_tw = cat_bb[2] - cat_bb[0]
+    cat_th = cat_bb[3] - cat_bb[1]
+    cat_cx = VIDEO_WIDTH // 2
+    cat_cy = 185
+    cat_pad = 28
+    cat_box_x1 = cat_cx - cat_tw // 2 - cat_pad
+    cat_box_y1 = cat_cy - cat_th // 2 - cat_pad
+    cat_box_x2 = cat_cx + cat_tw // 2 + cat_pad
+    cat_box_y2 = cat_cy + cat_th // 2 + cat_pad
+    rounded_rect(draw, (cat_box_x1, cat_box_y1, cat_box_x2, cat_box_y2),
+                 25, fill=(0, 0, 0, 190))
+    draw.text((cat_cx, cat_cy), cat_text,
+              fill=(255, 255, 255), font=font_category, anchor="mm",
+              stroke_width=2, stroke_fill=(0, 0, 0))
+
+    cy += gap_cat_nat
+
+    # English phrase (top)
+    en_margin = 60
+    rounded_rect(draw, (en_margin, cy, VIDEO_WIDTH - en_margin, cy + en_box_h), 28,
+                 fill=(20, 40, 100, 220))
+    for i, line in enumerate(en_lines):
+        ly = cy + en_box_pad + i * en_lh + en_lh // 2
+        draw.text((VIDEO_WIDTH // 2, ly), line,
+                  fill=(255, 255, 255), font=font_english, anchor="mm",
+                  stroke_width=3, stroke_fill=(0, 0, 40))
+
+    cy += en_box_h + gap_nat_en
+
+    # Native phrase (below English)
+    nat_margin = 50
+    rounded_rect(draw, (nat_margin, cy, VIDEO_WIDTH - nat_margin, cy + nat_box_h), 24,
+                 fill=(139, 0, 0, 220))
+    for i, line in enumerate(nat_lines):
+        ly = cy + nat_box_pad + i * nat_lh + nat_lh // 2
+        draw.text((VIDEO_WIDTH // 2, ly), line,
+                  fill=(255, 255, 200), font=nat_font, anchor="mm",
+                  stroke_width=2, stroke_fill=(60, 0, 0))
+
+    cy += nat_box_h + gap_en_trans
+
+    # Transliteration
+    if trans_lines:
+        trans_margin = 70
+        rounded_rect(draw, (trans_margin, cy, VIDEO_WIDTH - trans_margin, cy + trans_box_h), 18,
+                     fill=(40, 40, 40, 220))
+        for i, line in enumerate(trans_lines):
+            ly = cy + trans_box_pad + i * trans_lh + trans_lh // 2
+            draw.text((VIDEO_WIDTH // 2, ly), line,
+                      fill=(220, 220, 220), font=font_transliteration, anchor="mm",
+                      stroke_width=1, stroke_fill=(20, 20, 20))
+        cy += trans_box_h + gap_trans_prog
+    else:
+        cy += gap_trans_prog
+
+    # Progress
+    prog_text = f"{phrase_index + 1} / {total_phrases}"
+    prog_bb = draw.textbbox((0, 0), prog_text, font=font_progress)
+    prog_h = prog_bb[3] - prog_bb[1]
+    draw.text((VIDEO_WIDTH // 2, cy + prog_h // 2), prog_text,
+              fill=(180, 180, 180), font=font_progress, anchor="mm")
+
+    # Branding (rounded)
+    brand_text = "VELOCITY JAPANESE"
+    brand_bb = draw.textbbox((0, 0), brand_text, font=font_branding)
+    brand_tw = brand_bb[2] - brand_bb[0]
+    brand_th = brand_bb[3] - brand_bb[1]
+    brand_cx = VIDEO_WIDTH // 2
+    brand_cy = VIDEO_HEIGHT - 120
+    brand_pad = 32
+    brand_box_x1 = brand_cx - brand_tw // 2 - brand_pad
+    brand_box_y1 = brand_cy - brand_th // 2 - brand_pad
+    brand_box_x2 = brand_cx + brand_tw // 2 + brand_pad
+    brand_box_y2 = brand_cy + brand_th // 2 + brand_pad
+    rounded_rect(draw, (brand_box_x1, brand_box_y1, brand_box_x2, brand_box_y2),
+                 30, fill=(0, 0, 0, 195))
+    draw.text((brand_cx, brand_cy), brand_text,
+              fill=(255, 215, 0), font=font_branding, anchor="mm",
+              stroke_width=2, stroke_fill=(0, 0, 0))
 
     if img.mode == 'RGBA':
         img = img.convert('RGB')
 
     Path(output_path).parent.mkdir(parents=True, exist_ok=True)
     img.save(output_path, quality=95, optimize=True)
-    print(f"  ✓ Image: {Path(output_path).name}")
+    print(f"  Image: {Path(output_path).name}")
     return output_path
 
 
-# ============== VIDEO CREATION ==============
-
 def create_video_from_images_audio(image_files: list, audio_files: list, combined_audio: str, output_file: str):
-    """Create video from images and audio with PERFECT synchronization"""
-
     print(f"\n[video] Creating video from {len(image_files)} images...")
     print(f"[video] Ensuring complete audio playback and sync...")
 
@@ -804,7 +1614,7 @@ def create_video_from_images_audio(image_files: list, audio_files: list, combine
 
     for i, (img_path, audio_info) in enumerate(zip(image_files, audio_files)):
         duration = audio_info['duration']
-        print(f"  Image {i+1}/{len(image_files)}: {duration:.2f}s (EN: {audio_info.get('en_duration', 0):.1f}s + JP: {audio_info.get('jp_duration', 0):.1f}s)")
+        print(f"  Image {i+1}/{len(image_files)}: {duration:.2f}s (EN: {audio_info.get('en_duration', 0):.1f}s + JP: {audio_info.get('nat_duration', 0):.1f}s)")
 
         temp_clip = Path(output_file).parent / f"temp_clip_{i:02d}.mp4"
         temp_clips.append(temp_clip)
@@ -820,10 +1630,8 @@ def create_video_from_images_audio(image_files: list, audio_files: list, combine
             "-preset", "medium",
             str(temp_clip)
         ]
-
         subprocess.run(cmd, check=True, capture_output=True)
 
-    # Concatenate clips
     print("[video] Concatenating clips...")
     temp_video = Path(output_file).parent / "temp_video.mp4"
     concat_file = Path(output_file).parent / "concat_list.txt"
@@ -835,21 +1643,10 @@ def create_video_from_images_audio(image_files: list, audio_files: list, combine
     cmd = ["ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", str(concat_file), "-c", "copy", str(temp_video)]
     subprocess.run(cmd, check=True, capture_output=True)
 
-    # Add audio
     print("[video] Adding audio (ensuring complete playback)...")
     audio_duration = get_audio_duration(combined_audio)
     print(f"[video] Audio duration: {audio_duration:.2f}s")
-    
-    # Check input files exist
-    import os as _os
-    if not _os.path.exists(str(temp_video)) or _os.path.getsize(str(temp_video)) == 0:
-        print(f"[video] ERROR: temp_video.mp4 missing or empty - using fallback")
-        # Create a minimal valid video as fallback
-        _fallback = str(Path(output_file).parent / "fallback.mp4")
-        _cmd_fb = ["ffmpeg", "-y", "-f", "lavfi", "-i", "color=c=black:s=1080x1920:d=" + str(audio_duration), "-c:v", "libx264", "-pix_fmt", "yuv420p", _fallback]
-        subprocess.run(_cmd_fb, check=True, capture_output=True)
-        temp_video = Path(_fallback)
-    
+
     cmd = [
         "ffmpeg", "-y",
         "-i", str(temp_video),
@@ -859,18 +1656,11 @@ def create_video_from_images_audio(image_files: list, audio_files: list, combine
         "-shortest",
         str(output_file)
     ]
-    try:
-        subprocess.run(cmd, check=True, capture_output=True)
-    except subprocess.CalledProcessError:
-        print("[video] Audio merge failed, creating video without audio...")
-        cmd2 = ["ffmpeg", "-y", "-i", str(temp_video), "-c:v", "libx264", "-pix_fmt", "yuv420p", str(output_file)]
-        subprocess.run(cmd2, check=True, capture_output=True)
+    subprocess.run(cmd, check=True, capture_output=True)
 
-    # Verify
     video_duration = get_audio_duration(str(output_file).replace(".mp4", ".mp4"))
-    print(f"[video] ✓ Video created: {Path(output_file).name} ({video_duration:.2f}s)")
+    print(f"[video] Video created: {Path(output_file).name} ({video_duration:.2f}s)")
 
-    # Cleanup
     for clip in temp_clips:
         if clip.exists():
             clip.unlink()
@@ -880,45 +1670,36 @@ def create_video_from_images_audio(image_files: list, audio_files: list, combine
         concat_file.unlink()
 
 
-# ============== MAIN WORKFLOW ==============
-
 def generate_reel(category_english: str = None):
-    """Generate complete Facebook Reel"""
-
     if not category_english:
-        # Use smart category rotation to prevent repeats
         category_english = get_available_category()
 
     print(f"\n{'='*80}")
-    print(f"Category: {category_english} ({CATEGORIES_JAPANESE[category_english]})")
+    print(f"Category: {category_english} ({CATEGORIES_NATIVE[category_english]})")
     print(f"{'='*80}\n")
 
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     reel_dir = VIDEO_DIR / f"{category_english}_{timestamp}"
     reel_dir.mkdir(exist_ok=True)
 
-    # Step 1: Generate unique phrases
     print("[1/4] Generating unique phrases (checking history)...")
     phrases = generate_phrases(category_english, num_phrases=5)
 
     for i, phrase in enumerate(phrases, 1):
-        print(f"  {i}. {phrase['english']} → {phrase['japanese']}")
+        print(f"  {i}. {phrase['english']} -> {phrase['japanese']}")
 
-    # Step 2: Generate images
     print("\n[2/4] Generating images with impressive backgrounds...")
     for i, phrase in enumerate(phrases):
         output_path = reel_dir / f"phrase_{i:02d}.jpg"
-        generate_complete_image(phrase, category_english, str(output_path))
-        print(f"  ✓ Image {i+1}: {phrase['english'][:40]}...")
+        generate_complete_image(phrase, category_english, str(output_path), phrase_index=i, total_phrases=len(phrases))
+        print(f"  Image {i+1}: {phrase['english'][:40]}...")
 
-    # Step 3: Generate audio
-    print("\n[3/4] Generating audio (English + Japanese with 500ms pause)...")
+    print("\n[3/4] Generating audio (English + Dutch with 500ms pause)...")
     audio_files = generate_all_audio(phrases, str(reel_dir))
 
     final_audio = reel_dir / "narration.mp3"
     create_final_narration(audio_files, str(final_audio))
 
-    # Step 4: Create video - CRITICAL: Sort images for correct order
     print("\n[4/4] Creating video...")
     output_video = reel_dir / "final_reel.mp4"
 
@@ -931,10 +1712,9 @@ def generate_reel(category_english: str = None):
         str(output_video)
     )
 
-    # Save metadata
     metadata = {
         "category_english": category_english,
-        "category_japanese": CATEGORIES_JAPANESE[category_english],
+        "category_native": CATEGORIES_NATIVE[category_english],
         "timestamp": timestamp,
         "phrases": phrases,
         "video": str(output_video),
@@ -945,10 +1725,10 @@ def generate_reel(category_english: str = None):
         json.dump(metadata, f, indent=2, ensure_ascii=False)
 
     print(f"\n{'='*80}")
-    print(f"✅ REEL COMPLETE!")
-    print(f"  📁 {reel_dir}")
-    print(f"  🎬 {output_video.name}")
-    print(f"  🏷️  Branding: Velocity Japanese")
+    print(f"REEL COMPLETE!")
+    print(f"  {reel_dir}")
+    print(f"  {output_video.name}")
+    print(f"  Branding: VELOCITY JAPANESE")
     print(f"{'='*80}\n")
 
     return metadata
@@ -956,33 +1736,23 @@ def generate_reel(category_english: str = None):
 
 if __name__ == "__main__":
     print("\n" + "="*80)
-    print("🇯🇵 VELOCITY JAPANESE - FACEBOOK REELS AUTOMATION 🇯🇵")
+    print(f"VELOCITY JAPANESE - FACEBOOK REELS AUTOMATION")
     print("="*80)
-    print("\n✨ IMPROVED FEATURES:")
-    print("  ✓ Natural pauses with commas (non-robotic TTS)")
-    print("  ✓ Perfect audio-video synchronization")
-    print("  ✓ Complete audio playback guaranteed")
-    print("  ✓ English category names (for American/European learners)")
-    print("  ✓ Velocity Japanese branding at bottom")
-    print("  ✓ NEVER repeats phrases (permanent history tracking)")
-    print(f"\n📊 AVAILABLE CATEGORIES ({len(CATEGORIES_ENGLISH)} total):")
+    print("\nFEATURES:")
+    print("  - Natural pauses with commas (non-robotic TTS)")
+    print("  - Perfect audio-video synchronization")
+    print("  - Complete audio playback guaranteed")
+    print("  - English category names (for learners)")
+    print(f"  - VELOCITY JAPANESE branding at bottom")
+    print("  - NEVER repeats phrases (permanent history tracking)")
+    print(f"\nAVAILABLE CATEGORIES ({len(CATEGORIES_ENGLISH)} total):")
     for i, cat in enumerate(CATEGORIES_ENGLISH, 1):
-        print(f"   {i:2d}. {cat} ({CATEGORIES_JAPANESE[cat]})")
-    print(f"\n📅 DAILY CAPACITY:")
-    print(f"  • 4 reels per day = 20 unique phrases daily")
-    print(f"  • {len(CATEGORIES_ENGLISH)} categories = Over 6 days before any category repeats")
-    print(f"  • Phrase history is PERMANENT (never deletes)")
-    print(f"  • AI generates FRESH phrases every time")
+        print(f"   {i:2d}. {cat} ({CATEGORIES_NATIVE[cat]})")
     print("="*80)
 
     generate_reel()
 
     print("\n" + "="*80)
-    print("✅ READY FOR DAILY AUTOMATION!")
+    print("READY FOR DAILY AUTOMATION!")
     print("="*80)
-    print("\nTo generate 4 reels for today:")
-    print("  from facebook_reels_automation import generate_daily_content")
-    print("  generate_daily_content(times_per_day=4)")
-    print("\nTo generate a single reel:")
-    print("  generate_reel('Love')  # Or any category from the list above")
-    print("="*80)
+
