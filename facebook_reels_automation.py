@@ -1,4 +1,4 @@
-﻿﻿"""
+﻿"""
 Facebook Reels Automation - Bilingual English/Dutch Content Generator
 IMPROVED VERSION: Better backgrounds, English categories, no repeats, VELOCITY JAPANESE branding
 Rounded container style from Habla Verse
