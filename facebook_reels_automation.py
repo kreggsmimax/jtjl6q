@@ -1,4 +1,4 @@
-﻿"""
+﻿﻿"""
 Facebook Reels Automation - Bilingual English/Dutch Content Generator
 IMPROVED VERSION: Better backgrounds, English categories, no repeats, VELOCITY JAPANESE branding
 Rounded container style from Habla Verse
@@ -254,7 +254,7 @@ def generate_phrases(category_english: str, num_phrases: int = 5) -> list:
             if recent_english:
                 avoid_text = "\nABSOLUTELY AVOID these already-used phrases:\n" + "\n".join(f"- {p}" for p in recent_english)
 
-            prompt = f"""Create {num_phrases * 6} unique and creative {category_english} phrases for English speakers learning Dutch.{avoid_text}
+            prompt = f"""Create {num_phrases * 6} unique and creative {category_english} phrases for English speakers learning Japanese.{avoid_text}
 
 IMPORTANT RULES FOR NATURAL SPEECH:
 1. Keep phrases SHORT (5-12 words max per language)
@@ -269,19 +269,19 @@ IMPORTANT RULES FOR NATURAL SPEECH:
 
 For each phrase:
 1. English phrase (with commas for natural pauses)
-2. Dutch translation (in Dutch script)
+2. Dutch translation (in Japanese script)
 3. Transliteration (Roman script pronunciation)
 
 Return as JSON array:
 [{{"english": "...", "japanese": "...", "transliteration": "..."}}]
 
 IMPORTANT: Create FRESH, UNIQUE phrases that haven't been used before.
-IMPORTANT: Dutch text must be clean - no slashes, no multiple versions."""
+IMPORTANT: Japanese text must be clean - no slashes, no multiple versions."""
 
             payload = {
                 "model": AI_MODEL,
                 "messages": [
-                    {"role": "system", "content": "You are a Dutch teacher. Create short, natural phrases with pauses. Each generation must produce completely different, creative phrases."},
+                    {"role": "system", "content": "You are a Japanese teacher. Create short, natural phrases with pauses. Each generation must produce completely different, creative phrases."},
                     {"role": "user", "content": prompt}
                 ],
                 "temperature": min(0.95 + attempt * 0.03, 1.0)
@@ -341,56 +341,56 @@ IMPORTANT: Dutch text must be clean - no slashes, no multiple versions."""
 def get_fresh_fallback_phrases(category: str, num_phrases: int) -> list:
     """Return simple English fallback phrases when AI generation fails"""
     generic_fallbacks = [
-        {"english": "Hello, nice to meet you.", "japanese": "Hallo, leuk je te ontmoeten.", "transliteration": "Hallo, leuk je te ontmoeten."},
-        {"english": "Thank you very much.", "japanese": "Heel erg bedankt.", "transliteration": "Heel erg bedankt."},
-        {"english": "Good morning, have a great day.", "japanese": "Goedemorgen, een fijne dag.", "transliteration": "Goedemorgen, een fijne dag."},
-        {"english": "I love learning new languages.", "japanese": "Ik hou ervan om nieuwe talen te leren.", "transliteration": "Ik hou ervan om nieuwe talen te leren."},
-        {"english": "Never give up on your dreams.", "japanese": "Geef nooit je dromen op.", "transliteration": "Geef nooit je dromen op."},
-        {"english": "Every day is a fresh start.", "japanese": "Elke dag is een nieuwe start.", "transliteration": "Elke dag is een nieuwe start."},
-        {"english": "Believe in yourself always.", "japanese": "Geloof altijd in jezelf.", "transliteration": "Geloof altijd in jezelf."},
-        {"english": "Small steps lead to big changes.", "japanese": "Kleine stappen leiden tot grote veranderingen.", "transliteration": "Kleine stappen leiden tot grote veranderingen."},
-        {"english": "You are stronger than you think.", "japanese": "Je bent sterker dan je denkt.", "transliteration": "Je bent sterker dan je denkt."},
-        {"english": "Happiness is a choice, choose it.", "japanese": "Geluk is een keuze, kies ervoor.", "transliteration": "Geluk is een keuze, kies ervoor."},
-        {"english": "What time is it please.", "japanese": "Hoe laat is het alstublieft.", "transliteration": "Hoe laat is het alstublieft."},
-        {"english": "Where is the train station.", "japanese": "Waar is het treinstation.", "transliteration": "Waar is het treinstation."},
-        {"english": "How much does this cost.", "japanese": "Hoeveel kost dit.", "transliteration": "Hoeveel kost dit."},
-        {"english": "Can you help me please.", "japanese": "Kunt u mij alstublieft helpen.", "transliteration": "Kunt u mij alstublieft helpen."},
-        {"english": "I would like a coffee please.", "japanese": "Ik wil graag een koffie alstublieft.", "transliteration": "Ik wil graag een koffie alstublieft."},
-        {"english": "The food is delicious today.", "japanese": "Het eten is heerlijk vandaag.", "transliteration": "Het eten is heerlijk vandaag."},
-        {"english": "Have a wonderful weekend.", "japanese": "Een fijn weekend.", "transliteration": "Een fijn weekend."},
-        {"english": "Take care of yourself.", "japanese": "Zorg goed voor jezelf.", "transliteration": "Zorg goed voor jezelf."},
-        {"english": "See you tomorrow my friend.", "japanese": "Tot morgen mijn vriend.", "transliteration": "Tot morgen mijn vriend."},
-        {"english": "The weather is beautiful outside.", "japanese": "Het weer is prachtig buiten.", "transliteration": "Het weer is prachtig buiten."},
-        {"english": "I am very happy today.", "japanese": "Ik ben erg blij vandaag.", "transliteration": "Ik ben erg blij vandaag."},
-        {"english": "Learning a language opens new doors.", "japanese": "Een taal leren opent nieuwe deuren.", "transliteration": "Een taal leren opent nieuwe deuren."},
-        {"english": "Keep practicing every single day.", "japanese": "Blijf elke dag oefenen.", "transliteration": "Blijf elke dag oefenen."},
-        {"english": "You can achieve anything you want.", "japanese": "Je kunt alles bereiken wat je wilt.", "transliteration": "Je kunt alles bereiken wat je wilt."},
-        {"english": "Rest when you are tired.", "japanese": "Rust als je moe bent.", "transliteration": "Rust als je moe bent."},
-        {"english": "Focus on the positive things.", "japanese": "Focus op de positieve dingen.", "transliteration": "Focus op de positieve dingen."},
-        {"english": "Learn from your mistakes.", "japanese": "Leer van je fouten.", "transliteration": "Leer van je fouten."},
-        {"english": "Trust the process completely.", "japanese": "Vertrouw volledig op het proces.", "transliteration": "Vertrouw volledig op het proces."},
-        {"english": "Breathe deeply and stay calm.", "japanese": "Haal diep adem en blijf kalm.", "transliteration": "Haal diep adem en blijf kalm."},
-        {"english": "Enjoy the little moments in life.", "japanese": "Geniet van de kleine momenten in het leven.", "transliteration": "Geniet van de kleine momenten in het leven."},
-        {"english": "Smile more, worry less.", "japanese": "Lach meer, maak je minder zorgen.", "transliteration": "Lach meer, maak je minder zorgen."},
-        {"english": "Be kind to everyone you meet.", "japanese": "Wees vriendelijk tegen iedereen die je ontmoet.", "transliteration": "Wees vriendelijk tegen iedereen die je ontmoet."},
-        {"english": "Help others without expecting anything back.", "japanese": "Help anderen zonder iets terug te verwachten.", "transliteration": "Help anderen zonder iets terug te verwachten."},
-        {"english": "Forgive yourself and move forward.", "japanese": "Vergeef jezelf en ga verder.", "transliteration": "Vergeef jezelf en ga verder."},
-        {"english": "Stay strong in difficult times.", "japanese": "Blijf sterk in moeilijke tijden.", "transliteration": "Blijf sterk in moeilijke tijden."},
-        {"english": "Every moment is a new beginning.", "japanese": "Elk moment is een nieuw begin.", "transliteration": "Elk moment is een nieuw begin."},
-        {"english": "Listen to your heart always.", "japanese": "Luister altijd naar je hart.", "transliteration": "Luister altijd naar je hart."},
-        {"english": "Do what makes you happy.", "japanese": "Doe wat je gelukkig maakt.", "transliteration": "Doe wat je gelukkig maakt."},
-        {"english": "Your potential is unlimited.", "japanese": "Je potentieel is onbeperkt.", "transliteration": "Je potentieel is onbeperkt."},
-        {"english": "Be brave and take risks.", "japanese": "Wees moedig en neem risico's.", "transliteration": "Wees moedig en neem risico's."},
-        {"english": "Celebrate your progress every day.", "japanese": "Vier je vooruitgang elke dag.", "transliteration": "Vier je vooruitgang elke dag."},
-        {"english": "Surround yourself with good people.", "japanese": "Omring jezelf met goede mensen.", "transliteration": "Omring jezelf met goede mensen."},
-        {"english": "Read books and grow your mind.", "japanese": "Lees boeken en ontwikkel je geest.", "transliteration": "Lees boeken en ontwikkel je geest."},
-        {"english": "Travel and discover new places.", "japanese": "Reis en ontdek nieuwe plekken.", "transliteration": "Reis en ontdek nieuwe plekken."},
-        {"english": "Appreciate what you already have.", "japanese": "Waardeer wat je al hebt.", "transliteration": "Waardeer wat je al hebt."},
-        {"english": "Dance like nobody is watching.", "japanese": "Dans alsof niemand kijkt.", "transliteration": "Dans alsof niemand kijkt."},
-        {"english": "Sing from your heart out loud.", "japanese": "Zing uit volle borst.", "transliteration": "Zing uit volle borst."},
-        {"english": "Plant seeds of kindness everywhere.", "japanese": "Zaai overal zaadjes van vriendelijkheid.", "transliteration": "Zaai overal zaadjes van vriendelijkheid."},
-        {"english": "Let go of what you cannot control.", "japanese": "Laat los wat je niet kunt beheersen.", "transliteration": "Laat los wat je niet kunt beheersen."},
-        {"english": "Be present in the here and now.", "japanese": "Wees aanwezig in het hier en nu.", "transliteration": "Wees aanwezig in het hier en nu."}
+        {"english": "Hello, nice to meet you.", "japanese": "Konnichiwa, hajimemashite.", "transliteration": "Konnichiwa, hajimemashite."},
+        {"english": "Thank you very much.", "japanese": "Arigato gozaimasu.", "transliteration": "Arigato gozaimasu."},
+        {"english": "Good morning, have a great day.", "japanese": "Ohayo gozaimasu, kyo wa ii tenki desu ne.", "transliteration": "Ohayo gozaimasu, kyo wa ii tenki desu ne."},
+        {"english": "I love learning new languages.", "japanese": "Watashi wa atarashii gengo o manabu no ga daisuki desu.", "transliteration": "Watashi wa atarashii gengo o manabu no ga daisuki desu."},
+        {"english": "Never give up on your dreams.", "japanese": "Yume o akiramenaide kudasai.", "transliteration": "Yume o akiramenaide kudasai."},
+        {"english": "Every day is a fresh start.", "japanese": "Mainichi ga atarashii hajimari desu.", "transliteration": "Mainichi ga atarashii hajimari desu."},
+        {"english": "Believe in yourself always.", "japanese": "Itsumo jibun o shinjite kudasai.", "transliteration": "Itsumo jibun o shinjite kudasai."},
+        {"english": "Small steps lead to big changes.", "japanese": "Chiisana ippo ga ookina henka ni tsunagaru.", "transliteration": "Chiisana ippo ga ookina henka ni tsunagaru."},
+        {"english": "You are stronger than you think.", "japanese": "Anata wa omou yori mo tsuyoi desu.", "transliteration": "Anata wa omou yori mo tsuyoi desu."},
+        {"english": "Happiness is a choice, choose it.", "japanese": "Shiawase wa sentaku desu, sore o erande kudasai.", "transliteration": "Shiawase wa sentaku desu, sore o erande kudasai."},
+        {"english": "What time is it please.", "japanese": "Nanji desu ka.", "transliteration": "Nanji desu ka."},
+        {"english": "Where is the train station.", "japanese": "Eki wa doko desu ka.", "transliteration": "Eki wa doko desu ka."},
+        {"english": "How much does this cost.", "japanese": "Kore wa ikura desu ka.", "transliteration": "Kore wa ikura desu ka."},
+        {"english": "Can you help me please.", "japanese": "Tasukete kudasai.", "transliteration": "Tasukete kudasai."},
+        {"english": "I would like a coffee please.", "japanese": "Kohi o kudasai.", "transliteration": "Kohi o kudasai."},
+        {"english": "The food is delicious today.", "japanese": "Kyo no gohan wa oishii desu.", "transliteration": "Kyo no gohan wa oishii desu."},
+        {"english": "Have a wonderful weekend.", "japanese": "Yoi shuumatsu o.", "transliteration": "Yoi shuumatsu o."},
+        {"english": "Take care of yourself.", "japanese": "Jibun o daiji ni shite kudasai.", "transliteration": "Jibun o daiji ni shite kudasai."},
+        {"english": "See you tomorrow my friend.", "japanese": "Mata ashita, tomoyo.", "transliteration": "Mata ashita, tomoyo."},
+        {"english": "The weather is beautiful outside.", "japanese": "Soto no tenki wa subarashii desu.", "transliteration": "Soto no tenki wa subarashii desu."},
+        {"english": "I am very happy today.", "japanese": "Watashi wa kyo totemo shiawase desu.", "transliteration": "Watashi wa kyo totemo shiawase desu."},
+        {"english": "Learning a language opens new doors.", "japanese": "Gengo o manabu koto wa atarashii tobira o hiraku.", "transliteration": "Gengo o manabu koto wa atarashii tobira o hiraku."},
+        {"english": "Keep practicing every single day.", "japanese": "Mainichi renshu shite kudasai.", "transliteration": "Mainichi renshu shite kudasai."},
+        {"english": "You can achieve anything you want.", "japanese": "Anata wa nandemo kanarazu dekimasu.", "transliteration": "Anata wa nandemo kanarazu dekimasu."},
+        {"english": "Rest when you are tired.", "japanese": "Tsukareta toki wa yasunde kudasai.", "transliteration": "Tsukareta toki wa yasunde kudasai."},
+        {"english": "Focus on the positive things.", "japanese": "Pojitibu na koto ni fokasu shite.", "transliteration": "Pojitibu na koto ni fokasu shite."},
+        {"english": "Learn from your mistakes.", "japanese": "Machikara manande kudasai.", "transliteration": "Machikara manande kudasai."},
+        {"english": "Trust the process completely.", "japanese": "Purosesu o shinjite kudasai.", "transliteration": "Purosesu o shinjite kudasai."},
+        {"english": "Breathe deeply and stay calm.", "japanese": "Fukaku iki o shite, ochitsuite kudasai.", "transliteration": "Fukaku iki o shite, ochitsuite kudasai."},
+        {"english": "Enjoy the little moments in life.", "japanese": "Jinsei no chiisana shunkan o tanoshinde.", "transliteration": "Jinsei no chiisana shunkan o tanoshinde."},
+        {"english": "Smile more, worry less.", "japanese": "Yoku waratte, shinpai o herashite.", "transliteration": "Yoku waratte, shinpai o herashite."},
+        {"english": "Be kind to everyone you meet.", "japanese": "Au hito niwa shinsetsu ni.", "transliteration": "Au hito niwa shinsetsu ni."},
+        {"english": "Help others without expecting anything back.", "japanese": "Okaeshi o kitai sezu ni hito o tasukete.", "transliteration": "Okaeshi o kitai sezu ni hito o tasukete."},
+        {"english": "Forgive yourself and move forward.", "japanese": "Jibun o yurushite, saki ni susunde.", "transliteration": "Jibun o yurushite, saki ni susunde."},
+        {"english": "Stay strong in difficult times.", "japanese": "Taiken na toki mo tsuyoku ite.", "transliteration": "Taiken na toki mo tsuyoku ite."},
+        {"english": "Every moment is a new beginning.", "japanese": "Dono shunkan mo atarashii hajimari.", "transliteration": "Dono shunkan mo atarashii hajimari."},
+        {"english": "Listen to your heart always.", "japanese": "Itsumo jibun no kokoro ni shitagatte.", "transliteration": "Itsumo jibun no kokoro ni shitagatte."},
+        {"english": "Do what makes you happy.", "japanese": "Jibun o shiawase ni suru koto o shite.", "transliteration": "Jibun o shiawase ni suru koto o shite."},
+        {"english": "Your potential is unlimited.", "japanese": "Anata no kanosei wa mugendai desu.", "transliteration": "Anata no kanosei wa mugendai desu."},
+        {"english": "Be brave and take risks.", "japanese": "Yuki o motte risuku o's.", "transliteration": "Yuki o motte risuku o's."},
+        {"english": "Celebrate your progress every day.", "japanese": "Mainichi jibun no shinpo o iwatte.", "transliteration": "Mainichi jibun no shinpo o iwatte."},
+        {"english": "Surround yourself with good people.", "japanese": "Yoi hito ni kakomarete.", "transliteration": "Yoi hito ni kakomarete."},
+        {"english": "Read books and grow your mind.", "japanese": "Hon o yonde, kokoro o sodatete.", "transliteration": "Hon o yonde, kokoro o sodatete."},
+        {"english": "Travel and discover new places.", "japanese": "Tabishite, atarashii basho o hakken shite.", "transliteration": "Tabishite, atarashii basho o hakken shite."},
+        {"english": "Appreciate what you already have.", "japanese": "Motsu mono ni kansha shite.", "transliteration": "Motsu mono ni kansha shite."},
+        {"english": "Dance like nobody is watching.", "japanese": "Dare mo miteinai ka no yo ni odotte.", "transliteration": "Dare mo miteinai ka no yo ni odotte."},
+        {"english": "Sing from your heart out loud.", "japanese": "Koe no kagiri ni utatte.", "transliteration": "Koe no kagiri ni utatte."},
+        {"english": "Plant seeds of kindness everywhere.", "japanese": "Shinsetsu no tane o makite.", "transliteration": "Shinsetsu no tane o makite."},
+        {"english": "Let go of what you cannot control.", "japanese": "Seigyo dekinai koto wa hanate.", "transliteration": "Seigyo dekinai koto wa hanate."},
+        {"english": "Be present in the here and now.", "japanese": "Koko to ima ni sonzai shite.", "transliteration": "Koko to ima ni sonzai shite."}
     ]
     fresh = [p for p in generic_fallbacks if not is_phrase_used(p["english"])]
     return fresh[:num_phrases]
@@ -1755,4 +1755,5 @@ if __name__ == "__main__":
     print("\n" + "="*80)
     print("READY FOR DAILY AUTOMATION!")
     print("="*80)
+
 
