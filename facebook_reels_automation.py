@@ -270,13 +270,13 @@ IMPORTANT RULES FOR NATURAL SPEECH:
 For each phrase:
 1. English phrase (with commas for natural pauses)
 2. Dutch translation (in Japanese script)
-3. Transliteration (Roman script pronunciation)
+3. Japanese script (use Kanji, Hiragana, Katakana - NOT romanized)
 
 Return as JSON array:
 [{{"english": "...", "japanese": "...", "transliteration": "..."}}]
 
 IMPORTANT: Create FRESH, UNIQUE phrases that haven't been used before.
-IMPORTANT: Japanese text must be clean - no slashes, no multiple versions."""
+IMPORTANT: Japanese text must use Japanese script characters (NOT romaji) - no slashes, no multiple versions."""
 
             payload = {
                 "model": AI_MODEL,
@@ -341,13 +341,13 @@ IMPORTANT: Japanese text must be clean - no slashes, no multiple versions."""
 def get_fresh_fallback_phrases(category: str, num_phrases: int) -> list:
     """Return simple English fallback phrases when AI generation fails"""
     generic_fallbacks = [
-        {"english": "Hello, nice to meet you.", "japanese": "Konnichiwa, hajimemashite.", "transliteration": "Konnichiwa, hajimemashite."},
-        {"english": "Thank you very much.", "japanese": "Arigato gozaimasu.", "transliteration": "Arigato gozaimasu."},
-        {"english": "Good morning, have a great day.", "japanese": "Ohayo gozaimasu, kyo wa ii tenki desu ne.", "transliteration": "Ohayo gozaimasu, kyo wa ii tenki desu ne."},
-        {"english": "I love learning new languages.", "japanese": "Watashi wa atarashii gengo o manabu no ga daisuki desu.", "transliteration": "Watashi wa atarashii gengo o manabu no ga daisuki desu."},
-        {"english": "Never give up on your dreams.", "japanese": "Yume o akiramenaide kudasai.", "transliteration": "Yume o akiramenaide kudasai."},
-        {"english": "Every day is a fresh start.", "japanese": "Mainichi ga atarashii hajimari desu.", "transliteration": "Mainichi ga atarashii hajimari desu."},
-        {"english": "Believe in yourself always.", "japanese": "Itsumo jibun o shinjite kudasai.", "transliteration": "Itsumo jibun o shinjite kudasai."},
+        {"english": "Hello, nice to meet you.", "japanese": "\u3053\u3093\u306b\u3061\u306f\u3001\u306f\u3058\u3081\u307e\u3057\u3066", "transliteration": "\u3053\u3093\u306b\u3061\u306f\u3001\u306f\u3058\u3081\u307e\u3057\u3066"},
+        {"english": "Thank you very much.", "japanese": "\u3042\u308a\u304c\u3068\u3046\u3054\u3056\u3044\u307e\u3059", "transliteration": "\u3042\u308a\u304c\u3068\u3046\u3054\u3056\u3044\u307e\u3059"},
+        {"english": "Good morning, have a great day.", "japanese": "\u304a\u306f\u3088\u3046\u3054\u3056\u3044\u307e\u3059\u3001\u4eca\u65e5\u306f\u3044\u3044\u5929\u6c17\u3067\u3059\u306d", "transliteration": "\u304a\u306f\u3088\u3046\u3054\u3056\u3044\u307e\u3059\u3001\u4eca\u65e5\u306f\u3044\u3044\u5929\u6c17\u3067\u3059\u306d"},
+        {"english": "I love learning new languages.", "japanese": "\u79c1\u306f\u65b0\u3057\u3044\u8a00\u8a9e\u3092\u5b66\u3076\u306e\u304c\u5927\u597d\u304d\u3067\u3059", "transliteration": "\u79c1\u306f\u65b0\u3057\u3044\u8a00\u8a9e\u3092\u5b66\u3076\u306e\u304c\u5927\u597d\u304d\u3067\u3059"},
+        {"english": "Never give up on your dreams.", "japanese": "\u5922\u3092\u8b72\u3089\u306a\u3044\u3067\u304f\u3060\u3055\u3044", "transliteration": "\u5922\u3092\u8b72\u3089\u306a\u3044\u3067\u304f\u3060\u3055\u3044"},
+        {"english": "Every day is a fresh start.", "japanese": "\u6bce\u65e5\u304c\u65b0\u3057\u3044\u59cb\u307e\u308a\u3067\u3059", "transliteration": "\u6bce\u65e5\u304c\u65b0\u3057\u3044\u59cb\u307e\u308a\u3067\u3059"},
+        {"english": "Believe in yourself always.", "japanese": "\u3044\u3064\u3082\u81ea\u5206\u3092\u4fe1\u3058\u3066\u304f\u3060\u3055\u3044", "transliteration": "\u3044\u3064\u3082\u81ea\u5206\u3092\u4fe1\u3058\u3066\u304f\u3060\u3055\u3044"},
         {"english": "Small steps lead to big changes.", "japanese": "Chiisana ippo ga ookina henka ni tsunagaru.", "transliteration": "Chiisana ippo ga ookina henka ni tsunagaru."},
         {"english": "You are stronger than you think.", "japanese": "Anata wa omou yori mo tsuyoi desu.", "transliteration": "Anata wa omou yori mo tsuyoi desu."},
         {"english": "Happiness is a choice, choose it.", "japanese": "Shiawase wa sentaku desu, sore o erande kudasai.", "transliteration": "Shiawase wa sentaku desu, sore o erande kudasai."},
@@ -1765,6 +1765,7 @@ if __name__ == "__main__":
     print("\n" + "="*80)
     print("READY FOR DAILY AUTOMATION!")
     print("="*80)
+
 
 
 
