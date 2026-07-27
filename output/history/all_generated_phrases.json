@@ -14174,7 +14174,42 @@
       "romaji": "Shigoto ga owatte, ofisu o dete, ie ni kaerimashou",
       "category": "Daily Routine",
       "generated_at": "2026-07-27T02:29:31.187944"
+    },
+    {
+      "english": "You look happy today!",
+      "japanese": "今日、嬉しそうだね！",
+      "romaji": "Kyou, ureshi sou da ne!",
+      "category": "Feelings Japanese",
+      "generated_at": "2026-07-27T11:48:31.527067"
+    },
+    {
+      "english": "I feel a little tired today.",
+      "japanese": "今日、少し疲れたな。",
+      "romaji": "Kyou, sukoshi tsukareta na.",
+      "category": "Feelings Japanese",
+      "generated_at": "2026-07-27T11:48:31.527077"
+    },
+    {
+      "english": "It feels good to relax, right?",
+      "japanese": "リラックスすると気持ちいいよね。",
+      "romaji": "Rirakkusu suru to kimochi ii yo ne.",
+      "category": "Feelings Japanese",
+      "generated_at": "2026-07-27T11:48:31.527078"
+    },
+    {
+      "english": "Don't be so disappointed, cheer up!",
+      "japanese": "そんなにがっかりしないで、元気出して！",
+      "romaji": "Son'na ni gakkari shinaide, genki dashite!",
+      "category": "Feelings Japanese",
+      "generated_at": "2026-07-27T11:48:31.527079"
+    },
+    {
+      "english": "I'm a bit nervous for the test.",
+      "japanese": "テスト、少し不安だな。",
+      "romaji": "Tesuto, sukoshi fuan da na.",
+      "category": "Feelings Japanese",
+      "generated_at": "2026-07-27T11:48:31.527080"
     }
   ],
-  "last_updated": "2026-07-27T02:29:31.187946"
+  "last_updated": "2026-07-27T11:48:31.527082"
 }
