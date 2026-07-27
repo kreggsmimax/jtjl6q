@@ -209,18 +209,23 @@ def generate_phrases(category_english: str, num_phrases: int = 5) -> list:
 
     category_japanese = CATEGORIES_JAPANESE[category_english]
 
-    # Try AI first
-    max_attempts = 3
-    for attempt in range(max_attempts):
-        try:
-            import requests
-            url = "https://gen.pollinations.ai/v1/chat/completions"
-            headers = {
-                "Authorization": f"Bearer {POLLINATIONS_API_KEY}",
-                "Content-Type": "application/json"
-            }
+    # Try AI first with multiple models
+    models_to_try = ["gemini-fast", "openai", "mistral", "llama"]
+    if AI_MODEL in models_to_try:
+        models_to_try.remove(AI_MODEL)
+        models_to_try.insert(0, AI_MODEL)
 
-            prompt = f"""Create {num_phrases * 2} unique {category_english} phrases for English speakers learning Japanese.
+    import requests
+    for model in models_to_try:
+        for attempt in range(2):
+            try:
+                url = "https://gen.pollinations.ai/v1/chat/completions"
+                headers = {
+                    "Authorization": f"Bearer {POLLINATIONS_API_KEY}",
+                    "Content-Type": "application/json"
+                }
+
+                prompt = f"""Create {num_phrases * 2} unique {category_english} phrases for English speakers learning Japanese.
 
 IMPORTANT RULES FOR NATURAL SPEECH:
 1. Keep phrases SHORT (5-12 words max per language)
@@ -239,49 +244,45 @@ For each phrase:
 Return as JSON array:
 [{{"english": "...", "japanese": "...", "romaji": "..."}}]
 
-IMPORTANT: Create FRESH, UNIQUE phrases that haven't been used before.
-IMPORTANT: Japanese text must be clean - no slashes, no multiple versions."""
+IMPORTANT: Create FRESH, UNIQUE phrases that haven't been used before."""
 
-            payload = {
-                "model": AI_MODEL,
-                "messages": [
-                    {"role": "system", "content": "You are a Japanese teacher. Create short, natural phrases with pauses."},
-                    {"role": "user", "content": prompt}
-                ],
-                "temperature": 0.9
-            }
+                payload = {
+                    "model": model,
+                    "messages": [
+                        {"role": "system", "content": "You are a Japanese teacher. Create short, natural phrases with pauses."},
+                        {"role": "user", "content": prompt}
+                    ],
+                    "temperature": 0.9
+                }
 
-            response = requests.post(url, headers=headers, json=payload, timeout=180)
-            response.raise_for_status()
+                response = requests.post(url, headers=headers, json=payload, timeout=120)
+                response.raise_for_status()
 
-            data = response.json()
-            content = data["choices"][0]["message"]["content"].strip()
+                data = response.json()
+                content = data["choices"][0]["message"]["content"].strip()
 
-            # Extract JSON
-            if "```json" in content:
-                content = content.split("```json")[1].split("```")[0].strip()
-            elif "```" in content:
-                content = content.split("```")[1].split("```")[0].strip()
+                if "```json" in content:
+                    content = content.split("```json")[1].split("```")[0].strip()
+                elif "```" in content:
+                    content = content.split("```")[1].split("```")[0].strip()
 
-            phrases = json.loads(content)
+                phrases = json.loads(content)
 
-            # Filter out already-used phrases and ensure proper length
-            unique_phrases = []
-            for phrase in phrases:
-                # Skip if too long (over 15 words)
-                if len(phrase["english"].split()) > 15:
-                    continue
-                if not is_phrase_used(phrase["english"]):
-                    unique_phrases.append(phrase)
+                unique_phrases = []
+                for phrase in phrases:
+                    if len(phrase["english"].split()) > 15:
+                        continue
+                    if not is_phrase_used(phrase["english"]):
+                        unique_phrases.append(phrase)
+                    if len(unique_phrases) >= num_phrases:
+                        break
+
                 if len(unique_phrases) >= num_phrases:
-                    break
+                    add_phrases_to_history(unique_phrases[:num_phrases], category_english)
+                    return unique_phrases[:num_phrases]
 
-            if len(unique_phrases) >= num_phrases:
-                add_phrases_to_history(unique_phrases[:num_phrases], category_english)
-                return unique_phrases[:num_phrases]
-
-        except Exception as e:
-            print(f"[content] Attempt {attempt + 1} failed: {e}")
+            except Exception as e:
+                print(f"[content] {model} attempt {attempt + 1} failed: {e}")
 
     # Fallback to fresh phrases
     print("[content] Using fallback phrases...")
