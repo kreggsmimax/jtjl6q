@@ -14384,7 +14384,42 @@
       "romaji": "Mō ranchi tabeta?",
       "category": "Greetings",
       "generated_at": "2026-07-27T15:03:35.213405"
+    },
+    {
+      "english": "Please, speak a little slower, okay?",
+      "japanese": "すみません、少しゆっくり話してください。",
+      "romaji": "sumimasen, sukoshi yukkuri hanashite kudasai",
+      "category": "Basic Phrases",
+      "generated_at": "2026-07-27T17:04:04.530666"
+    },
+    {
+      "english": "Thank you, I really appreciate it.",
+      "japanese": "ありがとう、本当に助かりました。",
+      "romaji": "arigatou, hontou ni tasukarimashita",
+      "category": "Basic Phrases",
+      "generated_at": "2026-07-27T17:04:04.530681"
+    },
+    {
+      "english": "I’m learning Japanese, little by little.",
+      "japanese": "日本語を少しずつ勉強しています。",
+      "romaji": "nihongo o sukoshi zutsu benkyou shite imasu",
+      "category": "Basic Phrases",
+      "generated_at": "2026-07-27T17:04:04.530683"
+    },
+    {
+      "english": "Yes, I understand, thank you.",
+      "japanese": "はい、わかりました、ありがとうございます。",
+      "romaji": "hai, wakarimashita, arigatou gozaimasu",
+      "category": "Basic Phrases",
+      "generated_at": "2026-07-27T17:04:04.530685"
+    },
+    {
+      "english": "No worries, it’s okay.",
+      "japanese": "大丈夫です、気にしないでください。",
+      "romaji": "daijoubu desu, ki ni shinaide kudasai",
+      "category": "Basic Phrases",
+      "generated_at": "2026-07-27T17:04:04.530687"
     }
   ],
-  "last_updated": "2026-07-27T15:03:35.213407"
+  "last_updated": "2026-07-27T17:04:04.530688"
 }
