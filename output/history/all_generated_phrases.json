@@ -14489,7 +14489,42 @@
       "romaji": "Byōin wa doko desu ka?",
       "category": "Emergency Japanese",
       "generated_at": "2026-07-29T04:00:58.453779"
+    },
+    {
+      "english": "Your efforts, add up.",
+      "japanese": "あなたの努力は、積み重なります。",
+      "romaji": "anata no doryoku wa, tsumikasanarimasu.",
+      "category": "Confidence",
+      "generated_at": "2026-07-29T08:49:33.793930"
+    },
+    {
+      "english": "Today's progress, is tomorrow's strength.",
+      "japanese": "今日の進歩は、明日の力。",
+      "romaji": "kyō no shinpo wa, ashita no chikara.",
+      "category": "Confidence",
+      "generated_at": "2026-07-29T08:49:33.793942"
+    },
+    {
+      "english": "Keep speaking, it gets easier.",
+      "japanese": "話し続けて、楽になりますよ。",
+      "romaji": "hanashi tsuzukete, raku ni narimasu yo.",
+      "category": "Confidence",
+      "generated_at": "2026-07-29T08:49:33.793944"
+    },
+    {
+      "english": "One word at a time, you'll get there.",
+      "japanese": "一語ずつ、たどり着きます。",
+      "romaji": "ichigo zutsu, tadorizukimasu.",
+      "category": "Confidence",
+      "generated_at": "2026-07-29T08:49:33.793945"
+    },
+    {
+      "english": "Listen closely, understand deeply.",
+      "japanese": "よく聞いて、深く理解しましょう。",
+      "romaji": "yoku kiite, fukaku rikai shimashō.",
+      "category": "Confidence",
+      "generated_at": "2026-07-29T08:49:33.793946"
     }
   ],
-  "last_updated": "2026-07-29T04:00:58.453781"
+  "last_updated": "2026-07-29T08:49:33.793949"
 }
