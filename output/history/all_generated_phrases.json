@@ -14559,7 +14559,42 @@
       "romaji": "odayakana nagare, isogazu ni.",
       "category": "Inner Peace",
       "generated_at": "2026-07-29T11:54:33.640371"
+    },
+    {
+      "english": "Don't rush it, master it.",
+      "japanese": "急がず, 極めましょう。",
+      "romaji": "Isogazu, kiwamemashou.",
+      "category": "Patience",
+      "generated_at": "2026-07-29T16:26:08.962573"
+    },
+    {
+      "english": "Little by little, grows.",
+      "japanese": "少しずつ, 育ちます。",
+      "romaji": "Sukoshi zutsu, sodachimasu.",
+      "category": "Patience",
+      "generated_at": "2026-07-29T16:26:08.962583"
+    },
+    {
+      "english": "Practice makes, perfect.",
+      "japanese": "練習が, 完璧に, します。",
+      "romaji": "Renshuu ga, kanpeki ni, shimasu.",
+      "category": "Patience",
+      "generated_at": "2026-07-29T16:26:08.962584"
+    },
+    {
+      "english": "Keep trying, it will come.",
+      "japanese": "諦めずに, やりましょう。",
+      "romaji": "Akiramezu ni, yarimashou.",
+      "category": "Patience",
+      "generated_at": "2026-07-29T16:26:08.962586"
+    },
+    {
+      "english": "Think before, you act.",
+      "japanese": "行動する前に, よく考えて。",
+      "romaji": "Koudou suru mae ni, yoku kangaete.",
+      "category": "Patience",
+      "generated_at": "2026-07-29T16:26:08.962587"
     }
   ],
-  "last_updated": "2026-07-29T11:54:33.640372"
+  "last_updated": "2026-07-29T16:26:08.962589"
 }
