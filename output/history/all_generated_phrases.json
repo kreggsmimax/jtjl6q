@@ -14594,7 +14594,42 @@
       "romaji": "Koudou suru mae ni, yoku kangaete.",
       "category": "Patience",
       "generated_at": "2026-07-29T16:26:08.962587"
+    },
+    {
+      "english": "Little by little, progress made.",
+      "japanese": "少しずつ、進歩しました。",
+      "romaji": "Sukoshi zutsu, shinpo shimashita.",
+      "category": "Perseverance",
+      "generated_at": "2026-07-29T20:58:22.247941"
+    },
+    {
+      "english": "Even small steps, matter a lot.",
+      "japanese": "小さな一歩でも、とても大切です。",
+      "romaji": "Chiisana ippo demo, totemo taisetsu desu.",
+      "category": "Perseverance",
+      "generated_at": "2026-07-29T20:58:22.247950"
+    },
+    {
+      "english": "Every day, practice a little.",
+      "japanese": "毎日、少し練習しましょう。",
+      "romaji": "Mainichi, sukoshi renshuu shimashou.",
+      "category": "Perseverance",
+      "generated_at": "2026-07-29T20:58:22.247951"
+    },
+    {
+      "english": "Mistakes are learning chances.",
+      "japanese": "間違いは、学びのチャンスです。",
+      "romaji": "Machigai wa, manabi no chansu desu.",
+      "category": "Perseverance",
+      "generated_at": "2026-07-29T20:58:22.247952"
+    },
+    {
+      "english": "Don't be afraid, to speak.",
+      "japanese": "話すことを、恐れないで。",
+      "romaji": "Hanasu koto wo, osorenaide.",
+      "category": "Perseverance",
+      "generated_at": "2026-07-29T20:58:22.247954"
     }
   ],
-  "last_updated": "2026-07-29T16:26:08.962589"
+  "last_updated": "2026-07-29T20:58:22.247955"
 }
