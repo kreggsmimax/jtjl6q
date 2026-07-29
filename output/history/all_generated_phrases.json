@@ -14454,7 +14454,42 @@
       "romaji": "kosa o tebanashite, hitotsu kōdō shiyō",
       "category": "Self Improvement",
       "generated_at": "2026-07-28T21:07:43.957934"
+    },
+    {
+      "english": "Help me, please.",
+      "japanese": "助けてください。",
+      "romaji": "Tasukete kudasai.",
+      "category": "Emergency Japanese",
+      "generated_at": "2026-07-29T04:00:58.453765"
+    },
+    {
+      "english": "I am lost.",
+      "japanese": "道に迷いました。",
+      "romaji": "Michi ni mayoi mashita.",
+      "category": "Emergency Japanese",
+      "generated_at": "2026-07-29T04:00:58.453775"
+    },
+    {
+      "english": "I need a doctor.",
+      "japanese": "医者が必要です。",
+      "romaji": "Isha ga hitsuyō desu.",
+      "category": "Emergency Japanese",
+      "generated_at": "2026-07-29T04:00:58.453777"
+    },
+    {
+      "english": "Call the police.",
+      "japanese": "警察を呼んでください。",
+      "romaji": "Keisatsu o yonde kudasai.",
+      "category": "Emergency Japanese",
+      "generated_at": "2026-07-29T04:00:58.453778"
+    },
+    {
+      "english": "Where is the hospital?",
+      "japanese": "病院はどこですか？",
+      "romaji": "Byōin wa doko desu ka?",
+      "category": "Emergency Japanese",
+      "generated_at": "2026-07-29T04:00:58.453779"
     }
   ],
-  "last_updated": "2026-07-28T21:07:43.957935"
+  "last_updated": "2026-07-29T04:00:58.453781"
 }
