@@ -14524,7 +14524,42 @@
       "romaji": "yoku kiite, fukaku rikai shimashō.",
       "category": "Confidence",
       "generated_at": "2026-07-29T08:49:33.793946"
+    },
+    {
+      "english": "Breathe deep, let go.",
+      "japanese": "深く息をして、手放そう。",
+      "romaji": "fukaku iki o shite, tebanasou.",
+      "category": "Inner Peace",
+      "generated_at": "2026-07-29T11:54:33.640357"
+    },
+    {
+      "english": "Nature's calm, my peace.",
+      "japanese": "自然の静けさ、私の平和。",
+      "romaji": "shizen no shizukesa, watashi no heiwa.",
+      "category": "Inner Peace",
+      "generated_at": "2026-07-29T11:54:33.640366"
+    },
+    {
+      "english": "Simple life, rich soul.",
+      "japanese": "シンプルな暮らし、豊かな魂。",
+      "romaji": "shinpuru na kurashi, yutakana tamashii.",
+      "category": "Inner Peace",
+      "generated_at": "2026-07-29T11:54:33.640368"
+    },
+    {
+      "english": "Find stillness, inside.",
+      "japanese": "静けさを見つけよう、内側に。",
+      "romaji": "shizukesa o mitsukeyou, uchigawa ni.",
+      "category": "Inner Peace",
+      "generated_at": "2026-07-29T11:54:33.640369"
+    },
+    {
+      "english": "Gentle flow, no rush.",
+      "japanese": "穏やかな流れ、急がずに。",
+      "romaji": "odayakana nagare, isogazu ni.",
+      "category": "Inner Peace",
+      "generated_at": "2026-07-29T11:54:33.640371"
     }
   ],
-  "last_updated": "2026-07-29T08:49:33.793949"
+  "last_updated": "2026-07-29T11:54:33.640372"
 }
