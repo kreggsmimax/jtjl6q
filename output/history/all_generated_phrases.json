@@ -14629,7 +14629,42 @@
       "romaji": "Hanasu koto wo, osorenaide.",
       "category": "Perseverance",
       "generated_at": "2026-07-29T20:58:22.247954"
+    },
+    {
+      "english": "Take it easy, okay?",
+      "japanese": "無理しないでね、大丈夫？",
+      "romaji": "Muri shinaide ne, daijoubu?",
+      "category": "Common Expressions",
+      "generated_at": "2026-07-30T03:52:39.797840"
+    },
+    {
+      "english": "I'm looking forward to it.",
+      "japanese": "楽しみにしています、はい。",
+      "romaji": "Tanoshimi ni shite imasu, hai.",
+      "category": "Common Expressions",
+      "generated_at": "2026-07-30T03:52:39.797847"
+    },
+    {
+      "english": "No problem, really.",
+      "japanese": "全然平気、本当に。",
+      "romaji": "Zenzen heiki, hontou ni.",
+      "category": "Common Expressions",
+      "generated_at": "2026-07-30T03:52:39.797848"
+    },
+    {
+      "english": "Let's do our best.",
+      "japanese": "頑張りましょう、ね。",
+      "romaji": "Ganbarimashou, ne.",
+      "category": "Common Expressions",
+      "generated_at": "2026-07-30T03:52:39.797849"
+    },
+    {
+      "english": "Is that okay, then?",
+      "japanese": "それでいい、かな？",
+      "romaji": "Sore de ii, kana?",
+      "category": "Common Expressions",
+      "generated_at": "2026-07-30T03:52:39.797850"
     }
   ],
-  "last_updated": "2026-07-29T20:58:22.247955"
+  "last_updated": "2026-07-30T03:52:39.797851"
 }
