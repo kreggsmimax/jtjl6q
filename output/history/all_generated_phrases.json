@@ -14944,7 +14944,42 @@
       "romaji": "kyō wa manande, yoku yasunde, mata yarō",
       "category": "Positive Life",
       "generated_at": "2026-07-31T16:49:35.887376"
+    },
+    {
+      "english": "Excuse me, a table for two, please.",
+      "japanese": "すみません、二人席お願いします。",
+      "romaji": "sumimasen, futari seki onegai shimasu.",
+      "category": "Restaurant Japanese",
+      "generated_at": "2026-07-31T21:03:51.442272"
+    },
+    {
+      "english": "What is today's special?",
+      "japanese": "今日のおすすめは何ですか？",
+      "romaji": "kyō no osusume wa nan desu ka?",
+      "category": "Restaurant Japanese",
+      "generated_at": "2026-07-31T21:03:51.442282"
+    },
+    {
+      "english": "I'll have this, please.",
+      "japanese": "これにします。",
+      "romaji": "kore ni shimasu.",
+      "category": "Restaurant Japanese",
+      "generated_at": "2026-07-31T21:03:51.442284"
+    },
+    {
+      "english": "Water, please.",
+      "japanese": "お水、ください。",
+      "romaji": "o-mizu, kudasai.",
+      "category": "Restaurant Japanese",
+      "generated_at": "2026-07-31T21:03:51.442285"
+    },
+    {
+      "english": "Could I have the bill, please?",
+      "japanese": "お会計、お願いします。",
+      "romaji": "o-kaikei, onegai shimasu.",
+      "category": "Restaurant Japanese",
+      "generated_at": "2026-07-31T21:03:51.442287"
     }
   ],
-  "last_updated": "2026-07-31T16:49:35.887378"
+  "last_updated": "2026-07-31T21:03:51.442288"
 }
