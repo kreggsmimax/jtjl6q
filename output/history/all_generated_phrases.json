@@ -14874,7 +14874,42 @@
       "romaji": "kono jūsho o sagashite imasu, sumimasen.",
       "category": "Travel Japanese",
       "generated_at": "2026-07-31T08:58:37.468056"
+    },
+    {
+      "english": "Soon, I will go. Yes.",
+      "japanese": "もうすぐ、行きます。はい。",
+      "romaji": "Mōsugu, ikimasu. Hai.",
+      "category": "Time Japanese",
+      "generated_at": "2026-07-31T11:53:06.398130"
+    },
+    {
+      "english": "Today, very busy. Really.",
+      "japanese": "今日は、とても忙しいです。本当に。",
+      "romaji": "Kyō wa, totemo isogashii desu. Hontō ni.",
+      "category": "Time Japanese",
+      "generated_at": "2026-07-31T11:53:06.398143"
+    },
+    {
+      "english": "Later, maybe see you.",
+      "japanese": "後で、また会えるかも。",
+      "romaji": "Ato de, mata aeru kamo.",
+      "category": "Time Japanese",
+      "generated_at": "2026-07-31T11:53:06.398144"
+    },
+    {
+      "english": "Now, is good time.",
+      "japanese": "今が、良い時間です。",
+      "romaji": "Ima ga, yoi jikan desu.",
+      "category": "Time Japanese",
+      "generated_at": "2026-07-31T11:53:06.398146"
+    },
+    {
+      "english": "Morning, I will wake up.",
+      "japanese": "朝、起きます。",
+      "romaji": "Asa, okimasu.",
+      "category": "Time Japanese",
+      "generated_at": "2026-07-31T11:53:06.398147"
     }
   ],
-  "last_updated": "2026-07-31T08:58:37.468058"
+  "last_updated": "2026-07-31T11:53:06.398149"
 }
