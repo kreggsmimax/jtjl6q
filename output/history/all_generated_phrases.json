@@ -14839,7 +14839,42 @@
       "romaji": "Kimi wa itsumo, watashi o warawaseru.",
       "category": "Friendship",
       "generated_at": "2026-07-31T04:18:45.490061"
+    },
+    {
+      "english": "Where is the nearest station, please?",
+      "japanese": "いちばん近い駅はどこですか、すみません。",
+      "romaji": "ichiban chikai eki wa doko desu ka, sumimasen.",
+      "category": "Travel Japanese",
+      "generated_at": "2026-07-31T08:58:37.468041"
+    },
+    {
+      "english": "Is there a restroom nearby, please?",
+      "japanese": "近くにトイレはありますか、すみません。",
+      "romaji": "chikaku ni toire wa arimasu ka, sumimasen.",
+      "category": "Travel Japanese",
+      "generated_at": "2026-07-31T08:58:37.468052"
+    },
+    {
+      "english": "Can I take a photo here, please?",
+      "japanese": "ここで写真を撮ってもいいですか。",
+      "romaji": "koko de shashin o totte mo ii desu ka.",
+      "category": "Travel Japanese",
+      "generated_at": "2026-07-31T08:58:37.468054"
+    },
+    {
+      "english": "What time does it open, exactly?",
+      "japanese": "何時に開きますか、正確にお願いします。",
+      "romaji": "nanji ni akimasu ka, seikaku ni onegaishimasu.",
+      "category": "Travel Japanese",
+      "generated_at": "2026-07-31T08:58:37.468055"
+    },
+    {
+      "english": "I’m looking for this address, please.",
+      "japanese": "この住所を探しています、すみません。",
+      "romaji": "kono jūsho o sagashite imasu, sumimasen.",
+      "category": "Travel Japanese",
+      "generated_at": "2026-07-31T08:58:37.468056"
     }
   ],
-  "last_updated": "2026-07-31T04:18:45.490062"
+  "last_updated": "2026-07-31T08:58:37.468058"
 }
