@@ -14804,7 +14804,42 @@
       "romaji": "Mae e susume, tomaranai de.",
       "category": "Hope",
       "generated_at": "2026-07-30T21:10:14.482869"
+    },
+    {
+      "english": "You are, my best friend.",
+      "japanese": "あなたは、私の親友です。",
+      "romaji": "Anata wa, watashi no shin'yū desu.",
+      "category": "Friendship",
+      "generated_at": "2026-07-31T04:18:45.490048"
+    },
+    {
+      "english": "Thanks for, always being there.",
+      "japanese": "いつも、ありがとう。",
+      "romaji": "Itsumo, arigatō.",
+      "category": "Friendship",
+      "generated_at": "2026-07-31T04:18:45.490057"
+    },
+    {
+      "english": "I missed, our talks.",
+      "japanese": "話が、したかったよ。",
+      "romaji": "Hanashi ga, shitakatta yo.",
+      "category": "Friendship",
+      "generated_at": "2026-07-31T04:18:45.490058"
+    },
+    {
+      "english": "We make, a great team.",
+      "japanese": "私たち、最高のチームだね。",
+      "romaji": "Watashitachi, saikō no chīmu da ne.",
+      "category": "Friendship",
+      "generated_at": "2026-07-31T04:18:45.490059"
+    },
+    {
+      "english": "You always, make me laugh.",
+      "japanese": "君はいつも、私を笑わせる。",
+      "romaji": "Kimi wa itsumo, watashi o warawaseru.",
+      "category": "Friendship",
+      "generated_at": "2026-07-31T04:18:45.490061"
     }
   ],
-  "last_updated": "2026-07-30T21:10:14.482871"
+  "last_updated": "2026-07-31T04:18:45.490062"
 }
