@@ -14979,7 +14979,42 @@
       "romaji": "o-kaikei, onegai shimasu.",
       "category": "Restaurant Japanese",
       "generated_at": "2026-07-31T21:03:51.442287"
+    },
+    {
+      "english": "Good morning, please have a great day.",
+      "japanese": "おはようございます、今日もよろしく。",
+      "romaji": "ohayō gozaimasu, kyō mo yoroshiku.",
+      "category": "Greetings",
+      "generated_at": "2026-08-01T04:18:29.308997"
+    },
+    {
+      "english": "Nice to meet you, please take care of me.",
+      "japanese": "はじめまして、よろしくお願いします。",
+      "romaji": "hajimemashite, yoroshiku onegaishimasu.",
+      "category": "Greetings",
+      "generated_at": "2026-08-01T04:18:29.309009"
+    },
+    {
+      "english": "Welcome, come on in.",
+      "japanese": "いらっしゃいませ、どうぞこちらへ。",
+      "romaji": "irasshaimase, dōzo kochira e.",
+      "category": "Greetings",
+      "generated_at": "2026-08-01T04:18:29.309011"
+    },
+    {
+      "english": "Good evening, thanks for today.",
+      "japanese": "こんばんは、今日もありがとうございました。",
+      "romaji": "konbanwa, kyō mo arigatō gozaimashita.",
+      "category": "Greetings",
+      "generated_at": "2026-08-01T04:18:29.309012"
+    },
+    {
+      "english": "Hi there, what’s your name?",
+      "japanese": "やあ、お名前は何ですか。",
+      "romaji": "yā, onamae wa nan desu ka.",
+      "category": "Greetings",
+      "generated_at": "2026-08-01T04:18:29.309013"
     }
   ],
-  "last_updated": "2026-07-31T21:03:51.442288"
+  "last_updated": "2026-08-01T04:18:29.309015"
 }
