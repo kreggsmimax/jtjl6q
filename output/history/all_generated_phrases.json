@@ -15084,7 +15084,42 @@
       "romaji": "Yurushite, sugu ni, tebanasou.",
       "category": "Kindness",
       "generated_at": "2026-08-01T11:10:41.807585"
+    },
+    {
+      "english": "You've learned so much, wow!",
+      "japanese": "たくさん学びましたね、すごい！",
+      "romaji": "Takusan manabimashita ne, sugoi!",
+      "category": "Success",
+      "generated_at": "2026-08-01T16:05:37.487721"
+    },
+    {
+      "english": "Practice makes perfect, truly.",
+      "japanese": "練習は完璧に、本当に。",
+      "romaji": "Renshuu wa kanpeki ni, hontou ni.",
+      "category": "Success",
+      "generated_at": "2026-08-01T16:05:37.487733"
+    },
+    {
+      "english": "Don't give up, persevere.",
+      "japanese": "諦めないで、粘り強く。",
+      "romaji": "Akiramenaide, nebarizuyoku.",
+      "category": "Success",
+      "generated_at": "2026-08-01T16:05:37.487735"
+    },
+    {
+      "english": "Your progress is amazing.",
+      "japanese": "あなたの進歩は素晴らしい。",
+      "romaji": "Anata no shinpo wa subarashii.",
+      "category": "Success",
+      "generated_at": "2026-08-01T16:05:37.487736"
+    },
+    {
+      "english": "Keep that focus, yes!",
+      "japanese": "その集中を保って、ええ！",
+      "romaji": "Sono shuuchuu wo tamotte, ee!",
+      "category": "Success",
+      "generated_at": "2026-08-01T16:05:37.487738"
     }
   ],
-  "last_updated": "2026-08-01T11:10:41.807587"
+  "last_updated": "2026-08-01T16:05:37.487740"
 }
