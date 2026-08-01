@@ -15119,7 +15119,42 @@
       "romaji": "Sono shuuchuu wo tamotte, ee!",
       "category": "Success",
       "generated_at": "2026-08-01T16:05:37.487738"
+    },
+    {
+      "english": "Fire! Fire!",
+      "japanese": "火事です！火事です！",
+      "romaji": "Kaji desu! Kaji desu!",
+      "category": "Emergency Japanese",
+      "generated_at": "2026-08-01T20:51:59.825312"
+    },
+    {
+      "english": "I am injured.",
+      "japanese": "怪我をしました。",
+      "romaji": "Kega o shi mashita.",
+      "category": "Emergency Japanese",
+      "generated_at": "2026-08-01T20:51:59.825322"
+    },
+    {
+      "english": "I lost my passport.",
+      "japanese": "パスポートをなくしました。",
+      "romaji": "Pasupōto o nakushi mashita.",
+      "category": "Emergency Japanese",
+      "generated_at": "2026-08-01T20:51:59.825323"
+    },
+    {
+      "english": "Is anyone there?",
+      "japanese": "誰かいませんか？",
+      "romaji": "Dare ka imasen ka?",
+      "category": "Emergency Japanese",
+      "generated_at": "2026-08-01T20:51:59.825324"
+    },
+    {
+      "english": "Quiet, please.",
+      "japanese": "静かにしてください。",
+      "romaji": "Shizuka ni shite kudasai.",
+      "category": "Emergency Japanese",
+      "generated_at": "2026-08-01T20:51:59.825325"
     }
   ],
-  "last_updated": "2026-08-01T16:05:37.487740"
+  "last_updated": "2026-08-01T20:51:59.825327"
 }
