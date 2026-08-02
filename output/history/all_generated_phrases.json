@@ -15294,7 +15294,42 @@
       "romaji": "Bunka o, fukaku rikai shitai desu.",
       "category": "Purpose",
       "generated_at": "2026-08-02T16:05:31.087372"
+    },
+    {
+      "english": "My mother, she cooks well.",
+      "japanese": "母は、料理が上手です。",
+      "romaji": "Haha wa, ryōri ga jōzu desu.",
+      "category": "Family Terms",
+      "generated_at": "2026-08-02T20:54:55.582580"
+    },
+    {
+      "english": "My grandmother, she tells stories.",
+      "japanese": "祖母は、物語を話します。",
+      "romaji": "Sobo wa, monogatari o hanashimasu.",
+      "category": "Family Terms",
+      "generated_at": "2026-08-02T20:54:55.582592"
+    },
+    {
+      "english": "My grandfather, he likes reading.",
+      "japanese": "祖父は、読書が好きです。",
+      "romaji": "Sofi wa, dokusho ga suki desu.",
+      "category": "Family Terms",
+      "generated_at": "2026-08-02T20:54:55.582594"
+    },
+    {
+      "english": "My parents, they are kind.",
+      "japanese": "両親は、親切です。",
+      "romaji": "Ryōshin wa, shinsetsu desu.",
+      "category": "Family Terms",
+      "generated_at": "2026-08-02T20:54:55.582595"
+    },
+    {
+      "english": "My siblings, we play together.",
+      "japanese": "兄弟は、一緒に遊びます。",
+      "romaji": "Kyōdai wa, issho ni asobimasu.",
+      "category": "Family Terms",
+      "generated_at": "2026-08-02T20:54:55.582596"
     }
   ],
-  "last_updated": "2026-08-02T16:05:31.087374"
+  "last_updated": "2026-08-02T20:54:55.582598"
 }
