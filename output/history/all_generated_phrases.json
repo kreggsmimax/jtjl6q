@@ -15259,7 +15259,42 @@
       "romaji": "iki tsumattara, hitotsu iikae you",
       "category": "Motivation",
       "generated_at": "2026-08-02T11:10:43.470340"
+    },
+    {
+      "english": "Learn Japanese, for fun.",
+      "japanese": "日本語を、楽しみましょう。",
+      "romaji": "Nihongo o, tanoshimimashou.",
+      "category": "Purpose",
+      "generated_at": "2026-08-02T16:05:31.087356"
+    },
+    {
+      "english": "Study hard, everyday.",
+      "japanese": "毎日、一生懸命勉強します。",
+      "romaji": "Mainichi, isshōkenmei benkyō shimasu.",
+      "category": "Purpose",
+      "generated_at": "2026-08-02T16:05:31.087367"
+    },
+    {
+      "english": "Travel Japan, with confidence.",
+      "japanese": "自信を持って、日本を旅行しましょう。",
+      "romaji": "Jishin o motte, Nihon o ryokō shimashou.",
+      "category": "Purpose",
+      "generated_at": "2026-08-02T16:05:31.087369"
+    },
+    {
+      "english": "Make friends, speak often.",
+      "japanese": "友達を作り、よく話しましょう。",
+      "romaji": "Tomodachi o tsukuri, yoku hanashimashou.",
+      "category": "Purpose",
+      "generated_at": "2026-08-02T16:05:31.087371"
+    },
+    {
+      "english": "Understand culture, deeply.",
+      "japanese": "文化を、深く理解したいです。",
+      "romaji": "Bunka o, fukaku rikai shitai desu.",
+      "category": "Purpose",
+      "generated_at": "2026-08-02T16:05:31.087372"
     }
   ],
-  "last_updated": "2026-08-02T11:10:43.470342"
+  "last_updated": "2026-08-02T16:05:31.087374"
 }
