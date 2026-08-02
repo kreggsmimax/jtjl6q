@@ -15154,7 +15154,42 @@
       "romaji": "Shizuka ni shite kudasai.",
       "category": "Emergency Japanese",
       "generated_at": "2026-08-01T20:51:59.825325"
+    },
+    {
+      "english": "This is, so exciting!",
+      "japanese": "これは、すごくワクワクします！",
+      "romaji": "Kore wa, sugoku wakuwaku shimasu!",
+      "category": "Joy",
+      "generated_at": "2026-08-02T04:21:07.020505"
+    },
+    {
+      "english": "What a, wonderful day.",
+      "japanese": "なんて、素晴らしい日でしょう。",
+      "romaji": "Nante, subarashii hi deshou.",
+      "category": "Joy",
+      "generated_at": "2026-08-02T04:21:07.020515"
+    },
+    {
+      "english": "I feel, so happy now.",
+      "japanese": "今、とても幸せです。",
+      "romaji": "Ima, totemo shiawase desu.",
+      "category": "Joy",
+      "generated_at": "2026-08-02T04:21:07.020517"
+    },
+    {
+      "english": "This makes me, smile.",
+      "japanese": "これを見ると、笑顔になります。",
+      "romaji": "Kore o miru to, egao ni narimasu.",
+      "category": "Joy",
+      "generated_at": "2026-08-02T04:21:07.020519"
+    },
+    {
+      "english": "Pure bliss, right here.",
+      "japanese": "まさに、至福の時です。",
+      "romaji": "Masani, shifuku no toki desu.",
+      "category": "Joy",
+      "generated_at": "2026-08-02T04:21:07.020520"
     }
   ],
-  "last_updated": "2026-08-01T20:51:59.825327"
+  "last_updated": "2026-08-02T04:21:07.020522"
 }
