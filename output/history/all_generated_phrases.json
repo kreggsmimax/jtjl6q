@@ -15504,7 +15504,42 @@
       "romaji": "itsutsu, isogashii hibi, sugiru.",
       "category": "Numbers Japanese",
       "generated_at": "2026-08-03T21:01:41.560755"
+    },
+    {
+      "english": "Face your fears, head on.",
+      "japanese": "恐れに、立ち向かおう。",
+      "romaji": "Osore ni, tachimukao.",
+      "category": "Courage",
+      "generated_at": "2026-08-03T21:55:51.424321"
+    },
+    {
+      "english": "Be brave, little by little.",
+      "japanese": "少しずつ、勇気を出して。",
+      "romaji": "Sukoshi zutsu, yuuki o dashite.",
+      "category": "Courage",
+      "generated_at": "2026-08-03T21:55:51.424331"
+    },
+    {
+      "english": "Take a deep breath, and go.",
+      "japanese": "深呼吸して、行こう。",
+      "romaji": "Shinkokyuu shite, iko.",
+      "category": "Courage",
+      "generated_at": "2026-08-03T21:55:51.424333"
+    },
+    {
+      "english": "Even a small step, is progress.",
+      "japanese": "小さな一歩も、前進だ。",
+      "romaji": "Chiisana ippo mo, zenshin da.",
+      "category": "Courage",
+      "generated_at": "2026-08-03T21:55:51.424334"
+    },
+    {
+      "english": "Your strength, is within you.",
+      "japanese": "君の強さ、内にある。",
+      "romaji": "Kimi no tsuyosa, uchi ni aru.",
+      "category": "Courage",
+      "generated_at": "2026-08-03T21:55:51.424335"
     }
   ],
-  "last_updated": "2026-08-03T21:01:41.560757"
+  "last_updated": "2026-08-03T21:55:51.424337"
 }
