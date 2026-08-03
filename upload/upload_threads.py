@@ -169,58 +169,44 @@ def upload_to_threads(video_path, text):
             print(f"[threads] ❌ {error_msg}")
             raise Exception(error_msg)
         
-        # Step 3: Wait for processing
+        # Step 3: Wait for processing (sleep instead of polling)
         print(f"[threads] ⏳ Step 3: Waiting for video processing...")
-        max_wait = 120
+        max_wait = 180
         waited = 0
-        
+        publish_response = None
+
         while waited < max_wait:
-            status_url = f"https://graph.threads.net/v1.0/{container_id}"
-            status_params = {
-                'fields': 'status',
+            time.sleep(45 if waited == 0 else 30)
+            waited += 45 if waited == 0 else 30
+            print(f"[threads] Publishing media (waited {waited}s)...")
+
+            # Step 4: Publish
+            publish_url = f"https://graph.threads.net/v1.0/{user_id}/threads_publish"
+            publish_params = {
+                'creation_id': container_id,
                 'access_token': access_token
             }
-            
-            status_response = requests.get(status_url, params=status_params, timeout=30)
-            status_data = status_response.json()
-            status = status_data.get('status', 'UNKNOWN')
-            
-            print(f"[threads] Status: {status} (waited {waited}s)")
-            
-            if status == 'FINISHED':
-                print(f"[threads] ✅ Video processing complete!")
+
+            publish_response = requests.post(publish_url, params=publish_params, timeout=60)
+
+            if publish_response.status_code == 200:
                 break
-            elif status == 'ERROR':
-                error_msg = status_data.get('error_message', 'Video processing failed')
-                print(f"[threads] ❌ {error_msg}")
-                raise Exception(error_msg)
-            
-            time.sleep(10)
-            waited += 10
-        
-        if waited >= max_wait:
-            error_msg = "Video processing timed out"
-            print(f"[threads] ❌ {error_msg}")
-            raise Exception(error_msg)
-        
-        # Step 4: Publish
-        print(f"[threads] 📤 Step 4: Publishing to Threads...")
-        publish_url = f"https://graph.threads.net/v1.0/{user_id}/threads_publish"
-        publish_params = {
-            'creation_id': container_id,
-            'access_token': access_token
-        }
-        
-        publish_response = requests.post(publish_url, params=publish_params, timeout=60)
-        
+
+            err_msg = ""
+            try: err_msg = publish_response.json().get('error', {}).get('message', '')
+            except: pass
+            if waited >= max_wait:
+                raise Exception(f"Publish failed after {max_wait}s: {err_msg or publish_response.text}")
+            print(f"[threads] Not ready yet, retrying in 30s...")
+
         if publish_response.status_code != 200:
             error_data = publish_response.json() if publish_response.text else {}
             error_msg = error_data.get('error', {}).get('message', 'Unknown error')
             print(f"[threads] ❌ Publish failed: {error_msg}")
             raise Exception(f"Threads Publish Error: {error_msg}")
-        
+
         thread_id = publish_response.json().get('id')
-        
+
         print(f"[threads] ✅ SUCCESS! Video published to Threads!")
         print(f"[threads] Thread ID: {thread_id}")
         print(f"[threads] Check your Threads profile to see the post!")
@@ -229,7 +215,8 @@ def upload_to_threads(video_path, text):
         return {
             'id': thread_id,
             'platform': 'threads',
-            'status': 'success'
+            'status': 'success',
+            'wait_s': waited
         }
         
     except Exception as e:
