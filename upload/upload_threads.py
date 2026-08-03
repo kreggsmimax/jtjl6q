@@ -58,60 +58,65 @@ def upload_to_threads(video_path, text):
     print(f"[threads] Text length: {len(text_limited)} characters")
     
     try:
-        # Step 1: Upload to temporary hosting (catbox.moe returns raw bytes)
-        print(f"[threads] 📤 Step 1: Uploading to temporary hosting...")
-        
-        video_url = None
-        
-        # Primary method: catbox.moe (returns direct raw file URL, required by Threads)
-        try:
-            print("[threads] Uploading to catbox.moe...")
-            with open(video_path_obj, 'rb') as video_file:
-                files = {'fileToUpload': ('video.mp4', video_file, 'video/mp4')}
-                catbox_response = requests.post(
-                    'https://catbox.moe/user/api.php',
-                    data={'reqtype': 'fileupload'},
-                    files=files,
-                    timeout=180
-                )
-            
-            if catbox_response.status_code == 200:
-                catbox_url = catbox_response.text.strip()
-                if catbox_url.startswith('http'):
-                    video_url = catbox_url
-                    print(f"[threads] ✅ Uploaded to catbox.moe: {video_url}")
-                else:
-                    print(f"[threads] ⚠️ catbox.moe error: {catbox_url}")
-            else:
-                print(f"[threads] ⚠️ catbox.moe failed with status {catbox_response.status_code}")
-        except Exception as e:
-            print(f"[threads] ⚠️ catbox.moe exception: {e}")
+        # Step 1: Prepare video URL (prefer workflow-provided GitHub raw URL)
+        print(f"[threads] 📤 Step 1: Preparing video URL...")
 
-        # Fallback: tmpfiles.org
-        if not video_url:
-            print("[threads] ⚠️ Trying fallback to tmpfiles.org...")
+        video_url = os.getenv('THREADS_VIDEO_URL', '').strip()
+        if video_url.startswith('http'):
+            print(f"[threads] ✅ Using workflow-provided GitHub raw URL: {video_url}")
+        else:
+            # Upload to temporary hosting (catbox.moe returns raw bytes)
+            print(f"[threads] 📤 Uploading to temporary hosting...")
+
+            # Primary method: catbox.moe (returns direct raw file URL, required by Threads)
             try:
+                print("[threads] Uploading to catbox.moe...")
                 with open(video_path_obj, 'rb') as video_file:
-                    files = {'file': ('video.mp4', video_file, 'video/mp4')}
-                    temp_response = requests.post(
-                        'https://tmpfiles.org/api/v1/upload',
+                    files = {'fileToUpload': ('video.mp4', video_file, 'video/mp4')}
+                    catbox_response = requests.post(
+                        'https://catbox.moe/user/api.php',
+                        data={'reqtype': 'fileupload'},
                         files=files,
                         timeout=180
                     )
-                
-                if temp_response.status_code == 200:
-                    temp_data = temp_response.json()
-                    temp_url = temp_data.get('data', {}).get('url', '')
-                    if temp_url:
-                        video_url = temp_url.replace('tmpfiles.org/', 'tmpfiles.org/dl/').replace('http://', 'https://')
-                        print(f"[threads] ✅ Uploaded to tmpfiles.org: {video_url}")
-            except Exception as e:
-                 print(f"[threads] ⚠️ tmpfiles.org exception: {e}")
 
-        if not video_url:
-             raise Exception("All hosting attempts failed (catbox.moe and tmpfiles.org)")
-            
-        print(f"[threads] ✅ Temporary URL ready: {video_url}")
+                if catbox_response.status_code == 200:
+                    catbox_url = catbox_response.text.strip()
+                    if catbox_url.startswith('http'):
+                        video_url = catbox_url
+                        print(f"[threads] ✅ Uploaded to catbox.moe: {video_url}")
+                    else:
+                        print(f"[threads] ⚠️ catbox.moe error: {catbox_url}")
+                else:
+                    print(f"[threads] ⚠️ catbox.moe failed with status {catbox_response.status_code}")
+            except Exception as e:
+                print(f"[threads] ⚠️ catbox.moe exception: {e}")
+
+            # Fallback: tmpfiles.org
+            if not video_url:
+                print("[threads] ⚠️ Trying fallback to tmpfiles.org...")
+                try:
+                    with open(video_path_obj, 'rb') as video_file:
+                        files = {'file': ('video.mp4', video_file, 'video/mp4')}
+                        temp_response = requests.post(
+                            'https://tmpfiles.org/api/v1/upload',
+                            files=files,
+                            timeout=180
+                        )
+
+                    if temp_response.status_code == 200:
+                        temp_data = temp_response.json()
+                        temp_url = temp_data.get('data', {}).get('url', '')
+                        if temp_url:
+                            video_url = temp_url.replace('tmpfiles.org/', 'tmpfiles.org/dl/').replace('http://', 'https://')
+                            print(f"[threads] ✅ Uploaded to tmpfiles.org: {video_url}")
+                except Exception as e:
+                    print(f"[threads] ⚠️ tmpfiles.org exception: {e}")
+
+            if not video_url:
+                raise Exception("All hosting attempts failed (catbox.moe and tmpfiles.org)")
+
+            print(f"[threads] ✅ Temporary URL ready: {video_url}")
         
         # Step 2: Create Threads container with video URL
         print(f"[threads] 📦 Step 2: Creating Threads container...")
