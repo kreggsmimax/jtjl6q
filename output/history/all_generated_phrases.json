@@ -15329,7 +15329,42 @@
       "romaji": "Kyōdai wa, issho ni asobimasu.",
       "category": "Family Terms",
       "generated_at": "2026-08-02T20:54:55.582596"
+    },
+    {
+      "english": "Breathe in, breathe out, calm.",
+      "japanese": "吸って、吐いて、落ち着く。",
+      "romaji": "Sutte, haite, ochitsuku.",
+      "category": "Mindfulness",
+      "generated_at": "2026-08-03T04:25:59.848008"
+    },
+    {
+      "english": "This moment, right now, is enough.",
+      "japanese": "この瞬間、今、十分です。",
+      "romaji": "Kono shunkan, ima, jūbun desu.",
+      "category": "Mindfulness",
+      "generated_at": "2026-08-03T04:25:59.848018"
+    },
+    {
+      "english": "Listen gently, to your inner voice.",
+      "japanese": "優しく聞いて、内なる声に。",
+      "romaji": "Yasashiku kiite, uchi naru koe ni.",
+      "category": "Mindfulness",
+      "generated_at": "2026-08-03T04:25:59.848020"
+    },
+    {
+      "english": "Feel the ground, beneath your feet.",
+      "japanese": "地面を感じて、足の下の。",
+      "romaji": "Jimen o kanjite, ashi no shita no.",
+      "category": "Mindfulness",
+      "generated_at": "2026-08-03T04:25:59.848022"
+    },
+    {
+      "english": "Let worries go, like clouds drifting.",
+      "japanese": "心配を流そう、雲のように。",
+      "romaji": "Shinpai o nagasou, kumo no yō ni.",
+      "category": "Mindfulness",
+      "generated_at": "2026-08-03T04:25:59.848023"
     }
   ],
-  "last_updated": "2026-08-02T20:54:55.582598"
+  "last_updated": "2026-08-03T04:25:59.848025"
 }
