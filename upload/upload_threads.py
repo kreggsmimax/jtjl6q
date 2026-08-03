@@ -58,30 +58,34 @@ def upload_to_threads(video_path, text):
     print(f"[threads] Text length: {len(text_limited)} characters")
     
     try:
-        # Step 1: Upload to temporary hosting (file.io for reliability)
+        # Step 1: Upload to temporary hosting (catbox.moe returns raw bytes)
         print(f"[threads] 📤 Step 1: Uploading to temporary hosting...")
         
         video_url = None
         
-        # Primary method: file.io
+        # Primary method: catbox.moe (returns direct raw file URL, required by Threads)
         try:
-            print("[threads] Uploading to file.io...")
+            print("[threads] Uploading to catbox.moe...")
             with open(video_path_obj, 'rb') as video_file:
-                files = {'file': video_file}
-                # Set expiry to 1 day to be safe, auto-delete is default on download
-                response = requests.post('https://file.io/?expires=1d', files=files, timeout=60)
-                
-            if response.status_code == 200:
-                data = response.json()
-                if data.get('success'):
-                    video_url = data.get('link')
-                    print(f"[threads] ✅ Uploaded to file.io: {video_url}")
+                files = {'fileToUpload': ('video.mp4', video_file, 'video/mp4')}
+                catbox_response = requests.post(
+                    'https://catbox.moe/user/api.php',
+                    data={'reqtype': 'fileupload'},
+                    files=files,
+                    timeout=180
+                )
+            
+            if catbox_response.status_code == 200:
+                catbox_url = catbox_response.text.strip()
+                if catbox_url.startswith('http'):
+                    video_url = catbox_url
+                    print(f"[threads] ✅ Uploaded to catbox.moe: {video_url}")
                 else:
-                    print(f"[threads] ⚠️ file.io error: {data}")
+                    print(f"[threads] ⚠️ catbox.moe error: {catbox_url}")
             else:
-                print(f"[threads] ⚠️ file.io failed with status {response.status_code}")
+                print(f"[threads] ⚠️ catbox.moe failed with status {catbox_response.status_code}")
         except Exception as e:
-            print(f"[threads] ⚠️ file.io exception: {e}")
+            print(f"[threads] ⚠️ catbox.moe exception: {e}")
 
         # Fallback: tmpfiles.org
         if not video_url:
@@ -105,7 +109,7 @@ def upload_to_threads(video_path, text):
                  print(f"[threads] ⚠️ tmpfiles.org exception: {e}")
 
         if not video_url:
-             raise Exception("All hosting attempts failed (file.io and tmpfiles.org)")
+             raise Exception("All hosting attempts failed (catbox.moe and tmpfiles.org)")
             
         print(f"[threads] ✅ Temporary URL ready: {video_url}")
         
