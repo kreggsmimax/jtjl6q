@@ -15364,7 +15364,42 @@
       "romaji": "Shinpai o nagasou, kumo no yō ni.",
       "category": "Mindfulness",
       "generated_at": "2026-08-03T04:25:59.848023"
+    },
+    {
+      "english": "Every day, a new lesson.",
+      "japanese": "毎日、新しい学びがある。",
+      "romaji": "Mainichi, atarashii manabi ga aru.",
+      "category": "Growth",
+      "generated_at": "2026-08-03T09:57:23.768426"
+    },
+    {
+      "english": "Learn from mistakes, keep going.",
+      "japanese": "間違いから学び、続ける。",
+      "romaji": "Machigai kara manabi, tsuzukeru.",
+      "category": "Growth",
+      "generated_at": "2026-08-03T09:57:23.768437"
+    },
+    {
+      "english": "Step by step, reach your goal.",
+      "japanese": "一歩ずつ、目標に到達する。",
+      "romaji": "Ippo zutsu, mokuhyō ni tōtatsu suru.",
+      "category": "Growth",
+      "generated_at": "2026-08-03T09:57:23.768440"
+    },
+    {
+      "english": "Patience is key, success follows.",
+      "japanese": "忍耐が鍵、成功は続く。",
+      "romaji": "Nintai ga kagi, seikō wa tsuzuku.",
+      "category": "Growth",
+      "generated_at": "2026-08-03T09:57:23.768441"
+    },
+    {
+      "english": "Seek knowledge, expand your mind.",
+      "japanese": "知識を求め、心を広げる。",
+      "romaji": "Chishiki o motome, kokoro o hirogeru.",
+      "category": "Growth",
+      "generated_at": "2026-08-03T09:57:23.768442"
     }
   ],
-  "last_updated": "2026-08-03T04:25:59.848025"
+  "last_updated": "2026-08-03T09:57:23.768443"
 }
