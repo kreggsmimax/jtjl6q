@@ -15714,7 +15714,42 @@
       "romaji": "Ichido, are o tameshimashita.",
       "category": "Time Japanese",
       "generated_at": "2026-08-04T04:07:27.073842"
+    },
+    {
+      "english": "Welcome back, how was your trip?",
+      "japanese": "お帰り、旅行はどうだった？",
+      "romaji": "Okaeri, ryokō wa dō datta?",
+      "category": "Greetings",
+      "generated_at": "2026-08-04T08:48:47.081566"
+    },
+    {
+      "english": "You look tired today, are you okay?",
+      "japanese": "今日、疲れてるみたいだけど大丈夫？",
+      "romaji": "Kyō, tsukareteru mitai dakedo daijōbu?",
+      "category": "Greetings",
+      "generated_at": "2026-08-04T08:48:47.081577"
+    },
+    {
+      "english": "Busy day, huh? Take it easy.",
+      "japanese": "忙しい日だね、無理しないで。",
+      "romaji": "Isogashii hi da ne, muri shinaide.",
+      "category": "Greetings",
+      "generated_at": "2026-08-04T08:48:47.081578"
+    },
+    {
+      "english": "What brings you here today?",
+      "japanese": "今日は、どういうご用件ですか？",
+      "romaji": "Kyō wa, dōiu go-yōken desu ka?",
+      "category": "Greetings",
+      "generated_at": "2026-08-04T08:48:47.081579"
+    },
+    {
+      "english": "See you later, stay safe!",
+      "japanese": "じゃね、気をつけて！",
+      "romaji": "Ja ne, ki o tsukete!",
+      "category": "Greetings",
+      "generated_at": "2026-08-04T08:48:47.081580"
     }
   ],
-  "last_updated": "2026-08-04T04:07:27.073844"
+  "last_updated": "2026-08-04T08:48:47.081581"
 }
