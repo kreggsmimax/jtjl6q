@@ -15644,7 +15644,42 @@
       "romaji": "Genkai o oshi, sara ni tassei.",
       "category": "Strength",
       "generated_at": "2026-08-03T22:20:31.955162"
+    },
+    {
+      "english": "Keep going, even on hard days",
+      "japanese": "つらい日でも、歩き続けよう",
+      "romaji": "tsurai hi demo, aruki tsuzukeyou",
+      "category": "Perseverance",
+      "generated_at": "2026-08-04T00:29:54.246611"
+    },
+    {
+      "english": "One step now, another step tomorrow",
+      "japanese": "今一歩、明日また一歩",
+      "romaji": "ima ippo, ashita mata ippo",
+      "category": "Perseverance",
+      "generated_at": "2026-08-04T00:29:54.246620"
+    },
+    {
+      "english": "Small practice, big progress, daily",
+      "japanese": "毎日、小さく練習しよう",
+      "romaji": "mainichi, chīsaku renshū shiyou",
+      "category": "Perseverance",
+      "generated_at": "2026-08-04T00:29:54.246622"
+    },
+    {
+      "english": "Don’t quit, breathe, try again",
+      "japanese": "やめないで、深呼吸して、また挑戦",
+      "romaji": "yamenai de, shinkokyū shite, mata chōsen",
+      "category": "Perseverance",
+      "generated_at": "2026-08-04T00:29:54.246623"
+    },
+    {
+      "english": "Slow is okay, stay consistent",
+      "japanese": "ゆっくりでもいい、続けよう",
+      "romaji": "yukkuri demo ii, tsuzukeyou",
+      "category": "Perseverance",
+      "generated_at": "2026-08-04T00:29:54.246624"
     }
   ],
-  "last_updated": "2026-08-03T22:20:31.955164"
+  "last_updated": "2026-08-04T00:29:54.246626"
 }
