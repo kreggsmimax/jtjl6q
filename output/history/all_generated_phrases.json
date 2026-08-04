@@ -15749,7 +15749,42 @@
       "romaji": "Ja ne, ki o tsukete!",
       "category": "Greetings",
       "generated_at": "2026-08-04T08:48:47.081580"
+    },
+    {
+      "english": "Believe in yourself, take one step now",
+      "japanese": "自分を信じて、今一歩ずつ進もう",
+      "romaji": "jibun o shinjite, ima ippo zutsu susumou",
+      "category": "Success",
+      "generated_at": "2026-08-04T11:55:51.897615"
+    },
+    {
+      "english": "Work calmly, progress will follow you",
+      "japanese": "落ち着いて働くと、成長がついてくる",
+      "romaji": "ochitsuite hatarakuto, seichou ga tsuite kuru",
+      "category": "Success",
+      "generated_at": "2026-08-04T11:55:51.897626"
+    },
+    {
+      "english": "Do your best, then let it go",
+      "japanese": "ベストを尽くして、あとは手放そう",
+      "romaji": "besuto o tsukushite, ashi wa tebanasou",
+      "category": "Success",
+      "generated_at": "2026-08-04T11:55:51.897628"
+    },
+    {
+      "english": "Small wins matter, celebrate today",
+      "japanese": "小さな勝利を大切に、今日祝おう",
+      "romaji": "chiisana shouri o taisetsu ni, kyou iwou",
+      "category": "Success",
+      "generated_at": "2026-08-04T11:55:51.897629"
+    },
+    {
+      "english": "Keep going, even if it feels hard",
+      "japanese": "大変でも、進み続けよう",
+      "romaji": "taihen demo, susumi tsudzukeyou",
+      "category": "Success",
+      "generated_at": "2026-08-04T11:55:51.897630"
     }
   ],
-  "last_updated": "2026-08-04T08:48:47.081581"
+  "last_updated": "2026-08-04T11:55:51.897631"
 }
