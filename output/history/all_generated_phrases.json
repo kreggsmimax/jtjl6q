@@ -15679,7 +15679,42 @@
       "romaji": "yukkuri demo ii, tsuzukeyou",
       "category": "Perseverance",
       "generated_at": "2026-08-04T00:29:54.246624"
+    },
+    {
+      "english": "Evening, relax now.",
+      "japanese": "夜は、リラックスします。",
+      "romaji": "Yoru wa, rirakkusu shimasu.",
+      "category": "Time Japanese",
+      "generated_at": "2026-08-04T04:07:27.073826"
+    },
+    {
+      "english": "Last week, was fun.",
+      "japanese": "先週は、楽しかったです。",
+      "romaji": "Senshū wa, tanoshikatta desu.",
+      "category": "Time Japanese",
+      "generated_at": "2026-08-04T04:07:27.073838"
+    },
+    {
+      "english": "Next month, new plan.",
+      "japanese": "来月、新しい計画。",
+      "romaji": "Raigetsu, atarashii keikaku.",
+      "category": "Time Japanese",
+      "generated_at": "2026-08-04T04:07:27.073840"
+    },
+    {
+      "english": "Always, be patient.",
+      "japanese": "いつも、我慢しましょう。",
+      "romaji": "Itsumo, gaman shimashō.",
+      "category": "Time Japanese",
+      "generated_at": "2026-08-04T04:07:27.073841"
+    },
+    {
+      "english": "Once, I tried that.",
+      "japanese": "一度、あれを試しました。",
+      "romaji": "Ichido, are o tameshimashita.",
+      "category": "Time Japanese",
+      "generated_at": "2026-08-04T04:07:27.073842"
     }
   ],
-  "last_updated": "2026-08-04T00:29:54.246626"
+  "last_updated": "2026-08-04T04:07:27.073844"
 }
