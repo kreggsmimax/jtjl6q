@@ -111,12 +111,11 @@ def upload_to_instagram(video_path, caption="", is_story=False):
 
         print(f"[instagram] ✅ Video Bytes Transferred Successfully!")
 
-        print("[instagram] Step 3: Waiting for Meta to process container...")
+        print("[instagram] Step 3: Publishing with sleep-and-retry (no status polling)...")
         max_wait = 180
         waited = 0
+        pub_res = None
         while waited < max_wait:
-            time.sleep(45 if waited == 0 else 30)
-            waited += 45 if waited == 0 else 30
             print(f"[instagram] Publishing media (waited {waited}s)...")
             pub_res = requests.post(
                 f"{api_base}/{user_id}/media_publish",
@@ -130,7 +129,9 @@ def upload_to_instagram(video_path, caption="", is_story=False):
             except: pass
             if waited >= max_wait:
                 raise Exception(f"Publish failed after {max_wait}s: {err_msg or pub_res.text}")
-            print(f"[instagram] Not ready yet, retrying in 30s...")
+            print(f"[instagram] Not ready yet ({err_msg or pub_res.status_code}), retrying in 45s...")
+            time.sleep(45)
+            waited += 45
 
         if pub_res.status_code in (200, 201):
             media_id = pub_res.json().get('id', container_id)
