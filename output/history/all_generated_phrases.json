@@ -15854,7 +15854,42 @@
       "romaji": "Kore wa kanari, oishii.",
       "category": "Common Expressions",
       "generated_at": "2026-08-04T21:12:42.752954"
+    },
+    {
+      "english": "I can do it, step by step",
+      "japanese": "できるよ、ひとつずつ進もう",
+      "romaji": "dekiru yo, hitotsu zutsu susumou",
+      "category": "Confidence",
+      "generated_at": "2026-08-05T03:55:47.434378"
+    },
+    {
+      "english": "Breathe, then speak with confidence",
+      "japanese": "深呼吸して、自信を持って話そう",
+      "romaji": "shinkokyuu shite, jishin o motte hanasou",
+      "category": "Confidence",
+      "generated_at": "2026-08-05T03:55:47.434389"
+    },
+    {
+      "english": "My effort counts, every single day",
+      "japanese": "努力は大丈夫、毎日積み重ねよう",
+      "romaji": "doryoku wa daijoubu, mainichi tsumi kasane you",
+      "category": "Confidence",
+      "generated_at": "2026-08-05T03:55:47.434391"
+    },
+    {
+      "english": "I will try again, no fear",
+      "japanese": "また挑戦するよ、怖くない",
+      "romaji": "mata chousen suru yo, kowakunai",
+      "category": "Confidence",
+      "generated_at": "2026-08-05T03:55:47.434392"
+    },
+    {
+      "english": "Small progress, big confidence",
+      "japanese": "小さな進歩が、自信になる",
+      "romaji": "chiisana shinpo ga, jishin ni naru",
+      "category": "Confidence",
+      "generated_at": "2026-08-05T03:55:47.434394"
     }
   ],
-  "last_updated": "2026-08-04T21:12:42.752956"
+  "last_updated": "2026-08-05T03:55:47.434396"
 }
