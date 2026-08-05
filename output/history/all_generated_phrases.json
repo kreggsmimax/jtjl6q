@@ -15889,7 +15889,42 @@
       "romaji": "chiisana shinpo ga, jishin ni naru",
       "category": "Confidence",
       "generated_at": "2026-08-05T03:55:47.434394"
+    },
+    {
+      "english": "Breathe slowly, let worries go",
+      "japanese": "ゆっくり息をして、不安を手放して",
+      "romaji": "yukkuri iki o shite, fuan o tebanashite",
+      "category": "Inner Peace",
+      "generated_at": "2026-08-05T08:44:53.540058"
+    },
+    {
+      "english": "Smile softly, stay right here",
+      "japanese": "やさしく微笑んで, ここにいて",
+      "romaji": "yasashiku hohoendende, koko ni ite",
+      "category": "Inner Peace",
+      "generated_at": "2026-08-05T08:44:53.540069"
+    },
+    {
+      "english": "Notice now, breathe, repeat",
+      "japanese": "いまに気づいて, 息をして, くり返す",
+      "romaji": "ima ni kizuite, iki o shite, kurikaesu",
+      "category": "Inner Peace",
+      "generated_at": "2026-08-05T08:44:53.540071"
+    },
+    {
+      "english": "Release control, trust the moment",
+      "japanese": "コントロールを手放して, その時を信じて",
+      "romaji": "kontorooru o tebanashite, sono toki o shinji te",
+      "category": "Inner Peace",
+      "generated_at": "2026-08-05T08:44:53.540073"
+    },
+    {
+      "english": "Be kind, even to your thoughts",
+      "japanese": "やさしくして, 考えにもね",
+      "romaji": "yasashiku shite, kangae ni mo ne",
+      "category": "Inner Peace",
+      "generated_at": "2026-08-05T08:44:53.540074"
     }
   ],
-  "last_updated": "2026-08-05T03:55:47.434396"
+  "last_updated": "2026-08-05T08:44:53.540076"
 }
