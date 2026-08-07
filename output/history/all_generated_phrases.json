@@ -16169,7 +16169,42 @@
       "romaji": "asu ga yobu, kibou o sutenai de",
       "category": "Hope",
       "generated_at": "2026-08-07T00:53:03.481469"
+    },
+    {
+      "english": "It was thoughtless, I'm sorry.",
+      "japanese": "不注意でした、すみません。",
+      "romaji": "fuchuui deshita, sumimasen.",
+      "category": "Forgiveness",
+      "generated_at": "2026-08-07T03:45:22.371823"
+    },
+    {
+      "english": "I messed up, forgive me.",
+      "japanese": "失敗しました、許して。",
+      "romaji": "shippai shimashita, yurushite.",
+      "category": "Forgiveness",
+      "generated_at": "2026-08-07T03:45:22.371837"
+    },
+    {
+      "english": "My bad, I'll do better.",
+      "japanese": "私のせいです、頑張ります。",
+      "romaji": "watashi no sei desu, ganbarimasu.",
+      "category": "Forgiveness",
+      "generated_at": "2026-08-07T03:45:22.371839"
+    },
+    {
+      "english": "I'm so sorry, deeply.",
+      "japanese": "深く、お詫び申し上げます。",
+      "romaji": "fukaku, owabi moushiagemasu.",
+      "category": "Forgiveness",
+      "generated_at": "2026-08-07T03:45:22.371841"
+    },
+    {
+      "english": "Please overlook this.",
+      "japanese": "これを、見逃してください。",
+      "romaji": "kore o, minogashite kudasai.",
+      "category": "Forgiveness",
+      "generated_at": "2026-08-07T03:45:22.371842"
     }
   ],
-  "last_updated": "2026-08-07T00:53:03.481470"
+  "last_updated": "2026-08-07T03:45:22.371844"
 }
