@@ -16239,7 +16239,42 @@
       "romaji": "tetsudaimasu, yokattara itte kudasai",
       "category": "Kindness",
       "generated_at": "2026-08-07T07:25:38.798583"
+    },
+    {
+      "english": "Welcome, what would you like today?",
+      "japanese": "いらっしゃいませ、今日は何になさいますか。",
+      "romaji": "irasshaimase, kyou wa nani ni nasaimask a",
+      "category": "Restaurant Japanese",
+      "generated_at": "2026-08-07T10:42:38.821597"
+    },
+    {
+      "english": "May I take your order now, please?",
+      "japanese": "ご注文を今、伺ってもよろしいですか。",
+      "romaji": "go chuumon o ima, utaga ttemo yoroshii desu ka",
+      "category": "Restaurant Japanese",
+      "generated_at": "2026-08-07T10:42:38.821610"
+    },
+    {
+      "english": "This menu is popular, please try it.",
+      "japanese": "このメニューは人気です、ぜひどうぞ。",
+      "romaji": "kono menyuu wa ninki desu, zehi douzo",
+      "category": "Restaurant Japanese",
+      "generated_at": "2026-08-07T10:42:38.821612"
+    },
+    {
+      "english": "Would you like water, still or sparkling?",
+      "japanese": "お水はいかがですか、冷たいですか。",
+      "romaji": "omizu wa ikaga desu ka, tsumetai desu ka",
+      "category": "Restaurant Japanese",
+      "generated_at": "2026-08-07T10:42:38.821613"
+    },
+    {
+      "english": "Are you ready to order, now?",
+      "japanese": "ご注文はもうお決まりですか。",
+      "romaji": "go chuumon wa mou okimari desu ka",
+      "category": "Restaurant Japanese",
+      "generated_at": "2026-08-07T10:42:38.821615"
     }
   ],
-  "last_updated": "2026-08-07T07:25:38.798585"
+  "last_updated": "2026-08-07T10:42:38.821617"
 }
