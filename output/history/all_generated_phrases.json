@@ -16204,7 +16204,42 @@
       "romaji": "kore o, minogashite kudasai.",
       "category": "Forgiveness",
       "generated_at": "2026-08-07T03:45:22.371842"
+    },
+    {
+      "english": "You dropped this, here you go",
+      "japanese": "これ、落としましたか、どうぞ",
+      "romaji": "kore, otoshimashita ka, dōzo",
+      "category": "Kindness",
+      "generated_at": "2026-08-07T07:25:38.798570"
+    },
+    {
+      "english": "Thanks for helping me, I really appreciate it",
+      "japanese": "助けてくれて、ほんとうにありがとう",
+      "romaji": "tasukete kurete, hontō ni arigatō",
+      "category": "Kindness",
+      "generated_at": "2026-08-07T07:25:38.798579"
+    },
+    {
+      "english": "It’s okay, take your time, no rush",
+      "japanese": "大丈夫です、ゆっくりでいいですよ",
+      "romaji": "daijōbu desu, yukkuri de ii desu yo",
+      "category": "Kindness",
+      "generated_at": "2026-08-07T07:25:38.798581"
+    },
+    {
+      "english": "Your smile brightens my day",
+      "japanese": "あなたの笑顔で、元気になります",
+      "romaji": "anata no egao de, genki ni narimasu",
+      "category": "Kindness",
+      "generated_at": "2026-08-07T07:25:38.798582"
+    },
+    {
+      "english": "Let me help, just tell me",
+      "japanese": "手伝います、よかったら言ってください",
+      "romaji": "tetsudaimasu, yokattara itte kudasai",
+      "category": "Kindness",
+      "generated_at": "2026-08-07T07:25:38.798583"
     }
   ],
-  "last_updated": "2026-08-07T03:45:22.371844"
+  "last_updated": "2026-08-07T07:25:38.798585"
 }
