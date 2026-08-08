@@ -16449,7 +16449,42 @@
       "romaji": "tō, manten, mezasu.",
       "category": "Numbers Japanese",
       "generated_at": "2026-08-08T10:21:22.954957"
+    },
+    {
+      "english": "Time flies, slow down, breathe",
+      "japanese": "時間は過ぎるよ、ゆっくり、息をして",
+      "romaji": "jikan wa sugiruyo, yukkuri, iki o shite",
+      "category": "Time Japanese",
+      "generated_at": "2026-08-08T15:36:01.004635"
+    },
+    {
+      "english": "For now, take your time",
+      "japanese": "今はいいよ、急がなくて",
+      "romaji": "ima wa ii yo, isoganakute",
+      "category": "Time Japanese",
+      "generated_at": "2026-08-08T15:36:01.004644"
+    },
+    {
+      "english": "Wait a moment, then we go",
+      "japanese": "ちょっと待って、それから行こう",
+      "romaji": "chotto matte, sorekara ikou",
+      "category": "Time Japanese",
+      "generated_at": "2026-08-08T15:36:01.004646"
+    },
+    {
+      "english": "Soon you'll know, just be patient",
+      "japanese": "もうすぐ分かるよ、じっと待ってね",
+      "romaji": "mou sugu wakaru yo, jitto matte ne",
+      "category": "Time Japanese",
+      "generated_at": "2026-08-08T15:36:01.004647"
+    },
+    {
+      "english": "At 3 o'clock, meet me here",
+      "japanese": "三時にここで会おうね",
+      "romaji": "sanji ni koko de aou ne",
+      "category": "Time Japanese",
+      "generated_at": "2026-08-08T15:36:01.004649"
     }
   ],
-  "last_updated": "2026-08-08T10:21:22.954959"
+  "last_updated": "2026-08-08T15:36:01.004650"
 }
