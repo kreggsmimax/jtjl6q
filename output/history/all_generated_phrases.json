@@ -16379,7 +16379,42 @@
       "romaji": "koron demo, mō ichido mezasu",
       "category": "Perseverance",
       "generated_at": "2026-08-08T02:52:16.062301"
+    },
+    {
+      "english": "Help me, call an ambulance, please.",
+      "japanese": "たすけて、救急車を呼んでください。",
+      "romaji": "tasukete, kyukyuusha o yonde kudasai.",
+      "category": "Emergency Japanese",
+      "generated_at": "2026-08-08T07:02:57.572670"
+    },
+    {
+      "english": "Stop, stay back, it’s dangerous!",
+      "japanese": "止まって、下がって、危ないです！",
+      "romaji": "tomatte, sagatte, abunai desu!",
+      "category": "Emergency Japanese",
+      "generated_at": "2026-08-08T07:02:57.572678"
+    },
+    {
+      "english": "I’m hurt, please call for help.",
+      "japanese": "けがしました、助けを呼んでください。",
+      "romaji": "kega shimashita, tasuke o yonde kudasai.",
+      "category": "Emergency Japanese",
+      "generated_at": "2026-08-08T07:02:57.572680"
+    },
+    {
+      "english": "Fire, fire, please evacuate now!",
+      "japanese": "火事です、今すぐ避難してください！",
+      "romaji": "kaji desu, ima sug hi nan shite kudasai!",
+      "category": "Emergency Japanese",
+      "generated_at": "2026-08-08T07:02:57.572681"
+    },
+    {
+      "english": "Is anyone hurt? Please respond, quickly.",
+      "japanese": "だれかけがしてますか、早く返事して。",
+      "romaji": "dare ka kega shitemasu ka, hayaku henji shite.",
+      "category": "Emergency Japanese",
+      "generated_at": "2026-08-08T07:02:57.572682"
     }
   ],
-  "last_updated": "2026-08-08T02:52:16.062303"
+  "last_updated": "2026-08-08T07:02:57.572683"
 }
